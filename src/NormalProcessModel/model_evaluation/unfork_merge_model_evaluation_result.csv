@@ -1,0 +1,2 @@
+scene,case_num,variant_num,average_trace_fitness,percentage_of_fitting_traces,precision,generalization,simplicity
+unfork_merge,1536,191,0.9809159996163465,76.3671875,0.9497060971792286,0.8895258653570894,0.6727272727272727

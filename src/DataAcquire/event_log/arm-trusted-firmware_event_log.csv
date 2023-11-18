@@ -1,0 +1,480 @@
+﻿case:concept:name,concept:name,time:timestamp,people,scene,message,description
+1939,SubmitCommit,2021-01-28 09:04:26,deqi.hu,fork_close,"mmc: Change mmc_dev_info from pointer to global variable
+
+1.Since in bl_platform_setup, the mmc_device_info
+  passed in are all temporary variables, so need to
+  use global variables to store mmc_device_info in mmc.c
+2.Delete redundant;
+
+Signed-off-by: deqi.hu@siengine.com","{""sha"": ""13c0233591176160573142117246af500bc3bbd7"", ""author"": {""name"": ""deqi.hu"", ""email"": ""deqi.hu@siengine.com"", ""date"": ""2021-01-28T09:04:26Z""}, ""committer"": {""name"": ""deqi.hu"", ""email"": ""deqi.hu@siengine.com"", ""date"": ""2021-01-28T09:04:26Z""}}"
+1939,OpenPR,2021-01-28 09:38:47,hudeqiWH,fork_close,,
+1939,IssueComment,2021-01-28 10:00:29,hudeqiWH,fork_close,"as picture show mmc_read_blocks maybe called beyond function bl1_platform_setup
+
+
+![mmc_read_blocks maybe called beyond bl1_platform_setup](https://user-images.githubusercontent.com/21273083/106121512-9baf2b80-6192-11eb-9395-58d1d30fdf61.png)
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/768939793"", ""author_association"": ""NONE""}"
+1939,IssueComment,2021-01-29 09:17:23,Yann-lms,fork_close,"Hi,
+
+This github is a read-only mirror for review.trustedfirmware.org.
+Please check this link for submitting patches:
+https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html
+
+That said, I'd prefer not to modify the framework.
+The data should be kept either in dw_mmc.c (that's what is done in stm32_sdmmc2.c, but we do not expect to have 2 instances of MMC devices) or in hikey_bl1_setup.c, and other platform files using the dw_mmc driver.
+
+Regards,
+Yann","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/769682809"", ""author_association"": ""CONTRIBUTOR""}"
+1939,IssueComment,2021-02-01 02:48:21,hudeqiWH,fork_close,"> dw_mmc
+
+Hi,
+
+Thank you for your reply. Refer to other platform implementation(which all don`t have permanent instance), there may be a reference to the risk of free space, I will refer to your tips to submit patches in other repository.
+
+Regards,
+Deqi","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/770527612"", ""author_association"": ""NONE""}"
+1939,IssueComment,2021-03-12 16:14:25,ssg-bot,fork_close,"Hello @hudeqiWH!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/797592783"", ""author_association"": ""NONE""}"
+1939,ClosePR,2021-03-17 01:35:06,hudeqiWH,fork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/4467649740"", ""commit_url"": null}"
+1939,IssueCommentSupplement,2021-03-17 01:36:07,hudeqiWH,fork_close,commit on https://review.trustedfirmware.org/,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/800726818"", ""author_association"": ""NONE""}"
+1940,SubmitCommit,2021-03-15 07:52:17,zavorka,fork_close,"plat/allwinner: don't enable regulators disabled in DT
+
+Since July 2020 (36766d39e8), u-boot began building all device trees
+with symbols unless OF_LIBFDT_OVERLAY is explicitly disabled.
+
+Consequentially, each node in a device tree is assigned a phandle,
+regardless of it being actually referenced anywhere. This change made
+the selective enablement of only those regulators for which a phandle
+is present by the axp driver effectively useless.
+
+In order to reinstate a way of achieving selectivity in what regulators
+get enabled, check for a non-'okay' value of the 'status' property.","{""sha"": ""ad6e39c158b741bb32f203147301c10a2553b3f4"", ""author"": {""name"": ""Roman Beranek"", ""email"": ""roman.beranek@prusa3d.com"", ""date"": ""2021-03-15T07:52:17Z""}, ""committer"": {""name"": ""Roman Beranek"", ""email"": ""roman.beranek@prusa3d.com"", ""date"": ""2021-03-15T07:52:17Z""}}"
+1940,OpenPR,2021-03-15 08:18:05,zavorka,fork_close,,
+1940,IssueComment,2021-03-15 08:36:07,ssg-bot,fork_close,"Hello @zavorka!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/799226502"", ""author_association"": ""NONE""}"
+1940,IssueComment,2021-03-15 08:46:32,zavorka,fork_close,"Tried that, got an unexpected response:
+```
+ ! [remote rejected]     HEAD -> refs/for/integration/axp-reg-status (branch integration/axp-reg-status not found)
+```","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/799233422"", ""author_association"": ""CONTRIBUTOR""}"
+1940,IssueComment,2021-03-15 08:56:51,sandrine-bailleux-arm,fork_close,"Hi @zavorka ,
+
+What is the exact git command line you used that prompted this error message?","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/799240375"", ""author_association"": ""CONTRIBUTOR""}"
+1940,IssueComment,2021-03-15 08:59:40,Yann-lms,fork_close,"Hi,
+
+It seems that the old way of using topic is no more supported, you should use: refs/for/integration%topic=axp-reg-status
+
+Regards,
+Yann","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/799242349"", ""author_association"": ""CONTRIBUTOR""}"
+1940,IssueCommentSupplement,2021-03-15 11:34:50,zavorka,fork_close,"Okay, it is [there](https://review.trustedfirmware.org/c/TF-A/trusted-firmware-a/+/9207). Thank you, @Yann-lms ","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/799348300"", ""author_association"": ""CONTRIBUTOR""}"
+1940,ClosePR,2021-03-15 11:34:50,zavorka,fork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/4458153711"", ""commit_url"": null}"
+1942,SubmitCommit,2021-06-10 09:15:55,dependabot[bot],unfork_close,"build(deps): Bump trim-newlines from 3.0.0 to 3.0.1
+
+Bumps [trim-newlines](https://github.com/sindresorhus/trim-newlines) from 3.0.0 to 3.0.1.
+- [Release notes](https://github.com/sindresorhus/trim-newlines/releases)
+- [Commits](https://github.com/sindresorhus/trim-newlines/commits)
+
+---
+updated-dependencies:
+- dependency-name: trim-newlines
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>","{""sha"": ""d06446d09adea26a8fd5ada794e15b4d30123b0b"", ""author"": {""name"": ""dependabot[bot]"", ""email"": ""49699333+dependabot[bot]@users.noreply.github.com"", ""date"": ""2021-06-10T09:15:55Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-06-10T09:15:55Z""}}"
+1942,OpenPR,2021-06-10 09:15:56,dependabot[bot],unfork_close,,
+1942,IssueComment,2021-06-10 09:16:08,ssg-bot,unfork_close,"Hello @dependabot[bot]!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/858457476"", ""author_association"": ""NONE""}"
+1942,IssueComment,2021-06-16 12:50:22,dependabot[bot],unfork_close,"Looks like trim-newlines is up-to-date now, so this is no longer needed.","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/862352297"", ""author_association"": ""CONTRIBUTOR""}"
+1942,ClosePR,2021-06-16 12:50:23,dependabot[bot],unfork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/4897699269"", ""commit_url"": null}"
+1942,DeleteBranch,2021-06-16 12:50:25,dependabot[bot],unfork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/4897699415"", ""commit_url"": null}"
+1943,SubmitCommit,2021-08-13 01:17:53,dependabot[bot],unfork_close,"build(deps): Bump path-parse from 1.0.6 to 1.0.7
+
+Bumps [path-parse](https://github.com/jbgutierrez/path-parse) from 1.0.6 to 1.0.7.
+- [Release notes](https://github.com/jbgutierrez/path-parse/releases)
+- [Commits](https://github.com/jbgutierrez/path-parse/commits/v1.0.7)
+
+---
+updated-dependencies:
+- dependency-name: path-parse
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>","{""sha"": ""0fe6aa7ed416c3581fc128bd1444ef13da185f1b"", ""author"": {""name"": ""dependabot[bot]"", ""email"": ""49699333+dependabot[bot]@users.noreply.github.com"", ""date"": ""2021-08-13T01:17:53Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-08-13T01:17:53Z""}}"
+1943,OpenPR,2021-08-13 01:17:54,dependabot[bot],unfork_close,,
+1943,IssueComment,2021-08-13 01:26:07,ssg-bot,unfork_close,"Hello @dependabot[bot]!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/898089955"", ""author_association"": ""NONE""}"
+1943,IssueComment,2021-08-16 02:19:28,dependabot[bot],unfork_close,"Looks like path-parse is up-to-date now, so this is no longer needed.","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/899168731"", ""author_association"": ""CONTRIBUTOR""}"
+1943,ClosePR,2021-08-16 02:19:29,dependabot[bot],unfork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/5160547644"", ""commit_url"": null}"
+1943,DeleteBranch,2021-08-16 02:19:30,dependabot[bot],unfork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/5160547671"", ""commit_url"": null}"
+1979,SubmitCommit,2021-10-15 03:12:23,UEFICharlesZhang,fork_close,Create makefile.yml,"{""sha"": ""12d4af58735266de20b054b721804bd044c2cbd8"", ""author"": {""name"": ""UEFICharlesZhang"", ""email"": ""41136233+UEFICharlesZhang@users.noreply.github.com"", ""date"": ""2021-10-15T03:12:23Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-10-15T03:12:23Z""}}"
+1979,SubmitCommit,2021-10-15 03:13:45,UEFICharlesZhang,fork_close,Update makefile.yml,"{""sha"": ""d4b9ba153ad168b639820efe8aeba66bae85bb11"", ""author"": {""name"": ""UEFICharlesZhang"", ""email"": ""41136233+UEFICharlesZhang@users.noreply.github.com"", ""date"": ""2021-10-15T03:13:45Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-10-15T03:13:45Z""}}"
+1979,SubmitCommit,2021-10-15 03:14:59,UEFICharlesZhang,fork_close,Update makefile.yml,"{""sha"": ""b693fed54722564fead542c035808eeaf66942f9"", ""author"": {""name"": ""UEFICharlesZhang"", ""email"": ""41136233+UEFICharlesZhang@users.noreply.github.com"", ""date"": ""2021-10-15T03:14:59Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-10-15T03:14:59Z""}}"
+1979,SubmitCommit,2021-10-15 06:23:53,UEFICharlesZhang,fork_close,Build ATF for edk2.,"{""sha"": ""409a1cb7098eb005983624543eddd656506efeaf"", ""author"": {""name"": ""UEFICharlesZhang"", ""email"": ""41136233+UEFICharlesZhang@users.noreply.github.com"", ""date"": ""2021-10-15T06:23:53Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-10-15T06:23:53Z""}}"
+1979,OpenPR,2021-10-15 06:25:04,UEFICharlesZhang,fork_close,,
+1979,ClosePR,2021-10-15 06:25:43,UEFICharlesZhang,fork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/5467934543"", ""commit_url"": null}"
+1979,IssueCommentSupplement,2021-10-15 06:26:10,UEFICharlesZhang,fork_close,Discard for this is a mistake.,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/944035242"", ""author_association"": ""NONE""}"
+1981,SubmitCommit,2021-11-02 15:57:00,BruceFangShengzhou,fork_close,"    fix(auth): update with mbedtls development branch
+
+    the latest version of mbedtls implement sha256 based on sha224'
+    and del rsa_internal.c","{""sha"": ""c917d2cd15b91c9fa11f28577046401cd32a2115"", ""author"": {""name"": ""Bruce Fang"", ""email"": ""brucefangshengzhou@foxmail.com"", ""date"": ""2021-11-02T15:57:00Z""}, ""committer"": {""name"": ""Bruce Fang"", ""email"": ""brucefangshengzhou@foxmail.com"", ""date"": ""2021-11-02T15:57:00Z""}}"
+1981,OpenPR,2021-11-02 15:59:56,BruceFangShengzhou,fork_close,,
+1981,IssueComment,2021-11-02 16:06:06,ssg-bot,fork_close,"Hello @BruceFangShengzhou!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/957884178"", ""author_association"": ""NONE""}"
+1981,IssueComment,2021-11-03 01:31:28,BruceFangShengzhou,fork_close,fine,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/958588216"", ""author_association"": ""NONE""}"
+1981,ClosePR,2021-11-03 01:31:29,BruceFangShengzhou,fork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/5559055921"", ""commit_url"": null}"
+1984,SubmitCommit,2022-01-19 10:13:15,Herrie82,fork_close,"rockchip.rst: rk3399: Fix typo in build instructions
+
+rk3399 needs bl31 and not bl32.
+
+Signed-off-by: Herman van Hazendonk <github.com@herrie.org>","{""sha"": ""3c93d23cec1f86465fad11b05c3cd6464a947ddd"", ""author"": {""name"": ""Herrie"", ""email"": ""Github.com@herrie.org"", ""date"": ""2022-01-19T10:13:15Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-01-19T10:13:15Z""}}"
+1984,OpenPR,2022-01-19 10:13:26,Herrie82,fork_close,,
+1984,IssueComment,2022-01-19 10:16:06,ssg-bot,fork_close,"Hello @Herrie82!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/1016285568"", ""author_association"": ""NONE""}"
+1984,IssueCommentSupplement,2022-01-19 10:49:12,Herrie82,fork_close,Done via requested method,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/1016312460"", ""author_association"": ""NONE""}"
+1984,ClosePR,2022-01-19 10:49:12,Herrie82,fork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/5916730424"", ""commit_url"": null}"
+1985,SubmitCommit,2022-05-16 16:40:42,dependabot[bot],unfork_close,"build(deps): Bump ansi-regex from 3.0.0 to 3.0.1
+
+Bumps [ansi-regex](https://github.com/chalk/ansi-regex) from 3.0.0 to 3.0.1.
+- [Release notes](https://github.com/chalk/ansi-regex/releases)
+- [Commits](https://github.com/chalk/ansi-regex/compare/v3.0.0...v3.0.1)
+
+---
+updated-dependencies:
+- dependency-name: ansi-regex
+  dependency-type: indirect
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>","{""sha"": ""def8875eb92fcc221e538d9c98b3b5f10a7c7364"", ""author"": {""name"": ""dependabot[bot]"", ""email"": ""49699333+dependabot[bot]@users.noreply.github.com"", ""date"": ""2022-05-16T16:40:42Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-05-16T16:40:42Z""}}"
+1985,OpenPR,2022-05-16 16:40:43,dependabot[bot],unfork_close,,
+1985,IssueComment,2022-05-16 16:46:06,ssg-bot,unfork_close,"Hello @dependabot[bot]!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/1127900234"", ""author_association"": ""NONE""}"
+1985,IssueComment,2022-05-20 02:41:40,dependabot[bot],unfork_close,"Looks like ansi-regex is up-to-date now, so this is no longer needed.","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/1132398046"", ""author_association"": ""CONTRIBUTOR""}"
+1985,ClosePR,2022-05-20 02:41:41,dependabot[bot],unfork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/6647134368"", ""commit_url"": null}"
+1985,DeleteBranch,2022-05-20 02:41:43,dependabot[bot],unfork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/6647134450"", ""commit_url"": null}"
+1987,SubmitCommit,2022-08-16 16:27:45,ldts,fork_close,"plat: versal: support raw.bin if needed.
+
+This commit adds support for BL32 TEE-RAW.BIN by defaulting
+to built-time addresses when FSBL fails at providing a valid
+jump address.
+
+By default, BL32 is expected at 0x60000000.
+The BIF file to use would be something like this
+
+the_ROM_image:
+{
+	image {
+	      { type=bootimage, file=vpl_gen_fixed.pdi }
+	      { type=bootloader, file=plm.elf }
+	      { core=psm, file=psmfw.elf }
+	}
+
+	image {
+	      id = 0x1c000000, name=apu_subsystem
+	      { type=raw, load=0x00001000, file=versal-vck190-revA-x-ebm-01-revA.dtb }
+	      { type=raw, load=0x40000000, file=LedTest_Gpio.pdi }
+	      { core=a72-0, exception_level=el-3, trustzone, file=bl31.elf }
+ 	      { core=a72-0, exception_level=el-2, file=u-boot.elf }
+	      { core=a72-0, exception_level=el-1, trustzone,
+	            load=0x60000000, startup=0x60000000, file=tee-raw.bin }
+	}
+}
+
+Signed-off-by: Jorge Ramirez-Ortiz <jorge@foundries.io>","{""sha"": ""b39429988e3c2076adc8238375ae9cb0473b3978"", ""author"": {""name"": ""Jorge Ramirez-Ortiz"", ""email"": ""jorge@foundries.io"", ""date"": ""2022-08-16T16:27:45Z""}, ""committer"": {""name"": ""Jorge Ramirez-Ortiz"", ""email"": ""jorge@foundries.io"", ""date"": ""2022-08-16T16:27:45Z""}}"
+1987,OpenPR,2022-08-16 16:30:45,ldts,fork_close,,
+1987,IssueComment,2022-08-16 16:36:06,ssg-bot,fork_close,"Hello @ldts!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/1216880057"", ""author_association"": ""NONE""}"
+1987,ClosePR,2022-08-16 16:37:47,ldts,fork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/7198845182"", ""commit_url"": null}"
+1987,IssueCommentSupplement,2022-08-16 18:40:07,ldts,fork_close,"this has been submitted via ML - kept here just for reference
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/1217009399"", ""author_association"": ""CONTRIBUTOR""}"
+1989,SubmitCommit,2022-11-21 03:51:53,DemiMarie,fork_close,"Only accept v3 X.509 certificates
+
+v1 and v2 are forbidden as at least one extension is required.  Instead
+of actually parsing the version number, just compare it with a
+hard-coded string.
+
+Signed-off-by: Demi Marie Obenour <demi@invisiblethingslab.com>","{""sha"": ""dbe11cb88bb275b34e48089543bc30c0fd1f111d"", ""author"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-20T23:04:16Z""}, ""committer"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T03:51:53Z""}}"
+1989,SubmitCommit,2022-11-21 03:51:53,DemiMarie,fork_close,"Forbid junk after extensions
+
+The extensions must use all remaining bytes in the TBSCertificate.
+
+Signed-off-by: Demi Marie Obenour <demi@invisiblethingslab.com>","{""sha"": ""a47aaee5775c586fe2553d745cfd52290652f073"", ""author"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-20T23:05:00Z""}, ""committer"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T03:51:53Z""}}"
+1989,SubmitCommit,2022-11-21 03:51:53,DemiMarie,fork_close,"Require at least one extension to be present
+
+This relies on mbedtls_asn1_get_tag() rejecting the empty string.
+
+Signed-off-by: Demi Marie Obenour <demi@invisiblethingslab.com>","{""sha"": ""de0d3a1b0ca2d2a2b9c8a9f3a190589d25a3b12d"", ""author"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-20T23:05:41Z""}, ""committer"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T03:51:53Z""}}"
+1989,SubmitCommit,2022-11-21 03:51:53,DemiMarie,fork_close,"Reject invalid padding in digests
+
+Digests must not have padding after the SEQUENCE or OCTET STRING.
+
+Signed-off-by: Demi Marie Obenour <demi@invisiblethingslab.com>","{""sha"": ""76ffcaa71abe3fd9561e5a4856beafb99bd7dfdc"", ""author"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-20T23:19:43Z""}, ""committer"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T03:51:53Z""}}"
+1989,SubmitCommit,2022-11-21 03:51:53,DemiMarie,fork_close,"Reject padding after BIT STRING in signatures
+
+It is forbidden by ASN.1 DER.
+
+Signed-off-by: Demi Marie Obenour <demi@invisiblethingslab.com>","{""sha"": ""910b5977dea8332aea75c90571437269802082e5"", ""author"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-20T23:20:20Z""}, ""committer"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T03:51:53Z""}}"
+1989,SubmitCommit,2022-11-21 03:51:53,DemiMarie,fork_close,"Partially validate SubjectPublicKeyInfo early
+
+This reduces the likelihood of future problems later.
+
+Signed-off-by: Demi Marie Obenour <demi@invisiblethingslab.com>","{""sha"": ""190055e68c6933e118265c1ed6d2c97daf77c8a0"", ""author"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T00:09:07Z""}, ""committer"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T03:51:53Z""}}"
+1989,SubmitCommit,2022-11-21 03:51:53,DemiMarie,fork_close,"Require bit strings to have no unused bits
+
+This is already checked by the crypto module or by mbedTLS, but checking
+it in the X.509 parser is harmless.
+
+Signed-off-by: Demi Marie Obenour <demi@invisiblethingslab.com>","{""sha"": ""0d10db81688da12c2e53393314b4be5bdd6c9b08"", ""author"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T02:06:59Z""}, ""committer"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T03:51:53Z""}}"
+1989,SubmitCommit,2022-11-21 03:51:53,DemiMarie,fork_close,"Avoid parsing signature algorithm twice
+
+Since the two instances of the signature algorithm in a certificate must
+be bitwise identical, it is not necessary to parse both of them.
+Instead, it suffices to parse one of them, and then check that the other
+fits in the remaining buffer space and is equal to the first.
+
+Signed-off-by: Demi Marie Obenour <demi@invisiblethingslab.com>","{""sha"": ""2b07194008f1deea9efef1065a48f9262a5636e4"", ""author"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T03:32:32Z""}, ""committer"": {""name"": ""Demi Marie Obenour"", ""email"": ""demi@invisiblethingslab.com"", ""date"": ""2022-11-21T03:51:53Z""}}"
+1989,OpenPR,2022-11-21 03:54:51,DemiMarie,fork_close,,
+1989,IssueComment,2022-11-21 03:56:04,ssg-bot,fork_close,"Hello @DemiMarie!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/1321430612"", ""author_association"": ""NONE""}"
+1989,ClosePR,2022-11-21 17:50:18,DemiMarie,fork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/7859850155"", ""commit_url"": null}"
+1990,SubmitCommit,2022-12-05 18:35:17,Detlev Casanova,fork_close,"rcar: Add mandatory fields in reserved-memory node
+
+On the R-Car Gen3 boards, u-boot will apply this reserved-memory node
+directly on the Linux device-tree.
+
+The linux kernel requires that the ranges, #address-cells and #size-cells
+values must be set in the reserved-memory node.
+
+Signed-off-by: Detlev Casanova <detlev.casanova@collabora.com>","{""sha"": ""61f27c7d1b91be7eef902ab2ee21924fd3df9904"", ""author"": {""name"": ""Detlev Casanova"", ""email"": ""detlev.casanova@collabora.com"", ""date"": ""2022-12-01T22:57:31Z""}, ""committer"": {""name"": ""Detlev Casanova"", ""email"": ""detlev.casanova@collabora.com"", ""date"": ""2022-12-05T18:35:17Z""}}"
+1990,OpenPR,2022-12-06 17:05:44,cazou,fork_close,,
+1990,IssueComment,2022-12-06 17:06:11,ssg-bot,fork_close,"Hello @cazou!
+
+
+Thank you for your contribution to **Trusted Firmware-A**!
+
+The TF-A project has now migrated to www.trustedfirmware.org. Our GitHub repo will remain accessible as a Read-Only mirror but we have changed the way we accept contributions for the project.
+
+## How do I contribute patches to TF-A?
+We have a [Getting started](https://developer.trustedfirmware.org/w/tf_a/gerrit-getting-started/) article which we hope will make everything very straightforward! And if you would like more details you can always refer to the [contributing guidelines](https://trustedfirmware-a.readthedocs.io/en/latest/process/contributing.html).
+
+A quick overview:
+1. Go to review.trustedfirmware.org
+2. Register with your existing GitHub account
+3. Submit your patches!
+
+## What if I face any problems?
+We have many channels through which you can contact us:
+
+ * **Our mailing lists**
+   You can send us an email in the [public TF-A mailing list](https://lists.trustedfirmware.org/mailman/listinfo/tf-a). [Here](https://lists.trustedfirmware.org/mailman/listinfo) you can also find all the mailing lists for all the projects hosted under trustedfirmware.org.
+
+We are looking forward to seeing your patch submitted to trustedfirmware.org!
+
+The **Trusted Firmware-A** team
+","{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/comments/1339691022"", ""author_association"": ""NONE""}"
+1990,ClosePR,2022-12-06 21:31:36,cazou,fork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/7971107692"", ""commit_url"": null}"
+1990,DeleteBranch,2022-12-06 21:31:36,cazou,fork_close,,"{""url"": ""https://api.github.com/repos/ARM-software/arm-trusted-firmware/issues/events/7971107740"", ""commit_url"": null}"

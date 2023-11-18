@@ -1,0 +1,4 @@
+﻿people,pr_num,merge_rate,avg_assign_reviewer_num,avg_response_time,avg_response_interval,review_rate
+aureliendavid,3,0.6666666666666666,0.0,24291.911111111112,70542.63333333333,0.0
+jeanlf,5,0.8,0.2,15074.77,44281.48333333334,0.2
+rbouqueau,1,1.0,0.0,2625.2833333333333,0.0,0.0

@@ -1,0 +1,804 @@
+﻿case:concept:name,concept:name,time:timestamp,people,scene,message,description
+1673,SubmitCommit,2021-01-06 21:48:21,Jamaika1,fork_close,"Change description info
+
+```
+mp4box -info image_21447_24bit.j2c
+[jpeg2000 @ 0000017d4b6a1180] unsupported marker 0xFF50 at pos 0x33
+Import probing results for image_21447_24bit.j2c:
+File has 1 tracks
+        Track 1 type: Video Codec JPEG200 Image (ID 1785737835)
+        Size 1563x1558
+```","{""sha"": ""ab9d22dc6e4486d2a3c5bc3635425e649b34ec90"", ""author"": {""name"": ""Jamaika1"", ""email"": ""lukaszcz18@wp.pl"", ""date"": ""2021-01-06T21:48:21Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-01-06T21:48:21Z""}}"
+1673,OpenPR,2021-01-06 21:48:36,Jamaika1,fork_close,,
+1673,IssueComment,2021-01-06 22:28:59,codecov-io,fork_close,"# [Codecov](https://codecov.io/gh/gpac/gpac/pull/1673?src=pr&el=h1) Report
+> Merging [#1673](https://codecov.io/gh/gpac/gpac/pull/1673?src=pr&el=desc) (d8a4ca6) into [master](https://codecov.io/gh/gpac/gpac/commit/9f143de8c6180be433259329ecfac302f39e5df1?el=desc) (9f143de) will **increase** coverage by `0.00%`.
+> The diff coverage is `n/a`.
+
+[![Impacted file tree graph](https://codecov.io/gh/gpac/gpac/pull/1673/graphs/tree.svg?width=650&height=150&src=pr&token=2GbuvL6tD8)](https://codecov.io/gh/gpac/gpac/pull/1673?src=pr&el=tree)
+
+```diff
+@@           Coverage Diff           @@
+##           master    #1673   +/-   ##
+=======================================
+  Coverage   74.44%   74.44%           
+=======================================
+  Files         386      386           
+  Lines      308328   308328           
+=======================================
++ Hits       229522   229548   +26     
++ Misses      78806    78780   -26     
+```
+
+
+| [Impacted Files](https://codecov.io/gh/gpac/gpac/pull/1673?src=pr&el=tree) | Coverage Δ | |
+|---|---|---|
+| [src/utils/constants.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL3V0aWxzL2NvbnN0YW50cy5j) | `71.44% <ø> (ø)` | |
+| [src/filters/in\_route.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvaW5fcm91dGUuYw==) | `60.68% <0.00%> (-7.13%)` | :arrow_down: |
+| [src/filters/in\_http.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvaW5faHR0cC5j) | `74.72% <0.00%> (-5.95%)` | :arrow_down: |
+| [src/filters/dec\_xvid.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvZGVjX3h2aWQuYw==) | `87.50% <0.00%> (-4.87%)` | :arrow_down: |
+| [src/compositor/camera.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3IvY2FtZXJhLmM=) | `82.75% <0.00%> (-4.08%)` | :arrow_down: |
+| [src/compositor/mpeg4\_grouping\_2d.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3IvbXBlZzRfZ3JvdXBpbmdfMmQuYw==) | `92.34% <0.00%> (-3.28%)` | :arrow_down: |
+| [src/isomedia/isom\_intern.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL2lzb21lZGlhL2lzb21faW50ZXJuLmM=) | `71.80% <0.00%> (-0.93%)` | :arrow_down: |
+| [src/compositor/object\_manager.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3Ivb2JqZWN0X21hbmFnZXIuYw==) | `80.76% <0.00%> (-0.44%)` | :arrow_down: |
+| [src/scenegraph/vrml\_js.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL3NjZW5lZ3JhcGgvdnJtbF9qcy5j) | `48.36% <0.00%> (-0.34%)` | :arrow_down: |
+| [src/scenegraph/dom\_js.c](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree#diff-c3JjL3NjZW5lZ3JhcGgvZG9tX2pzLmM=) | `64.67% <0.00%> (-0.33%)` | :arrow_down: |
+| ... and [20 more](https://codecov.io/gh/gpac/gpac/pull/1673/diff?src=pr&el=tree-more) | |
+
+------
+
+[Continue to review full report at Codecov](https://codecov.io/gh/gpac/gpac/pull/1673?src=pr&el=continue).
+> **Legend** - [Click here to learn more](https://docs.codecov.io/docs/codecov-delta)
+> `Δ = absolute <relative> (impact)`, `ø = not affected`, `? = missing data`
+> Powered by [Codecov](https://codecov.io/gh/gpac/gpac/pull/1673?src=pr&el=footer). Last update [9f143de...43fdcce](https://codecov.io/gh/gpac/gpac/pull/1673?src=pr&el=lastupdated). Read the [comment docs](https://docs.codecov.io/docs/pull-request-comments).
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/755756352"", ""author_association"": ""NONE""}"
+1673,Revise,2021-01-07 06:41:32,Jamaika1,fork_close,Change description info,"{""sha"": ""d8a4ca6bc51cdff3ba6a63d74d73937593220087"", ""author"": {""name"": ""Jamaika1"", ""email"": ""lukaszcz18@wp.pl"", ""date"": ""2021-01-07T06:41:32Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-01-07T06:41:32Z""}}"
+1673,Revise,2021-01-07 08:58:38,Jamaika1,fork_close,Change description 2021,"{""sha"": ""b8bd4ad99ec124b2464ccebc40dea4041bf9c3d2"", ""author"": {""name"": ""Jamaika1"", ""email"": ""lukaszcz18@wp.pl"", ""date"": ""2021-01-07T08:58:38Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-01-07T08:58:38Z""}}"
+1673,Revise,2021-01-07 09:23:34,Jamaika1,fork_close,Change description 2021,"{""sha"": ""43fdcceafd52ce8455a561cfa69612eb83a6fa35"", ""author"": {""name"": ""Jamaika1"", ""email"": ""lukaszcz18@wp.pl"", ""date"": ""2021-01-07T09:23:34Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-01-07T09:23:34Z""}}"
+1673,IssueCommentSupplement,2021-01-07 09:26:35,jeanlf,fork_close,"you're mixing codec IDs and containers, do not do that. Mimes and extensions for containers are not defined in the codecID definitions.
+ I've patched the typo for J2K, closing.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/755995523"", ""author_association"": ""CONTRIBUTOR""}"
+1673,ClosePR,2021-01-07 09:26:35,jeanlf,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4178975453"", ""commit_url"": null}"
+1678,SubmitCommit,2021-01-11 15:49:32,aureliendavid,unfork_merge,added bsd strlcpy function for better string copies,"{""sha"": ""11be7dc31ebb5eb54913f019e35baf2398ae78d1"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-01-11T15:22:47Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-01-11T15:49:32Z""}}"
+1678,OpenPR,2021-01-11 17:15:11,aureliendavid,unfork_merge,,
+1678,IssueComment,2021-01-11 20:44:09,rbouqueau,unfork_merge,"Thanks. Agreed that we should name it gf_strlcpy. If we copy code with a BSD, we should take care of copying the disclaimer paragraph if required.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/758211725"", ""author_association"": ""CONTRIBUTOR""}"
+1678,Revise,2021-01-12 10:24:46,aureliendavid,unfork_merge,strlcpy: added bsd copyright notice and renamed to gf_strlcpy,"{""sha"": ""bbf08c60a719545b3b616f94ecd00aa104911ef1"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-01-12T09:59:06Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-01-12T10:24:46Z""}}"
+1678,IssueComment,2021-01-12 10:39:44,codecov-io,unfork_merge,"# [Codecov](https://codecov.io/gh/gpac/gpac/pull/1678?src=pr&el=h1) Report
+> Merging [#1678](https://codecov.io/gh/gpac/gpac/pull/1678?src=pr&el=desc) (bbf08c6) into [master](https://codecov.io/gh/gpac/gpac/commit/7a6d74a882ca9a89df453162d5c05f283dfc2dad?el=desc) (7a6d74a) will **decrease** coverage by `0.18%`.
+> The diff coverage is `58.33%`.
+
+[![Impacted file tree graph](https://codecov.io/gh/gpac/gpac/pull/1678/graphs/tree.svg?width=650&height=150&src=pr&token=2GbuvL6tD8)](https://codecov.io/gh/gpac/gpac/pull/1678?src=pr&el=tree)
+
+```diff
+@@            Coverage Diff             @@
+##           master    #1678      +/-   ##
+==========================================
+- Coverage   74.47%   74.29%   -0.19%     
+==========================================
+  Files         386      386              
+  Lines      308477   308488      +11     
+==========================================
+- Hits       229750   229200     -550     
+- Misses      78727    79288     +561     
+```
+
+
+| [Impacted Files](https://codecov.io/gh/gpac/gpac/pull/1678?src=pr&el=tree) | Coverage Δ | |
+|---|---|---|
+| [applications/mp4box/main.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-YXBwbGljYXRpb25zL21wNGJveC9tYWluLmM=) | `77.24% <33.33%> (-0.05%)` | :arrow_down: |
+| [src/utils/alloc.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-c3JjL3V0aWxzL2FsbG9jLmM=) | `81.74% <66.66%> (-0.59%)` | :arrow_down: |
+| [src/jsmods/scene\_js.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-c3JjL2pzbW9kcy9zY2VuZV9qcy5j) | `28.18% <0.00%> (-34.28%)` | :arrow_down: |
+| [src/compositor/mpeg4\_mediasensor.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3IvbXBlZzRfbWVkaWFzZW5zb3IuYw==) | `55.31% <0.00%> (-4.97%)` | :arrow_down: |
+| [src/scenegraph/vrml\_tools.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-c3JjL3NjZW5lZ3JhcGgvdnJtbF90b29scy5j) | `89.84% <0.00%> (-3.06%)` | :arrow_down: |
+| [src/compositor/object\_manager.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3Ivb2JqZWN0X21hbmFnZXIuYw==) | `78.15% <0.00%> (-2.61%)` | :arrow_down: |
+| [src/filters/in\_route.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvaW5fcm91dGUuYw==) | `67.56% <0.00%> (-1.97%)` | :arrow_down: |
+| [src/compositor/scene\_node\_init.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3Ivc2NlbmVfbm9kZV9pbml0LmM=) | `53.88% <0.00%> (-1.67%)` | :arrow_down: |
+| [src/compositor/media\_object.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3IvbWVkaWFfb2JqZWN0LmM=) | `83.23% <0.00%> (-1.45%)` | :arrow_down: |
+| [src/scenegraph/dom\_js.c](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree#diff-c3JjL3NjZW5lZ3JhcGgvZG9tX2pzLmM=) | `63.68% <0.00%> (-1.32%)` | :arrow_down: |
+| ... and [36 more](https://codecov.io/gh/gpac/gpac/pull/1678/diff?src=pr&el=tree-more) | |
+
+------
+
+[Continue to review full report at Codecov](https://codecov.io/gh/gpac/gpac/pull/1678?src=pr&el=continue).
+> **Legend** - [Click here to learn more](https://docs.codecov.io/docs/codecov-delta)
+> `Δ = absolute <relative> (impact)`, `ø = not affected`, `? = missing data`
+> Powered by [Codecov](https://codecov.io/gh/gpac/gpac/pull/1678?src=pr&el=footer). Last update [7a6d74a...bbf08c6](https://codecov.io/gh/gpac/gpac/pull/1678?src=pr&el=lastupdated). Read the [comment docs](https://docs.codecov.io/docs/pull-request-comments).
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/758567778"", ""author_association"": ""NONE""}"
+1678,MergePR,2021-01-13 10:07:16,aureliendavid,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4200398565"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/6f6bca63d0411e17e5425b53537061f419cdfab9""}"
+1678,DeleteBranch,2021-02-24 17:34:46,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4372291398"", ""commit_url"": null}"
+1697,SubmitCommit,2021-03-04 13:15:14,DavidKorczynski,fork_close,Added a fuzzer for initial integration with OSS-Fuzz.,"{""sha"": ""8a6a696e8efa007f5596469652c5ab17211b393b"", ""author"": {""name"": ""davkor"", ""email"": ""david@adalogics.com"", ""date"": ""2021-03-04T13:15:14Z""}, ""committer"": {""name"": ""davkor"", ""email"": ""david@adalogics.com"", ""date"": ""2021-03-04T13:15:14Z""}}"
+1697,OpenPR,2021-03-04 13:19:40,DavidKorczynski,fork_close,,
+1697,IssueComment,2021-03-04 14:45:25,rbouqueau,fork_close,"Hi David, many thanks for bootstrapping this.
+
+@jeanlf @aureliendavid @cconcolato  Wouldn't it be an opportunity to consolidate the work started years ago with AFL?","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/790669286"", ""author_association"": ""CONTRIBUTOR""}"
+1697,IssueComment,2021-03-04 18:22:35,jeanlf,fork_close,"Thanks indeed.
+FYI, we already run fuzzing on gpac in our CI platform, results here: https://tests.gpac.io/testres/fuzzing, but we don't yet have a public interface for submitting new fuzzing tests.
+
+
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/790827504"", ""author_association"": ""CONTRIBUTOR""}"
+1697,IssueComment,2021-03-08 11:31:32,DavidKorczynski,fork_close,"> Thanks indeed.
+> FYI, we already run fuzzing on gpac in our CI platform, results here: https://tests.gpac.io/testres/fuzzing, but we don't yet have a public interface for submitting new fuzzing tests.
+
+Ah that's great. I think OSS-Fuzz probably brings a fair amount of more features, amongst other things coverage, crash analysis and more. It also comes with a nice UI where you can browse all bugs and statistics. OSS-Fuzz also comes with continuous fuzzing and we can integrate it such that the fuzzers will be part of the CI as well, namely that the fuzzers is run for each new PR to the project.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/792693301"", ""author_association"": ""NONE""}"
+1697,IssueComment,2021-03-08 11:46:51,aureliendavid,fork_close,"This is interesting. I haven't had time to look into it in details yet.
+
+If you have more info or documentation on what we would need to do on the gpac side to integrate with it, I'll take a look when I can. 
+
+Thanks.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/792701653"", ""author_association"": ""CONTRIBUTOR""}"
+1697,IssueComment,2021-03-08 12:17:28,DavidKorczynski,fork_close,"> This is interesting. I haven't had time to look into it in details yet.
+> 
+> If you have more info or documentation on what we would need to do on the gpac side to integrate with it, I'll take a look when I can.
+> 
+> Thanks.
+
+Essentially the only thing that is needed for getting this up and running is a set of emails that will receive notifications with bug reports (this is described in the first message of this PR). Then when this is merged in we can merge things on the OSS-Fuzz side and the fuzzer will start being run. ","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/792717885"", ""author_association"": ""NONE""}"
+1697,IssueComment,2021-03-08 13:05:53,aureliendavid,fork_close,"I've only ever used afl+asan so I'll need to look into libfuzzer (that's what is used by oss-fuzz right?) to see how to add fuzzers and things like that.
+
+Is storing fuzzers on the main repo mandatory? Because I think for us it would make more sense to store them in our tests repo (https://github.com/gpac/testsuite). 
+
+Other than that I think it would be good to use this for gpac. 
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/792742984"", ""author_association"": ""CONTRIBUTOR""}"
+1697,IssueComment,2021-03-08 23:00:15,DavidKorczynski,fork_close,"> 
+> Is storing fuzzers on the main repo mandatory? Because I think for us it would make more sense to store them in our tests repo (https://github.com/gpac/testsuite).
+> 
+> Other than that I think it would be good to use this for gpac.
+
+We can place the fuzzers anywhere. I can upload it to the testsuite repository or we can also start with keeping the fuzzers in the OSS-Fuzz repository - it's up to you! Let me know which you prefer and I will fix it up.
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/793149867"", ""author_association"": ""NONE""}"
+1697,IssueComment,2021-03-09 08:42:42,aureliendavid,fork_close,"> we can also start with keeping the fuzzers in the OSS-Fuzz repository
+
+ok I think it would make sense to start like this (with the fuzzers in the oss-fuzz repo) while we get familiar with the tools
+
+as for a maintainer email address, we can use: project.gpac@gmail.com
+
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/793558247"", ""author_association"": ""CONTRIBUTOR""}"
+1697,IssueCommentSupplement,2021-04-21 09:32:32,aureliendavid,fork_close,"oss-fuzz is now up and running for gpac so I'll close this, thanks @DavidKorczynski for the integration
+
+next steps will be: 
+ - fix issues found by oss-fuzz
+ - add more fuzzers for more coverage
+ - move fuzzers from oss-fuzz repo to our testsuite (or other?)
+
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/823922584"", ""author_association"": ""CONTRIBUTOR""}"
+1697,ClosePR,2021-04-21 09:32:32,aureliendavid,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4623866696"", ""commit_url"": null}"
+1697,IssueCommentSupplement,2021-04-21 09:34:26,DavidKorczynski,fork_close,"> oss-fuzz is now up and running for gpac so I'll close this, thanks @DavidKorczynski for the integration
+
+My pleasure! 
+
+> next steps will be:
+> 
+> * move fuzzers from oss-fuzz repo to our testsuite (or other?)
+
+I can help with this one if you tell me where you would like to have the fuzzers placed. Should we put it in a `/fuzz` folder to start?","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/823923722"", ""author_association"": ""NONE""}"
+1697,IssueCommentSupplement,2021-04-21 09:52:46,aureliendavid,fork_close,"> I can help with this one if you tell me where you would like to have the fuzzers placed. Should we put it in a `/fuzz` folder to start?
+
+thanks, I think we need to decide on a location first 
+
+I'd say the choice is between: 
+1. a `/oss-fuzzers` directory in the https://github.com/gpac/testsuite repo
+2. or a new `oss-fuzzers` repo under https://github.com/gpac
+
+probably 1. makes more sense now and 2. if it gets larger
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/823934991"", ""author_association"": ""CONTRIBUTOR""}"
+1697,CrossReferenced,2021-04-26 09:12:39,DavidKorczynski,fork_close,oss-fuzzers: add first fuzzer.,"{""reference"": {""url"": ""https://api.github.com/repos/gpac/testsuite/issues/11"", ""is_pull_request"": true}}"
+1709,SubmitCommit,2021-03-15 14:16:11,aureliendavid,unfork_merge,android fix ndk build of libmp4box.so,"{""sha"": ""4edabd965b2e13d140c5d6a7e463c2db0bf036a5"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-03-15T14:16:11Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-03-15T14:16:11Z""}}"
+1709,SubmitCommit,2021-03-15 16:21:55,aureliendavid,unfork_merge,android: make mp4box buildable with android studio or command line,"{""sha"": ""763d325ef45549237b5a9c4ecc88d895e5296dad"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-03-15T16:21:55Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-03-15T16:21:55Z""}}"
+1709,SubmitCommit,2021-03-15 16:55:52,aureliendavid,unfork_merge,"comment cleanup
+
+[noCI]","{""sha"": ""8794d7be7fdc61ed7523798bddf6a22581f29fce"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-03-15T16:55:52Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2021-03-15T16:55:52Z""}}"
+1709,OpenPR,2021-03-16 12:54:55,aureliendavid,unfork_merge,,
+1709,MergePR,2021-03-17 14:25:42,aureliendavid,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4470574532"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/5834c30694ac100b3a258285903a01393db31d01""}"
+1709,DeleteBranch,2021-05-07 09:51:59,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4700671890"", ""commit_url"": null}"
+1709,IssueCommentSupplement,2022-02-24 10:41:44,Fatima212,unfork_merge,"I have successfully compiled MP4Box_android. But the problem is that I can only run the command line one time after the app was opened. If I run the command one more time, I will got this message in _/mnt/sdcard/stderrout.txt_ : ""Error - 2 input names specified, please check usage""","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1049722685"", ""author_association"": ""NONE""}"
+1709,IssueCommentSupplement,2022-03-01 16:46:40,aureliendavid,unfork_merge,"@Fatima212 you're right, it doesn't work properly on the second execution
+
+this version was just a POC of a jni wrapper around mp4box, the problem is that, as a command line tool, the mp4box main() is not made to be called more than once (because there are a bunch of global variables that are not reset between calls)
+
+I think the better solution would be to build a proper executable MP4Box command line for android, and maybe build a java gui that just calls it; but running and bundling binaries is a bit of a pain on android
+
+what I did in the above commit is a hack in which the app restarts itself after each execution of mp4box, I also added a field to display the log of the previous execution: 
+
+![Screenshot_2022-03-01-17-17-35-520_com gpac mp4box](https://user-images.githubusercontent.com/7168263/156211351-2ad1141c-c874-4ac2-837b-1dd2c9b83474.jpg)
+
+it's a bit clunky but it kinda works ","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1055640971"", ""author_association"": ""CONTRIBUTOR""}"
+1709,IssueCommentSupplement,2022-03-12 03:04:01,Fatima212,unfork_merge,"@aureliendavid Thank you for your help! 
+After reading some .c files, I figure out this error occurs because `inName` variable  is not reset. https://github.com/gpac/gpac/blob/7b64a5c3b51abd225d6e869e8e8a8057d18a07cb/applications/mp4box/main.c#L245
+I have set `inName = NULL` in first line of `mp4boxMain` function so that `inName ` is reset every time mp4boxMain is called. 
+https://github.com/gpac/gpac/blob/7b64a5c3b51abd225d6e869e8e8a8057d18a07cb/applications/mp4box/main.c#L5671
+Rebuilding mp4box libs, my mp4box_android application can run without restart. 
+Maybe it would help.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1065798822"", ""author_association"": ""NONE""}"
+1709,IssueCommentSupplement,2022-03-12 12:18:57,aureliendavid,unfork_merge,"yes in this particular it was inName that was not reset and caused the ""2 input files"" error
+
+but in the general case there might be other stuff that are not reinitialized between runs, so I figured reloading the whole thing safer ","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1065873632"", ""author_association"": ""CONTRIBUTOR""}"
+1710,OpenPR,2021-03-17 02:33:23,tdaede,fork_merge,,
+1710,Revise,2021-03-17 02:37:04,tdaede,fork_merge,"AV1: Use sequence header resolution if frame override is not set.
+
+Corrects frame sizes for scalable images, among other applications.","{""sha"": ""b2ce4ec8023646a3f9c6f681d5aea7ea5de2327b"", ""author"": {""name"": ""Thomas Daede"", ""email"": ""daede003@umn.edu"", ""date"": ""2021-03-16T01:02:36Z""}, ""committer"": {""name"": ""Thomas Daede"", ""email"": ""daede003@umn.edu"", ""date"": ""2021-03-17T02:37:04Z""}}"
+1710,IssueComment,2021-03-17 03:10:02,codecov-io,fork_merge,"# [Codecov](https://codecov.io/gh/gpac/gpac/pull/1710?src=pr&el=h1) Report
+> Merging [#1710](https://codecov.io/gh/gpac/gpac/pull/1710?src=pr&el=desc) (b2ce4ec) into [master](https://codecov.io/gh/gpac/gpac/commit/3788d15c26a1c2d7bc8edeb87ecdd32f65c15901?el=desc) (3788d15) will **increase** coverage by `0.05%`.
+> The diff coverage is `100.00%`.
+
+[![Impacted file tree graph](https://codecov.io/gh/gpac/gpac/pull/1710/graphs/tree.svg?width=650&height=150&src=pr&token=2GbuvL6tD8)](https://codecov.io/gh/gpac/gpac/pull/1710?src=pr&el=tree)
+
+```diff
+@@            Coverage Diff             @@
+##           master    #1710      +/-   ##
+==========================================
++ Coverage   73.77%   73.83%   +0.05%     
+==========================================
+  Files         387      387              
+  Lines      311365   311369       +4     
+==========================================
++ Hits       229718   229892     +174     
++ Misses      81647    81477     -170     
+```
+
+
+| [Impacted Files](https://codecov.io/gh/gpac/gpac/pull/1710?src=pr&el=tree) | Coverage Δ | |
+|---|---|---|
+| [src/media\_tools/av\_parsers.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL21lZGlhX3Rvb2xzL2F2X3BhcnNlcnMuYw==) | `72.34% <100.00%> (+0.02%)` | :arrow_up: |
+| [src/filters/in\_http.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvaW5faHR0cC5j) | `72.89% <0.00%> (-2.20%)` | :arrow_down: |
+| [src/scenegraph/vrml\_route.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL3NjZW5lZ3JhcGgvdnJtbF9yb3V0ZS5j) | `86.99% <0.00%> (-0.90%)` | :arrow_down: |
+| [src/compositor/scene.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3Ivc2NlbmUuYw==) | `52.04% <0.00%> (-0.80%)` | :arrow_down: |
+| [src/media\_tools/route\_dmx.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL21lZGlhX3Rvb2xzL3JvdXRlX2RteC5j) | `78.22% <0.00%> (-0.61%)` | :arrow_down: |
+| [src/compositor/mpeg4\_sensors.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3IvbXBlZzRfc2Vuc29ycy5j) | `63.26% <0.00%> (-0.12%)` | :arrow_down: |
+| [src/media\_tools/dash\_client.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL21lZGlhX3Rvb2xzL2Rhc2hfY2xpZW50LmM=) | `70.03% <0.00%> (-0.07%)` | :arrow_down: |
+| [src/utils/downloader.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL3V0aWxzL2Rvd25sb2FkZXIuYw==) | `72.56% <0.00%> (-0.05%)` | :arrow_down: |
+| [src/filter\_core/filter\_pid.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcl9jb3JlL2ZpbHRlcl9waWQuYw==) | `84.02% <0.00%> (-0.03%)` | :arrow_down: |
+| [src/filters/dasher.c](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvZGFzaGVyLmM=) | `75.73% <0.00%> (+0.02%)` | :arrow_up: |
+| ... and [8 more](https://codecov.io/gh/gpac/gpac/pull/1710/diff?src=pr&el=tree-more) | |
+
+------
+
+[Continue to review full report at Codecov](https://codecov.io/gh/gpac/gpac/pull/1710?src=pr&el=continue).
+> **Legend** - [Click here to learn more](https://docs.codecov.io/docs/codecov-delta)
+> `Δ = absolute <relative> (impact)`, `ø = not affected`, `? = missing data`
+> Powered by [Codecov](https://codecov.io/gh/gpac/gpac/pull/1710?src=pr&el=footer). Last update [3788d15...b2ce4ec](https://codecov.io/gh/gpac/gpac/pull/1710?src=pr&el=lastupdated). Read the [comment docs](https://docs.codecov.io/docs/pull-request-comments).
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/800758591"", ""author_association"": ""NONE""}"
+1710,MergePR,2021-03-17 09:02:30,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4468932490"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/0335ac833612d5ecc55f382a791529cc33ca328d""}"
+1710,IssueCommentSupplement,2021-03-17 09:02:34,jeanlf,fork_merge,thanks !,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/800916402"", ""author_association"": ""CONTRIBUTOR""}"
+1710,CrossReferenced,2021-03-17 15:06:38,tdaede,fork_merge,Clarify semantics of ispe,"{""reference"": {""url"": ""https://api.github.com/repos/AOMediaCodec/av1-avif/issues/132"", ""is_pull_request"": false}}"
+1712,SubmitCommit,2021-03-20 04:03:37,cconcolato,unfork_merge,fix AV1 timing info parser,"{""sha"": ""bebd291a1fe4aec196ec71cfc5d18d34b33de7b6"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-03-20T04:03:37Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-03-20T04:03:37Z""}}"
+1712,OpenPR,2021-03-20 04:04:16,cconcolato,unfork_merge,,
+1712,ReviewRequested,2021-03-20 04:04:17,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""rbouqueau"", ""id"": 1917976, ""node_id"": ""MDQ6VXNlcjE5MTc5NzY="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/1917976?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/rbouqueau"", ""html_url"": ""https://github.com/rbouqueau"", ""followers_url"": ""https://api.github.com/users/rbouqueau/followers"", ""following_url"": ""https://api.github.com/users/rbouqueau/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/rbouqueau/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/rbouqueau/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/rbouqueau/subscriptions"", ""organizations_url"": ""https://api.github.com/users/rbouqueau/orgs"", ""repos_url"": ""https://api.github.com/users/rbouqueau/repos"", ""events_url"": ""https://api.github.com/users/rbouqueau/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/rbouqueau/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1712,IssueComment,2021-03-21 12:46:50,rbouqueau,unfork_merge,Thanks for submitting! LGTM,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/803572693"", ""author_association"": ""CONTRIBUTOR""}"
+1712,MergePR,2021-03-22 14:02:03,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4490323067"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/bebd291a1fe4aec196ec71cfc5d18d34b33de7b6""}"
+1712,DeleteBranch,2021-03-25 18:46:49,cconcolato,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4509591953"", ""commit_url"": null}"
+1717,OpenPR,2021-03-25 04:34:44,tdaede,fork_merge,,
+1717,IssueComment,2021-03-25 05:09:42,codecov-io,fork_merge,"# [Codecov](https://codecov.io/gh/gpac/gpac/pull/1717?src=pr&el=h1) Report
+> Merging [#1717](https://codecov.io/gh/gpac/gpac/pull/1717?src=pr&el=desc) (8e29558) into [master](https://codecov.io/gh/gpac/gpac/commit/39a90386b1a461bbc5885050fde41a51a392de31?el=desc) (39a9038) will **increase** coverage by `0.22%`.
+> The diff coverage is `76.74%`.
+
+> :exclamation: Current head 8e29558 differs from pull request most recent head 963d9d4. Consider uploading reports for the commit 963d9d4 to get more accurate results
+[![Impacted file tree graph](https://codecov.io/gh/gpac/gpac/pull/1717/graphs/tree.svg?width=650&height=150&src=pr&token=2GbuvL6tD8)](https://codecov.io/gh/gpac/gpac/pull/1717?src=pr&el=tree)
+
+```diff
+@@            Coverage Diff             @@
+##           master    #1717      +/-   ##
+==========================================
++ Coverage   73.79%   74.02%   +0.22%     
+==========================================
+  Files         387      387              
+  Lines      311526   311583      +57     
+==========================================
++ Hits       229897   230640     +743     
++ Misses      81629    80943     -686     
+```
+
+
+| [Impacted Files](https://codecov.io/gh/gpac/gpac/pull/1717?src=pr&el=tree) | Coverage Δ | |
+|---|---|---|
+| [src/isomedia/box\_funcs.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL2lzb21lZGlhL2JveF9mdW5jcy5j) | `89.54% <ø> (ø)` | |
+| [src/media\_tools/av\_parsers.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL21lZGlhX3Rvb2xzL2F2X3BhcnNlcnMuYw==) | `72.27% <0.00%> (+<0.01%)` | :arrow_up: |
+| [src/isomedia/meta.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL2lzb21lZGlhL21ldGEuYw==) | `73.28% <54.54%> (-0.99%)` | :arrow_down: |
+| [src/isomedia/iff.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL2lzb21lZGlhL2lmZi5j) | `89.35% <79.31%> (-0.35%)` | :arrow_down: |
+| [src/isomedia/avc\_ext.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL2lzb21lZGlhL2F2Y19leHQuYw==) | `74.84% <92.59%> (+0.24%)` | :arrow_up: |
+| [src/isomedia/box\_dump.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL2lzb21lZGlhL2JveF9kdW1wLmM=) | `76.89% <100.00%> (+0.03%)` | :arrow_up: |
+| [src/ietf/rtsp\_common.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL2lldGYvcnRzcF9jb21tb24uYw==) | `46.96% <0.00%> (-7.08%)` | :arrow_down: |
+| [src/filters/dec\_xvid.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvZGVjX3h2aWQuYw==) | `87.50% <0.00%> (-4.87%)` | :arrow_down: |
+| [src/compositor/camera.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3IvY2FtZXJhLmM=) | `82.75% <0.00%> (-4.08%)` | :arrow_down: |
+| [src/compositor/mpeg4\_grouping\_2d.c](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3IvbXBlZzRfZ3JvdXBpbmdfMmQuYw==) | `92.34% <0.00%> (-3.28%)` | :arrow_down: |
+| ... and [57 more](https://codecov.io/gh/gpac/gpac/pull/1717/diff?src=pr&el=tree-more) | |
+
+------
+
+[Continue to review full report at Codecov](https://codecov.io/gh/gpac/gpac/pull/1717?src=pr&el=continue).
+> **Legend** - [Click here to learn more](https://docs.codecov.io/docs/codecov-delta)
+> `Δ = absolute <relative> (impact)`, `ø = not affected`, `? = missing data`
+> Powered by [Codecov](https://codecov.io/gh/gpac/gpac/pull/1717?src=pr&el=footer). Last update [d47fc36...963d9d4](https://codecov.io/gh/gpac/gpac/pull/1717?src=pr&el=lastupdated). Read the [comment docs](https://docs.codecov.io/docs/pull-request-comments).
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/806367897"", ""author_association"": ""NONE""}"
+1717,ReviewRejected,2021-03-25 08:53:36,jeanlf,fork_merge,"Great, many thanks, looks almost perfect!
+
+Do you have a public AV1 multi layer source file we could use for the test suite ?","{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/gpac/gpac/pull/1717#pullrequestreview-620854782""}"
+1717,IssueComment,2021-03-30 09:43:41,tdaede,fork_merge,"While implementing support for u16 layer sizes I realized that the current spec is a bit inefficient: https://github.com/AOMediaCodec/av1-avif/issues/140
+
+I'd like to resolve this before landing.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/810078263"", ""author_association"": ""CONTRIBUTOR""}"
+1717,IssueComment,2021-04-16 03:46:43,tdaede,fork_merge,"OK, so I've now updated the a1lx box to reflect the new spec changes. Specifically:
+* It's now a simple box rather than a full box
+* It is only 3 entries rather than 4
+* Last entry is always 0
+* u8 length field replaces flag","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/820885604"", ""author_association"": ""CONTRIBUTOR""}"
+1717,Revise,2021-04-16 03:47:30,tdaede,fork_merge,"AVIF: Add a1lx box support.
+
+This automatically adds an a1lx box if the input image has
+multiple spatial layers.","{""sha"": ""13fbbbd910a8c354f3b866e3f7882127cc8088e7"", ""author"": {""name"": ""Thomas Daede"", ""email"": ""daede003@umn.edu"", ""date"": ""2021-03-25T00:39:03Z""}, ""committer"": {""name"": ""Thomas Daede"", ""email"": ""daede003@umn.edu"", ""date"": ""2021-04-16T03:47:30Z""}}"
+1717,CrossReferenced,2021-05-07 09:53:49,jeanlf,fork_merge,AVIF: Add basic support for a1op.,"{""reference"": {""url"": ""https://api.github.com/repos/gpac/gpac/issues/1748"", ""is_pull_request"": true}}"
+1717,MergePR,2021-05-10 09:32:31,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4715501036"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/bf22497f6ff2a2f4543c28a2d9361457937a0495""}"
+1730,SubmitCommit,2021-04-06 14:41:17,rbouqueau,fork_merge,dasher: handler errors instead of asserting when the number of stream at period switch is beyond expectation,"{""sha"": ""90ee5320d5375f41a32a9e09a9b87b9a8ad6f6da"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-04-06T14:41:17Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-04-06T14:41:17Z""}}"
+1730,OpenPR,2021-04-06 14:42:37,rbouqueau,fork_merge,,
+1730,IssueComment,2021-04-09 13:47:24,rbouqueau,fork_merge,Can we merge?,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/816694702"", ""author_association"": ""CONTRIBUTOR""}"
+1730,MergePR,2021-04-09 13:53:48,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4574584615"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/38302782a225bf413d0826529eabd07c37d5ab0c""}"
+1739,OpenPR,2021-04-09 13:48:40,rbouqueau,fork_merge,,
+1739,IssueComment,2021-04-09 14:20:01,codecov-io,fork_merge,"# [Codecov](https://codecov.io/gh/gpac/gpac/pull/1739?src=pr&el=h1) Report
+> Merging [#1739](https://codecov.io/gh/gpac/gpac/pull/1739?src=pr&el=desc) (29031a5) into [master](https://codecov.io/gh/gpac/gpac/commit/b2eab95e07cb5819375a50358d4806a8813b6e50?el=desc) (b2eab95) will **decrease** coverage by `0.16%`.
+> The diff coverage is `33.33%`.
+
+[![Impacted file tree graph](https://codecov.io/gh/gpac/gpac/pull/1739/graphs/tree.svg?width=650&height=150&src=pr&token=2GbuvL6tD8)](https://codecov.io/gh/gpac/gpac/pull/1739?src=pr&el=tree)
+
+```diff
+@@            Coverage Diff             @@
+##           master    #1739      +/-   ##
+==========================================
+- Coverage   73.81%   73.64%   -0.17%     
+==========================================
+  Files         387      387              
+  Lines      312036   312052      +16     
+==========================================
+- Hits       230339   229823     -516     
+- Misses      81697    82229     +532     
+```
+
+
+| [Impacted Files](https://codecov.io/gh/gpac/gpac/pull/1739?src=pr&el=tree) | Coverage Δ | |
+|---|---|---|
+| [src/filters/dasher.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvZGFzaGVyLmM=) | `75.38% <33.33%> (-0.19%)` | :arrow_down: |
+| [src/filters/unit\_test\_filter.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvdW5pdF90ZXN0X2ZpbHRlci5j) | `60.04% <0.00%> (-31.18%)` | :arrow_down: |
+| [src/filter\_core/filter\_props.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcl9jb3JlL2ZpbHRlcl9wcm9wcy5j) | `73.77% <0.00%> (-12.72%)` | :arrow_down: |
+| [src/utils/Remotery.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL3V0aWxzL1JlbW90ZXJ5LmM=) | `50.58% <0.00%> (-12.34%)` | :arrow_down: |
+| [src/compositor/hardcoded\_protos.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3IvaGFyZGNvZGVkX3Byb3Rvcy5j) | `59.28% <0.00%> (-8.27%)` | :arrow_down: |
+| [src/filters/in\_route.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvaW5fcm91dGUuYw==) | `60.78% <0.00%> (-7.36%)` | :arrow_down: |
+| [src/filters/out\_sock.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvb3V0X3NvY2suYw==) | `68.12% <0.00%> (-5.18%)` | :arrow_down: |
+| [src/compositor/scene.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3Ivc2NlbmUuYw==) | `52.83% <0.00%> (-4.56%)` | :arrow_down: |
+| [src/filters/in\_http.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL2ZpbHRlcnMvaW5faHR0cC5j) | `69.96% <0.00%> (-3.67%)` | :arrow_down: |
+| [src/compositor/media\_object.c](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree#diff-c3JjL2NvbXBvc2l0b3IvbWVkaWFfb2JqZWN0LmM=) | `80.05% <0.00%> (-3.33%)` | :arrow_down: |
+| ... and [41 more](https://codecov.io/gh/gpac/gpac/pull/1739/diff?src=pr&el=tree-more) | |
+
+------
+
+[Continue to review full report at Codecov](https://codecov.io/gh/gpac/gpac/pull/1739?src=pr&el=continue).
+> **Legend** - [Click here to learn more](https://docs.codecov.io/docs/codecov-delta)
+> `Δ = absolute <relative> (impact)`, `ø = not affected`, `? = missing data`
+> Powered by [Codecov](https://codecov.io/gh/gpac/gpac/pull/1739?src=pr&el=footer). Last update [b2eab95...29031a5](https://codecov.io/gh/gpac/gpac/pull/1739?src=pr&el=lastupdated). Read the [comment docs](https://docs.codecov.io/docs/pull-request-comments).
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/816717433"", ""author_association"": ""NONE""}"
+1739,IssueComment,2021-04-12 14:44:36,rbouqueau,fork_merge,Can we merge?,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/817872527"", ""author_association"": ""CONTRIBUTOR""}"
+1739,Revise,2021-04-14 04:38:46,rbouqueau,fork_merge,dasher: add cmaf profile when cmaf option is set,"{""sha"": ""e102a52894509f774c97ff19198fd6523c140358"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-04-14T04:38:46Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-04-14T04:38:46Z""}}"
+1739,MergePR,2021-04-14 08:50:58,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4592309656"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/df0f7ec2b8bacc3bc96bc01f49438900b0c0f35c""}"
+1744,SubmitCommit,2021-04-14 20:14:52,cconcolato,unfork_merge,fix parsing of layered AV1 streams with varying tile config,"{""sha"": ""36cba6e9475b1117689885152d63f26e5b22c429"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-04-14T20:14:05Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-04-14T20:14:52Z""}}"
+1744,OpenPR,2021-04-14 20:31:42,cconcolato,unfork_merge,,
+1744,Revise,2021-04-14 21:07:43,cconcolato,unfork_merge,improve av1 parsing logging,"{""sha"": ""8814f5679b7aa7124584ad2b2256b02012b05591"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-04-14T21:07:43Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-04-14T21:07:43Z""}}"
+1744,ReviewRequested,2021-04-15 19:51:27,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""rbouqueau"", ""id"": 1917976, ""node_id"": ""MDQ6VXNlcjE5MTc5NzY="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/1917976?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/rbouqueau"", ""html_url"": ""https://github.com/rbouqueau"", ""followers_url"": ""https://api.github.com/users/rbouqueau/followers"", ""following_url"": ""https://api.github.com/users/rbouqueau/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/rbouqueau/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/rbouqueau/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/rbouqueau/subscriptions"", ""organizations_url"": ""https://api.github.com/users/rbouqueau/orgs"", ""repos_url"": ""https://api.github.com/users/rbouqueau/repos"", ""events_url"": ""https://api.github.com/users/rbouqueau/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/rbouqueau/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1744,IssueComment,2021-04-15 21:13:40,rbouqueau,unfork_merge,LGTM. Do we have a plan to add a regression test? I can help strip the file if it makes sense.,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/820735255"", ""author_association"": ""CONTRIBUTOR""}"
+1744,MergePR,2021-04-16 16:16:59,rbouqueau,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4605719070"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/f815be9ae928f249cbcb6202949184141f4b7d86""}"
+1744,CrossReferenced,2021-04-16 17:20:05,jeanlf,unfork_merge,AV1 parser doesn't read enough to get correct size for ispe element,"{""reference"": {""url"": ""https://api.github.com/repos/gpac/gpac/issues/1747"", ""is_pull_request"": false}}"
+1744,DeleteBranch,2021-05-07 09:51:53,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4700671385"", ""commit_url"": null}"
+1748,OpenPR,2021-04-20 01:38:21,tdaede,fork_merge,,
+1748,IssueComment,2021-04-20 02:07:28,codecov-commenter,fork_merge,"# [Codecov](https://codecov.io/gh/gpac/gpac/pull/1748?src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) Report
+> Merging [#1748](https://codecov.io/gh/gpac/gpac/pull/1748?src=pr&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) (48b32f4) into [master](https://codecov.io/gh/gpac/gpac/commit/1fd9cf2d84752faeaecbf03e93e331203f8fe0a1?el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) (1fd9cf2) will **decrease** coverage by `0.20%`.
+> The diff coverage is `55.11%`.
+
+> :exclamation: Current head 48b32f4 differs from pull request most recent head 05a3698. Consider uploading reports for the commit 05a3698 to get more accurate results
+[![Impacted file tree graph](https://codecov.io/gh/gpac/gpac/pull/1748/graphs/tree.svg?width=650&height=150&src=pr&token=2GbuvL6tD8&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac)](https://codecov.io/gh/gpac/gpac/pull/1748?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac)
+
+```diff
+@@            Coverage Diff             @@
+##           master    #1748      +/-   ##
+==========================================
+- Coverage   73.92%   73.71%   -0.21%     
+==========================================
+  Files         387      387              
+  Lines      313043   312618     -425     
+==========================================
+- Hits       231410   230454     -956     
+- Misses      81633    82164     +531     
+```
+
+
+| [Impacted Files](https://codecov.io/gh/gpac/gpac/pull/1748?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) | Coverage Δ | |
+|---|---|---|
+| [src/isomedia/box\_funcs.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2lzb21lZGlhL2JveF9mdW5jcy5j) | `89.86% <ø> (+0.58%)` | :arrow_up: |
+| [src/isomedia/meta.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2lzb21lZGlhL21ldGEuYw==) | `72.00% <9.09%> (-2.44%)` | :arrow_down: |
+| [src/isomedia/box\_dump.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2lzb21lZGlhL2JveF9kdW1wLmM=) | `76.71% <50.00%> (-0.10%)` | :arrow_down: |
+| [src/isomedia/iff.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2lzb21lZGlhL2lmZi5j) | `88.00% <55.81%> (-1.71%)` | :arrow_down: |
+| [src/isomedia/avc\_ext.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2lzb21lZGlhL2F2Y19leHQuYw==) | `74.94% <94.28%> (+0.35%)` | :arrow_up: |
+| [src/media\_tools/av\_parsers.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL21lZGlhX3Rvb2xzL2F2X3BhcnNlcnMuYw==) | `73.08% <100.00%> (+0.01%)` | :arrow_up: |
+| [src/jsmods/scene\_js.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2pzbW9kcy9zY2VuZV9qcy5j) | `28.18% <0.00%> (-34.28%)` | :arrow_down: |
+| [src/ietf/rtsp\_common.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2lldGYvcnRzcF9jb21tb24uYw==) | `46.96% <0.00%> (-7.08%)` | :arrow_down: |
+| [src/utils/path2d.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL3V0aWxzL3BhdGgyZC5j) | `88.12% <0.00%> (-6.30%)` | :arrow_down: |
+| [src/compositor/mpeg4\_mediasensor.c](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2NvbXBvc2l0b3IvbXBlZzRfbWVkaWFzZW5zb3IuYw==) | `55.31% <0.00%> (-4.97%)` | :arrow_down: |
+| ... and [146 more](https://codecov.io/gh/gpac/gpac/pull/1748/diff?src=pr&el=tree-more&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) | |
+
+------
+
+[Continue to review full report at Codecov](https://codecov.io/gh/gpac/gpac/pull/1748?src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac).
+> **Legend** - [Click here to learn more](https://docs.codecov.io/docs/codecov-delta?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac)
+> `Δ = absolute <relative> (impact)`, `ø = not affected`, `? = missing data`
+> Powered by [Codecov](https://codecov.io/gh/gpac/gpac/pull/1748?src=pr&el=footer&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac). Last update [bef61fd...05a3698](https://codecov.io/gh/gpac/gpac/pull/1748?src=pr&el=lastupdated&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac). Read the [comment docs](https://docs.codecov.io/docs/pull-request-comments?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac).
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/822916638"", ""author_association"": ""NONE""}"
+1748,IssueComment,2021-05-07 09:53:49,jeanlf,fork_merge,"This seems to include al1x, can we close #1717 ?","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/834226091"", ""author_association"": ""CONTRIBUTOR""}"
+1748,IssueComment,2021-05-07 16:11:52,tdaede,fork_merge,"I had intended to rebase this once #1717 lands, but it can be reviewed in one PR if you prefer.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/834581278"", ""author_association"": ""CONTRIBUTOR""}"
+1748,IssueComment,2021-05-10 10:24:08,jeanlf,fork_merge,"I merged #1717 and did a few cleanups, plus added tests in [testsuite](https://github.com/gpac/testsuite/blob/master/scripts/iff-misc.sh), you can rebase.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/836522064"", ""author_association"": ""CONTRIBUTOR""}"
+1748,IssueComment,2021-05-12 15:08:29,tdaede,fork_merge,Rebased.,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/839850447"", ""author_association"": ""CONTRIBUTOR""}"
+1748,IssueComment,2021-05-19 09:23:16,jeanlf,fork_merge,"unless I'm mistaking, this only has the code to read/write the box but no option to set the a1op value right ?","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/843918678"", ""author_association"": ""CONTRIBUTOR""}"
+1748,IssueComment,2021-05-19 15:06:18,tdaede,fork_merge,"I had forgotten to push the latest version of the code. There is a CLI parameter for it.
+
+One thing that is not plumbed is passing the operating point to the AV1 parsing code - so if the operating points should result in other properties having different values, that is not reflected. I can plumb it through into all the av1 parsing code, but wanted to get feedback on whether you liked the current way of setting the option first.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/844195669"", ""author_association"": ""CONTRIBUTOR""}"
+1748,IssueComment,2021-05-19 15:19:04,jeanlf,fork_merge,"seems OK, but we should check that the specified value is less than operating_points_cnt_minus_1 (stored in state->operating_points_count) no?","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/844207121"", ""author_association"": ""CONTRIBUTOR""}"
+1748,Revise,2021-05-19 15:54:56,tdaede,fork_merge,"AVIF: Add basic support for a1op.
+
+This writes the selector based on a new command line option for
+-add-image, a1_op_index.","{""sha"": ""ae5890016d111c3ab22a9168c36ab17a6e070f5d"", ""author"": {""name"": ""Thomas Daede"", ""email"": ""daede003@umn.edu"", ""date"": ""2021-04-20T01:36:00Z""}, ""committer"": {""name"": ""Thomas Daede"", ""email"": ""daede003@umn.edu"", ""date"": ""2021-05-19T15:54:56Z""}}"
+1748,IssueComment,2021-05-19 15:55:31,tdaede,fork_merge,Updated to have a check for exceeding operating_points_count.,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/844238935"", ""author_association"": ""CONTRIBUTOR""}"
+1748,IssueComment,2021-05-21 16:53:42,jeanlf,fork_merge,"I think that's good. I can merge now if you want, and we'll add the update of item properties depending on the chosen OP later. Unless you have something ready ?","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/846101553"", ""author_association"": ""CONTRIBUTOR""}"
+1748,IssueComment,2021-05-25 00:52:03,tdaede,fork_merge,"Yeah, I think it's useful as is, I'd like to merge it now.","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/847450639"", ""author_association"": ""CONTRIBUTOR""}"
+1748,MergePR,2021-05-25 07:20:11,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4790633519"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/da32d10a84c0632e3883954ddca33fe2c19712b5""}"
+1748,IssueCommentSupplement,2021-05-25 07:20:21,jeanlf,fork_merge,"merged, thanks !","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/847615039"", ""author_association"": ""CONTRIBUTOR""}"
+1750,SubmitCommit,2021-04-20 20:40:31,gorinje,fork_merge,Verify JFIF markers before reading,"{""sha"": ""a894e4b37f6ab03ca3fcccd419dff60f9ca960e8"", ""author"": {""name"": ""jgn"", ""email"": ""gorinje@gmail.com"", ""date"": ""2021-04-20T20:40:31Z""}, ""committer"": {""name"": ""jgn"", ""email"": ""gorinje@gmail.com"", ""date"": ""2021-04-20T20:40:31Z""}}"
+1750,OpenPR,2021-04-20 21:03:13,gorinje,fork_merge,,
+1750,MergePR,2021-04-21 08:23:48,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4623499092"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/4b6d0cd42fa371eefaed338b282a3485c31fd3bd""}"
+1750,IssueCommentSupplement,2021-04-21 08:23:52,jeanlf,fork_merge,"Thanks, I'll add the file to the test suite as well","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/823878581"", ""author_association"": ""CONTRIBUTOR""}"
+1760,OpenPR,2021-04-26 15:17:29,rbouqueau,unfork_close,,
+1760,Revise,2021-04-26 15:18:15,rbouqueau,unfork_close,fix cmaf compliance: mehd should be absent when duration is unknown,"{""sha"": ""ce7399205c367129a1e1b0fbddbcf12f393e4df1"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-04-26T15:18:15Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-04-26T15:18:15Z""}}"
+1760,IssueComment,2021-04-26 16:34:04,codecov-commenter,unfork_close,"# [Codecov](https://codecov.io/gh/gpac/gpac/pull/1760?src=pr&el=h1&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) Report
+> Merging [#1760](https://codecov.io/gh/gpac/gpac/pull/1760?src=pr&el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) (4afa8e7) into [master](https://codecov.io/gh/gpac/gpac/commit/70e17969e1a15c572089fdb92cae95932853927e?el=desc&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) (70e1796) will **increase** coverage by `0.07%`.
+> The diff coverage is `50.00%`.
+
+[![Impacted file tree graph](https://codecov.io/gh/gpac/gpac/pull/1760/graphs/tree.svg?width=650&height=150&src=pr&token=2GbuvL6tD8&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac)](https://codecov.io/gh/gpac/gpac/pull/1760?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac)
+
+```diff
+@@            Coverage Diff             @@
+##           master    #1760      +/-   ##
+==========================================
++ Coverage   74.04%   74.12%   +0.07%     
+==========================================
+  Files         387      387              
+  Lines      312890   313407     +517     
+==========================================
++ Hits       231681   232311     +630     
++ Misses      81209    81096     -113     
+```
+
+
+| [Impacted Files](https://codecov.io/gh/gpac/gpac/pull/1760?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) | Coverage Δ | |
+|---|---|---|
+| [src/filters/mux\_isom.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2ZpbHRlcnMvbXV4X2lzb20uYw==) | `75.95% <50.00%> (-0.03%)` | :arrow_down: |
+| [src/isomedia/movie\_fragments.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2lzb21lZGlhL21vdmllX2ZyYWdtZW50cy5j) | `70.30% <50.00%> (-0.08%)` | :arrow_down: |
+| [src/filters/dec\_xvid.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2ZpbHRlcnMvZGVjX3h2aWQuYw==) | `88.27% <0.00%> (-3.45%)` | :arrow_down: |
+| [src/compositor/scene.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2NvbXBvc2l0b3Ivc2NlbmUuYw==) | `59.56% <0.00%> (-2.25%)` | :arrow_down: |
+| [src/filters/reframe\_mpgvid.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2ZpbHRlcnMvcmVmcmFtZV9tcGd2aWQuYw==) | `89.23% <0.00%> (-0.73%)` | :arrow_down: |
+| [src/terminal/terminal.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL3Rlcm1pbmFsL3Rlcm1pbmFsLmM=) | `74.57% <0.00%> (-0.31%)` | :arrow_down: |
+| [src/utils/downloader.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL3V0aWxzL2Rvd25sb2FkZXIuYw==) | `73.20% <0.00%> (-0.10%)` | :arrow_down: |
+| [src/filter\_core/filter\_pid.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL2ZpbHRlcl9jb3JlL2ZpbHRlcl9waWQuYw==) | `83.97% <0.00%> (-0.06%)` | :arrow_down: |
+| [src/media\_tools/av\_parsers.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL21lZGlhX3Rvb2xzL2F2X3BhcnNlcnMuYw==) | `73.09% <0.00%> (+0.02%)` | :arrow_up: |
+| [src/scene\_manager/scene\_dump.c](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac#diff-c3JjL3NjZW5lX21hbmFnZXIvc2NlbmVfZHVtcC5j) | `74.00% <0.00%> (+0.04%)` | :arrow_up: |
+| ... and [22 more](https://codecov.io/gh/gpac/gpac/pull/1760/diff?src=pr&el=tree-more&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac) | |
+
+------
+
+[Continue to review full report at Codecov](https://codecov.io/gh/gpac/gpac/pull/1760?src=pr&el=continue&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac).
+> **Legend** - [Click here to learn more](https://docs.codecov.io/docs/codecov-delta?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac)
+> `Δ = absolute <relative> (impact)`, `ø = not affected`, `? = missing data`
+> Powered by [Codecov](https://codecov.io/gh/gpac/gpac/pull/1760?src=pr&el=footer&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac). Last update [70e1796...4afa8e7](https://codecov.io/gh/gpac/gpac/pull/1760?src=pr&el=lastupdated&utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac). Read the [comment docs](https://docs.codecov.io/docs/pull-request-comments?utm_medium=referral&utm_source=github&utm_content=comment&utm_campaign=pr+comments&utm_term=gpac).
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/826982126"", ""author_association"": ""NONE""}"
+1760,ReviewRejected,2021-04-26 16:49:28,jeanlf,unfork_close,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/gpac/gpac/pull/1760#pullrequestreview-644901660""}"
+1760,Revise,2021-04-26 20:02:17,rbouqueau,unfork_close,cmaf: move mehd duration check in gf_isom_finalize_for_fragment(),"{""sha"": ""4afa8e7e4e871dc412dfae5dca40c88f43f23fdd"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-04-26T20:02:17Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-04-26T20:02:17Z""}}"
+1760,IssueCommentSupplement,2021-04-26 21:42:47,jeanlf,unfork_close,"merged from first commit, didn't want to modify gf_isom_finalize_for_fragment ","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/827164599"", ""author_association"": ""CONTRIBUTOR""}"
+1760,ClosePR,2021-04-26 21:42:47,jeanlf,unfork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4647524684"", ""commit_url"": null}"
+1760,DeleteBranch,2021-05-07 09:51:49,jeanlf,unfork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4700670972"", ""commit_url"": null}"
+1793,SubmitCommit,2021-05-18 09:35:19,rbouqueau,fork_merge,expose suggested_presentation_delay and misc,"{""sha"": ""62ce101e6112cd91244ed9a64d245f14b916a4fd"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-05-17T16:20:22Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-05-18T09:35:19Z""}}"
+1793,SubmitCommit,2021-05-18 09:39:25,rbouqueau,fork_merge,remove debug trace,"{""sha"": ""1d760cd3ccfda5d58f3c7199c75e3ec5a4626597"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-05-18T09:39:25Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-05-18T09:39:25Z""}}"
+1793,OpenPR,2021-05-18 09:40:11,rbouqueau,fork_merge,,
+1793,RenameTitle,2021-05-18 09:52:07,rbouqueau,fork_merge,,"{""rename"": {""from"": ""dash suugested presentation delay and misc"", ""to"": ""dash suggested presentation delay and misc""}, ""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4759601531""}"
+1793,Revise,2021-05-18 10:00:01,rbouqueau,fork_merge,remove fixes linked to #1778 (will be processed separately),"{""sha"": ""995070df10ad10e80cbe7b65a2334cd6bc676cd6"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-05-18T10:00:01Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-05-18T10:00:01Z""}}"
+1793,MergePR,2021-05-18 10:15:49,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4759724831"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/7e44beb8677fa5516da35d48358fa8c07a4a3b10""}"
+1801,SubmitCommit,2021-05-25 03:43:22,Zhang Xiaohui,fork_close,fix NULL pointer dereference in gf_media_export_saf,"{""sha"": ""0fbc5ddf2572cbd8afffaaa7c9ce8f2c57f044c6"", ""author"": {""name"": ""Zhang Xiaohui"", ""email"": ""ruc_zhangxiaohui@163.com"", ""date"": ""2021-05-25T03:43:22Z""}, ""committer"": {""name"": ""Zhang Xiaohui"", ""email"": ""ruc_zhangxiaohui@163.com"", ""date"": ""2021-05-25T03:43:22Z""}}"
+1801,OpenPR,2021-05-25 03:44:40,hifoolno,fork_close,,
+1801,IssueCommentSupplement,2021-05-25 07:34:10,jeanlf,fork_close,"This will create a memory leak by not destroying esd.
+Patched, thanks for the report!","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/847624211"", ""author_association"": ""CONTRIBUTOR""}"
+1801,ClosePR,2021-05-25 07:34:10,jeanlf,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4790715478"", ""commit_url"": null}"
+1803,SubmitCommit,2021-05-25 13:35:57,Zhang Xiaohui,fork_close,fix possible null pointer dereference in gf_export_isom_copy_track,"{""sha"": ""a7e32560b07db270e5c435ea63291cf84d8a128b"", ""author"": {""name"": ""Zhang Xiaohui"", ""email"": ""ruc_zhangxiaohui@163.com"", ""date"": ""2021-05-25T13:35:57Z""}, ""committer"": {""name"": ""Zhang Xiaohui"", ""email"": ""ruc_zhangxiaohui@163.com"", ""date"": ""2021-05-25T13:35:57Z""}}"
+1803,OpenPR,2021-05-25 13:37:18,hifoolno,fork_close,,
+1803,ClosePR,2021-05-25 15:17:36,jeanlf,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4793437940"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/c81913b3b1fa355c9612f6a88fe0548321567819""}"
+1804,SubmitCommit,2021-05-25 13:48:53,Zhang Xiaohui,fork_close,fix possible null pointer dereference in gf_media_make_3gpp,"{""sha"": ""43b8f5f7c39c2b56afa314b55750331c80fc6299"", ""author"": {""name"": ""Zhang Xiaohui"", ""email"": ""ruc_zhangxiaohui@163.com"", ""date"": ""2021-05-25T13:48:53Z""}, ""committer"": {""name"": ""Zhang Xiaohui"", ""email"": ""ruc_zhangxiaohui@163.com"", ""date"": ""2021-05-25T13:48:53Z""}}"
+1804,OpenPR,2021-05-25 13:53:00,hifoolno,fork_close,,
+1804,ClosePR,2021-05-25 15:28:58,jeanlf,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4793518845"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/4a8000c4595bcff82fe54afc4f6a515c2e1322ba""}"
+1824,SubmitCommit,2021-06-09 19:26:37,rbouqueau,unfork_merge,flist: add 'timeout' option (backward compatility broken because 'ka' default timeout is removed),"{""sha"": ""b1c35ec3ab6330221b2b0c54bbbbee8b0f330d12"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-06-09T19:26:37Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-06-09T19:26:37Z""}}"
+1824,OpenPR,2021-06-09 19:27:08,rbouqueau,unfork_merge,,
+1824,ReviewRequested,2021-06-09 19:27:09,rbouqueau,unfork_merge,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1824,MergePR,2021-06-10 08:59:06,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4870001013"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/415cbc96c5ea78db1a17baa83155f0342f679323""}"
+1836,SubmitCommit,2021-06-29 19:45:40,rbouqueau,unfork_merge,catch SIGTERM to be able to exit without any user interaction from a script,"{""sha"": ""e5988ed09aec6d0f3d8b53a3b0d1631cdbabad8c"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-06-29T19:45:40Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-06-29T19:45:40Z""}}"
+1836,OpenPR,2021-07-01 20:06:03,rbouqueau,unfork_merge,,
+1836,MergePR,2021-07-06 07:46:28,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4981510171"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/57af3bcfc6644117508d4d87db8089736924b147""}"
+1837,SubmitCommit,2021-07-01 20:10:01,rbouqueau,unfork_merge,"dash: in segment timeline parsing, compute start time in case we need it afterward (manifest forwarding)","{""sha"": ""95ccfb27033b075a150285f4820ede7c275c12f9"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-07-01T20:10:01Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-07-01T20:10:01Z""}}"
+1837,OpenPR,2021-07-01 20:11:01,rbouqueau,unfork_merge,,
+1837,MergePR,2021-07-06 07:47:13,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/4981513838"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/74ade3b5992c6ebd4a8cf8ae00df046a74f69516""}"
+1845,SubmitCommit,2021-07-06 20:05:19,rbouqueau,fork_merge,ffenc.fintra: clarify example in doc,"{""sha"": ""24843ef2f8030dcdba95aaa12ab3a6d8436eabad"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-07-06T20:05:19Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-07-06T20:05:19Z""}}"
+1845,OpenPR,2021-07-06 20:05:57,rbouqueau,fork_merge,,
+1845,MergePR,2021-07-09 12:37:31,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5000147445"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/4f2a12870694de3a2117268b783bb526f5750ce4""}"
+1848,SubmitCommit,2021-07-09 08:25:27,rbouqueau,unfork_merge,ffmux: fix cts offset adjustment,"{""sha"": ""1dbc2127251fbcd18619ecfa0745bdb8550693f8"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-07-09T08:25:27Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-07-09T08:25:27Z""}}"
+1848,OpenPR,2021-07-09 08:26:00,rbouqueau,unfork_merge,,
+1848,MergePR,2021-07-09 12:36:47,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5000144430"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/0c4282e0fc9daa3cc4816b2a487f1d2b4ea0f194""}"
+1867,SubmitCommit,2021-08-01 02:31:36,gmaen,fork_merge,modify parse date,"{""sha"": ""ceb02d86b243eb1244a7ca3df4acf90ac42c6eed"", ""author"": {""name"": ""gmaen"", ""email"": ""mlqlm@139.com"", ""date"": ""2021-08-01T02:31:36Z""}, ""committer"": {""name"": ""gmaen"", ""email"": ""mlqlm@139.com"", ""date"": ""2021-08-01T02:31:36Z""}}"
+1867,OpenPR,2021-08-01 02:56:06,gmaen,fork_merge,,
+1867,MergePR,2021-08-02 10:57:12,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5098323574"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/6e92c32a415cae5ff0d5a17cec37a904e366ef36""}"
+1867,IssueCommentSupplement,2021-08-02 10:57:21,jeanlf,fork_merge,"thanks,merged","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/890930512"", ""author_association"": ""CONTRIBUTOR""}"
+1878,SubmitCommit,2021-08-17 12:41:32,K-os,fork_merge,use correct type to allocate GF_VVCConfigurationBox,"{""sha"": ""bde0e778511e3ec5a7fbee7afd50ca29db8852b0"", ""author"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-08-17T12:41:32Z""}, ""committer"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-08-17T12:41:32Z""}}"
+1878,OpenPR,2021-08-17 12:42:53,K-os,fork_merge,,
+1878,MergePR,2021-09-01 10:04:04,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5238449733"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/e9c3cf1bb2d43bdf6eb265b2d349ddf46b6d06d1""}"
+1878,IssueCommentSupplement,2021-09-01 10:04:06,jeanlf,fork_merge,Thanks !,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/910132643"", ""author_association"": ""CONTRIBUTOR""}"
+1914,OpenPR,2021-09-16 09:31:56,K-os,fork_close,,
+1914,CrossReferenced,2021-09-16 09:37:44,K-os,fork_close,Wrong CTS calculation for VVC bitstreams ,"{""reference"": {""url"": ""https://api.github.com/repos/gpac/gpac/issues/1913"", ""is_pull_request"": false}}"
+1914,Revise,2021-09-17 08:17:45,K-os,fork_close,"fix POC reset for IDR with leading pics (#1913)
+
+poc still jumps up","{""sha"": ""fc02cdc9c39ffdfb1d9e7e2b51281390b25d1465"", ""author"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-16T09:27:43Z""}, ""committer"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-17T08:17:45Z""}}"
+1914,Revise,2021-09-17 12:41:26,K-os,fork_close,VVC: fix wrong poc_msb calculations,"{""sha"": ""f63a2fd74487b86e5a9d4e95e2cf7200456ee858"", ""author"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-17T12:41:26Z""}, ""committer"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-17T12:41:26Z""}}"
+1914,Revise,2021-09-17 12:42:32,K-os,fork_close,try some more leading picture fixes,"{""sha"": ""291544da58f42487eb5b784c61f4d10f25e4f5c6"", ""author"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-17T12:42:32Z""}, ""committer"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-17T12:42:32Z""}}"
+1914,Revise,2021-09-17 13:03:51,K-os,fork_close,don't assume IDR has POC 0,"{""sha"": ""0d243d854170c87e148a52a52a06ed8512e22381"", ""author"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-17T13:01:43Z""}, ""committer"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-17T13:03:51Z""}}"
+1914,Revise,2021-09-17 13:04:21,K-os,fork_close,VVC write sync points for IDR_W_LP again,"{""sha"": ""7158fac930e9fee7995398b8ac8e7a476695f0c8"", ""author"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-17T13:04:21Z""}, ""committer"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-09-17T13:04:21Z""}}"
+1914,IssueComment,2021-09-17 13:39:57,K-os,fork_close,Still some remaining problems with the POC calculation. See #1913 ,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/921805631"", ""author_association"": ""CONTRIBUTOR""}"
+1914,ClosePR,2021-09-28 08:47:30,K-os,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5372199690"", ""commit_url"": null}"
+1915,SubmitCommit,2021-09-20 16:11:08,cconcolato,unfork_merge,fix dump of mdcv and clli for AV1 and other codecs,"{""sha"": ""e8beb10ed91f01d85cb7069042fffbcba41828fb"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-09-20T16:11:08Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-09-20T16:11:08Z""}}"
+1915,OpenPR,2021-09-20 16:12:18,cconcolato,unfork_merge,,
+1915,ReviewRequested,2021-09-20 16:12:19,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""rbouqueau"", ""id"": 1917976, ""node_id"": ""MDQ6VXNlcjE5MTc5NzY="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/1917976?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/rbouqueau"", ""html_url"": ""https://github.com/rbouqueau"", ""followers_url"": ""https://api.github.com/users/rbouqueau/followers"", ""following_url"": ""https://api.github.com/users/rbouqueau/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/rbouqueau/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/rbouqueau/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/rbouqueau/subscriptions"", ""organizations_url"": ""https://api.github.com/users/rbouqueau/orgs"", ""repos_url"": ""https://api.github.com/users/rbouqueau/repos"", ""events_url"": ""https://api.github.com/users/rbouqueau/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/rbouqueau/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1915,ReviewRequested,2021-09-20 16:12:19,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1915,ReviewComment,2021-09-21 09:51:15,rbouqueau,unfork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/gpac/gpac/pull/1915#pullrequestreview-759534976""}"
+1915,IssueComment,2021-09-21 09:52:26,rbouqueau,unfork_merge,I made a comment but otherwise LGTM :),"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/923818864"", ""author_association"": ""CONTRIBUTOR""}"
+1915,Revise,2021-10-04 16:24:52,cconcolato,unfork_merge,Merge branch 'github_master' into mdcv_clli_dump,"{""sha"": ""975c96c1a86b348ac60d9a976523ab9a60658369"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-10-04T16:24:52Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-10-04T16:24:52Z""}}"
+1915,Revise,2021-10-04 16:26:28,cconcolato,unfork_merge,fix byte count error in t35 dump,"{""sha"": ""b6579855a56d1f6023159c94d7cd16dc38913aaf"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-10-04T16:26:28Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-10-04T16:26:28Z""}}"
+1915,IssueComment,2021-10-04 16:30:54,cconcolato,unfork_merge,"For the record, with this PR, MP4Box manipulates HDR data as follows:
+- ""-diso"" dumps the values from the boxes as integers (see SmDm_box_dump and mdcv_box_dump)
+- ""-dnal"" dumps (this PR) values as floats (dividing  by the corresponding MPEG vs. AOM max value based on the stream type)
+- ""-hdr"" (https://github.com/gpac/gpac/commit/b8e7d96a53a106606fed9af71f9093636f44b08f) takes integers in the MPEG space to generate MPEG boxes (not VP9 boxes).
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/933652671"", ""author_association"": ""CONTRIBUTOR""}"
+1915,IssueComment,2021-10-05 16:15:21,rbouqueau,unfork_merge,@jeanlf please merge if ok for you!,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/934556220"", ""author_association"": ""CONTRIBUTOR""}"
+1915,MergePR,2021-10-12 07:25:32,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5447487306"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/904c028e3c553452bde7791f3a9b05e21ff361c1""}"
+1915,DeleteBranch,2022-12-02 19:11:26,cconcolato,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7943159030"", ""commit_url"": null}"
+1917,SubmitCommit,2021-09-22 04:38:29,cconcolato,unfork_merge,complete parsing of VP9 uncompressed header,"{""sha"": ""d404095c3db3a4abe3fb6d1ab1697ad9b58a8501"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-09-22T04:38:29Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-09-22T04:38:29Z""}}"
+1917,OpenPR,2021-09-22 04:39:09,cconcolato,unfork_merge,,
+1917,MergePR,2021-09-22 07:24:56,rbouqueau,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5341061585"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/ef5694774993dd31b72e1541398f4e5f4e10fb4e""}"
+1917,DeleteBranch,2022-12-01 21:48:29,cconcolato,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7935871056"", ""commit_url"": null}"
+1918,SubmitCommit,2021-09-22 17:27:57,cconcolato,unfork_merge,preserve VP9 parsing context during encryption,"{""sha"": ""d8b89eeb57b80b96874b2991bc74898dfa5731c3"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-09-22T17:27:57Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-09-22T17:27:57Z""}}"
+1918,OpenPR,2021-09-22 17:28:45,cconcolato,unfork_merge,,
+1918,ReviewRequested,2021-09-22 17:28:46,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""rbouqueau"", ""id"": 1917976, ""node_id"": ""MDQ6VXNlcjE5MTc5NzY="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/1917976?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/rbouqueau"", ""html_url"": ""https://github.com/rbouqueau"", ""followers_url"": ""https://api.github.com/users/rbouqueau/followers"", ""following_url"": ""https://api.github.com/users/rbouqueau/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/rbouqueau/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/rbouqueau/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/rbouqueau/subscriptions"", ""organizations_url"": ""https://api.github.com/users/rbouqueau/orgs"", ""repos_url"": ""https://api.github.com/users/rbouqueau/repos"", ""events_url"": ""https://api.github.com/users/rbouqueau/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/rbouqueau/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1918,ReviewRequested,2021-09-22 17:28:46,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1918,ReviewComment,2021-09-22 19:38:29,rbouqueau,unfork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/gpac/gpac/pull/1918#pullrequestreview-761330150""}"
+1918,IssueComment,2021-09-22 19:39:10,rbouqueau,unfork_merge,I made a comment. Otherwise LGTM on the VP9 side. I let @jeanlf check for the (de)allocation positions.,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/925267594"", ""author_association"": ""CONTRIBUTOR""}"
+1918,Revise,2021-09-23 18:35:44,cconcolato,unfork_merge,improve error processing in VP9 superframe detection,"{""sha"": ""21e0030e656dd0626f524e24479e8afa2b1e401a"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-09-23T18:35:44Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2021-09-23T18:35:44Z""}}"
+1918,MergePR,2021-09-24 07:00:22,rbouqueau,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5354163875"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/af530c824014f8782938e805ef5969960a214fd5""}"
+1918,DeleteBranch,2022-12-01 21:48:31,cconcolato,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7935871236"", ""commit_url"": null}"
+1926,OpenPR,2021-10-02 20:16:04,rbouqueau,unfork_merge,,
+1926,ReviewRequested,2021-10-02 20:16:05,rbouqueau,unfork_merge,,"{""requested_reviewer"": {""login"": ""cconcolato"", ""id"": 1830314, ""node_id"": ""MDQ6VXNlcjE4MzAzMTQ="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/1830314?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/cconcolato"", ""html_url"": ""https://github.com/cconcolato"", ""followers_url"": ""https://api.github.com/users/cconcolato/followers"", ""following_url"": ""https://api.github.com/users/cconcolato/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/cconcolato/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/cconcolato/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/cconcolato/subscriptions"", ""organizations_url"": ""https://api.github.com/users/cconcolato/orgs"", ""repos_url"": ""https://api.github.com/users/cconcolato/repos"", ""events_url"": ""https://api.github.com/users/cconcolato/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/cconcolato/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1926,ReviewRequested,2021-10-02 20:16:05,rbouqueau,unfork_merge,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1926,Revise,2021-10-04 18:47:46,rbouqueau,unfork_merge,"av1 rfc6381: ""All the other fields [...] are optional, mutually inclusive (all or none)""","{""sha"": ""dc3b5e51d3be7843e5bd2f7f71ae553bf59d6c81"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-09-29T19:32:59Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-04T18:47:46Z""}}"
+1926,Revise,2021-10-04 18:47:46,rbouqueau,unfork_merge,fix colour property name typo,"{""sha"": ""6ea1ea2de85a97e9f774fce24f17b3f31302ee72"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-02T19:15:09Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-04T18:47:46Z""}}"
+1926,Revise,2021-10-04 18:47:46,rbouqueau,unfork_merge,av1/vpx rfc 6381 computation: implement 'colr' precedence over bitstream,"{""sha"": ""99d1f97b21baba0c4d780d8bf7a40a6933905ed6"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-02T20:11:34Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-04T18:47:46Z""}}"
+1926,Revise,2021-10-04 18:47:46,rbouqueau,unfork_merge,don't use compact ternary condition as msvc doesn't support it,"{""sha"": ""f69f86b84d30c81d9d3fe9fcc20efdf05967d89b"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-04T08:25:36Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-04T18:47:46Z""}}"
+1926,Revise,2021-10-04 20:32:04,rbouqueau,unfork_merge,av1 rfc6381: get color info in  gf_media_get_rfc_6381_codec_name() too,"{""sha"": ""b07029d03f42c03c32cc17ac1b3356708f69898a"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-04T20:32:04Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-04T20:32:04Z""}}"
+1926,Revise,2021-10-04 20:42:58,rbouqueau,unfork_merge,fix typo,"{""sha"": ""73bb7b71400fedc47088f0735d818bf5de98cb57"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-04T20:42:58Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-04T20:42:58Z""}}"
+1926,Revise,2021-10-05 12:30:13,rbouqueau,unfork_merge,rfc6381 colr precedence: use a struct with a 'override' field,"{""sha"": ""94478be2be41c0ad8027ce126d708233e64d446d"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-05T12:30:13Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-05T12:30:13Z""}}"
+1926,Revise,2021-10-05 16:14:52,rbouqueau,unfork_merge,typos,"{""sha"": ""35a5bab484b815c00a90fa82dfa6a0ff1fb8c409"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-05T16:14:52Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-10-05T16:14:52Z""}}"
+1926,IssueComment,2021-10-05 16:15:25,rbouqueau,unfork_merge,@jeanlf please merge if ok for you!,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/934556278"", ""author_association"": ""CONTRIBUTOR""}"
+1926,MergePR,2021-10-12 07:28:35,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5447503039"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/fddc82c25ca11c90a8d287202f2028d4c91138ba""}"
+1927,OpenPR,2021-10-03 19:20:33,RodolpheFouquet,unfork_close,,
+1927,ReviewRequested,2021-10-03 19:20:34,RodolpheFouquet,unfork_close,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+1927,Revise,2021-10-03 19:21:36,RodolpheFouquet,unfork_close,Export filter register manipulation symbols,"{""sha"": ""9fe37136e08f248aaf2838f862319753a5fd8d0e"", ""author"": {""name"": ""Rodolphe Fouquet"", ""email"": ""rodolphefouquet@gmail.com"", ""date"": ""2021-10-03T19:21:36Z""}, ""committer"": {""name"": ""Rodolphe Fouquet"", ""email"": ""rodolphefouquet@gmail.com"", ""date"": ""2021-10-03T19:21:36Z""}}"
+1927,IssueComment,2021-10-04 08:30:13,rbouqueau,unfork_close,If ok then we also need to export them in export.cpp (for msvc).,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/933262984"", ""author_association"": ""CONTRIBUTOR""}"
+1927,IssueCommentSupplement,2021-10-04 12:10:35,jeanlf,unfork_close,done + exports for MSVC ,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/933421726"", ""author_association"": ""CONTRIBUTOR""}"
+1927,ClosePR,2021-10-04 12:10:35,jeanlf,unfork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5403494311"", ""commit_url"": null}"
+1930,OpenPR,2021-10-07 12:29:42,K-os,fork_merge,,
+1930,Revise,2021-10-07 12:41:12,K-os,fork_merge,detect VVC bitstream when it starts with an AUD,"{""sha"": ""79979043ba72965b71a772da6cf48e71e1fd9ff1"", ""author"": {""name"": ""Gabriel Hege"", ""email"": ""g+github@hege.cc"", ""date"": ""2021-10-07T12:41:12Z""}, ""committer"": {""name"": ""Gabriel Hege"", ""email"": ""g+github@hege.cc"", ""date"": ""2021-10-07T12:41:12Z""}}"
+1930,IssueComment,2021-10-08 14:15:38,jeanlf,fork_merge,"Looks good to me, but could you add a comment (eg ""for files with no vps ...."") ?","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/938678764"", ""author_association"": ""CONTRIBUTOR""}"
+1930,Revise,2021-10-12 07:01:28,K-os,fork_merge,add comment,"{""sha"": ""40d66a17fb6702541bcd96b12b06c8b764011c14"", ""author"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-10-12T07:01:28Z""}, ""committer"": {""name"": ""Gabriel Hege"", ""email"": ""gabriel.hege@hhi.fraunhofer.de"", ""date"": ""2021-10-12T07:01:28Z""}}"
+1930,MergePR,2021-10-12 07:21:49,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5447468203"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/52d89640a6dff588341693a5b28b636129508b26""}"
+1930,IssueCommentSupplement,2021-10-12 07:21:53,jeanlf,fork_merge,Thanks !,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/940736087"", ""author_association"": ""CONTRIBUTOR""}"
+1930,DeleteBranch,2021-10-21 09:19:11,K-os,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5497121620"", ""commit_url"": null}"
+1932,SubmitCommit,2021-10-10 01:18:23,adripo,fork_merge,Fixed MP4Box wiki url,"{""sha"": ""5d19acdd1b479899d0890388a78c4a02f74e9a67"", ""author"": {""name"": ""adripo"", ""email"": ""26493496+adripo@users.noreply.github.com"", ""date"": ""2021-10-10T01:18:23Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-10-10T01:18:23Z""}}"
+1932,OpenPR,2021-10-10 01:18:36,adripo,fork_merge,,
+1932,MergePR,2021-10-12 07:22:33,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5447471827"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/e92f024fdf3a06bc1884699db255c587d714b58b""}"
+1932,IssueCommentSupplement,2021-10-12 07:22:40,jeanlf,fork_merge,Thanks !,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/940736617"", ""author_association"": ""CONTRIBUTOR""}"
+1953,SubmitCommit,2021-12-04 15:39:09,rbouqueau,unfork_merge,route_dmx del on null ptr,"{""sha"": ""1d4379b37443fa5e55b4af67cf42ee56b34e195f"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-12-02T16:50:11Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-12-04T15:39:09Z""}}"
+1953,SubmitCommit,2021-12-05 11:30:02,rbouqueau,unfork_merge,fix audio extra forwarding,"{""sha"": ""04c6c8f8c8c0b5216a83d4f5bbbd2cc76bc4fef5"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-12-05T11:30:02Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-12-05T11:30:02Z""}}"
+1953,SubmitCommit,2021-12-05 11:30:12,rbouqueau,unfork_merge,fix codec typo,"{""sha"": ""1238bbcf059a772825a535e9999b82762fd1b9ec"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-12-05T11:30:12Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-12-05T11:30:12Z""}}"
+1953,SubmitCommit,2021-12-05 16:33:22,rbouqueau,unfork_merge,fix typo,"{""sha"": ""4240d058ca2e59cd73d62ec4da2ee5e3240182c6"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-12-05T16:33:22Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2021-12-05T16:33:22Z""}}"
+1953,OpenPR,2021-12-05 16:34:17,rbouqueau,unfork_merge,,
+1953,MergePR,2021-12-05 16:34:22,rbouqueau,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5716970830"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/c705b89a27b8d13ec2e9301d59bcef55e0154977""}"
+2009,SubmitCommit,2021-12-22 23:09:03,JamieSlome,fork_close,Create SECURITY.md,"{""sha"": ""8e60fe134056c710ba105212ef993c52d80e003e"", ""author"": {""name"": ""Jamie Slome"", ""email"": ""jamie@418sec.com"", ""date"": ""2021-12-22T23:09:03Z""}, ""committer"": {""name"": ""Jamie Slome"", ""email"": ""jamie@418sec.com"", ""date"": ""2021-12-22T23:09:03Z""}}"
+2009,OpenPR,2021-12-22 23:09:05,JamieSlome,fork_close,,
+2009,IssueCommentSupplement,2022-01-17 12:02:45,aureliendavid,fork_close,done in #1997,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1014446830"", ""author_association"": ""CONTRIBUTOR""}"
+2009,ClosePR,2022-01-17 12:02:45,aureliendavid,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5903943376"", ""commit_url"": null}"
+2083,SubmitCommit,2022-01-28 14:08:51,m-i-dyer,fork_close,Don't scale duration twice. Fixes #2082,"{""sha"": ""8169a4fe34349d1eace743dec55cc311f8a1237d"", ""author"": {""name"": ""Mike Dyer"", ""email"": ""mdyer@twitter.com"", ""date"": ""2022-01-28T12:14:25Z""}, ""committer"": {""name"": ""Mike Dyer"", ""email"": ""mdyer@twitter.com"", ""date"": ""2022-01-28T14:08:51Z""}}"
+2083,OpenPR,2022-01-28 14:16:20,m-i-dyer,fork_close,,
+2083,ClosePR,2022-01-28 16:21:39,m-i-dyer,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5971876415"", ""commit_url"": null}"
+2083,IssueCommentSupplement,2022-01-28 16:22:01,m-i-dyer,fork_close,Already fixed :),"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1024376183"", ""author_association"": ""NONE""}"
+2083,IssueCommentSupplement,2022-01-28 16:23:57,jeanlf,fork_close,sorry I didn't see the PR in time ...,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1024378061"", ""author_association"": ""CONTRIBUTOR""}"
+2083,IssueCommentSupplement,2022-01-28 16:25:35,m-i-dyer,fork_close,No problem!,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1024379806"", ""author_association"": ""NONE""}"
+2085,SubmitCommit,2022-01-31 10:07:02,John Talling,fork_close,"Expose moof_get_earliest_cts() and add ""gf_"" prefix","{""sha"": ""201c8930e8bf14c0f6ab8d6f17a791f1c472e07b"", ""author"": {""name"": ""John Talling"", ""email"": ""talling@spotify.com"", ""date"": ""2022-01-20T18:25:40Z""}, ""committer"": {""name"": ""John Talling"", ""email"": ""talling@spotify.com"", ""date"": ""2022-01-31T10:07:02Z""}}"
+2085,SubmitCommit,2022-01-31 10:07:02,John Talling,fork_close,"Fix fragmented mp4 with composition offset having too short duration
+
+The composition start offset of the track does not necessarily start at
+0, such as when encoding H.264 with B-frames. When calculating the
+duration of the fragment, the composition start offset of the track
+needs to be subtracted from the media_time of the edit list entry to
+compensate for this.","{""sha"": ""52ad9680da684286d9f26f504fb4f6073b507882"", ""author"": {""name"": ""John Talling"", ""email"": ""talling@spotify.com"", ""date"": ""2022-01-20T18:26:22Z""}, ""committer"": {""name"": ""John Talling"", ""email"": ""talling@spotify.com"", ""date"": ""2022-01-31T10:07:02Z""}}"
+2085,OpenPR,2022-01-31 10:21:56,inrustwetrust,fork_close,,
+2085,Referenced,2022-02-01 13:34:39,jeanlf,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5988271349"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/07bfa83deb0fa7a39521f11bf14c9579ba341751""}"
+2085,IssueCommentSupplement,2022-02-01 13:36:22,jeanlf,fork_close,"Thanks for the detailed report. I fixed that differently to also check for cases where tfdt extends previous sample duration, this should now work properly.  ","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1026851830"", ""author_association"": ""CONTRIBUTOR""}"
+2085,ClosePR,2022-02-01 13:36:22,jeanlf,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/5988283159"", ""commit_url"": null}"
+2085,IssueCommentSupplement,2022-02-01 16:02:07,inrustwetrust,fork_close,"Great, thank you!","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1027004869"", ""author_association"": ""NONE""}"
+2145,SubmitCommit,2022-03-16 22:07:22,cconcolato,unfork_merge,adding Opus packet inspection,"{""sha"": ""8a94bca1fc272e0161258cbb521b659b0fa59071"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-03-15T21:22:39Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-03-16T22:07:22Z""}}"
+2145,OpenPR,2022-03-16 22:14:40,cconcolato,unfork_merge,,
+2145,ReviewRequested,2022-03-16 22:14:41,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+2145,IssueComment,2022-03-16 22:15:09,cconcolato,unfork_merge,@tdaede FYI,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1069689721"", ""author_association"": ""CONTRIBUTOR""}"
+2145,MergePR,2022-03-17 09:01:58,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6257150643"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/5aecfa8bef6a9677f48c2edbe925692cf5d489f7""}"
+2145,DeleteBranch,2022-12-02 19:11:25,cconcolato,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7943158943"", ""commit_url"": null}"
+2156,SubmitCommit,2022-03-30 12:00:25,hieule96,fork_merge,"Update Makefile
+
+Typo in the make file LINKFLAGS variable, make it was not compile.","{""sha"": ""85799ce10388e7068938ea1bdb8fde9bbeb61748"", ""author"": {""name"": ""hieule96"", ""email"": ""35891545+hieule96@users.noreply.github.com"", ""date"": ""2022-03-30T12:00:25Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-03-30T12:00:25Z""}}"
+2156,OpenPR,2022-03-30 12:01:07,hieule96,fork_merge,,
+2156,MergePR,2022-05-17 11:54:50,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6623810246"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/812991da94fcf5d4f740d3a02d155c1f4d7e279f""}"
+2174,SubmitCommit,2022-04-16 08:04:36,xidoo123,fork_close,"Update box_code_3gpp.c
+
+fix bug","{""sha"": ""ad2f9921ba767fda49ab1d07106c0a2f487c8c3b"", ""author"": {""name"": ""xidoo123"", ""email"": ""wantsomemilk@qq.com"", ""date"": ""2022-04-16T08:04:36Z""}, ""committer"": {""name"": ""xidoo123"", ""email"": ""wantsomemilk@qq.com"", ""date"": ""2022-04-16T08:04:36Z""}}"
+2174,SubmitCommit,2022-04-16 08:16:56,xidoo123,fork_close,"Update box_code_3gpp.c
+
+fix bug","{""sha"": ""9ca4e72955620143ce5852a704917afeb5dca4ee"", ""author"": {""name"": ""xidoo123"", ""email"": ""wantsomemilk@qq.com"", ""date"": ""2022-04-16T08:16:56Z""}, ""committer"": {""name"": ""xidoo123"", ""email"": ""wantsomemilk@qq.com"", ""date"": ""2022-04-16T08:16:56Z""}}"
+2174,OpenPR,2022-04-16 08:20:11,xidoo123,fork_close,,
+2174,CrossReferenced,2022-04-16 08:21:46,xidoo123,fork_close,GPAC-2.0.0 MP4Box: stack overflow with unlimited length and controllable content in diST_box_read,"{""reference"": {""url"": ""https://api.github.com/repos/gpac/gpac/issues/2175"", ""is_pull_request"": false}}"
+2174,IssueCommentSupplement,2022-04-19 07:16:31,jeanlf,fork_close,see fix for #2175,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1102179820"", ""author_association"": ""CONTRIBUTOR""}"
+2174,ClosePR,2022-04-19 07:16:31,jeanlf,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6452584762"", ""commit_url"": null}"
+2195,SubmitCommit,2022-05-17 05:26:07,rbouqueau,fork_merge,dash client: consider SuggestedPresentationDelay,"{""sha"": ""bc6976b312ef7174e4f77afcdeb486e451495ee6"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T05:26:07Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T05:26:07Z""}}"
+2195,OpenPR,2022-05-17 05:28:25,rbouqueau,fork_merge,,
+2195,Revise,2022-05-17 13:50:41,rbouqueau,fork_merge,dash dmx/client: add option to overwrite suggested presentation delay from the manifest,"{""sha"": ""cb143f953a0eea6867fb74ecae4cdf08cb21a575"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T13:50:41Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T13:50:41Z""}}"
+2195,Revise,2022-05-17 15:20:00,rbouqueau,fork_merge,dash route-ast-shift and spd: make them sign + spd default value to MIN_INT instead of misleading 0,"{""sha"": ""5d623299c1891fc95bd8d14fa5167d7f811478a2"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T15:20:00Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T15:20:00Z""}}"
+2195,Revise,2022-05-18 20:32:25,rbouqueau,fork_merge,"dash client: use :spd as an offset (resets with ""-I""","{""sha"": ""05ab04b351e1dabf8b167f744c954d1a193527fe"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-18T20:32:25Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-18T20:32:25Z""}}"
+2195,MergePR,2022-05-19 08:01:34,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6640217115"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/0e39671bd00b90f2a2d3e654bdf471ebf148926e""}"
+2198,SubmitCommit,2022-05-17 11:10:50,rbouqueau,fork_merge,getch->gf_getch and read_line_input->gf_read_line_input,"{""sha"": ""00ff02eed5fc8702e97c8a9690798217f8e6e3d5"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T11:10:50Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T11:10:50Z""}}"
+2198,SubmitCommit,2022-05-17 11:18:52,rbouqueau,fork_merge,"gpac: use getch() when pressing ctrl-c (pressing ""return"" didn't work)","{""sha"": ""6f6b78c9940bbca70e07af1213527408f97198c8"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T11:18:52Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-05-17T11:18:52Z""}}"
+2198,OpenPR,2022-05-17 11:19:47,rbouqueau,fork_merge,,
+2198,MergePR,2022-05-17 11:54:08,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6623806068"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/79c8ab760b2a66e6729764a00e720c972b029e06""}"
+2203,OpenPR,2022-06-08 01:24:50,quietvoid,fork_merge,,
+2203,HeadRefForcePushed,2022-06-08 01:25:48,quietvoid,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6765819043"", ""commit_url"": null}"
+2203,Revise,2022-06-08 01:26:02,quietvoid,fork_merge,mp4box/fileimport: Allow profile 8.4 Dolby Vision config,"{""sha"": ""b007cdc1c9f8daa652050b49dba23c50e98cc20b"", ""author"": {""name"": ""quietvoid"", ""email"": ""39477805+quietvoid@users.noreply.github.com"", ""date"": ""2022-06-08T01:25:42Z""}, ""committer"": {""name"": ""quietvoid"", ""email"": ""39477805+quietvoid@users.noreply.github.com"", ""date"": ""2022-06-08T01:26:02Z""}}"
+2203,HeadRefForcePushed,2022-06-08 01:26:09,quietvoid,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6765820346"", ""commit_url"": null}"
+2203,RenameTitle,2022-06-08 01:26:16,quietvoid,fork_merge,,"{""rename"": {""from"": ""fileimport: Allow profile 8.4 Dolby Vision config"", ""to"": ""mp4box/fileimport: Allow profile 8.4 Dolby Vision config""}, ""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6765820727""}"
+2203,MergePR,2022-06-08 10:06:39,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6768433282"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/8a60f4a6c000e4d7f86aefdbac91c3a0296a00b3""}"
+2203,IssueCommentSupplement,2022-06-08 10:06:42,jeanlf,fork_merge,thanks !,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1149720980"", ""author_association"": ""CONTRIBUTOR""}"
+2206,SubmitCommit,2022-06-19 18:14:40,rwfpl,fork_merge,"Fix use of uninitialized mediaTime in cat_isomedia_file()
+
+The problem was reported when running Debug build inside the Visual Studio during MP4 file concatenation via mp4box.","{""sha"": ""cf75d6786ccfe78253a1e17f60e93c16473b8199"", ""author"": {""name"": ""ReWolf"", ""email"": ""rwfpl@users.noreply.github.com"", ""date"": ""2022-06-19T17:50:29Z""}, ""committer"": {""name"": ""ReWolf"", ""email"": ""rwfpl@users.noreply.github.com"", ""date"": ""2022-06-19T18:14:40Z""}}"
+2206,SubmitCommit,2022-06-19 18:15:30,rwfpl,fork_merge,"Fix co64->alloc_size setting in the stbl_AddChunkOffset().
+
+Without the fix, mp4box just crashes during mp4 file concatenation.","{""sha"": ""fa015569cf54381f6a36ce21fee41a1853ea5000"", ""author"": {""name"": ""ReWolf"", ""email"": ""rwfpl@users.noreply.github.com"", ""date"": ""2022-06-19T17:51:25Z""}, ""committer"": {""name"": ""ReWolf"", ""email"": ""rwfpl@users.noreply.github.com"", ""date"": ""2022-06-19T18:15:30Z""}}"
+2206,OpenPR,2022-06-19 18:22:38,rwfpl,fork_merge,,
+2206,MergePR,2022-06-20 09:51:05,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6837987574"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/42c5b77f3146f0c823e7e41566c6991b5f18e476""}"
+2206,IssueCommentSupplement,2022-06-20 09:51:08,jeanlf,fork_merge,"Nice catch, thanks!","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1160227168"", ""author_association"": ""CONTRIBUTOR""}"
+2222,SubmitCommit,2022-07-06 14:45:34,rbouqueau,fork_merge,dasher: add possibility to have both inband and outband parameter sets,"{""sha"": ""1d1e111ef704fd2e8929f976421afa27fdd0e4d5"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-07-06T14:45:34Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-07-06T14:45:34Z""}}"
+2222,OpenPR,2022-07-06 14:45:53,rbouqueau,fork_merge,,
+2222,IssueComment,2022-07-12 13:44:27,rbouqueau,fork_merge,Any news?,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1181779240"", ""author_association"": ""CONTRIBUTOR""}"
+2222,MergePR,2022-07-12 14:56:16,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/6978416761"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/0b29a41c4cde0dabde4c29b1d7aac4a7c503f4ae""}"
+2251,SubmitCommit,2022-09-01 13:54:35,Vltnrch,fork_close,"Merge TTML ""head"" nodes during the writegen process","{""sha"": ""2d3dcb831c0fec1330764e3bff360d618e796185"", ""author"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-01T10:49:35Z""}, ""committer"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-01T13:54:35Z""}}"
+2251,OpenPR,2022-09-01 14:15:45,Vltnrch,fork_close,,
+2251,Revise,2022-09-05 14:15:49,Vltnrch,fork_close,No content and no body case in TTML during the writegen process,"{""sha"": ""560764cdc4a404a5d4feb079a689ad54df83d46f"", ""author"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-05T14:15:30Z""}, ""committer"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-05T14:15:49Z""}}"
+2251,IssueCommentSupplement,2022-09-05 14:18:47,Vltnrch,fork_close,Wrong branch,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1237109129"", ""author_association"": ""CONTRIBUTOR""}"
+2251,ClosePR,2022-09-05 14:18:47,Vltnrch,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7323627004"", ""commit_url"": null}"
+2252,SubmitCommit,2022-09-05 00:54:53,Adrian Haensler,fork_merge,fix stbl_AppendChunk and append offsets instead of overwriting last one,"{""sha"": ""10a803bc94eb86fe5716a0513fba103656a57985"", ""author"": {""name"": ""Adrian Haensler"", ""email"": ""adrian@chronicled.com"", ""date"": ""2022-09-05T00:54:53Z""}, ""committer"": {""name"": ""Adrian Haensler"", ""email"": ""adrian@chronicled.com"", ""date"": ""2022-09-05T00:54:53Z""}}"
+2252,OpenPR,2022-09-05 01:12:29,ahaensler,fork_merge,,
+2252,MergePR,2022-09-12 07:34:48,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7364813736"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/848afda4c16e757b1819e7552426dac9ad7eea67""}"
+2252,IssueCommentSupplement,2022-09-12 07:34:54,jeanlf,fork_merge,"Indeed, thanks for the patch !","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1243332843"", ""author_association"": ""CONTRIBUTOR""}"
+2253,SubmitCommit,2022-09-01 13:54:35,Vltnrch,fork_merge,"Merge TTML ""head"" nodes during the writegen process","{""sha"": ""2d3dcb831c0fec1330764e3bff360d618e796185"", ""author"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-01T10:49:35Z""}, ""committer"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-01T13:54:35Z""}}"
+2253,OpenPR,2022-09-05 14:18:53,Vltnrch,fork_merge,,
+2253,MergePR,2022-09-12 07:37:09,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7364829794"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/d89dc0940cf68988c33c9c4483bee52935563606""}"
+2253,IssueCommentSupplement,2022-09-12 07:37:12,jeanlf,fork_merge,"Indeed, thanks for the patch","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1243334969"", ""author_association"": ""CONTRIBUTOR""}"
+2253,DeleteBranch,2022-09-15 10:09:00,Vltnrch,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7393501080"", ""commit_url"": null}"
+2257,SubmitCommit,2022-09-14 14:26:36,aureliendavid,unfork_merge,"add support for building mp4box on windows xp
+
+this is based on the article at http://wp.xin.at/archives/5810","{""sha"": ""fe2f3618b20e8e1e6f2b05bc3975bf56844add0f"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-14T14:24:16Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-14T14:26:36Z""}}"
+2257,OpenPR,2022-09-14 15:16:31,aureliendavid,unfork_merge,,
+2257,Revise,2022-09-19 17:09:12,aureliendavid,unfork_merge,Merge remote-tracking branch 'origin/master' into buildbot-winxp21,"{""sha"": ""360b380b52598bb70b80bbb41cfe146d57c85c42"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-19T17:09:12Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-19T17:09:12Z""}}"
+2257,MergePR,2022-09-19 18:41:12,aureliendavid,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7416103438"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/360b380b52598bb70b80bbb41cfe146d57c85c42""}"
+2257,CrossReferenced,2022-11-28 12:06:03,aureliendavid,unfork_merge,32 bit issue,"{""reference"": {""url"": ""https://api.github.com/repos/gpac/gpac/issues/2326"", ""is_pull_request"": false}}"
+2257,IssueCommentSupplement,2022-12-25 05:29:57,Noitarud,unfork_merge,"I will list some ways I thought it could be implemented that would not involve the publisher:
+- a converter, it can incorporate missing functions elsewhere in executable or in separate DLL. Could make Ollydbg to import such a file then export - would allow troubleshooting (does not recognise it at present).
+- or I thought could use Wine, I suggested a windows port to Wine since I noticed it ran new programs the old windows could not run (due to missing DLLs), I suggested this to them but you could almost feel their shuddering at such an idea (perhaps would upset MS, but MS made a converter to allow old office to open new office files…).","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1364628981"", ""author_association"": ""NONE""}"
+2258,SubmitCommit,2022-09-15 10:02:02,Vltnrch,fork_merge,No content and no body case in TTML during the writegen process,"{""sha"": ""3e7fc490586200f6f3c268d0015035cf6c40085d"", ""author"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-05T14:15:30Z""}, ""committer"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-15T10:02:02Z""}}"
+2258,OpenPR,2022-09-15 10:08:18,Vltnrch,fork_merge,,
+2258,ReviewRejected,2022-09-16 17:39:04,jeanlf,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/gpac/gpac/pull/2258#pullrequestreview-1111014269""}"
+2258,Revise,2022-09-19 07:50:12,Vltnrch,fork_merge,Fix wrong free,"{""sha"": ""f470baa2fd144e7a66602b718e525506e66e2cca"", ""author"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-19T07:50:12Z""}, ""committer"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-19T07:50:12Z""}}"
+2258,ReviewRequested,2022-09-19 07:51:58,Vltnrch,fork_merge,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+2258,MergePR,2022-09-19 09:18:39,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7411901188"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/d05a666a681abf26c98aaf45ceb8e17833de79e5""}"
+2258,IssueCommentSupplement,2022-09-19 09:18:44,jeanlf,fork_merge,Thanks!,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1250773637"", ""author_association"": ""CONTRIBUTOR""}"
+2258,Referenced,2022-09-21 10:33:46,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7429627548"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/986def15c4539bbe85b9241a2cba59904c254951""}"
+2258,IssueCommentSupplement,2022-09-21 10:35:04,jeanlf,fork_merge,"I had to revert part of your empty root checks as this was breaking export of single, empty TTML sample. Could you cross-check this doesn't break your use case ? ","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1253516582"", ""author_association"": ""CONTRIBUTOR""}"
+2258,IssueCommentSupplement,2022-09-29 16:31:46,Vltnrch,fork_merge,Everything is ok,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1262523736"", ""author_association"": ""CONTRIBUTOR""}"
+2261,SubmitCommit,2022-09-16 07:24:48,Vltnrch,fork_merge,mfra opt in mp4box split,"{""sha"": ""61e1f34b4a54d69c17b6b8736316584620160726"", ""author"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-16T07:23:29Z""}, ""committer"": {""name"": ""Valentin ROCHE"", ""email"": ""vroche@fubo.tv"", ""date"": ""2022-09-16T07:24:48Z""}}"
+2261,OpenPR,2022-09-16 07:27:20,Vltnrch,fork_merge,,
+2261,MergePR,2022-09-16 17:36:25,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7404926352"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/69231a329b61a3b9a41bd5c55fdbb629c436e9fc""}"
+2261,IssueCommentSupplement,2022-09-16 17:36:30,jeanlf,fork_merge,thanks!,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1249618555"", ""author_association"": ""CONTRIBUTOR""}"
+2264,SubmitCommit,2022-06-29 17:06:39,jeanlf,unfork_merge,"Build system cleanup
+
+- cleanup of library detection
+- cleanup of libgpac features selection
+- core tools can no longer be disabled","{""sha"": ""0443a4caf9ac0d7a2b3d239921b4e3ea52cd4915"", ""author"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-06-29T17:04:35Z""}, ""committer"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-06-29T17:06:39Z""}}"
+2264,SubmitCommit,2022-06-29 17:30:18,aureliendavid,unfork_merge,configure: change shebang to use bash,"{""sha"": ""f066e3a030c3f46e037277cf25c6231089bdb141"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-06-29T17:30:18Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-06-29T17:30:18Z""}}"
+2264,SubmitCommit,2022-06-30 16:01:13,jeanlf,unfork_merge,avoid using bash specific tools in configure and fixed dvbx build,"{""sha"": ""9865c8eafb26e72532ce33ec98db91cbe0c0ed73"", ""author"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-06-30T16:01:13Z""}, ""committer"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-06-30T16:01:13Z""}}"
+2264,SubmitCommit,2022-06-30 17:48:56,jeanlf,unfork_merge,export all libs cflags and ldflags for local vs system config,"{""sha"": ""a27a2cd07d596d35b088c8eae01b548279ef8145"", ""author"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-06-30T17:48:56Z""}, ""committer"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-06-30T17:48:56Z""}}"
+2264,SubmitCommit,2022-07-01 08:49:55,jeanlf,unfork_merge,fixed extra lib cflags in libgpac to allow mix of system and local or custom build,"{""sha"": ""41f69f997ac1e938617d3704f2e8368a714951c6"", ""author"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-07-01T08:49:55Z""}, ""committer"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-07-01T08:49:55Z""}}"
+2264,SubmitCommit,2022-07-01 12:06:25,aureliendavid,unfork_merge,fixes for macos build,"{""sha"": ""79b73a200947b61939e67c6ef1d1edaeac93260f"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-01T12:06:25Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-01T12:06:25Z""}}"
+2264,SubmitCommit,2022-07-01 15:19:34,aureliendavid,unfork_merge,fix --static-moules build on ubuntu,"{""sha"": ""5343f86322b4960f7e2600d45f0f32b6ef1023dd"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-01T15:19:34Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-01T15:19:34Z""}}"
+2264,SubmitCommit,2022-07-04 08:14:02,jeanlf,unfork_merge,do not link for vvc detection (faster),"{""sha"": ""c1cbfc402261ad5a3b19a087ee3b711df73c9a32"", ""author"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-07-04T08:14:02Z""}, ""committer"": {""name"": ""jeanlf"", ""email"": ""jeanlf@gpac.io"", ""date"": ""2022-07-04T08:14:02Z""}}"
+2264,SubmitCommit,2022-07-04 11:47:10,aureliendavid,unfork_merge,fix build of evg jsmod,"{""sha"": ""f266193178f3eeb79f24fc47b4609b1fad2d8227"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-04T11:47:10Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-04T11:47:10Z""}}"
+2264,SubmitCommit,2022-07-04 18:07:13,aureliendavid,unfork_merge,fix some mingw builds,"{""sha"": ""a5bf237505e68b8bc35aa652f022453f37f14a7d"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-04T18:07:13Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-04T18:07:13Z""}}"
+2264,SubmitCommit,2022-07-04 20:04:18,aureliendavid,unfork_merge,configure: fix modules listing on some shells,"{""sha"": ""263326d1c2340b9734442e3e7eaeaabc824edf1a"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-04T20:04:18Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-07-04T20:04:18Z""}}"
+2264,SubmitCommit,2022-09-16 12:22:13,aureliendavid,unfork_merge,fix cross mingw build of gpac tool,"{""sha"": ""b919c9b0128f643c79f0cc5f433729456cacbf20"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T12:22:13Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T12:22:13Z""}}"
+2264,SubmitCommit,2022-09-16 13:14:32,aureliendavid,unfork_merge,fix mingw build with gettimeofday (#2259),"{""sha"": ""dd95483a936be83a721719ce10903d62b4d1eefb"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T13:14:32Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T13:14:32Z""}}"
+2264,SubmitCommit,2022-09-16 13:54:23,aureliendavid,unfork_merge,Merge branch 'buildbot-mingwbuild' into cfgcleantmp2,"{""sha"": ""c912b96abcf9a05fe2e2c1c32b570a406e6c68c9"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T13:54:23Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T13:54:23Z""}}"
+2264,SubmitCommit,2022-09-16 14:05:46,aureliendavid,unfork_merge,Merge remote-tracking branch 'origin/master' into cfgcleantmp2,"{""sha"": ""f227abed90424324dcbc543ee9c4a3360d0f4b3a"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T14:05:46Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T14:05:46Z""}}"
+2264,SubmitCommit,2022-09-16 15:22:39,aureliendavid,unfork_merge,Merge remote-tracking branch 'origin/master' into cfgcleantmp2,"{""sha"": ""fc2bfa026e29bb5d1903053a3b934da4d9e4c789"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T15:22:39Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T15:22:39Z""}}"
+2264,SubmitCommit,2022-09-16 15:45:22,aureliendavid,unfork_merge,fix downloader deps build,"{""sha"": ""d45a9ff353bea044af16e156859a4833bf95f9a3"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T15:45:22Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-16T15:45:22Z""}}"
+2264,SubmitCommit,2022-09-19 11:12:23,aureliendavid,unfork_merge,Merge remote-tracking branch 'origin/master' into buildbot-cfgclean,"{""sha"": ""98b25c387168ab1ddbbdc2231de5d7aae038e029"", ""author"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-19T11:12:23Z""}, ""committer"": {""name"": ""Aurelien David"", ""email"": ""aurelien.david@telecom-paristech.fr"", ""date"": ""2022-09-19T11:12:23Z""}}"
+2264,OpenPR,2022-09-19 11:51:39,aureliendavid,unfork_merge,,
+2264,MergePR,2022-09-19 15:08:19,aureliendavid,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7414559239"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/fd46696b63efcf32b7a1d4814dac8da23a8b9cc2""}"
+2271,SubmitCommit,2022-09-28 19:28:26,rbouqueau,fork_merge,add vui timing info removal,"{""sha"": ""feb612aadaef24b9bd3af224ffb1ff227bc29a91"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-09-28T19:28:26Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-09-28T19:28:26Z""}}"
+2271,SubmitCommit,2022-09-29 01:09:56,rbouqueau,fork_merge,vui rewrite: add missing chroma_loc_info,"{""sha"": ""a7abbc5ca8d5a85428c0a035d59f0ad9a885fbcb"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-09-29T01:09:56Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-09-29T01:09:56Z""}}"
+2271,OpenPR,2022-09-29 01:11:42,rbouqueau,fork_merge,,
+2271,ReviewRejected,2022-09-29 10:00:30,jeanlf,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/gpac/gpac/pull/2271#pullrequestreview-1125001693""}"
+2271,Revise,2022-09-29 10:42:19,rbouqueau,fork_merge,add parenthesis,"{""sha"": ""5c53d148a4d8cbbad2a3283414f5a55acb711047"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-09-29T10:42:19Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-09-29T10:42:19Z""}}"
+2271,MergePR,2022-09-29 10:50:02,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7485566349"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/e477b5159f23caaf0ef814e52acbea26c84a9dd4""}"
+2271,IssueCommentSupplement,2022-09-29 10:50:08,jeanlf,fork_merge,thanks !,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1262106958"", ""author_association"": ""CONTRIBUTOR""}"
+2292,SubmitCommit,2022-10-28 21:01:37,xidoo123,fork_close,Update box_code_base.c,"{""sha"": ""2d5bb385646b6ce5e9d27e4068ae34d83b9d1ce3"", ""author"": {""name"": ""xdchase"", ""email"": ""48048058+xidoo123@users.noreply.github.com"", ""date"": ""2022-10-28T21:01:37Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-10-28T21:01:37Z""}}"
+2292,OpenPR,2022-10-28 21:20:53,xidoo123,fork_close,,
+2292,CrossReferenced,2022-10-28 21:21:59,xidoo123,fork_close,GPAC-2.0.0 MP4Box: invalid free in csgp_box_del,"{""reference"": {""url"": ""https://api.github.com/repos/gpac/gpac/issues/2293"", ""is_pull_request"": false}}"
+2292,IssueCommentSupplement,2022-11-04 14:29:28,jeanlf,fork_close,this was fixed some months ago,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1303646023"", ""author_association"": ""CONTRIBUTOR""}"
+2292,ClosePR,2022-11-04 14:29:28,jeanlf,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7741263578"", ""commit_url"": null}"
+2298,SubmitCommit,2022-10-31 18:39:19,Mart Jansink,fork_merge,again don't write vpcc->level as hex (#1114),"{""sha"": ""1567f5405892672f2c6974ceaf7b40592fa7bf4d"", ""author"": {""name"": ""Mart Jansink"", ""email"": ""mart@cinemait.nl"", ""date"": ""2022-10-31T18:39:19Z""}, ""committer"": {""name"": ""Mart Jansink"", ""email"": ""mart@cinemait.nl"", ""date"": ""2022-10-31T18:39:19Z""}}"
+2298,OpenPR,2022-10-31 18:42:08,mart-jansink,fork_merge,,
+2298,MergePR,2022-11-04 14:35:12,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7741312549"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/86f781721caee2ced306bf1b58f4e39224b46291""}"
+2300,OpenPR,2022-11-01 23:37:00,cconcolato,unfork_merge,,
+2300,Revise,2022-11-01 23:41:50,cconcolato,unfork_merge,fix DASH channel layout configuration for EAC-3 streams with 6 channels,"{""sha"": ""b42e953875037a088d479204e61e9b2a562ef6e8"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-11-01T23:32:32Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-11-01T23:41:50Z""}}"
+2300,HeadRefForcePushed,2022-11-01 23:42:02,cconcolato,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7718040375"", ""commit_url"": null}"
+2300,ReviewRequested,2022-11-01 23:48:50,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+2300,IssueComment,2022-11-01 23:50:12,cconcolato,unfork_merge,"I should note that this is based on https://www.atsc.org/wp-content/uploads/2015/03/A52-201212-17.pdf and in particular 
+![image](https://user-images.githubusercontent.com/1830314/199363112-046271a0-2fa0-4160-8f4f-59929b144248.png)
+","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1299367130"", ""author_association"": ""CONTRIBUTOR""}"
+2300,IssueComment,2022-11-02 15:57:05,cconcolato,unfork_merge,"One way to create an example eac3 file is with ffmpeg
+```ffmpeg -f lavfi -i anullsrc=channel_layout=5.1:sample_rate=48000 -t 4100ms -b:a 32000 silence.eac3```","{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1300754408"", ""author_association"": ""CONTRIBUTOR""}"
+2300,MergePR,2022-11-04 14:28:53,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7741258578"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/25af0e7bdcbcc3393397c01fff018816e64a658b""}"
+2300,IssueCommentSupplement,2022-11-05 01:34:36,rbouqueau,unfork_merge,@cconcolato on the latest GPAC you can also do ```gpac ffavf::f=anullsrc=channel_layout=5.1:sample_rate=48000:d=4.1 c=eac3:b=32k -o silence.eac3``` :),"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1304370040"", ""author_association"": ""CONTRIBUTOR""}"
+2300,DeleteBranch,2022-12-01 21:47:45,cconcolato,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7935866830"", ""commit_url"": null}"
+2304,SubmitCommit,2022-11-06 09:42:58,erikbs,fork_merge,"Configure: do not overwrite LDFLAGS on Darwin
+
+Preserve user specified linker flags on Darwin by appending library path instead of overwriting LDFLAGS.","{""sha"": ""61d8f2869c305811f97e4feed262aede0b6a2e53"", ""author"": {""name"": ""erikbs"", ""email"": ""erikbsolem@hotmail.com"", ""date"": ""2022-11-06T09:42:58Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-11-06T09:42:58Z""}}"
+2304,OpenPR,2022-11-06 09:49:34,erikbs,fork_merge,,
+2304,CrossReferenced,2022-11-07 00:24:39,erikbs,fork_merge,gpac: fix linking with legacy-support,"{""reference"": {""url"": ""https://api.github.com/repos/macports/macports-ports/issues/16604"", ""is_pull_request"": true}}"
+2304,MergePR,2022-11-07 07:37:13,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7749827539"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/c34fe92b5da3369d405039569c86ae6ff91199af""}"
+2304,IssueCommentSupplement,2022-11-07 07:37:19,jeanlf,fork_merge,Thanks!,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1305197863"", ""author_association"": ""CONTRIBUTOR""}"
+2317,SubmitCommit,2022-11-18 09:31:35,rbouqueau,fork_close,fix conditional build without http2 support,"{""sha"": ""e296c529ba51f298a46bf2884d7309ec89d09a5a"", ""author"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-11-18T09:31:35Z""}, ""committer"": {""name"": ""Romain Bouqueau"", ""email"": ""romain.bouqueau.pro@gmail.com"", ""date"": ""2022-11-18T09:31:35Z""}}"
+2317,OpenPR,2022-11-18 09:32:07,rbouqueau,fork_close,,
+2317,IssueCommentSupplement,2022-11-18 09:40:16,rbouqueau,fork_close,superseeded by 68064e10172675e0853d6f429fb2055112835602,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1319762217"", ""author_association"": ""CONTRIBUTOR""}"
+2317,ClosePR,2022-11-18 09:40:17,rbouqueau,fork_close,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7842002035"", ""commit_url"": null}"
+2318,SubmitCommit,2022-11-18 12:25:00,thowat,fork_merge,"Update configure
+
+fix build on aarch64, missing fPIC","{""sha"": ""ae15e4f7ac00c2a2485d8d318101d8d076f06efc"", ""author"": {""name"": ""thowat"", ""email"": ""46895388+thowat@users.noreply.github.com"", ""date"": ""2022-11-18T12:25:00Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-11-18T12:25:00Z""}}"
+2318,OpenPR,2022-11-18 18:38:25,thowat,fork_merge,,
+2318,MergePR,2022-11-21 08:16:07,jeanlf,fork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7854867770"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/bd1a8e9906c2628d9fd340b17b08f4f9c6e58823""}"
+2318,IssueCommentSupplement,2022-11-21 08:16:12,jeanlf,fork_merge,Thanks !,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1321657542"", ""author_association"": ""CONTRIBUTOR""}"
+2335,SubmitCommit,2022-12-01 21:26:25,cconcolato,unfork_merge,fix bsdbg for AV1 parsing,"{""sha"": ""5da20cb806241c224ecccb7ff3425357a4c06496"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-11-11T05:31:16Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-12-01T21:26:25Z""}}"
+2335,SubmitCommit,2022-12-01 21:26:35,cconcolato,unfork_merge,update reframe_av1 documentation,"{""sha"": ""5443acd6ad23e126e05cfda01fce121c6ff97d08"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-11-11T05:20:59Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-12-01T21:26:35Z""}}"
+2335,OpenPR,2022-12-01 21:27:54,cconcolato,unfork_merge,,
+2335,ReviewRequested,2022-12-01 21:27:55,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+2335,MergePR,2022-12-02 17:04:38,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7942368961"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/05e26c08d01c676a70a426539e55cb0b8ee458f8""}"
+2335,DeleteBranch,2022-12-02 19:11:23,cconcolato,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7943158804"", ""commit_url"": null}"
+2336,SubmitCommit,2022-12-01 21:33:11,cconcolato,unfork_merge,adding TS descriptors for AV1,"{""sha"": ""186f75ccb10a6276f0de4144974b42d79c875408"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-11-19T05:45:20Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-12-01T21:33:11Z""}}"
+2336,SubmitCommit,2022-12-01 21:42:06,cconcolato,unfork_merge,require TS muxer for AV1 to use an unframer,"{""sha"": ""4b9e1c4fa9dcdb1ed3f194f1324bf1ed33940b0c"", ""author"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-11-19T05:28:17Z""}, ""committer"": {""name"": ""Cyril Concolato"", ""email"": ""cconcolato@netflix.com"", ""date"": ""2022-12-01T21:42:06Z""}}"
+2336,OpenPR,2022-12-01 21:46:57,cconcolato,unfork_merge,,
+2336,ReviewRequested,2022-12-01 21:46:58,cconcolato,unfork_merge,,"{""requested_reviewer"": {""login"": ""jeanlf"", ""id"": 7303785, ""node_id"": ""MDQ6VXNlcjczMDM3ODU="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7303785?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeanlf"", ""html_url"": ""https://github.com/jeanlf"", ""followers_url"": ""https://api.github.com/users/jeanlf/followers"", ""following_url"": ""https://api.github.com/users/jeanlf/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeanlf/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeanlf/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeanlf/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeanlf/orgs"", ""repos_url"": ""https://api.github.com/users/jeanlf/repos"", ""events_url"": ""https://api.github.com/users/jeanlf/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeanlf/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+2336,MergePR,2022-12-02 17:05:53,jeanlf,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7942379064"", ""commit_url"": ""https://api.github.com/repos/gpac/gpac/commits/be6d2f5915bf83e7c23ce1449c029a1b5737747e""}"
+2336,IssueCommentSupplement,2022-12-02 17:06:24,jeanlf,unfork_merge,looks good - we'll need tests once the demux is in place,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/comments/1335546817"", ""author_association"": ""CONTRIBUTOR""}"
+2336,DeleteBranch,2022-12-02 19:11:23,cconcolato,unfork_merge,,"{""url"": ""https://api.github.com/repos/gpac/gpac/issues/events/7943158728"", ""commit_url"": null}"

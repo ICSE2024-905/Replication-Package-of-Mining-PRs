@@ -1,0 +1,713 @@
+case_id,variant,variant_id
+dubbo#10143,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+dubbo#10162,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR')",2
+dubbo#10285,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+dubbo#7398,"('SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",4
+dubbo#7939,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+dubbo#8148,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",5
+dubbo#9355,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR')",2
+gpac#1760,"('OpenPR', 'Revise', 'IssueComment', 'ReviewRejected', 'Revise', 'ClosePR', 'DeleteBranch')",6
+gpac#1927,"('OpenPR', 'ReviewRequested', 'Revise', 'IssueComment', 'ClosePR')",7
+hadoop#2635,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR')",8
+hadoop#3002,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",9
+hadoop#3432,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR')",10
+hadoop#3626,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+hadoop#4015,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'ClosePR', 'Referenced')",11
+hadoop#4475,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",9
+hadoop#4476,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'IssueComment', 'IssueComment', 'IssueComment', 'Referenced', 'ClosePR')",12
+hadoop#4535,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",9
+hadoop#4970,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",9
+hadoop#5042,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+hadoop#5107,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'ClosePR')",13
+hadoop#5108,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+httpd#293,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+libexpat#440,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+netbeans#2749,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",15
+netbeans#2869,"('SubmitCommit', 'OpenPR', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'IssueComment', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR')",16
+netbeans#3161,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+netbeans#3436,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+netbeans#3460,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'ClosePR')",17
+netbeans#3706,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",18
+opencv#20101,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR')",19
+opencv#20262,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+opencv#20707,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR')",20
+opencv#20786,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR')",21
+phoenix#4295,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+phoenix#4296,"('OpenPR', 'Revise', 'IssueComment', 'ClosePR', 'DeleteBranch')",22
+phoenix#4315,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+phoenix#4657,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4672,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4693,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4755,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+phoenix#4761,"('OpenPR', 'Revise', 'ClosePR', 'DeleteBranch')",23
+phoenix#4769,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4770,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4771,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4772,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4774,"('OpenPR', 'Revise', 'ClosePR', 'DeleteBranch')",23
+phoenix#4788,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4821,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+phoenix#4824,"('OpenPR', 'Revise', 'IssueComment', 'ClosePR', 'DeleteBranch')",22
+phoenix#4835,"('OpenPR', 'Revise', 'IssueComment', 'ClosePR', 'DeleteBranch')",22
+phoenix#4836,"('OpenPR', 'Revise', 'IssueComment', 'ClosePR', 'DeleteBranch')",22
+phoenix#4837,"('OpenPR', 'Revise', 'IssueComment', 'ClosePR', 'DeleteBranch')",22
+phoenix#4838,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+phoenix#4844,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",9
+phoenix#4845,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+phoenix#4846,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",9
+phoenix#4853,"('OpenPR', 'Revise', 'ClosePR', 'DeleteBranch')",23
+phoenix#4854,"('OpenPR', 'Revise', 'ClosePR', 'DeleteBranch')",23
+phoenix#4856,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+phoenix#4869,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4871,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4874,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4875,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+phoenix#4879,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4884,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4885,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+phoenix#4947,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'Revise', 'ReviewComment', 'ClosePR', 'DeleteBranch')",24
+redis#10069,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR')",25
+redis#11006,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",26
+redis#11174,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",26
+redis#11257,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+redis#11286,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+redis#11351,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+redis#11394,"('SubmitCommit', 'OpenPR', 'ReviewComment', 'Referenced', 'ClosePR', 'DeleteBranch', 'Referenced', 'Referenced')",27
+redis#8889,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR')",28
+spring-cloud-function#755,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+spring-framework#26333,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR')",29
+spring-framework#28197,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+spring-framework#28373,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR')",29
+spring-framework#28468,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR')",30
+spring-framework#28674,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR')",31
+spring-framework#29133,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR')",32
+spring-framework#29134,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR')",29
+swtpm#535,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+swtpm#562,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",26
+swtpm#594,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+swtpm#599,"('SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR')",33
+swtpm#626,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+swtpm#693,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR')",8
+tensorflow#46525,"('SubmitCommit', 'OpenPR', 'ReviewRejected', 'ClosePR')",34
+tensorflow#47273,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",35
+tensorflow#48092,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",36
+tensorflow#48172,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#48181,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'ClosePR')",37
+tensorflow#48446,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'ClosePR', 'DeleteBranch')",38
+tensorflow#48576,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ReviewComment', 'Revise', 'ReviewRejected', 'IssueComment', 'ClosePR', 'DeleteBranch')",39
+tensorflow#48686,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#48754,"('SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'ReviewRequested', 'IssueComment', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",41
+tensorflow#48790,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'ReviewApproved', 'ReviewApproved', 'ClosePR', 'DeleteBranch')",42
+tensorflow#49098,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#49466,"('OpenPR', 'ReviewRequested', 'ReviewApproved', 'Revise', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",43
+tensorflow#49499,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ClosePR', 'ReviewRequestRemoved')",44
+tensorflow#49562,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ReviewApproved', 'ReviewRequestRemoved', 'ReviewRequested', 'ReviewComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",45
+tensorflow#50088,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#50156,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#50157,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR', 'DeleteBranch')",46
+tensorflow#50235,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'ReviewApproved', 'IssueComment', 'ClosePR', 'DeleteBranch')",47
+tensorflow#50390,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'IssueComment', 'IssueComment', 'ClosePR')",48
+tensorflow#50442,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",49
+tensorflow#50464,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'IssueComment', 'ClosePR', 'DeleteBranch')",50
+tensorflow#50544,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#50672,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequestRemoved', 'IssueComment', 'Revise', 'IssueComment', 'ReviewRequested', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",51
+tensorflow#50768,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",52
+tensorflow#50771,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#50949,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+tensorflow#51103,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",53
+tensorflow#51118,"('SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",54
+tensorflow#51152,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",55
+tensorflow#51158,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",56
+tensorflow#51159,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",57
+tensorflow#51714,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ClosePR')",58
+tensorflow#52008,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ReviewRequested', 'ReviewRequestRemoved', 'IssueComment', 'Revise', 'ReviewRequested', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",59
+tensorflow#52205,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#52340,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#52612,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#52684,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",49
+tensorflow#52804,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",60
+tensorflow#52819,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",61
+tensorflow#52823,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",62
+tensorflow#52826,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",63
+tensorflow#52838,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",64
+tensorflow#53282,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ReviewRequested', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",65
+tensorflow#53429,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",66
+tensorflow#53452,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#53739,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'ReviewRequested', 'Revise', 'ClosePR')",67
+tensorflow#53857,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'ClosePR', 'DeleteBranch')",38
+tensorflow#54252,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'IssueComment', 'ClosePR', 'DeleteBranch')",50
+tensorflow#54316,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",66
+tensorflow#54352,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'Referenced', 'IssueComment', 'Referenced', 'ReviewRequested', 'IssueComment', 'IssueComment', 'Referenced', 'IssueComment', 'Referenced', 'IssueComment', 'IssueComment', 'ReviewRequestRemoved', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",68
+tensorflow#54425,"('SubmitCommit', 'OpenPR', 'Revise', 'ReviewRequested', 'ReviewApproved', 'Referenced', 'ReviewApproved', 'ReviewApproved', 'IssueComment', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",69
+tensorflow#54520,"('SubmitCommit', 'OpenPR', 'Revise', 'ReviewRequested', 'IssueComment', 'IssueComment', 'IssueComment', 'ReviewComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",70
+tensorflow#54523,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequestRemoved', 'ReviewRequested', 'ClosePR')",71
+tensorflow#54525,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54526,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54527,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54528,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54529,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54530,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54531,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54533,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54534,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54535,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54536,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54537,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54538,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54539,"('OpenPR', 'Revise', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",76
+tensorflow#54541,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54542,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54543,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54544,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#54546,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54549,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54550,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54551,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54552,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54553,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54554,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54555,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54556,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54557,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54558,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54560,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54561,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54562,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54563,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54564,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54565,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54567,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54569,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54570,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54571,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54574,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54575,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54576,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54577,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54579,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54580,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54581,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54583,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54584,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#54585,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54586,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54587,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54588,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54589,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54590,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54592,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54593,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54594,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54595,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54596,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54597,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54598,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54600,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54601,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54602,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54603,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54604,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54605,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54606,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ReviewRequested', 'Revise', 'ClosePR')",79
+tensorflow#54607,"('OpenPR', 'Revise', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'ClosePR')",80
+tensorflow#54608,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54609,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54610,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54611,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54613,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54614,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54615,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54616,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54617,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54618,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#54619,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'ClosePR')",81
+tensorflow#54620,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'ClosePR')",82
+tensorflow#54621,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54622,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54623,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54624,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54625,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54626,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54627,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54628,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54629,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54630,"('OpenPR', 'Revise', 'ReviewRequested', 'Revise', 'Revise', 'ClosePR')",83
+tensorflow#54631,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#54632,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'ClosePR')",82
+tensorflow#54633,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54635,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54636,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54638,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54639,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54640,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54641,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54642,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54643,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54646,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54647,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54649,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54651,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR')",10
+tensorflow#54652,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54653,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54656,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54661,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54662,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54663,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54664,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54665,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54666,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54667,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54668,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54670,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54672,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54673,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54674,"('OpenPR', 'ReviewComment', 'Revise', 'Revise', 'ClosePR')",84
+tensorflow#54675,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54676,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54677,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54678,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54679,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54680,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54682,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54683,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54684,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54685,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54686,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54688,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54689,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54690,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54691,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#54692,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54695,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54696,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54698,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54699,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54700,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54701,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54702,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54703,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54704,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54705,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54706,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54707,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54708,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54709,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54710,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54711,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54712,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54713,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54715,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54716,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",85
+tensorflow#54717,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54718,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54719,"('OpenPR', 'Revise', 'IssueComment', 'IssueComment', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",86
+tensorflow#54720,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#54721,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54722,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#54723,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54724,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54725,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54726,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54727,"('SubmitCommit', 'OpenPR', 'ClosePR', 'Revise')",87
+tensorflow#54728,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54729,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#54730,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54731,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54732,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54733,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54734,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54735,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54736,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54737,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54738,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54739,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54741,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54742,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54743,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54744,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54752,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54754,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54755,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54756,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54757,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54758,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54759,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54760,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54761,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54762,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54765,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54766,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54767,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54768,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54769,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54770,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54772,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54773,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54774,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54775,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54776,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54777,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54778,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54780,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54781,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54782,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54783,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54785,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54786,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54787,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54789,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54791,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54792,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54793,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54794,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54795,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54796,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54797,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54798,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54799,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54800,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54802,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54803,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54804,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'Revise', 'ClosePR')",88
+tensorflow#54805,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54806,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54807,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#54808,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54809,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54811,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54812,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54813,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54814,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54815,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54816,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54821,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54823,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54824,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54825,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54826,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54827,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54829,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54830,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54831,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54833,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54834,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54836,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54837,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#54838,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54839,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54840,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54842,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54843,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54844,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54845,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54846,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#54847,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54850,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54852,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54853,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54858,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54859,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54861,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54862,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54863,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54864,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54865,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54866,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54867,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54869,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54870,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54871,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54872,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54873,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54874,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54875,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",85
+tensorflow#54876,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54877,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54878,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",89
+tensorflow#54879,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54880,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54881,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54882,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54883,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54886,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54887,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54888,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54889,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54890,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54891,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54892,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54893,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54894,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54895,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54896,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54897,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54898,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54901,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54902,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54903,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54906,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54907,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54908,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54909,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54910,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54912,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54913,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54914,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54915,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54917,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54918,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54919,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54920,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewComment', 'IssueComment', 'Revise', 'ClosePR', 'DeleteBranch')",90
+tensorflow#54921,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54922,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54927,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54928,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54929,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54930,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54931,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#54932,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54933,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR')",8
+tensorflow#54934,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54935,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54936,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54937,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54938,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54939,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54940,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#54941,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54942,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'ClosePR')",82
+tensorflow#54943,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'Revise', 'ClosePR')",91
+tensorflow#54944,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54945,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'ClosePR')",81
+tensorflow#54946,"('OpenPR', 'ReviewApproved', 'Revise', 'Revise', 'ClosePR')",92
+tensorflow#54947,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#54948,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54949,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54950,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'ClosePR')",82
+tensorflow#54951,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54952,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54953,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54955,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54956,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54957,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54959,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54960,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54961,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54962,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54963,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54964,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54965,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54967,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54968,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54970,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54971,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54974,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54978,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54981,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#54982,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54983,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54985,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#54987,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54989,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54990,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54992,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54993,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#54994,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54995,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'ClosePR')",82
+tensorflow#54996,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#54997,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#54998,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#54999,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55000,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55001,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55002,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55003,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55004,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55005,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55006,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55007,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55008,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55009,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55010,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#55011,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55012,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55013,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55015,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55016,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55017,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55018,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55019,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#55020,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#55021,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55022,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55024,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#55025,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55028,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#55029,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#55032,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#55033,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55034,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55036,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55041,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55042,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#55044,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55045,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55046,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55047,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55048,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#55049,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55050,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55051,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'ReviewRequestRemoved', 'ReviewRequested', 'ReviewRejected', 'Revise', 'ReviewComment', 'IssueComment', 'Revise', 'IssueComment', 'ReviewRequested', 'ReviewRequestRemoved', 'ReviewComment', 'Revise', 'ReviewRejected', 'IssueComment', 'ReviewRejected', 'IssueComment', 'ReviewRequestRemoved', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",93
+tensorflow#55052,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55054,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55056,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55058,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55061,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55062,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55063,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55064,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55066,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#55068,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55069,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#55070,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55071,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'Revise')",77
+tensorflow#55074,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55076,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55077,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55078,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55079,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#55080,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55081,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55083,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55084,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55085,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55086,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55087,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55088,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55089,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55090,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55091,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55092,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55093,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55094,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55095,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55096,"('SubmitCommit', 'OpenPR', 'ClosePR', 'Revise')",87
+tensorflow#55098,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55099,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55100,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55101,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55102,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#55104,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55105,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55106,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#55107,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55108,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#55109,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55110,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55111,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#55112,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#55114,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#55115,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55116,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",73
+tensorflow#55117,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55119,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55120,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55121,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55122,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55124,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55125,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55126,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55127,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55129,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55130,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55131,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55140,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55141,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55142,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55144,"('OpenPR', 'Revise', 'Revise', 'Revise', 'ClosePR')",72
+tensorflow#55146,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55149,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'Revise')",94
+tensorflow#55150,"('OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'ClosePR')",81
+tensorflow#55151,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55152,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55153,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55154,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55155,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#55156,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55157,"('OpenPR', 'Revise', 'Revise', 'ClosePR')",74
+tensorflow#55158,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55160,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55161,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55162,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#55163,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55164,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#55165,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR')",10
+tensorflow#55167,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#55168,"('OpenPR', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",78
+tensorflow#55169,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#55170,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55171,"('SubmitCommit', 'OpenPR', 'ClosePR')",14
+tensorflow#55172,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR')",75
+tensorflow#55222,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRejected', 'IssueComment', 'IssueComment', 'IssueComment', 'IssueComment', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",95
+tensorflow#55287,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR')",10
+tensorflow#55465,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#55543,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ReviewRequestRemoved', 'ReviewRequestRemoved', 'IssueComment', 'ClosePR', 'DeleteBranch')",96
+tensorflow#55567,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'ReviewRequested', 'IssueComment', 'IssueComment', 'IssueComment', 'IssueComment', 'Revise', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",97
+tensorflow#56045,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+tensorflow#56101,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",49
+tensorflow#56263,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'Revise', 'ClosePR', 'DeleteBranch')",98
+tensorflow#56401,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'Revise', 'ReviewRejected', 'Revise', 'ReviewRejected', 'IssueComment', 'ReviewRequested', 'ReviewRequestRemoved', 'Revise', 'ReviewComment', 'ClosePR', 'DeleteBranch')",99
+tensorflow#56431,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'ClosePR', 'DeleteBranch')",100
+tensorflow#56437,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'IssueComment', 'IssueComment', 'ReviewApproved', 'IssueComment', 'ClosePR', 'Referenced', 'DeleteBranch')",101
+tensorflow#56596,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'ReviewApproved', 'ClosePR', 'DeleteBranch')",102
+tensorflow#56631,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",103
+tensorflow#56728,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+tensorflow#56991,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'ReviewRequestRemoved', 'DeleteBranch')",104
+tensorflow#57176,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'IssueComment', 'IssueComment', 'ReviewRequestRemoved', 'IssueComment', 'ClosePR', 'DeleteBranch')",105
+tensorflow#57224,"('SubmitCommit', 'OpenPR', 'IssueComment', 'Revise', 'ReviewRequested', 'ReviewApproved', 'IssueComment', 'ClosePR', 'DeleteBranch')",106
+tensorflow#57227,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ReviewRequested', 'ReviewRequested', 'ReviewComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",107
+tensorflow#57373,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",108
+tensorflow#57379,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",49
+tensorflow#57380,"('SubmitCommit', 'OpenPR', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",109
+tensorflow#57381,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",49
+tensorflow#57382,"('SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",4
+tensorflow#57383,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",49
+tensorflow#57384,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",49
+tensorflow#57394,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",52
+tensorflow#57399,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRejected', 'ReviewComment', 'ClosePR', 'DeleteBranch')",110
+tensorflow#57436,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#57513,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",111
+tensorflow#57598,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'Revise', 'ClosePR', 'DeleteBranch')",98
+tensorflow#57599,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'Revise', 'ClosePR', 'DeleteBranch')",98
+tensorflow#57600,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#57602,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#57603,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#57630,"('SubmitCommit', 'OpenPR', 'Revise', 'IssueComment', 'Revise', 'IssueComment', 'ReviewRequested', 'IssueComment', 'Revise', 'IssueComment', 'IssueComment', 'IssueComment', 'ReviewRequested', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",112
+tensorflow#57772,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'IssueComment', 'ClosePR', 'DeleteBranch')",50
+tensorflow#57808,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",66
+tensorflow#57881,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'Revise', 'ClosePR', 'DeleteBranch')",98
+tensorflow#58095,"('SubmitCommit', 'OpenPR', 'IssueComment', 'ClosePR', 'DeleteBranch')",1
+tensorflow#58136,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'Revise', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",113
+tensorflow#58276,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#58304,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#58359,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'ClosePR', 'DeleteBranch')",38
+tensorflow#58361,"('SubmitCommit', 'OpenPR', 'ReviewComment', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",114
+tensorflow#58384,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'ReviewApproved', 'ClosePR', 'DeleteBranch')",102
+tensorflow#58409,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#58418,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'IssueComment', 'IssueComment', 'IssueComment', 'IssueComment', 'ClosePR', 'DeleteBranch')",115
+tensorflow#58509,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'ClosePR', 'DeleteBranch')",116
+tensorflow#58554,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'ClosePR', 'DeleteBranch')",38
+tensorflow#58557,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'IssueComment', 'ReviewRejected', 'ClosePR', 'DeleteBranch')",117
+tensorflow#58577,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3
+tensorflow#58585,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'IssueComment', 'ClosePR', 'DeleteBranch')",50
+tensorflow#58591,"('OpenPR', 'IssueComment', 'Revise', 'IssueComment', 'Revise', 'ClosePR', 'DeleteBranch')",118
+tensorflow#58594,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR', 'DeleteBranch')",40
+tensorflow#58759,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewRequested', 'IssueComment', 'ClosePR')",119
+tensorflow#58850,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ReviewApproved', 'ClosePR', 'DeleteBranch')",38
+tensorflow#58928,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR', 'DeleteBranch')",46
+tensorflow#58929,"('SubmitCommit', 'OpenPR', 'Revise', 'ClosePR', 'DeleteBranch')",46
+tensorflow#58967,"('SubmitCommit', 'OpenPR', 'ReviewRequested', 'ClosePR')",10
+zipkin#3404,"('SubmitCommit', 'SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",4
+zookeeper#1588,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'IssueComment', 'IssueComment', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'Revise', 'ReviewComment', 'Revise', 'Revise', 'Revise', 'ClosePR')",120
+zookeeper#1707,"('SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'SubmitCommit', 'OpenPR', 'ReviewComment', 'ClosePR')",121
+zookeeper#1956,"('SubmitCommit', 'OpenPR', 'ClosePR', 'DeleteBranch')",3

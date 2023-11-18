@@ -1,0 +1,2 @@
+scene,case_num,variant_num,average_trace_fitness,percentage_of_fitting_traces,precision,generalization,simplicity
+fork_close,4329,1528,0.884,22.176,0.886,0.953,0.675

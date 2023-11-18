@@ -1,0 +1,937 @@
+﻿case:concept:name,concept:name,time:timestamp,people,scene,message,description
+560,SubmitCommit,2021-06-02 05:48:11,dbezhetskov,fork_close,"Fix compilation error: implicit declaration of function {lseek, read, write} is invalid in C99.
+
+gzread.c and gzwrite.c use read, write and lseek functions without declaring them
+and this is forbidden without the declaration.
+The error reproduces on WASI platform, see for the workaround https://phabricator.services.mozilla.com/D116207.","{""sha"": ""17880eb7c065a533cea503a1f637614922de8453"", ""author"": {""name"": ""Dmitry Bezhetskov"", ""email"": ""dbezhetskov@igalia.com"", ""date"": ""2021-06-02T05:48:11Z""}, ""committer"": {""name"": ""Dmitry Bezhetskov"", ""email"": ""dbezhetskov@igalia.com"", ""date"": ""2021-06-02T05:48:11Z""}}"
+560,OpenPR,2021-06-02 05:50:35,dbezhetskov,fork_close,,
+560,IssueCommentSupplement,2021-06-03 03:44:18,madler,fork_close,"No, it doesn't. Not so long as you follow the directions and run ./configure first. configure looks for unistd.h, and if there is one, it writes a zconf.h that includes it.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/853538978"", ""author_association"": ""OWNER""}"
+560,ClosePR,2021-06-03 03:44:18,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/4835118275"", ""commit_url"": null}"
+563,SubmitCommit,2017-01-16 06:46:03,madler,unfork_close,Change version number to 1.2.11.1.,"{""sha"": ""7d60b86782f96854974fdec6f17cb95cfaf020a6"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T06:46:03Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T06:46:03Z""}}"
+563,SubmitCommit,2017-01-16 17:38:36,madler,unfork_close,"Cygwin does not have _wopen(), so do not create gzopen_w() there.","{""sha"": ""5ff989033e8b839b80ce716a1452acf7664e2ff4"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T17:38:36Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T17:38:36Z""}}"
+563,SubmitCommit,2017-02-16 06:38:55,madler,unfork_close,"Permit a deflateParams() parameter change as soon as possible.
+
+This commit allows a parameter change even if the input data has
+not all been compressed and copied to the application output
+buffer, so long as all of the input data has been compressed to
+the internal pending output buffer. This also allows an immediate
+deflateParams change so long as there have been no deflate calls
+since initialization or reset.","{""sha"": ""f9694097dd69354b03cb8af959094c7f260db0a1"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T17:49:35Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:38:55Z""}}"
+563,SubmitCommit,2017-02-16 06:39:25,madler,unfork_close,"Limit hash table inserts after switch from stored deflate.
+
+This limits hash table inserts to the available data in the window
+and to the sliding window size in deflate_stored(). The hash table
+inserts are deferred until deflateParams() switches to a non-zero
+compression level.","{""sha"": ""2d80d3f6b52f9fa454c26c89d2d6a1790e1cecb0"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-21T09:50:26Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:25Z""}}"
+563,SubmitCommit,2017-02-16 06:39:25,madler,unfork_close,Fix bug when window full in deflate_stored().,"{""sha"": ""8ba393e70d984d902b15b9e6876f4d0d38ae4be8"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-21T20:13:25Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:25Z""}}"
+563,SubmitCommit,2017-02-16 06:39:26,madler,unfork_close,"Fix CLEAR_HASH macro to be usable as a single statement.
+
+As it is used in deflateParams().","{""sha"": ""38e8ce32afbaa82f67d992b9f3056f281fe69259"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-23T07:38:52Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+563,SubmitCommit,2017-02-16 06:39:26,madler,unfork_close,"Avoid a conversion error in gzseek when off_t type too small.
+
+This is a problem in the odd case that the second argument of
+LSEEK is a larger type than off_t. Apparently MinGW defines off_t
+to be 32 bits, but _lseeki64 has a 64-bit second argument.
+
+Also undo a previous commit to permit MinGW to use _lseeki64.","{""sha"": ""a3622937453f517285f851817a7505f54f4f19aa"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-05T07:58:37Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+563,SubmitCommit,2017-02-16 06:39:26,madler,unfork_close,Have Makefile return non-zero error code on test failure.,"{""sha"": ""e00a2bd392ca51351ecee55dbeee803f6ebda2f5"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T06:38:09Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+563,SubmitCommit,2017-02-16 06:39:26,madler,unfork_close,Avoid some conversion warnings in gzread.c and gzwrite.c.,"{""sha"": ""793ad7f559555757e6443ea591ce70de5505fc69"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T06:45:27Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+563,SubmitCommit,2017-02-16 06:39:26,madler,unfork_close,Update use of errno for newer Windows CE versions.,"{""sha"": ""e1f1a3a1469c91b15ea1d31f1c2b92bdc27879fa"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T06:48:31Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+563,SubmitCommit,2017-02-16 06:39:26,madler,unfork_close,"Small speedup to inflate [psumbera].
+
+Seeing a few percent speedup by using a pointer instead of an
+assigned structure. This seems to help the compiler to optimize
+better.","{""sha"": ""60a5ecc62b18d1e2391993b1fcfc10e100720642"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T07:21:41Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+563,SubmitCommit,2017-02-16 06:39:26,madler,unfork_close,Return an error if the gzputs string length can't fit in an int.,"{""sha"": ""90287635ef9ae8e51e120483d1b48789239a0577"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T07:54:17Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+563,SubmitCommit,2017-02-19 07:07:01,madler,unfork_close,Add address checking in clang to -w option of configure.,"{""sha"": ""be5e3647c4aca626dcfa833ae2455b7af21b60b3"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-19T07:07:01Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-19T07:07:01Z""}}"
+563,SubmitCommit,2017-03-30 21:48:43,madler,unfork_close,Don't compute check value for raw inflate if asked to validate.,"{""sha"": ""89245c0a84eac0c5cfc6f0eb2fe72854f4b2c9e6"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-03-30T21:48:43Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-03-30T21:48:43Z""}}"
+563,SubmitCommit,2017-04-16 15:35:33,madler,unfork_close,"Handle case where inflateSync used when header never processed.
+
+If zlib and/or gzip header processing was requested, but a header
+was never provided and inflateSync was used successfully, then the
+inflate state would be inconsistent, trying to compute a check
+value but with no flags set. This commit sets the inflate mode to
+raw in this case, since there is no other assumption that can be
+made if a header was requested but never seen.","{""sha"": ""44e8ac810d7d50381429a15cdc6e48816beafd2b"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-04-16T15:35:33Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-04-16T15:35:33Z""}}"
+563,SubmitCommit,2017-06-03 16:53:33,madler,unfork_close,"Avoid the use of ptrdiff_t.
+
+This isn't the right type anyway to assure that it contains a
+pointer. That type would be intptr_t or uintptr_t. However the C99
+standard says that those types are optional, so their use would not
+be portable. This commit simply uses size_t or whatever configure
+decided to use for size_t. That would be the same length as
+ptrdiff_t, and so will work just as well. The code checks to see if
+the length of the type used is the same as the length of a void
+pointer, so there is already protection against the use of the
+wrong type. The use of size_t (or ptrdiff_t) will almost always
+work, as all modern architectures have an array size that is the
+same as the pointer size. Only old segmented architectures would
+have to fall back to the slower CRC-32 calculation, where the
+amount of memory that can be accessed is larger than the maximum
+array size.","{""sha"": ""3c46f5ddb5d4c6203805209076249dd80589682b"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-06-03T16:49:39Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-06-03T16:53:33Z""}}"
+563,SubmitCommit,2017-10-13 02:27:59,madler,unfork_close,Avoid an undefined behavior of memcpy() in gzappend().,"{""sha"": ""ae49d1472ec176ddc53a3a4905f91d46344386e6"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:27:59Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:27:59Z""}}"
+563,SubmitCommit,2017-10-13 02:35:59,madler,unfork_close,Avoid undefined behaviors of memcpy() in gz*printf().,"{""sha"": ""b25d5fcdcf4723ca3da8bc69ecc6c52010778f7c"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:34:51Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:35:59Z""}}"
+563,SubmitCommit,2017-10-13 02:44:01,madler,unfork_close,"Avoid an undefined behavior of memcpy() in _tr_stored_block().
+
+Allegedly the behavior of memcpy() is undefined if the source
+pointer is NULL, even if the number of bytes to copy is zero.","{""sha"": ""723e928b84b0adac84cc11ec5c075a45e1a79903"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:44:01Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:44:01Z""}}"
+563,SubmitCommit,2017-10-13 03:03:51,madler,unfork_close,Make the names in functions declarations identical to definitions.,"{""sha"": ""a5773513942b1c57d0eff51fcb2ebac72796ed95"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T03:03:51Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T03:03:51Z""}}"
+563,SubmitCommit,2017-10-13 03:27:14,madler,unfork_close,"Remove old assembler code in which bugs have manifested.
+
+In addition, there is not sufficient gain from the inflate
+assembler code to warrant its inclusion.","{""sha"": ""288f1080317b954b6bdca33708631c011549c008"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T03:08:53Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T03:27:14Z""}}"
+563,SubmitCommit,2017-10-13 04:07:22,madler,unfork_close,Fix deflateEnd() to not report an error at start of raw deflate.,"{""sha"": ""c376a417a724c21173f40765bd643388523b16f7"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T04:07:22Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T04:07:22Z""}}"
+563,SubmitCommit,2017-10-13 04:57:51,madler,unfork_close,Add legal disclaimer to README.,"{""sha"": ""ba9df2111e9c4a95bc48daf402a90873852b10af"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T04:57:51Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T04:57:51Z""}}"
+563,SubmitCommit,2018-01-09 02:16:05,madler,unfork_close,Emphasize the need to continue decompressing gzip members.,"{""sha"": ""bf88202e314898f74b42995a71bb67d1bcc51883"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-01-09T02:16:05Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-01-09T02:16:05Z""}}"
+563,SubmitCommit,2018-01-31 21:24:12,madler,unfork_close,Correct the initialization requirements for deflateInit2().,"{""sha"": ""e99813dbfe9a09e33d42e8da9e550a0c4b7ff734"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-01-31T21:24:12Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-01-31T21:24:12Z""}}"
+563,SubmitCommit,2018-04-20 02:47:11,madler,unfork_close,"Fix a bug that can crash deflate on some input when using Z_FIXED.
+
+This bug was reported by Danilo Ramos of Eideticom, Inc. It has
+lain in wait 13 years before being found! The bug was introduced
+in zlib 1.2.2.2, with the addition of the Z_FIXED option. That
+option forces the use of fixed Huffman codes. For rare inputs with
+a large number of distant matches, the pending buffer into which
+the compressed data is written can overwrite the distance symbol
+table which it overlays. That results in corrupted output due to
+invalid distances, and can result in out-of-bound accesses,
+crashing the application.
+
+The fix here combines the distance buffer and literal/length
+buffers into a single symbol buffer. Now three bytes of pending
+buffer space are opened up for each literal or length/distance
+pair consumed, instead of the previous two bytes. This assures
+that the pending buffer cannot overwrite the symbol table, since
+the maximum fixed code compressed length/distance is 31 bits, and
+since there are four bytes of pending space for every three bytes
+of symbol space.","{""sha"": ""5c44459c3b28a9bd3283aaceab7c615f8020c531"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-04-18T05:09:22Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-04-20T02:47:11Z""}}"
+563,SubmitCommit,2018-04-20 02:47:53,madler,unfork_close,Assure that the number of bits for deflatePrime() is valid.,"{""sha"": ""4346a16853e19b45787ce933666026903fb8f3f8"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-04-18T05:44:41Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-04-20T02:47:53Z""}}"
+563,SubmitCommit,2018-08-01 08:37:03,madler,unfork_close,Use a structure to make globals in enough.c evident.,"{""sha"": ""194e558efefe58866c88519708a7ff836b2c66be"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:37:03Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:37:03Z""}}"
+563,SubmitCommit,2018-08-01 08:39:47,madler,unfork_close,Use a macro for the printf format of big_t in enough.c.,"{""sha"": ""4c14b51587b3bf484f7ca26a92dcfc0f8559201b"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:39:47Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:39:47Z""}}"
+563,SubmitCommit,2018-08-02 02:51:56,madler,unfork_close,"Clean up code style in enough.c, update version.","{""sha"": ""8ba2cdb6bdbee95703e1c6632fd8519a5e4a206e"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:49:45Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-02T02:51:56Z""}}"
+563,SubmitCommit,2018-08-06 06:08:13,madler,unfork_close,Use inline function instead of macro for index in enough.c.,"{""sha"": ""5b1381006b715a93f226117f82b7b6dd81bfff5e"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-02T01:24:43Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-06T06:08:13Z""}}"
+563,SubmitCommit,2018-08-06 06:08:25,madler,unfork_close,"Clarify that prefix codes are counted in enough.c.
+
+There is no assurance that all prefix codes are reachable as
+optimal Huffman codes for the numbers of symbols encountered in
+a deflate block. This code considers all possible prefix codes,
+which might be a larger set than all possible Huffman codes,
+depending on the constraints.","{""sha"": ""d00c147f531e757bfbd5cfab58d941caa8333ba8"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-04T21:27:02Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-06T06:08:25Z""}}"
+563,SubmitCommit,2018-08-06 06:08:33,madler,unfork_close,Show all the codes for the maximum tables size in enough.c.,"{""sha"": ""cd16ff0b3a3665273e47141de8973bf1088cdf59"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-04T21:34:01Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-06T06:08:33Z""}}"
+563,SubmitCommit,2018-10-07 20:55:00,madler,unfork_close,"Add gznorm.c example, which normalizes gzip files.","{""sha"": ""354fa43d123b9759e4308c81e181caa1f97187ed"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-10-06T06:06:36Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-10-07T20:55:00Z""}}"
+563,SubmitCommit,2018-10-14 16:57:34,madler,unfork_close,Fix the zran.c example to work on a multiple-member gzip file.,"{""sha"": ""921d81b2a853233659d50b3c499a5c711a11e998"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-10-08T04:26:43Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-10-14T16:57:34Z""}}"
+563,SubmitCommit,2018-11-04 02:45:22,madler,unfork_close,"Add tables for crc32_combine(), to speed it up by a factor of 200.","{""sha"": ""47cb41295751ee1b1b7e0acbfb847ea24324d5aa"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-11-03T05:55:14Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-11-04T02:45:22Z""}}"
+563,SubmitCommit,2018-11-04 18:31:46,madler,unfork_close,"Add crc32_combine_gen() and crc32_combine_op() for fast combines.
+
+When the same len2 is used repeatedly, it is faster to use
+crc32_combine_gen() to generate an operator, that is then used to
+combine CRCs with crc32_combine_op().","{""sha"": ""41d86c73b21191a3fa9ea5f476fc9f1fc5e4f8b3"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-11-04T18:31:46Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-11-04T18:31:46Z""}}"
+563,SubmitCommit,2018-12-26 20:26:52,madler,unfork_close,"Speed up software CRC-32 computation by a factor of 1.5 to 3.
+
+Use the interleaved method of Kadatch and Jenkins in order to make
+use of pipelined instructions through multiple ALUs in a single
+core. This also speeds up and simplifies the combination of CRCs,
+and updates the functions to pre-calculate and use an operator for
+CRC combination.","{""sha"": ""f8719f5ae5acdc31d3794ddfea8ac963359de41e"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-12-11T09:11:38Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-12-26T20:26:52Z""}}"
+563,SubmitCommit,2018-12-26 21:50:27,madler,unfork_close,"Use atomic test and set, if available, for dynamic CRC tables.","{""sha"": ""7c0c75e990ca5395139c148f120042048b0ce091"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-12-26T21:50:27Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-12-26T21:50:27Z""}}"
+563,SubmitCommit,2019-01-03 04:40:40,madler,unfork_close,"Don't bother computing check value after successful inflateSync().
+
+inflateSync() is used to skip invalid deflate data, which means
+that the check value that was being computed is no longer useful.
+This commit turns off the check value computation, and furthermore
+allows a successful return if the compressed data terminated in a
+graceful manner. This commit also fixes a bug in the case that
+inflateSync() is used before a header is ever processed. In that
+case, there is no knowledge of a trailer, so the remainder is
+treated as raw.","{""sha"": ""0d36ec47f310478549c0864f215ab5c0114c49ba"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-01-03T02:10:40Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-01-03T04:40:40Z""}}"
+563,SubmitCommit,2019-02-04 03:54:46,madler,unfork_close,Correct comment in crc32.c.,"{""sha"": ""aec89faa2e366e5cff501310771afaf16289c6ad"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-04T03:54:46Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-04T03:54:46Z""}}"
+563,SubmitCommit,2019-02-18 03:48:57,madler,unfork_close,"Add use of the ARMv8 crc32 instructions when requested.
+
+Define the macro Z_ARM_CRC32 at compile time to use the ARMv8
+(aarch64) crc32x and crc32b instructions. This code does not check
+for the presence of the crc32 instructions. Those instructions are
+optional for ARMv8.0, though mandatory for ARMv8.1 and later. The
+use of the crc32 instructions is about ten times as fast as the
+software braided calculation of the CRC-32. This can noticeably
+speed up the decompression of gzip streams.","{""sha"": ""52fc78baf216dac4e76c5eb3bd940f68e87086da"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-18T03:48:57Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-18T03:48:57Z""}}"
+563,SubmitCommit,2019-02-18 04:49:29,madler,unfork_close,"Use ARM crc32 instructions if the ARM architecture has them.
+
+The ARM crc32 instructions will be used only if an architecture is
+explicitly specified at compile time that has those instructions.
+For example, -march=armv8.1-a or -march=armv8-a+crc, or if the
+machine being compiled on has the instructions, -march=native.","{""sha"": ""deb44b57429b05d4ad5b4f793c969e58a9328f06"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-18T04:45:53Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-18T04:49:29Z""}}"
+563,SubmitCommit,2019-04-05 22:27:47,madler,unfork_close,Explicitly note that the 32-bit check values are 32 bits.,"{""sha"": ""0e96d8e7c7079ab9f07cc7b57ae3ca9de8c80742"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-04-05T22:27:47Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-04-05T22:27:47Z""}}"
+563,SubmitCommit,2019-04-14 00:08:50,madler,unfork_close,Avoid adding empty gzip member after gzflush with Z_FINISH.,"{""sha"": ""79baebe50e4d6b73ae1f8b603f0ef41300110aa3"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-04-14T00:05:16Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-04-14T00:08:50Z""}}"
+563,SubmitCommit,2019-05-26 05:23:20,madler,unfork_close,"Fix memory leak on error in gzlog.c.
+
+Thank you Adam Richter.","{""sha"": ""02064366155215162223417b939deebfe563ded0"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-05-26T05:23:20Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-05-26T05:23:20Z""}}"
+563,SubmitCommit,2019-07-09 15:55:13,madler,unfork_close,Fix error in comment on the polynomial representation of a byte.,"{""sha"": ""d71dc66fa8a153fb6e7c626847095d9697a6cf42"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-07-09T15:55:13Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-07-09T15:55:13Z""}}"
+563,SubmitCommit,2020-08-31 19:53:58,madler,unfork_close,"Clarify gz* function interfaces, referring to parameter names.","{""sha"": ""e54494e6bc6dc661269201435f6961b44354fb40"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2020-08-31T19:53:58Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2020-08-31T19:53:58Z""}}"
+563,SubmitCommit,2020-09-17 18:09:46,madler,unfork_close,Change macro name in inflate.c to avoid collision in VxWorks.,"{""sha"": ""53ce2713117ef2a8ed682d77b944df991c499252"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2020-09-17T18:09:46Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2020-09-17T18:09:46Z""}}"
+563,OpenPR,2021-06-20 17:58:22,rafsanofficial,unfork_close,,
+563,ClosePR,2021-06-20 18:00:39,rafsanofficial,unfork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/4913644440"", ""commit_url"": null}"
+563,ReopenPR,2021-06-20 18:00:53,rafsanofficial,unfork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/4913644718"", ""commit_url"": null}"
+563,ClosePR,2021-06-20 18:01:05,rafsanofficial,unfork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/4913644915"", ""commit_url"": null}"
+563,ReopenPR,2021-06-20 18:04:07,rafsanofficial,unfork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/4913647973"", ""commit_url"": null}"
+563,ClosePR,2021-06-20 18:04:12,rafsanofficial,unfork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/4913648047"", ""commit_url"": null}"
+567,SubmitCommit,2021-07-22 16:30:35,FnControlOption,fork_close,"Fix potential overflow in zcalloc
+
+Before calling malloc(), use a cast to uInt so that the
+multiplication does not overflow.","{""sha"": ""b0666399d88cac91b17ce5f100d1d70706ca3cd3"", ""author"": {""name"": ""FnControlOption"", ""email"": ""70830482+FnControlOption@users.noreply.github.com"", ""date"": ""2021-07-22T16:30:35Z""}, ""committer"": {""name"": ""FnControlOption"", ""email"": ""70830482+FnControlOption@users.noreply.github.com"", ""date"": ""2021-07-22T16:30:35Z""}}"
+567,OpenPR,2021-07-22 16:35:18,FnControlOption,fork_close,,
+567,IssueCommentSupplement,2021-07-22 17:03:07,madler,fork_close,"This commit does nothing, in that `uInt` is the same as `unsigned`. and `items` is already `unsigned`.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/885070040"", ""author_association"": ""OWNER""}"
+567,ClosePR,2021-07-22 17:03:07,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/5056888954"", ""commit_url"": null}"
+567,IssueCommentSupplement,2021-07-22 17:09:44,FnControlOption,fork_close,"Ah. Right. For some reason I thought I was using `uLong`.
+
+Instead of `uInt`, it should be `size_t`. Should I open another PR?","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/885074554"", ""author_association"": ""NONE""}"
+567,IssueCommentSupplement,2021-07-22 17:55:47,madler,fork_close,"No, there's no point. There is no use of `zcalloc` that could overflow.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/885106763"", ""author_association"": ""OWNER""}"
+590,OpenPR,2021-12-29 23:50:05,gvollant,fork_close,,
+590,IssueComment,2022-01-01 01:26:27,madler,fork_close,I don't see a new commit here. Do you have a fix for the issue you describe?,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1003480917"", ""author_association"": ""OWNER""}"
+590,Revise,2022-01-01 13:51:24,gvollant,fork_close,"miniunzip fix from Daniël Hörchner :
+
+The issue is that unztell64() does not return the correct value if the position in the current file (in the ZIP archive) is beyond 4 GB.
+The cause is that unzReadCurrentFile() does not account for pfile_in_zip_read_info->stream.total_out at line 1854 of unzip.c wrapping around (it is a 32-bit variable). So, on line 1860 uTotalOutAfter can be *less* than uTotalOutBefore, propagating the wraparound to uOutThis, which in turn is added to pfile_in_zip_read_info->total_out_64. That has the effect of subtracting 4 GB.
+The issue can be reproduced with the following steps:
+- Zip a 5 GB file.
+- Read the file inside the ZIP archive beyond 4 GB, for example in increments of 32 kB.
+- Call unztell64() afterwards. For example, after having read the entire file.
+- You will see that unztell64() returns a value less than the actual number of decompressed bytes.","{""sha"": ""1f4495f2b8dedca39d8a013148ab4918175d8f14"", ""author"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2021-12-29T23:46:21Z""}, ""committer"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2022-01-01T13:51:24Z""}}"
+590,IssueComment,2022-01-01 13:53:13,gvollant,fork_close,"@madler The commit is
+https://github.com/gvollant/zlib/commit/1f4495f2b8dedca39d8a013148ab4918175d8f14","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1003562082"", ""author_association"": ""NONE""}"
+590,IssueCommentSupplement,2022-01-01 20:14:18,madler,fork_close,Patched.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1003611589"", ""author_association"": ""OWNER""}"
+590,ClosePR,2022-01-01 20:14:18,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/5831999355"", ""commit_url"": null}"
+590,CrossReferenced,2022-01-04 11:17:11,gvollant,fork_close,rename to something else than minizip,"{""reference"": {""url"": ""https://api.github.com/repos/zlib-ng/minizip-ng/issues/333"", ""is_pull_request"": false}}"
+591,SubmitCommit,2017-01-16 06:46:03,madler,fork_close,Change version number to 1.2.11.1.,"{""sha"": ""7d60b86782f96854974fdec6f17cb95cfaf020a6"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T06:46:03Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T06:46:03Z""}}"
+591,SubmitCommit,2017-01-16 17:38:36,madler,fork_close,"Cygwin does not have _wopen(), so do not create gzopen_w() there.","{""sha"": ""5ff989033e8b839b80ce716a1452acf7664e2ff4"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T17:38:36Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T17:38:36Z""}}"
+591,SubmitCommit,2017-02-16 06:38:55,madler,fork_close,"Permit a deflateParams() parameter change as soon as possible.
+
+This commit allows a parameter change even if the input data has
+not all been compressed and copied to the application output
+buffer, so long as all of the input data has been compressed to
+the internal pending output buffer. This also allows an immediate
+deflateParams change so long as there have been no deflate calls
+since initialization or reset.","{""sha"": ""f9694097dd69354b03cb8af959094c7f260db0a1"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-16T17:49:35Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:38:55Z""}}"
+591,SubmitCommit,2017-02-16 06:39:25,madler,fork_close,"Limit hash table inserts after switch from stored deflate.
+
+This limits hash table inserts to the available data in the window
+and to the sliding window size in deflate_stored(). The hash table
+inserts are deferred until deflateParams() switches to a non-zero
+compression level.","{""sha"": ""2d80d3f6b52f9fa454c26c89d2d6a1790e1cecb0"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-21T09:50:26Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:25Z""}}"
+591,SubmitCommit,2017-02-16 06:39:25,madler,fork_close,Fix bug when window full in deflate_stored().,"{""sha"": ""8ba393e70d984d902b15b9e6876f4d0d38ae4be8"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-21T20:13:25Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:25Z""}}"
+591,SubmitCommit,2017-02-16 06:39:26,madler,fork_close,"Fix CLEAR_HASH macro to be usable as a single statement.
+
+As it is used in deflateParams().","{""sha"": ""38e8ce32afbaa82f67d992b9f3056f281fe69259"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-01-23T07:38:52Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+591,SubmitCommit,2017-02-16 06:39:26,madler,fork_close,"Avoid a conversion error in gzseek when off_t type too small.
+
+This is a problem in the odd case that the second argument of
+LSEEK is a larger type than off_t. Apparently MinGW defines off_t
+to be 32 bits, but _lseeki64 has a 64-bit second argument.
+
+Also undo a previous commit to permit MinGW to use _lseeki64.","{""sha"": ""a3622937453f517285f851817a7505f54f4f19aa"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-05T07:58:37Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+591,SubmitCommit,2017-02-16 06:39:26,madler,fork_close,Have Makefile return non-zero error code on test failure.,"{""sha"": ""e00a2bd392ca51351ecee55dbeee803f6ebda2f5"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T06:38:09Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+591,SubmitCommit,2017-02-16 06:39:26,madler,fork_close,Avoid some conversion warnings in gzread.c and gzwrite.c.,"{""sha"": ""793ad7f559555757e6443ea591ce70de5505fc69"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T06:45:27Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+591,SubmitCommit,2017-02-16 06:39:26,madler,fork_close,Update use of errno for newer Windows CE versions.,"{""sha"": ""e1f1a3a1469c91b15ea1d31f1c2b92bdc27879fa"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T06:48:31Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+591,SubmitCommit,2017-02-16 06:39:26,madler,fork_close,"Small speedup to inflate [psumbera].
+
+Seeing a few percent speedup by using a pointer instead of an
+assigned structure. This seems to help the compiler to optimize
+better.","{""sha"": ""60a5ecc62b18d1e2391993b1fcfc10e100720642"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T07:21:41Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+591,SubmitCommit,2017-02-16 06:39:26,madler,fork_close,Return an error if the gzputs string length can't fit in an int.,"{""sha"": ""90287635ef9ae8e51e120483d1b48789239a0577"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-12T07:54:17Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-16T06:39:26Z""}}"
+591,SubmitCommit,2017-02-19 07:07:01,madler,fork_close,Add address checking in clang to -w option of configure.,"{""sha"": ""be5e3647c4aca626dcfa833ae2455b7af21b60b3"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-19T07:07:01Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-02-19T07:07:01Z""}}"
+591,SubmitCommit,2017-03-30 21:48:43,madler,fork_close,Don't compute check value for raw inflate if asked to validate.,"{""sha"": ""89245c0a84eac0c5cfc6f0eb2fe72854f4b2c9e6"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-03-30T21:48:43Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-03-30T21:48:43Z""}}"
+591,SubmitCommit,2017-04-16 15:35:33,madler,fork_close,"Handle case where inflateSync used when header never processed.
+
+If zlib and/or gzip header processing was requested, but a header
+was never provided and inflateSync was used successfully, then the
+inflate state would be inconsistent, trying to compute a check
+value but with no flags set. This commit sets the inflate mode to
+raw in this case, since there is no other assumption that can be
+made if a header was requested but never seen.","{""sha"": ""44e8ac810d7d50381429a15cdc6e48816beafd2b"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-04-16T15:35:33Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-04-16T15:35:33Z""}}"
+591,SubmitCommit,2017-06-03 16:53:33,madler,fork_close,"Avoid the use of ptrdiff_t.
+
+This isn't the right type anyway to assure that it contains a
+pointer. That type would be intptr_t or uintptr_t. However the C99
+standard says that those types are optional, so their use would not
+be portable. This commit simply uses size_t or whatever configure
+decided to use for size_t. That would be the same length as
+ptrdiff_t, and so will work just as well. The code checks to see if
+the length of the type used is the same as the length of a void
+pointer, so there is already protection against the use of the
+wrong type. The use of size_t (or ptrdiff_t) will almost always
+work, as all modern architectures have an array size that is the
+same as the pointer size. Only old segmented architectures would
+have to fall back to the slower CRC-32 calculation, where the
+amount of memory that can be accessed is larger than the maximum
+array size.","{""sha"": ""3c46f5ddb5d4c6203805209076249dd80589682b"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-06-03T16:49:39Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2017-06-03T16:53:33Z""}}"
+591,SubmitCommit,2017-10-13 02:27:59,madler,fork_close,Avoid an undefined behavior of memcpy() in gzappend().,"{""sha"": ""ae49d1472ec176ddc53a3a4905f91d46344386e6"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:27:59Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:27:59Z""}}"
+591,SubmitCommit,2017-10-13 02:35:59,madler,fork_close,Avoid undefined behaviors of memcpy() in gz*printf().,"{""sha"": ""b25d5fcdcf4723ca3da8bc69ecc6c52010778f7c"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:34:51Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:35:59Z""}}"
+591,SubmitCommit,2017-10-13 02:44:01,madler,fork_close,"Avoid an undefined behavior of memcpy() in _tr_stored_block().
+
+Allegedly the behavior of memcpy() is undefined if the source
+pointer is NULL, even if the number of bytes to copy is zero.","{""sha"": ""723e928b84b0adac84cc11ec5c075a45e1a79903"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:44:01Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T02:44:01Z""}}"
+591,SubmitCommit,2017-10-13 03:03:51,madler,fork_close,Make the names in functions declarations identical to definitions.,"{""sha"": ""a5773513942b1c57d0eff51fcb2ebac72796ed95"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T03:03:51Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T03:03:51Z""}}"
+591,SubmitCommit,2017-10-13 03:27:14,madler,fork_close,"Remove old assembler code in which bugs have manifested.
+
+In addition, there is not sufficient gain from the inflate
+assembler code to warrant its inclusion.","{""sha"": ""288f1080317b954b6bdca33708631c011549c008"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T03:08:53Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T03:27:14Z""}}"
+591,SubmitCommit,2017-10-13 04:07:22,madler,fork_close,Fix deflateEnd() to not report an error at start of raw deflate.,"{""sha"": ""c376a417a724c21173f40765bd643388523b16f7"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T04:07:22Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T04:07:22Z""}}"
+591,SubmitCommit,2017-10-13 04:57:51,madler,fork_close,Add legal disclaimer to README.,"{""sha"": ""ba9df2111e9c4a95bc48daf402a90873852b10af"", ""author"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T04:57:51Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""zlib@madler.net"", ""date"": ""2017-10-13T04:57:51Z""}}"
+591,SubmitCommit,2018-01-09 02:16:05,madler,fork_close,Emphasize the need to continue decompressing gzip members.,"{""sha"": ""bf88202e314898f74b42995a71bb67d1bcc51883"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-01-09T02:16:05Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-01-09T02:16:05Z""}}"
+591,SubmitCommit,2018-01-31 21:24:12,madler,fork_close,Correct the initialization requirements for deflateInit2().,"{""sha"": ""e99813dbfe9a09e33d42e8da9e550a0c4b7ff734"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-01-31T21:24:12Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-01-31T21:24:12Z""}}"
+591,SubmitCommit,2018-04-20 02:47:11,madler,fork_close,"Fix a bug that can crash deflate on some input when using Z_FIXED.
+
+This bug was reported by Danilo Ramos of Eideticom, Inc. It has
+lain in wait 13 years before being found! The bug was introduced
+in zlib 1.2.2.2, with the addition of the Z_FIXED option. That
+option forces the use of fixed Huffman codes. For rare inputs with
+a large number of distant matches, the pending buffer into which
+the compressed data is written can overwrite the distance symbol
+table which it overlays. That results in corrupted output due to
+invalid distances, and can result in out-of-bound accesses,
+crashing the application.
+
+The fix here combines the distance buffer and literal/length
+buffers into a single symbol buffer. Now three bytes of pending
+buffer space are opened up for each literal or length/distance
+pair consumed, instead of the previous two bytes. This assures
+that the pending buffer cannot overwrite the symbol table, since
+the maximum fixed code compressed length/distance is 31 bits, and
+since there are four bytes of pending space for every three bytes
+of symbol space.","{""sha"": ""5c44459c3b28a9bd3283aaceab7c615f8020c531"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-04-18T05:09:22Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-04-20T02:47:11Z""}}"
+591,SubmitCommit,2018-04-20 02:47:53,madler,fork_close,Assure that the number of bits for deflatePrime() is valid.,"{""sha"": ""4346a16853e19b45787ce933666026903fb8f3f8"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-04-18T05:44:41Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-04-20T02:47:53Z""}}"
+591,SubmitCommit,2018-08-01 08:37:03,madler,fork_close,Use a structure to make globals in enough.c evident.,"{""sha"": ""194e558efefe58866c88519708a7ff836b2c66be"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:37:03Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:37:03Z""}}"
+591,SubmitCommit,2018-08-01 08:39:47,madler,fork_close,Use a macro for the printf format of big_t in enough.c.,"{""sha"": ""4c14b51587b3bf484f7ca26a92dcfc0f8559201b"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:39:47Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:39:47Z""}}"
+591,SubmitCommit,2018-08-02 02:51:56,madler,fork_close,"Clean up code style in enough.c, update version.","{""sha"": ""8ba2cdb6bdbee95703e1c6632fd8519a5e4a206e"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-01T08:49:45Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-02T02:51:56Z""}}"
+591,SubmitCommit,2018-08-06 06:08:13,madler,fork_close,Use inline function instead of macro for index in enough.c.,"{""sha"": ""5b1381006b715a93f226117f82b7b6dd81bfff5e"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-02T01:24:43Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-06T06:08:13Z""}}"
+591,SubmitCommit,2018-08-06 06:08:25,madler,fork_close,"Clarify that prefix codes are counted in enough.c.
+
+There is no assurance that all prefix codes are reachable as
+optimal Huffman codes for the numbers of symbols encountered in
+a deflate block. This code considers all possible prefix codes,
+which might be a larger set than all possible Huffman codes,
+depending on the constraints.","{""sha"": ""d00c147f531e757bfbd5cfab58d941caa8333ba8"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-04T21:27:02Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-06T06:08:25Z""}}"
+591,SubmitCommit,2018-08-06 06:08:33,madler,fork_close,Show all the codes for the maximum tables size in enough.c.,"{""sha"": ""cd16ff0b3a3665273e47141de8973bf1088cdf59"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-04T21:34:01Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-08-06T06:08:33Z""}}"
+591,SubmitCommit,2018-10-07 20:55:00,madler,fork_close,"Add gznorm.c example, which normalizes gzip files.","{""sha"": ""354fa43d123b9759e4308c81e181caa1f97187ed"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-10-06T06:06:36Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-10-07T20:55:00Z""}}"
+591,SubmitCommit,2018-10-14 16:57:34,madler,fork_close,Fix the zran.c example to work on a multiple-member gzip file.,"{""sha"": ""921d81b2a853233659d50b3c499a5c711a11e998"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-10-08T04:26:43Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-10-14T16:57:34Z""}}"
+591,SubmitCommit,2018-11-04 02:45:22,madler,fork_close,"Add tables for crc32_combine(), to speed it up by a factor of 200.","{""sha"": ""47cb41295751ee1b1b7e0acbfb847ea24324d5aa"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-11-03T05:55:14Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-11-04T02:45:22Z""}}"
+591,SubmitCommit,2018-11-04 18:31:46,madler,fork_close,"Add crc32_combine_gen() and crc32_combine_op() for fast combines.
+
+When the same len2 is used repeatedly, it is faster to use
+crc32_combine_gen() to generate an operator, that is then used to
+combine CRCs with crc32_combine_op().","{""sha"": ""41d86c73b21191a3fa9ea5f476fc9f1fc5e4f8b3"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-11-04T18:31:46Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-11-04T18:31:46Z""}}"
+591,SubmitCommit,2018-12-26 20:26:52,madler,fork_close,"Speed up software CRC-32 computation by a factor of 1.5 to 3.
+
+Use the interleaved method of Kadatch and Jenkins in order to make
+use of pipelined instructions through multiple ALUs in a single
+core. This also speeds up and simplifies the combination of CRCs,
+and updates the functions to pre-calculate and use an operator for
+CRC combination.","{""sha"": ""f8719f5ae5acdc31d3794ddfea8ac963359de41e"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-12-11T09:11:38Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-12-26T20:26:52Z""}}"
+591,SubmitCommit,2018-12-26 21:50:27,madler,fork_close,"Use atomic test and set, if available, for dynamic CRC tables.","{""sha"": ""7c0c75e990ca5395139c148f120042048b0ce091"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-12-26T21:50:27Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-12-26T21:50:27Z""}}"
+591,SubmitCommit,2019-01-03 04:40:40,madler,fork_close,"Don't bother computing check value after successful inflateSync().
+
+inflateSync() is used to skip invalid deflate data, which means
+that the check value that was being computed is no longer useful.
+This commit turns off the check value computation, and furthermore
+allows a successful return if the compressed data terminated in a
+graceful manner. This commit also fixes a bug in the case that
+inflateSync() is used before a header is ever processed. In that
+case, there is no knowledge of a trailer, so the remainder is
+treated as raw.","{""sha"": ""0d36ec47f310478549c0864f215ab5c0114c49ba"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-01-03T02:10:40Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-01-03T04:40:40Z""}}"
+591,SubmitCommit,2019-02-04 03:54:46,madler,fork_close,Correct comment in crc32.c.,"{""sha"": ""aec89faa2e366e5cff501310771afaf16289c6ad"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-04T03:54:46Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-04T03:54:46Z""}}"
+591,SubmitCommit,2019-02-18 03:48:57,madler,fork_close,"Add use of the ARMv8 crc32 instructions when requested.
+
+Define the macro Z_ARM_CRC32 at compile time to use the ARMv8
+(aarch64) crc32x and crc32b instructions. This code does not check
+for the presence of the crc32 instructions. Those instructions are
+optional for ARMv8.0, though mandatory for ARMv8.1 and later. The
+use of the crc32 instructions is about ten times as fast as the
+software braided calculation of the CRC-32. This can noticeably
+speed up the decompression of gzip streams.","{""sha"": ""52fc78baf216dac4e76c5eb3bd940f68e87086da"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-18T03:48:57Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-18T03:48:57Z""}}"
+591,SubmitCommit,2019-02-18 04:49:29,madler,fork_close,"Use ARM crc32 instructions if the ARM architecture has them.
+
+The ARM crc32 instructions will be used only if an architecture is
+explicitly specified at compile time that has those instructions.
+For example, -march=armv8.1-a or -march=armv8-a+crc, or if the
+machine being compiled on has the instructions, -march=native.","{""sha"": ""deb44b57429b05d4ad5b4f793c969e58a9328f06"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-18T04:45:53Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-02-18T04:49:29Z""}}"
+591,SubmitCommit,2019-04-05 22:27:47,madler,fork_close,Explicitly note that the 32-bit check values are 32 bits.,"{""sha"": ""0e96d8e7c7079ab9f07cc7b57ae3ca9de8c80742"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-04-05T22:27:47Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-04-05T22:27:47Z""}}"
+591,SubmitCommit,2019-04-14 00:08:50,madler,fork_close,Avoid adding empty gzip member after gzflush with Z_FINISH.,"{""sha"": ""79baebe50e4d6b73ae1f8b603f0ef41300110aa3"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-04-14T00:05:16Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-04-14T00:08:50Z""}}"
+591,SubmitCommit,2019-05-26 05:23:20,madler,fork_close,"Fix memory leak on error in gzlog.c.
+
+Thank you Adam Richter.","{""sha"": ""02064366155215162223417b939deebfe563ded0"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-05-26T05:23:20Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-05-26T05:23:20Z""}}"
+591,SubmitCommit,2019-07-09 15:55:13,madler,fork_close,Fix error in comment on the polynomial representation of a byte.,"{""sha"": ""d71dc66fa8a153fb6e7c626847095d9697a6cf42"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-07-09T15:55:13Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2019-07-09T15:55:13Z""}}"
+591,SubmitCommit,2020-08-31 19:53:58,madler,fork_close,"Clarify gz* function interfaces, referring to parameter names.","{""sha"": ""e54494e6bc6dc661269201435f6961b44354fb40"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2020-08-31T19:53:58Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2020-08-31T19:53:58Z""}}"
+591,SubmitCommit,2020-09-17 18:09:46,madler,fork_close,Change macro name in inflate.c to avoid collision in VxWorks.,"{""sha"": ""53ce2713117ef2a8ed682d77b944df991c499252"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2020-09-17T18:09:46Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2020-09-17T18:09:46Z""}}"
+591,SubmitCommit,2021-01-18 05:50:08,madler,fork_close,Correct typo in blast.c.,"{""sha"": ""506424c6405d0cf7ea7b9c3316516676f259c665"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2021-01-18T05:50:08Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2021-01-18T05:50:08Z""}}"
+591,SubmitCommit,2021-02-10 23:03:22,madler,fork_close,Improve portability of contrib/minizip.,"{""sha"": ""0530dbcef992b56b88a6bfd0fd2efa868669d04e"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2021-02-10T23:03:22Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2021-02-10T23:03:22Z""}}"
+591,SubmitCommit,2021-07-08 16:32:18,madler,fork_close,Fix indentation in minizip's zip.c.,"{""sha"": ""c3f3043f7aa80750245f8166a338c4877020b589"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2021-07-08T16:31:52Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2021-07-08T16:32:18Z""}}"
+591,SubmitCommit,2021-12-29 23:47:28,gvollant,fork_close,minizip warning fix if MAXU32 already defined,"{""sha"": ""7ea3b9cec21665be54bc32db6e178b588ecbf0c6"", ""author"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2021-12-29T23:47:28Z""}, ""committer"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2021-12-29T23:47:28Z""}}"
+591,OpenPR,2021-12-29 23:50:58,gvollant,fork_close,,
+591,IssueCommentSupplement,2022-01-01 01:25:22,madler,fork_close,Patched -- thanks Gilles!,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1003480788"", ""author_association"": ""OWNER""}"
+591,ClosePR,2022-01-01 01:25:22,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/5831213452"", ""commit_url"": null}"
+598,SubmitCommit,2022-03-06 07:22:59,ken-matsui,fork_close,"Fix code scanning alert - Multiplication result converted to larger type
+
+Tracking issue for: https://github.com/poacpm/poac/security/code-scanning/1","{""sha"": ""f06d2161e3d329c7ca2aaba72b923e46113d3052"", ""author"": {""name"": ""Ken Matsui"", ""email"": ""26405363+ken-matsui@users.noreply.github.com"", ""date"": ""2022-03-06T07:22:59Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-03-06T07:22:59Z""}}"
+598,OpenPR,2022-03-06 07:23:52,ken-matsui,fork_close,,
+598,IssueComment,2022-03-28 23:50:59,Neustradamus,fork_close,@ken-matsui: Your link is dead.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1081260370"", ""author_association"": ""NONE""}"
+598,IssueComment,2022-03-29 00:51:49,ken-matsui,fork_close,Hey @Neustradamus - thanks for your heads up. I've extracted the link contents into the first comment rather than the link that only I can see.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1081290274"", ""author_association"": ""NONE""}"
+598,IssueComment,2022-03-29 02:50:03,madler,fork_close,"Not a problem. Per the code, the multiplication is done only if `sizeof(uInt) > 2`. So it must be at least three. (Three? Wait, what the heck architecture would have three-byte integers? Doesn't matter. We'll go with three.) All of the calls in zlib of `zcalloc()` have multiplications that result in, at most 131,072, which easily fits in 24 bits.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1081344652"", ""author_association"": ""OWNER""}"
+598,IssueCommentSupplement,2022-05-04 23:54:24,ken-matsui,fork_close,"Ahhh, I totally missed the condition. Thoroughly agreed. Thank you!","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1118034137"", ""author_association"": ""NONE""}"
+598,ClosePR,2022-05-04 23:54:24,ken-matsui,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6553053755"", ""commit_url"": null}"
+598,DeleteBranch,2022-05-04 23:54:28,ken-matsui,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6553053912"", ""commit_url"": null}"
+603,OpenPR,2022-03-24 07:04:59,ynezz,fork_close,,
+603,RenameTitle,2022-03-24 07:05:29,ynezz,fork_close,,"{""rename"": {""from"": ""Fix a bug that can crash deflate on some input when using Z_FIXED."", ""to"": ""security: backport fix for a bug that can crash deflate on some input when using Z_FIXED.""}, ""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6296953083""}"
+603,Revise,2022-03-26 10:31:40,madler,fork_close,"Fix CVE-2018-25032: bug that can crash deflate on some input when using Z_FIXED
+
+This bug was reported by Danilo Ramos of Eideticom, Inc. It has
+lain in wait 13 years before being found! The bug was introduced
+in zlib 1.2.2.2, with the addition of the Z_FIXED option. That
+option forces the use of fixed Huffman codes. For rare inputs with
+a large number of distant matches, the pending buffer into which
+the compressed data is written can overwrite the distance symbol
+table which it overlays. That results in corrupted output due to
+invalid distances, and can result in out-of-bound accesses,
+crashing the application.
+
+The fix here combines the distance buffer and literal/length
+buffers into a single symbol buffer. Now three bytes of pending
+buffer space are opened up for each literal or length/distance
+pair consumed, instead of the previous two bytes. This assures
+that the pending buffer cannot overwrite the symbol table, since
+the maximum fixed code compressed length/distance is 31 bits, and
+since there are four bytes of pending space for every three bytes
+of symbol space.
+
+References: https://www.openwall.com/lists/oss-security/2022/03/24/1
+Suggested-by: Tavis Ormandy <taviso@gmail.com>
+Signed-off-by: Mark Adler <madler@alumni.caltech.edu>
+Signed-off-by: Petr Štetiar <ynezz@true.cz> [cherry-pick]
+(cherry picked from commit 5c44459c3b28a9bd3283aaceab7c615f8020c531)","{""sha"": ""39ee12a76e83f2e5e8856210b6667afc3e0828ff"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2018-04-18T05:09:22Z""}, ""committer"": {""name"": ""Petr \u0160tetiar"", ""email"": ""ynezz@true.cz"", ""date"": ""2022-03-26T10:31:40Z""}}"
+603,HeadRefForcePushed,2022-03-26 10:34:36,ynezz,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6311497493"", ""commit_url"": null}"
+603,RenameTitle,2022-03-26 10:35:17,ynezz,fork_close,,"{""rename"": {""from"": ""security: backport fix for a bug that can crash deflate on some input when using Z_FIXED."", ""to"": ""security: Fix CVE-2018-25032: bug that can crash deflate on some input when using Z_FIXED.""}, ""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6311498356""}"
+603,IssueComment,2022-03-26 10:35:49,ynezz,fork_close,@madler seems to be ready.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1079658724"", ""author_association"": ""NONE""}"
+603,IssueComment,2022-03-26 15:09:19,nmoinvaz,fork_close,This has been already fixed in the `develop` branch. zlib just needs a new release. #422,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1079712609"", ""author_association"": ""CONTRIBUTOR""}"
+603,IssueComment,2022-03-26 18:12:12,ynezz,fork_close,"> This has been already fixed in the develop branch
+
+FYI that's what that (cherry picked from commit https://github.com/madler/zlib/commit/5c44459c3b28a9bd3283aaceab7c615f8020c531) is saying, it's backported from that `develop` branch","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1079746713"", ""author_association"": ""NONE""}"
+603,CrossReferenced,2022-03-26 19:39:33,vielmetti,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/422"", ""is_pull_request"": false}}"
+603,IssueComment,2022-03-26 21:49:54,vielmetti,fork_close,Several of the distros that patched CVE-2018-25032 also picked up 4346a16 along the way.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1079781125"", ""author_association"": ""NONE""}"
+603,IssueComment,2022-03-26 22:10:18,ynezz,fork_close,"> Several of the distros that patched [CVE-2018-25032](https://github.com/advisories/GHSA-jc36-42cf-vqwj) also picked up [4346a16](https://github.com/madler/zlib/commit/4346a16853e19b45787ce933666026903fb8f3f8) along the way.
+
+@taviso any idea?","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1079784325"", ""author_association"": ""NONE""}"
+603,CrossReferenced,2022-03-27 14:14:17,Neustradamus,fork_close,use zib-ng instead of zib?,"{""reference"": {""url"": ""https://api.github.com/repos/shinchiro/mpv-winbuild-cmake/issues/179"", ""is_pull_request"": false}}"
+603,IssueCommentSupplement,2022-03-28 06:14:11,ynezz,fork_close,@madler Thank you for [1.2.12](https://github.com/madler/zlib/commit/21767c654d31d2dccdde4330529775c6c5fd5389),"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1080241934"", ""author_association"": ""NONE""}"
+603,ClosePR,2022-03-28 06:14:11,ynezz,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6315580646"", ""commit_url"": null}"
+610,SubmitCommit,2022-03-28 13:14:14,gvollant,fork_close,Fix compile with Windows 10 SDK,"{""sha"": ""e275c2662cf7b878547dbb3ad230230a9616d1df"", ""author"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2022-03-28T13:14:14Z""}, ""committer"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2022-03-28T13:14:14Z""}}"
+610,OpenPR,2022-03-28 13:19:40,gvollant,fork_close,,
+610,CrossReferenced,2022-03-29 00:16:57,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/422"", ""is_pull_request"": false}}"
+610,IssueCommentSupplement,2022-03-29 02:01:44,madler,fork_close,Thanks Gilles! https://github.com/madler/zlib/commit/ce12773790517034317274f5c65ba70cfeea29f7,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1081321268"", ""author_association"": ""OWNER""}"
+610,ClosePR,2022-03-29 02:01:44,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6322833047"", ""commit_url"": null}"
+610,CrossReferenced,2022-03-29 09:04:25,gvollant,fork_close,minizip's iowin32 does not properly detect Windows Store / UWP,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/480"", ""is_pull_request"": false}}"
+610,DeleteBranch,2022-08-19 20:31:28,gvollant,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7224892538"", ""commit_url"": null}"
+611,SubmitCommit,2022-03-28 13:21:16,gvollant,fork_close,"fix warning
+warning C4244: '=': conversion from 'ush' to 'uchf',
+with Visual Studio 2022","{""sha"": ""0277b683c4240f35586f417ff19d84508abec471"", ""author"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2022-03-28T13:21:16Z""}, ""committer"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2022-03-28T13:21:16Z""}}"
+611,OpenPR,2022-03-28 13:21:46,gvollant,fork_close,,
+611,IssueCommentSupplement,2022-03-28 18:29:32,gvollant,fork_close,duplicate of #606,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1080998280"", ""author_association"": ""NONE""}"
+611,ClosePR,2022-03-28 18:29:32,gvollant,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6320798056"", ""commit_url"": null}"
+611,DeleteBranch,2022-08-19 20:30:45,gvollant,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7224889646"", ""commit_url"": null}"
+614,SubmitCommit,2022-03-29 18:08:09,Adenilson,fork_close,"[cmake][build] Remove ASM configure options
+
+With the release of 1.2.12, all the legacy ASM code was
+removed from the 'contrib' folder.
+
+This patch will update the CMake buildsystem to reflect that
+and fix the report on issue #609.","{""sha"": ""247194606779b5ca9c9b3e62d883049ea38f09eb"", ""author"": {""name"": ""Adenilson Cavalcanti"", ""email"": ""cavalcantii@gmail.com"", ""date"": ""2022-03-29T18:08:09Z""}, ""committer"": {""name"": ""Adenilson Cavalcanti"", ""email"": ""cavalcantii@gmail.com"", ""date"": ""2022-03-29T18:08:09Z""}}"
+614,OpenPR,2022-03-29 18:13:28,Adenilson,fork_close,,
+614,IssueComment,2022-04-06 19:36:20,Adenilson,fork_close,@madler anything you like to see changed on this to allow it to be merged?,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1090687407"", ""author_association"": ""NONE""}"
+614,CrossReferenced,2022-07-31 18:30:20,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/686"", ""is_pull_request"": false}}"
+614,IssueCommentSupplement,2022-10-12 01:35:59,madler,fork_close,See https://github.com/madler/zlib/commit/d0704a820186481da35d08f4b655881e1d32089f,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1275472045"", ""author_association"": ""OWNER""}"
+614,ClosePR,2022-10-12 01:35:59,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7567456215"", ""commit_url"": null}"
+619,SubmitCommit,2022-03-30 21:24:05,toxieainc,fork_close,remove useless check (always true),"{""sha"": ""53633ad73d43aeef49026d1dbd37a94ffa6f0a8d"", ""author"": {""name"": ""toxie"", ""email"": ""toxieainc@users.noreply.github.com"", ""date"": ""2022-03-30T21:24:05Z""}, ""committer"": {""name"": ""toxie"", ""email"": ""toxieainc@users.noreply.github.com"", ""date"": ""2022-03-30T21:24:05Z""}}"
+619,SubmitCommit,2022-03-30 21:51:42,toxieainc,fork_close,remove outdated asm references,"{""sha"": ""1b8721f0badaf6a6c2f2ee74fdfcf9cf5d6494f3"", ""author"": {""name"": ""toxie"", ""email"": ""toxieainc@users.noreply.github.com"", ""date"": ""2022-03-30T21:51:42Z""}, ""committer"": {""name"": ""toxie"", ""email"": ""toxieainc@users.noreply.github.com"", ""date"": ""2022-03-30T21:51:42Z""}}"
+619,OpenPR,2022-03-30 21:53:10,toxieainc,fork_close,,
+619,ReviewComment,2022-03-31 08:07:22,rhuijben,fork_close,,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/madler/zlib/pull/619#pullrequestreview-927165351""}"
+619,CrossReferenced,2022-04-05 11:31:54,SivaShankar1925,fork_close,Build failed with cr32 errors in Windows zlibvc 1.2.12 - Win32/x86,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/629"", ""is_pull_request"": false}}"
+619,BaseRefChanged,2022-10-06 19:46:53,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7538192703"", ""commit_url"": null}"
+619,IssueCommentSupplement,2022-10-06 19:54:54,madler,fork_close,Incorporated. Thanks.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270606711"", ""author_association"": ""OWNER""}"
+619,ClosePR,2022-10-06 19:54:54,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7538243459"", ""commit_url"": null}"
+624,SubmitCommit,2022-04-02 13:02:51,tbeu,fork_close,Keep compatibility with older compilers (addresses 2014a993addbc8f1b9785d97f55fd189792c2f78),"{""sha"": ""2a2f35ee013d001e802993189f880b3d79e408af"", ""author"": {""name"": ""tbeu"", ""email"": ""tc@tbeu.de"", ""date"": ""2022-04-02T12:58:22Z""}, ""committer"": {""name"": ""tbeu"", ""email"": ""tc@tbeu.de"", ""date"": ""2022-04-02T13:02:51Z""}}"
+624,OpenPR,2022-04-02 13:03:08,tbeu,fork_close,,
+624,RenameTitle,2022-04-02 13:04:33,tbeu,fork_close,,"{""rename"": {""from"": ""Keep compatibility with older compilers"", ""to"": ""Keep compatibility with older compilers (broken by v1.2.12)""}, ""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6356915628""}"
+624,CrossReferenced,2022-04-09 20:10:03,tbeu,fork_close,Please fix 1.2.12 compile,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/631"", ""is_pull_request"": false}}"
+624,CrossReferenced,2022-04-10 10:56:14,tbeu,fork_close,[minizip] Keep compatibility with older compilers,"{""reference"": {""url"": ""https://api.github.com/repos/conan-io/conan-center-index/issues/10213"", ""is_pull_request"": true}}"
+624,IssueComment,2022-07-31 16:26:32,Neustradamus,fork_close,@madler: Have you seen this @tbeu PR?,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1200456611"", ""author_association"": ""NONE""}"
+624,CrossReferenced,2022-08-18 22:04:51,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/686"", ""is_pull_request"": false}}"
+624,CrossReferenced,2022-09-05 19:20:35,tbeu,fork_close,The ioapi.c file in minizip is incompatible with the C89 standard.,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/668"", ""is_pull_request"": false}}"
+624,CrossReferenced,2022-09-05 19:23:18,tbeu,fork_close,Old c89 compatibility fix for minizip,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/695"", ""is_pull_request"": true}}"
+624,IssueCommentSupplement,2022-10-07 18:20:00,tbeu,fork_close,Resolved by 2d283adfee7b944860ebf38f307a18ff6265b086.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1271914589"", ""author_association"": ""NONE""}"
+624,ClosePR,2022-10-07 18:20:00,tbeu,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7545629488"", ""commit_url"": null}"
+624,DeleteBranch,2022-10-07 18:20:04,tbeu,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7545629788"", ""commit_url"": null}"
+630,SubmitCommit,2022-04-06 13:46:09,mathstuf,fork_close,zconf: add missing `crc32_combine_*` to mangling mechanisms,"{""sha"": ""362515c0ea5d6b66ec8577348897568dbb221800"", ""author"": {""name"": ""Ben Boeckel"", ""email"": ""ben.boeckel@kitware.com"", ""date"": ""2022-04-06T13:46:09Z""}, ""committer"": {""name"": ""Ben Boeckel"", ""email"": ""ben.boeckel@kitware.com"", ""date"": ""2022-04-06T13:46:09Z""}}"
+630,OpenPR,2022-04-06 13:47:14,mathstuf,fork_close,,
+630,IssueCommentSupplement,2022-10-03 15:54:44,madler,fork_close,Thanks! Applied.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1265675570"", ""author_association"": ""OWNER""}"
+630,ClosePR,2022-10-03 15:54:45,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7508689425"", ""commit_url"": null}"
+630,DeleteBranch,2022-10-03 20:47:01,mathstuf,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7510789265"", ""commit_url"": null}"
+632,SubmitCommit,2022-04-09 15:22:51,0ric1,fork_close,Corrected date from 2017 to 2022,"{""sha"": ""dad727f1de4d204245fa2437212cc3fb4e1d4cc5"", ""author"": {""name"": ""snowflake"", ""email"": ""309430+0ric1@users.noreply.github.com"", ""date"": ""2022-04-09T15:22:51Z""}, ""committer"": {""name"": ""snowflake"", ""email"": ""309430+0ric1@users.noreply.github.com"", ""date"": ""2022-04-09T15:22:51Z""}}"
+632,OpenPR,2022-04-09 15:25:38,0ric1,fork_close,,
+632,Revise,2022-04-09 15:42:55,0ric1,fork_close,"Add cmake.yml
+
+to automatically build on ubuntu-latest","{""sha"": ""0879a95cb043ac716d8b8518501341724d2287bb"", ""author"": {""name"": ""snowflake"", ""email"": ""309430+0ric1@users.noreply.github.com"", ""date"": ""2022-04-09T15:42:55Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-04-09T15:42:55Z""}}"
+632,Revise,2022-04-09 15:56:11,0ric1,fork_close,Add matrix build windows-latest to cmake.yml,"{""sha"": ""571b91771270c0cd58ec8e87a4e4595886defa8f"", ""author"": {""name"": ""snowflake"", ""email"": ""309430+0ric1@users.noreply.github.com"", ""date"": ""2022-04-09T15:56:11Z""}, ""committer"": {""name"": ""snowflake"", ""email"": ""309430+0ric1@users.noreply.github.com"", ""date"": ""2022-04-09T15:56:11Z""}}"
+632,IssueComment,2022-04-09 16:21:52,nmoinvaz,fork_close,I have GHA workflows in #506 too.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1094078296"", ""author_association"": ""CONTRIBUTOR""}"
+632,Revise,2022-04-09 16:40:00,0ric1,fork_close,"Remove: cmake.yml, because it does not belong to the actual pull request and because of https://github.com/madler/zlib/pull/506","{""sha"": ""6e3090f70731f934e34f6db819e75ddd434f727b"", ""author"": {""name"": ""snowflake"", ""email"": ""309430+0ric1@users.noreply.github.com"", ""date"": ""2022-04-09T16:40:00Z""}, ""committer"": {""name"": ""snowflake"", ""email"": ""309430+0ric1@users.noreply.github.com"", ""date"": ""2022-04-09T16:40:00Z""}}"
+632,IssueComment,2022-06-02 19:48:01,tbeu,fork_close,You probably also want to bump the date in https://github.com/madler/zlib/blob/21767c654d31d2dccdde4330529775c6c5fd5389/win32/README-WIN32.txt#L75,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1145277788"", ""author_association"": ""NONE""}"
+632,IssueComment,2022-07-31 16:22:42,Neustradamus,fork_close,"@0ric1: Have you seen the @tbeu comment?
+
+@madler: Can you look?","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1200455988"", ""author_association"": ""NONE""}"
+632,CrossReferenced,2022-07-31 18:30:20,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/686"", ""is_pull_request"": false}}"
+632,IssueCommentSupplement,2022-10-12 01:39:21,madler,fork_close,See https://github.com/madler/zlib/commit/cc8d08c21ec7211bd844eec50bb6d042c59d9426,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1275474184"", ""author_association"": ""OWNER""}"
+632,ClosePR,2022-10-12 01:39:21,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7567468165"", ""commit_url"": null}"
+632,IssueCommentSupplement,2022-10-15 11:40:46,tbeu,fork_close,Still outdated in line 75 of [zlib/win32/README-WIN32.txt](https://github.com/madler/zlib/blob/21767c654d31d2dccdde4330529775c6c5fd5389/win32/README-WIN32.txt#L75),"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1279727609"", ""author_association"": ""NONE""}"
+632,IssueCommentSupplement,2022-10-15 12:41:43,Neustradamus,fork_close,"Not only once, a lot others too.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1279738060"", ""author_association"": ""NONE""}"
+638,SubmitCommit,2022-04-12 18:21:41,ied206,fork_close,Fix crc32.c build error on MSVC x86 build,"{""sha"": ""353398a9d8ba0cbf72aea626e751a448013d9bba"", ""author"": {""name"": ""Hajin Jang"", ""email"": ""jb6804@naver.com"", ""date"": ""2022-04-12T18:21:41Z""}, ""committer"": {""name"": ""Hajin Jang"", ""email"": ""jb6804@naver.com"", ""date"": ""2022-04-12T18:21:41Z""}}"
+638,OpenPR,2022-04-12 18:27:19,ied206,fork_close,,
+638,IssueComment,2022-04-12 19:02:46,ied206,fork_close,This PR also fixes #629.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1097106758"", ""author_association"": ""NONE""}"
+638,IssueComment,2022-04-13 05:48:29,tbeu,fork_close,See also https://github.com/madler/zlib/issues/620#issuecomment-1086640253.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1097584819"", ""author_association"": ""NONE""}"
+638,CrossReferenced,2022-07-31 18:30:20,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/686"", ""is_pull_request"": false}}"
+638,IssueCommentSupplement,2022-10-07 01:20:34,ied206,fork_close,Patched by 6c532a8e8a2fcedc4abbe2378dd26b5d89cf1c4a and 7ecf7c7458578d05a20fa481436dd5c58db112f7.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270988805"", ""author_association"": ""NONE""}"
+638,ClosePR,2022-10-07 01:20:35,ied206,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7539708662"", ""commit_url"": null}"
+639,SubmitCommit,2022-04-12 18:37:58,ied206,fork_close,"Fix MSVC vc14 ReleaseWithoutAsm build
+
+MASM optimizations are removed in 1.2.12, but MSVC project files were
+still refering to masm dir/files, making it impossible to build on MSVC.
+
+This commit fix ReleaseWithoutAsm configuration on vc14 vcxproj file.
+Debug, Release configs are not yet removed since it requires major rewrite
+of vcxproj file.","{""sha"": ""39ad3090f3d71eb1e3f41366965ce9c969d875ea"", ""author"": {""name"": ""Hajin Jang"", ""email"": ""jb6804@naver.com"", ""date"": ""2022-04-12T18:37:58Z""}, ""committer"": {""name"": ""Hajin Jang"", ""email"": ""jb6804@naver.com"", ""date"": ""2022-04-12T18:37:58Z""}}"
+639,OpenPR,2022-04-12 18:48:43,ied206,fork_close,,
+639,IssueComment,2022-04-13 05:38:41,tbeu,fork_close,"This needs to be applied to all other VS projects, too.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1097579704"", ""author_association"": ""NONE""}"
+639,IssueComment,2022-06-22 12:01:44,TatianaVV,fork_close,"Build ReleaseWithoutAsm|Win32 failed
+![image](https://user-images.githubusercontent.com/85076426/175024245-6fabc118-d8c5-4b89-bf7f-b9f3bd7610f5.png)
+","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1163011606"", ""author_association"": ""NONE""}"
+639,CrossReferenced,2022-07-31 18:30:20,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/686"", ""is_pull_request"": false}}"
+639,IssueCommentSupplement,2022-10-12 01:39:51,madler,fork_close,See https://github.com/madler/zlib/commit/d0704a820186481da35d08f4b655881e1d32089f,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1275474478"", ""author_association"": ""OWNER""}"
+639,ClosePR,2022-10-12 01:39:51,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7567470044"", ""commit_url"": null}"
+644,SubmitCommit,2022-04-26 03:02:44,kaoh,fork_close,"solution for VS 22, fix for Windows build","{""sha"": ""98a4fdb30ecb783bbcab4b7a91184cd725220f61"", ""author"": {""name"": ""Karsten Ohme"", ""email"": ""k_o_@users.sourceforge.net"", ""date"": ""2022-04-26T02:39:17Z""}, ""committer"": {""name"": ""Karsten Ohme"", ""email"": ""k_o_@users.sourceforge.net"", ""date"": ""2022-04-26T03:02:44Z""}}"
+644,OpenPR,2022-04-26 03:07:49,kaoh,fork_close,,
+644,IssueComment,2022-04-26 03:09:59,kaoh,fork_close,"I guess, the built failed, but the error message seems to be not related to my pull request.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1109254551"", ""author_association"": ""NONE""}"
+644,CrossReferenced,2022-04-26 11:46:31,kaoh,fork_close,Building static library in VIsual Studio 2017,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/404"", ""is_pull_request"": false}}"
+644,CrossReferenced,2022-07-31 18:30:20,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/686"", ""is_pull_request"": false}}"
+644,IssueCommentSupplement,2022-10-12 01:59:56,madler,fork_close,Missing exports and prototypes addressed. You may check the develop branch and suggest any contrib/vstudio changes relative to that branch.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1275486659"", ""author_association"": ""OWNER""}"
+644,ClosePR,2022-10-12 01:59:56,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7567541524"", ""commit_url"": null}"
+650,SubmitCommit,2022-05-10 12:29:31,likema,fork_close,Remove gcc asm from CMakeLists.txt,"{""sha"": ""a9c3b744ec74c7456e094c1c2abb106f8f039cd7"", ""author"": {""name"": ""Like Ma"", ""email"": ""likemartinma@gmail.com"", ""date"": ""2022-05-10T12:29:31Z""}, ""committer"": {""name"": ""Like Ma"", ""email"": ""likemartinma@gmail.com"", ""date"": ""2022-05-10T12:29:31Z""}}"
+650,OpenPR,2022-05-10 12:48:17,likema,fork_close,,
+650,IssueComment,2022-07-26 17:54:17,joeyparrish,fork_close,"This is a definite improvement.  Also, the MSVC asm is missing from the repo, so you could remove the `contrib/masmx86/` section right after that.  @likema, could you remove that, too?
+
+@madler, any chance you could review and merge?","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1195800585"", ""author_association"": ""NONE""}"
+650,Revise,2022-07-30 16:18:51,likema,fork_close,Remove obsolete asm,"{""sha"": ""02d414462f624e14732b0a2a1fd6f84581e4d51b"", ""author"": {""name"": ""Like Ma"", ""email"": ""likemartinma@gmail.com"", ""date"": ""2022-07-30T16:18:45Z""}, ""committer"": {""name"": ""Like Ma"", ""email"": ""likemartinma@gmail.com"", ""date"": ""2022-07-30T16:18:51Z""}}"
+650,IssueComment,2022-07-30 16:19:21,likema,fork_close,"OK
+
+","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1200245853"", ""author_association"": ""CONTRIBUTOR""}"
+650,CrossReferenced,2022-10-09 07:14:33,likema,fork_close,Fix MingGW i686 build error with asm implemenation.,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/68"", ""is_pull_request"": true}}"
+650,IssueCommentSupplement,2022-10-09 23:53:55,madler,fork_close,This should be resolved by https://github.com/madler/zlib/commit/d0704a820186481da35d08f4b655881e1d32089f . Let me know if it is not.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1272656768"", ""author_association"": ""OWNER""}"
+650,ClosePR,2022-10-09 23:53:55,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7550107407"", ""commit_url"": null}"
+656,OpenPR,2022-05-19 18:53:35,mostynb,fork_close,,
+656,CrossReferenced,2022-05-19 18:58:55,mostynb,fork_close,[zlib] extract the license from the README file,"{""reference"": {""url"": ""https://api.github.com/repos/microsoft/vcpkg/issues/24781"", ""is_pull_request"": true}}"
+656,IssueComment,2022-06-02 19:44:50,tbeu,fork_close,You probably also want to update the files INDEX (to reflect the added file) and win32/README-WIN32.txt.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1145275221"", ""author_association"": ""NONE""}"
+656,Revise,2022-06-02 20:06:48,mostynb,fork_close,"Move the README's copyright notice to a separate COPYRIGHT file
+
+This makes it easier for various tools to compile copyright information
+automatically, and ultimately easier for humans to review the license.
+
+Resolves #573.","{""sha"": ""c24f30c4210058a4bed78b910049423a83e258d7"", ""author"": {""name"": ""Mostyn Bramley-Moore"", ""email"": ""mostyn@antipode.se"", ""date"": ""2022-06-02T20:06:48Z""}, ""committer"": {""name"": ""Mostyn Bramley-Moore"", ""email"": ""mostyn@antipode.se"", ""date"": ""2022-06-02T20:06:48Z""}}"
+656,HeadRefForcePushed,2022-06-02 20:07:13,mostynb,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6731303569"", ""commit_url"": null}"
+656,IssueComment,2022-06-02 20:28:24,mostynb,fork_close,"Done, thanks. I also put the text after the license back in the INDEX file.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1145310465"", ""author_association"": ""NONE""}"
+656,IssueCommentSupplement,2022-10-07 00:27:22,madler,fork_close,Added a LICENSE file.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270884139"", ""author_association"": ""OWNER""}"
+656,ClosePR,2022-10-07 00:27:22,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7539528339"", ""commit_url"": null}"
+656,DeleteBranch,2022-10-07 16:39:27,mostynb,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7545068128"", ""commit_url"": null}"
+656,DeleteBranch,2022-10-07 16:42:49,mostynb,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7545087839"", ""commit_url"": null}"
+662,SubmitCommit,2022-06-07 09:55:53,Robin Geffroy,fork_close,"Use $CC if variable is set
+
+Fixes commit e9a52aa129efe3834383e415580716a7c4027f8d
+cc variable is set if CC is not set, and ignored otherwise.","{""sha"": ""61cdeab29def48e29bf2363a30b9953d68453f48"", ""author"": {""name"": ""Robin Geffroy"", ""email"": ""rgeffroy@axway.com"", ""date"": ""2022-06-07T09:55:53Z""}, ""committer"": {""name"": ""Robin Geffroy"", ""email"": ""rgeffroy@axway.com"", ""date"": ""2022-06-07T09:55:53Z""}}"
+662,OpenPR,2022-06-07 10:04:01,RobinGeffroy,fork_close,,
+662,IssueComment,2022-06-07 11:35:54,Mr-Clam,fork_close,"More details in https://github.com/madler/zlib/issues/646, which was closed without a fix.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1148547175"", ""author_association"": ""NONE""}"
+662,IssueComment,2022-06-07 11:46:35,RobinGeffroy,fork_close,"@Mr-Clam thanks for the link.
+Since this is a regression caused by a commit for v1.2.12, I assumed it was unintentional.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1148558488"", ""author_association"": ""NONE""}"
+662,IssueComment,2022-06-07 11:55:05,Mr-Clam,fork_close,"Right.  And to correct me comment, there is this commit in the develop branch: https://github.com/madler/zlib/commit/05796d3d8d5546cf1b4dfe2cd72ab746afae505d","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1148566231"", ""author_association"": ""NONE""}"
+662,CrossReferenced,2022-07-31 18:30:20,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/686"", ""is_pull_request"": false}}"
+662,IssueCommentSupplement,2022-08-09 09:56:04,RobinGeffroy,fork_close,"Fixed in develop branch, closing this.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1209168324"", ""author_association"": ""NONE""}"
+662,ClosePR,2022-08-09 09:56:04,RobinGeffroy,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7154001530"", ""commit_url"": null}"
+663,SubmitCommit,2022-06-07 19:16:59,stoeckmann,fork_close,"Handle invalid windowBits in init functions
+
+Negative windowBits arguments are eventually turned positive in
+deflateInit2_ and inflateInit2_ (more precisely in inflateReset2).
+Such values are used to indicate that raw deflate/inflate should
+be performed.
+
+If a user supplies INT_MIN for windowBits, the code will perform
+-INT_MIN which does not fit into int. In fact, this is undefined
+behavior in C and should be avoided.
+
+Clearly this is a user error, but given the careful validation of
+input arguments a few lines later in deflateInit2_ I think this
+might be of interest.
+
+Proof of Concept:
+
+- Compile zlib with gcc -ftrapv or -fsanitize=undefined
+- Compile and run this program:
+
+```
+ #include <limits.h>
+ #include <stdio.h>
+ #include <zlib.h>
+
+ int main(void) {
+	z_stream de_stream = { 0 }, in_stream = { 0 };
+	int result;
+
+	result = deflateInit2(&de_stream, 0, Z_DEFLATED, INT_MIN,
+	    MAX_MEM_LEVEL, Z_DEFAULT_STRATEGY);
+	printf(""deflateInit2: %d\n"", result);
+
+	result = inflateInit2(&in_stream, INT_MIN);
+	printf(""inflateInit2: %d\n"", result);
+
+	return 0;
+ }
+```","{""sha"": ""6e855ac763197061db5140c7aa256413244ca78b"", ""author"": {""name"": ""Tobias Stoeckmann"", ""email"": ""tobias@stoeckmann.org"", ""date"": ""2022-06-07T19:16:59Z""}, ""committer"": {""name"": ""Tobias Stoeckmann"", ""email"": ""tobias@stoeckmann.org"", ""date"": ""2022-06-07T19:16:59Z""}}"
+663,OpenPR,2022-06-07 19:26:42,stoeckmann,fork_close,,
+663,IssueCommentSupplement,2022-10-06 23:32:55,madler,fork_close,Incorporated. Thanks.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270841932"", ""author_association"": ""OWNER""}"
+663,ClosePR,2022-10-06 23:32:55,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7539343768"", ""commit_url"": null}"
+667,OpenPR,2022-06-14 04:03:43,fredgan,fork_close,,
+667,CrossReferenced,2022-06-23 08:27:28,fredgan,fork_close,Functions without prorotypes cause -Wstrict-prototypes warnings,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/633"", ""is_pull_request"": false}}"
+667,Revise,2022-07-04 11:19:52,fredgan,fork_close,Fix -Wstrict-prototypes warnings,"{""sha"": ""7f4a106a0bc15617627909188172d10079d71c97"", ""author"": {""name"": ""Fred Gan"", ""email"": ""ganshaolong@vip.qq.com"", ""date"": ""2022-07-04T11:19:52Z""}, ""committer"": {""name"": ""Fred Gan"", ""email"": ""ganshaolong@vip.qq.com"", ""date"": ""2022-07-04T11:19:52Z""}}"
+667,HeadRefForcePushed,2022-07-04 11:20:38,fredgan,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/6927236844"", ""commit_url"": null}"
+667,IssueCommentSupplement,2022-10-07 00:10:19,madler,fork_close,Incorporated. Thanks.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270861047"", ""author_association"": ""OWNER""}"
+667,ClosePR,2022-10-07 00:10:19,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7539471386"", ""commit_url"": null}"
+678,SubmitCommit,2022-07-13 21:24:49,klemensn,fork_close,"Define OpenBSD as system with 64 bit off_t
+
+At least two ports (packaged third-party software) on OpenBSD currently
+require building with `-DIOAPI_NO_64` due to their bundled minizip copy
+trying to use the nonexistent f*64() functions.
+
+Sync behaviour with Apple and thus allow future versions to build
+out of the box.","{""sha"": ""9cead4446c0a55a476920973b2179c149157a864"", ""author"": {""name"": ""Klemens Nanni"", ""email"": ""kn@openbsd.org"", ""date"": ""2022-07-13T21:23:47Z""}, ""committer"": {""name"": ""Klemens Nanni"", ""email"": ""klemens@posteo.de"", ""date"": ""2022-07-13T21:24:49Z""}}"
+678,SubmitCommit,2022-07-13 21:27:07,klemensn,fork_close,"Move FreeBSD's definition as 64 bit off_t system into the right place
+
+```
+commit 5c312df969b4b5bed7ec16cc057c61c652bcceb1
+Author: Mark Adler <madler@alumni.caltech.edu>
+Date:   Mon Jan 16 17:52:51 2012 -0800
+
+    Fix compilation of contrib/minizip on FreeBSD [Márquez].
+```
+
+introduced the current FreeBSD, only shortly before `IOAPI_NO_64` came
+to be:
+```
+commit de6cb6fe5c0b209c0337a78294017c38efd54c6b
+Author: Mark Adler <madler@alumni.caltech.edu>
+Date:   Sat Jan 21 11:54:52 2012 -0800
+
+    Avoid some warnings in contrib/minizip [Vollant].
+```
+
+Merge the former into the latter for consistency.","{""sha"": ""969f0b892f553c77d6d197e179d81479e975bca0"", ""author"": {""name"": ""Klemens Nanni"", ""email"": ""kn@openbsd.org"", ""date"": ""2022-07-13T21:27:07Z""}, ""committer"": {""name"": ""Klemens Nanni"", ""email"": ""klemens@posteo.de"", ""date"": ""2022-07-13T21:27:07Z""}}"
+678,OpenPR,2022-07-13 21:33:39,klemensn,fork_close,,
+678,IssueCommentSupplement,2022-12-07 15:53:19,klemensn,fork_close,Apparently this was fixed in https://github.com/madler/zlib/commit/40c5a9bc06c5b0746aab270971c8cc546e3d5fc7.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1341170667"", ""author_association"": ""NONE""}"
+678,ClosePR,2022-12-07 15:53:20,klemensn,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7979313410"", ""commit_url"": null}"
+678,CrossReferenced,2022-12-08 21:24:59,klemensn,fork_close,Update to minizip 1.2.13,"{""reference"": {""url"": ""https://api.github.com/repos/telegramdesktop/tdesktop/issues/25537"", ""is_pull_request"": true}}"
+678,Referenced,2022-12-08 21:25:00,klemensn,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7993114910"", ""commit_url"": ""https://api.github.com/repos/klemensn/tdesktop/commits/c8f03828f88654a6405c36b39a4bf22dd0fb64c1""}"
+678,DeleteBranch,2022-12-08 21:27:16,klemensn,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7993130028"", ""commit_url"": null}"
+678,Referenced,2022-12-09 05:58:18,john-preston,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7995630199"", ""commit_url"": ""https://api.github.com/repos/telegramdesktop/tdesktop/commits/620f6657ae1ad48fb8ef68c7a5cad5940fb48357""}"
+680,SubmitCommit,2022-07-15 19:01:58,hexadoggo,fork_close,Fix included directories in CMakeLists.txt,"{""sha"": ""91b77cdabe3f25182ce2b6175d4fc1a4ed9e9cf9"", ""author"": {""name"": ""hexadoggo"", ""email"": ""104458338+hexadoggo@users.noreply.github.com"", ""date"": ""2022-07-15T19:01:58Z""}, ""committer"": {""name"": ""hexadoggo"", ""email"": ""104458338+hexadoggo@users.noreply.github.com"", ""date"": ""2022-07-15T19:01:58Z""}}"
+680,OpenPR,2022-07-15 19:17:08,ghost,fork_close,,
+680,IssueComment,2022-08-19 14:37:48,Neustradamus,fork_close,"@madler, @gvollant: Can you look?","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1220756609"", ""author_association"": ""NONE""}"
+680,ClosePR,2022-09-23 02:38:47,,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7444082815"", ""commit_url"": null}"
+687,SubmitCommit,2022-08-05 08:08:26,likunyur,fork_close,"minizip: remove a semicolon
+
+Signed-off-by: Li kunyu <kunyu@nfschina.com>","{""sha"": ""2ab6b48bae982677db580b6b839c3d569a63a2b1"", ""author"": {""name"": ""Li kunyu"", ""email"": ""kunyu@nfschina.com"", ""date"": ""2022-08-05T08:08:26Z""}, ""committer"": {""name"": ""Li kunyu"", ""email"": ""kunyu@nfschina.com"", ""date"": ""2022-08-05T08:08:26Z""}}"
+687,OpenPR,2022-08-05 08:12:47,likunyur,fork_close,,
+687,Revise,2022-08-05 08:14:20,likunyur,fork_close,"minizip/miniunz: remove a semicolon
+
+Signed-off-by: Li kunyu <kunyu@nfschina.com>","{""sha"": ""22171cbf35c95de7b2c6f7bdb014819acb52df4f"", ""author"": {""name"": ""Li kunyu"", ""email"": ""kunyu@nfschina.com"", ""date"": ""2022-08-05T08:14:20Z""}, ""committer"": {""name"": ""Li kunyu"", ""email"": ""kunyu@nfschina.com"", ""date"": ""2022-08-05T08:14:20Z""}}"
+687,IssueComment,2022-08-12 21:07:16,Neustradamus,fork_close,cc: @gvollant.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1213520337"", ""author_association"": ""NONE""}"
+687,ReviewApproved,2022-08-18 20:19:47,flomnes,fork_close,,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/madler/zlib/pull/687#pullrequestreview-1077952693""}"
+687,IssueComment,2022-08-19 13:37:07,gvollant,fork_close,"Of course I approve this syntax ""no risk"" cleanup","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1220693497"", ""author_association"": ""NONE""}"
+687,IssueComment,2022-08-19 13:37:22,gvollant,fork_close,@madler you can merge,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1220693765"", ""author_association"": ""NONE""}"
+687,ReviewApproved,2022-09-05 19:33:46,tbeu,fork_close,,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/madler/zlib/pull/687#pullrequestreview-1096737670""}"
+687,IssueCommentSupplement,2022-10-07 00:15:39,madler,fork_close,Incorporated.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270864561"", ""author_association"": ""OWNER""}"
+687,ClosePR,2022-10-07 00:15:39,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7539490611"", ""commit_url"": null}"
+688,SubmitCommit,2022-08-08 16:07:57,winterqt,fork_close,Fix segfault in inflate() when state->head is null.,"{""sha"": ""42214778ada66b2fd65643369703725b542f3196"", ""author"": {""name"": ""Winter"", ""email"": ""winter@winter.cafe"", ""date"": ""2022-08-08T16:07:57Z""}, ""committer"": {""name"": ""Winter"", ""email"": ""winter@winter.cafe"", ""date"": ""2022-08-08T16:07:57Z""}}"
+688,OpenPR,2022-08-08 16:12:53,winterqt,fork_close,,
+688,CrossReferenced,2022-08-08 16:56:20,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/686"", ""is_pull_request"": false}}"
+688,IssueComment,2022-08-08 18:17:11,madler,fork_close,Thanks. Fixed in https://github.com/madler/zlib/commit/1eb7682f845ac9e9bf9ae35bbfb3bad5dacbd91d .,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1208453628"", ""author_association"": ""OWNER""}"
+688,ClosePR,2022-08-08 18:17:12,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7149296126"", ""commit_url"": null}"
+694,SubmitCommit,2022-03-28 01:07:49,madler,fork_close,Change version number on develop branch to 1.2.12.1.,"{""sha"": ""a4c17581d8fd9dc38d498430825d148fe7177881"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-28T01:07:49Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-28T01:07:49Z""}}"
+694,SubmitCommit,2022-03-28 17:50:16,madler,fork_close,Silence some warnings from Visual Studio C.,"{""sha"": ""3df842426b53522e232da7aa06d5ef10eeb5ec4a"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-28T17:50:16Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-28T17:50:16Z""}}"
+694,SubmitCommit,2022-03-29 01:34:10,madler,fork_close,Fix configure issue that discarded provided CC definition.,"{""sha"": ""05796d3d8d5546cf1b4dfe2cd72ab746afae505d"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-29T01:34:10Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-29T01:34:10Z""}}"
+694,SubmitCommit,2022-03-29 01:46:59,madler,fork_close,Fix compile with Windows 10 SDK. (gvollant),"{""sha"": ""ce12773790517034317274f5c65ba70cfeea29f7"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-29T01:46:59Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-29T01:46:59Z""}}"
+694,SubmitCommit,2022-03-30 18:14:53,madler,fork_close,"Correct incorrect inputs provided to the CRC functions.
+
+The previous releases of zlib were not sensitive to incorrect CRC
+inputs with bits set above the low 32. This commit restores that
+behavior, so that applications with such bugs will continue to
+operate as before.","{""sha"": ""ec3df00224d4b396e2ac6586ab5d25f673caa4c2"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-30T18:14:53Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-30T18:14:53Z""}}"
+694,SubmitCommit,2022-05-26 15:47:51,madler,fork_close,Have build test report library version if it doesn't match zlib.h.,"{""sha"": ""441a2ac6028aca34f1921b2f4cc469124c9235c7"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-05-26T15:47:51Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-05-26T15:47:51Z""}}"
+694,SubmitCommit,2022-06-04 19:52:13,madler,fork_close,Fix missing ZEXPORT for crc32_combine_op().,"{""sha"": ""6c532a8e8a2fcedc4abbe2378dd26b5d89cf1c4a"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-04T19:52:13Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-04T19:52:13Z""}}"
+694,SubmitCommit,2022-06-04 22:02:40,madler,fork_close,Fix odd error in Visual C compiler preventing automatic promotion.,"{""sha"": ""7ecf7c7458578d05a20fa481436dd5c58db112f7"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-04T22:02:40Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-04T22:02:40Z""}}"
+694,SubmitCommit,2022-06-27 19:20:04,madler,fork_close,Fix inflateBack to detect invalid input with distances too far.,"{""sha"": ""2333419cd76cb9ae5f15c9b240b16a2052b27691"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-27T19:15:36Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-27T19:20:04Z""}}"
+694,SubmitCommit,2022-07-24 18:41:07,madler,fork_close,Have infback() deliver all of the available output up to any error.,"{""sha"": ""b8bd09801f4a2c224655e14edffc5793943a33d2"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-24T18:41:07Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-24T18:41:07Z""}}"
+694,SubmitCommit,2022-07-30 22:58:02,madler,fork_close,"Fix a bug when getting a gzip header extra field with inflate().
+
+If the extra field was larger than the space the user provided with
+inflateGetHeader(), and if multiple calls of inflate() delivered
+the extra header data, then there could be a buffer overflow of the
+provided space. This commit assures that provided space is not
+exceeded.","{""sha"": ""eff308af425b67093bab25f80f1ae950166bece1"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-30T22:51:11Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-30T22:58:02Z""}}"
+694,SubmitCommit,2022-07-31 16:32:43,madler,fork_close,Add -g when debugging with -fsanitize=address to include symbols.,"{""sha"": ""22aec0cb0bb53c126f9feb0471f616203e55d37d"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-31T16:31:52Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-31T16:32:43Z""}}"
+694,SubmitCommit,2022-08-08 17:55:40,madler,fork_close,"Fix extra field processing bug that dereferences NULL state->head.
+
+The recent commit to fix a gzip header extra field processing bug
+introduced the new bug fixed here.","{""sha"": ""1eb7682f845ac9e9bf9ae35bbfb3bad5dacbd91d"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-08-08T17:50:09Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-08-08T17:55:40Z""}}"
+694,SubmitCommit,2022-08-19 11:24:16,gvollant,fork_close,"apply fix suggested at https://github.com/madler/zlib/issues/693
+remove unused code and not useful test for free","{""sha"": ""5ad75f5426faffe586a7b32e722beb0ea2b63c5c"", ""author"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2022-08-19T11:24:16Z""}, ""committer"": {""name"": ""Gilles Vollant"", ""email"": ""info@winimage.com"", ""date"": ""2022-08-19T11:24:16Z""}}"
+694,OpenPR,2022-08-19 11:25:07,gvollant,fork_close,,
+694,CrossReferenced,2022-08-19 11:25:21,gvollant,fork_close,minizip has two risks,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/693"", ""is_pull_request"": false}}"
+694,IssueComment,2022-08-19 12:42:23,Neustradamus,fork_close,"@gvollant: Thanks!
+
+Have you looked all tickets about minizip, a lot of not closed:
+- https://github.com/madler/zlib/search?q=minizip&type=issues
+
+And all compilation problems:
+- https://github.com/madler/zlib/issues/686","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1220630858"", ""author_association"": ""NONE""}"
+694,CrossReferenced,2022-08-19 12:45:37,Neustradamus,fork_close,Please make new release,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/686"", ""is_pull_request"": false}}"
+694,IssueComment,2022-08-19 12:46:11,Neustradamus,fork_close,"@gvollant: Can you update (c) and version too?
+- https://github.com/madler/zlib/tree/master/contrib/minizip","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1220635152"", ""author_association"": ""NONE""}"
+694,IssueComment,2022-09-05 19:32:51,tbeu,fork_close,Should this PR be targeted for development branch instead of master?,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1237411880"", ""author_association"": ""NONE""}"
+694,IssueCommentSupplement,2022-10-07 00:18:15,madler,fork_close,Applied.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270866053"", ""author_association"": ""OWNER""}"
+694,ClosePR,2022-10-07 00:18:15,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7539499572"", ""commit_url"": null}"
+694,DeleteBranch,2022-10-15 09:50:06,gvollant,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7594734542"", ""commit_url"": null}"
+695,SubmitCommit,2022-03-28 01:07:49,madler,fork_close,Change version number on develop branch to 1.2.12.1.,"{""sha"": ""a4c17581d8fd9dc38d498430825d148fe7177881"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-28T01:07:49Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-28T01:07:49Z""}}"
+695,SubmitCommit,2022-03-28 17:50:16,madler,fork_close,Silence some warnings from Visual Studio C.,"{""sha"": ""3df842426b53522e232da7aa06d5ef10eeb5ec4a"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-28T17:50:16Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-28T17:50:16Z""}}"
+695,SubmitCommit,2022-03-29 01:34:10,madler,fork_close,Fix configure issue that discarded provided CC definition.,"{""sha"": ""05796d3d8d5546cf1b4dfe2cd72ab746afae505d"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-29T01:34:10Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-29T01:34:10Z""}}"
+695,SubmitCommit,2022-03-29 01:46:59,madler,fork_close,Fix compile with Windows 10 SDK. (gvollant),"{""sha"": ""ce12773790517034317274f5c65ba70cfeea29f7"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-29T01:46:59Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-29T01:46:59Z""}}"
+695,SubmitCommit,2022-03-30 18:14:53,madler,fork_close,"Correct incorrect inputs provided to the CRC functions.
+
+The previous releases of zlib were not sensitive to incorrect CRC
+inputs with bits set above the low 32. This commit restores that
+behavior, so that applications with such bugs will continue to
+operate as before.","{""sha"": ""ec3df00224d4b396e2ac6586ab5d25f673caa4c2"", ""author"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-30T18:14:53Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""madler@alumni.caltech.edu"", ""date"": ""2022-03-30T18:14:53Z""}}"
+695,SubmitCommit,2022-05-26 15:47:51,madler,fork_close,Have build test report library version if it doesn't match zlib.h.,"{""sha"": ""441a2ac6028aca34f1921b2f4cc469124c9235c7"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-05-26T15:47:51Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-05-26T15:47:51Z""}}"
+695,SubmitCommit,2022-06-04 19:52:13,madler,fork_close,Fix missing ZEXPORT for crc32_combine_op().,"{""sha"": ""6c532a8e8a2fcedc4abbe2378dd26b5d89cf1c4a"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-04T19:52:13Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-04T19:52:13Z""}}"
+695,SubmitCommit,2022-06-04 22:02:40,madler,fork_close,Fix odd error in Visual C compiler preventing automatic promotion.,"{""sha"": ""7ecf7c7458578d05a20fa481436dd5c58db112f7"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-04T22:02:40Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-04T22:02:40Z""}}"
+695,SubmitCommit,2022-06-27 19:20:04,madler,fork_close,Fix inflateBack to detect invalid input with distances too far.,"{""sha"": ""2333419cd76cb9ae5f15c9b240b16a2052b27691"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-27T19:15:36Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-06-27T19:20:04Z""}}"
+695,SubmitCommit,2022-07-24 18:41:07,madler,fork_close,Have infback() deliver all of the available output up to any error.,"{""sha"": ""b8bd09801f4a2c224655e14edffc5793943a33d2"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-24T18:41:07Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-24T18:41:07Z""}}"
+695,SubmitCommit,2022-07-30 22:58:02,madler,fork_close,"Fix a bug when getting a gzip header extra field with inflate().
+
+If the extra field was larger than the space the user provided with
+inflateGetHeader(), and if multiple calls of inflate() delivered
+the extra header data, then there could be a buffer overflow of the
+provided space. This commit assures that provided space is not
+exceeded.","{""sha"": ""eff308af425b67093bab25f80f1ae950166bece1"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-30T22:51:11Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-30T22:58:02Z""}}"
+695,SubmitCommit,2022-07-31 16:32:43,madler,fork_close,Add -g when debugging with -fsanitize=address to include symbols.,"{""sha"": ""22aec0cb0bb53c126f9feb0471f616203e55d37d"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-31T16:31:52Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-07-31T16:32:43Z""}}"
+695,SubmitCommit,2022-08-08 17:55:40,madler,fork_close,"Fix extra field processing bug that dereferences NULL state->head.
+
+The recent commit to fix a gzip header extra field processing bug
+introduced the new bug fixed here.","{""sha"": ""1eb7682f845ac9e9bf9ae35bbfb3bad5dacbd91d"", ""author"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-08-08T17:50:09Z""}, ""committer"": {""name"": ""Mark Adler"", ""email"": ""fork@madler.net"", ""date"": ""2022-08-08T17:55:40Z""}}"
+695,OpenPR,2022-08-19 13:58:51,gvollant,fork_close,,
+695,Revise,2022-08-19 13:58:53,gvollant,fork_close,"fix compatibility with some old C89 compiler
+see https://github.com/madler/zlib/issues/668","{""sha"": ""4fbc6f6cbcccbcd551daf857b772c8d05dcb6714"", ""author"": {""name"": ""Gilles Vollant"", ""email"": ""vollant.g@gmail.com"", ""date"": ""2022-08-19T13:58:53Z""}, ""committer"": {""name"": ""Gilles Vollant"", ""email"": ""vollant.g@gmail.com"", ""date"": ""2022-08-19T13:58:53Z""}}"
+695,IssueComment,2022-09-05 19:23:18,tbeu,fork_close,Duplicate of #624.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1237406595"", ""author_association"": ""NONE""}"
+695,IssueCommentSupplement,2022-10-07 00:18:58,madler,fork_close,Applied.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270866892"", ""author_association"": ""OWNER""}"
+695,ClosePR,2022-10-07 00:18:58,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7539501938"", ""commit_url"": null}"
+695,DeleteBranch,2022-10-15 09:54:49,gvollant,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7594740176"", ""commit_url"": null}"
+700,SubmitCommit,2022-09-01 18:41:45,bryancall,fork_close,Fixed spelling mistakes,"{""sha"": ""decbf3493a65eb5f953a053d6557df8023209f8e"", ""author"": {""name"": ""Bryan Call"", ""email"": ""bcall@apache.org"", ""date"": ""2022-09-01T18:41:45Z""}, ""committer"": {""name"": ""Bryan Call"", ""email"": ""bcall@apache.org"", ""date"": ""2022-09-01T18:41:45Z""}}"
+700,OpenPR,2022-09-01 18:57:44,bryancall,fork_close,,
+700,IssueComment,2022-09-02 19:35:24,spaette,fork_close,"_cf_: `#673`
+
+deflate.c
+
+British spelling
+
+``` c
+    /* If the WIN_INIT bytes after the end of the current data have never been
+     * written, then zero those bytes in order to avoid memory check reports of
+     * the use of uninitialized (or uninitialised as Julian writes) bytes by
+     * the longest match routines.  Update the high water mark for the next
+     * time through here.  WIN_INIT is set to MAX_MATCH since the longest match
+     * routines allow scanning to strstart + MAX_MATCH, ignoring lookahead.
+     */
+```
+
+below likely incorporated (but not yet pushed)
+
+```diff
+-  * maximizes the opportunites to have a single copy from next_in to next_out.
++  * maximizes the opportunities to have a single copy from next_in to next_out.
+```
+
+suggest closing
+
+
+
+
+","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1235837219"", ""author_association"": ""NONE""}"
+700,IssueComment,2022-09-05 19:39:48,spaette,fork_close,see develop branch,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1237415794"", ""author_association"": ""NONE""}"
+700,ClosePR,2022-09-06 16:09:06,bryancall,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7331911881"", ""commit_url"": null}"
+701,SubmitCommit,2018-07-11 14:21:51,chris19782,fork_close,"inffas32.asm struct/enum binding to zlib 1.2.9
+
+zlib 1.2.9 added ""z_streamp strm"" in ""struct inflate_state"" in
+inflate.h, new offset/binding is required
+
+zlib 1.2.9 started ""enum inflate_mode"" in inflate.h @ 16180
+
+zlib 1.2.3.4 added 3 values in ""enum inflate_mode"" in inflate.h
+
+zlib 1.2.2.1 removed GUNZIP condition in ""struct inflate_state"" in
+inflate.h, compilation directive was no longer required","{""sha"": ""d89d28674ac12a73d8344db8cea2364f9369fa7d"", ""author"": {""name"": ""Christian Nols"", ""email"": ""christian.nols@mcl-technologies.com"", ""date"": ""2017-05-16T16:09:46Z""}, ""committer"": {""name"": ""Christian Nols"", ""email"": ""christian.nols@mcl-technologies.com"", ""date"": ""2018-07-11T14:21:51Z""}}"
+701,SubmitCommit,2022-09-02 16:57:40,U-CFATI-5510-0\cfati,fork_close,Ms VisualStudio - Assembler speedups on x64,"{""sha"": ""5ac84142172086a5828df98519f29a396f6cd41a"", ""author"": {""name"": ""U-CFATI-5510-0\\cfati"", ""email"": ""cristian.fati@devtelsoftware.com"", ""date"": ""2018-09-03T11:27:00Z""}, ""committer"": {""name"": ""CristiFati"", ""email"": ""fati_utcluj@yahoo.com"", ""date"": ""2022-09-02T16:57:40Z""}}"
+701,SubmitCommit,2022-09-02 19:29:02,CristiFati,fork_close,RE-add (Win) asm speedups. Partial revert of 288f1080317b954b6bdca33708631c011549c008,"{""sha"": ""c7591d2ab2bd2e0d48d2f770f5b9f235b7420288"", ""author"": {""name"": ""CristiFati"", ""email"": ""fati_utcluj@yahoo.com"", ""date"": ""2022-09-02T19:29:02Z""}, ""committer"": {""name"": ""CristiFati"", ""email"": ""fati_utcluj@yahoo.com"", ""date"": ""2022-09-02T19:29:02Z""}}"
+701,SubmitCommit,2022-09-02 19:41:30,CristiFati,fork_close,Rename misleading assembly macro,"{""sha"": ""e3e2e703c07e86580d51f055a1695874be85fbe5"", ""author"": {""name"": ""CristiFati"", ""email"": ""fati_utcluj@yahoo.com"", ""date"": ""2022-09-02T19:41:30Z""}, ""committer"": {""name"": ""CristiFati"", ""email"": ""fati_utcluj@yahoo.com"", ""date"": ""2022-09-02T19:41:30Z""}}"
+701,SubmitCommit,2022-09-02 19:43:49,CristiFati,fork_close,Rename x86 assembly macro to preserve convention,"{""sha"": ""d31de1db71bca45a328a53cb5fe61bb8ef4b671b"", ""author"": {""name"": ""CristiFati"", ""email"": ""fati_utcluj@yahoo.com"", ""date"": ""2022-09-02T19:43:49Z""}, ""committer"": {""name"": ""CristiFati"", ""email"": ""fati_utcluj@yahoo.com"", ""date"": ""2022-09-02T19:43:49Z""}}"
+701,SubmitCommit,2022-09-02 22:50:11,CristiFati,fork_close,"Merge pull request #1 from chris19782/issues/41&200
+
+inffas32.asm struct/enum binding to zlib 1.2.9","{""sha"": ""4e31d7b44ee31db5d6f4c13ccc4d1acef30b994c"", ""author"": {""name"": ""Cristi Fati"", ""email"": ""fati_utcluj@yahoo.com"", ""date"": ""2022-09-02T22:50:11Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-09-02T22:50:11Z""}}"
+701,OpenPR,2022-09-03 01:22:38,CristiFati,fork_close,,
+701,CrossReferenced,2022-09-03 01:26:02,CristiFati,fork_close,Ms VisualStudio - Assembler speedups on x64,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/376"", ""is_pull_request"": true}}"
+701,IssueComment,2022-09-05 12:47:58,rhuijben,fork_close,"Did you verify that the code actually works as expected after all security updates to the C code?
+
+Several bound checks were added to the C code, but never copied/implemented in the `unmaintained` assembler code.
+
+Several years ago it was easy to prove data corruption with the then easy to enable asm code on Windows. (There is a regression test with the proof in the Apache Subversion code to make sure repackagers don't accidentally enable that knob and silently break their users)","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1236971108"", ""author_association"": ""NONE""}"
+701,IssueComment,2022-09-05 12:49:30,rhuijben,fork_close,Note that some of the original optimizations are no longer optimizations... They used to be better than compiler generated code from the 1990s... and in my testing the automatically vectorized and inlined code from recent C compilers was usually as good as or better than the old asm code in separated code.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1236973130"", ""author_association"": ""NONE""}"
+701,ReviewComment,2022-09-05 12:50:22,rhuijben,fork_close,,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/madler/zlib/pull/701#pullrequestreview-1096407665""}"
+701,IssueComment,2022-09-05 13:40:38,madler,fork_close,"Thank you for your work on this, but @rhuijben's comments are one of the reasons I removed this particular assembler code. The commit (288f1080317b954b6bdca33708631c011549c008) is ""Remove old assembler code in which bugs have manifested."", with the comment ""In addition, there is not sufficient gain from the inflate assembler code to warrant its inclusion.""","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1237050017"", ""author_association"": ""OWNER""}"
+701,IssueComment,2022-09-05 22:57:02,CristiFati,fork_close,"Thank you for inputs. There seems to be more to this than meets the eye. The problem was that (on *Win*, with assemblies):
+
+- *064bit*: didn't build
+
+- *032bit*: deflate crashed
+
+This is (mainly) what the *PR* proposes. I didn't go that far to check security updates (I'd give it a try if provided a method).
+
+Regarding naming: *AMD64* is an architecture name, and is misleading. Also, is not consistent with the other. These names are supposed to say whether assemblies are enabled on *032* or *064* bits (whatever underlying architecture is).
+
+I updated the *SO* question with some test results that I did, and it's true that in some cases *C* code is faster.
+
+
+Anyway, even if this *PR* is rejected (which makes total sense if *ASM* code is error prone to attacks - buffer overruns and stuff), it will be self sufficient for anyone who want to use them.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1237512487"", ""author_association"": ""NONE""}"
+701,IssueCommentSupplement,2022-10-07 00:21:02,madler,fork_close,I plan to leave the assembly code deleted. Thanks.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270871091"", ""author_association"": ""OWNER""}"
+701,ClosePR,2022-10-07 00:21:02,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7539508761"", ""commit_url"": null}"
+701,IssueCommentSupplement,2022-10-07 05:06:33,CristiFati,fork_close,Fair enough. I will keep building the speedup variants as well (for a while) and post it to [\[GitHub\]: CristiFati/Prebuilt-Binaries - (master) Prebuilt-Binaries/ZLib](https://github.com/CristiFati/Prebuilt-Binaries/tree/master/ZLib).,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1271114309"", ""author_association"": ""NONE""}"
+712,SubmitCommit,2022-09-22 07:05:05,Monniasza,fork_close,Create LICENSE.md,"{""sha"": ""c92be22b2f3e622be71514eb485adbd86b06f6f5"", ""author"": {""name"": ""Monniasza"", ""email"": ""37037712+Monniasza@users.noreply.github.com"", ""date"": ""2022-09-22T07:05:05Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-09-22T07:05:05Z""}}"
+712,SubmitCommit,2022-09-22 07:09:40,Monniasza,fork_close,Remove license from README and move to LICENSE,"{""sha"": ""6ad477bdb8d8fed673f3994331fedcdb2e07b671"", ""author"": {""name"": ""Monniasza"", ""email"": ""37037712+Monniasza@users.noreply.github.com"", ""date"": ""2022-09-22T07:09:40Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-09-22T07:09:40Z""}}"
+712,OpenPR,2022-09-22 07:10:38,Monniasza,fork_close,,
+712,IssueCommentSupplement,2022-10-07 00:25:06,madler,fork_close,Added a LICENSE file.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1270879503"", ""author_association"": ""OWNER""}"
+712,ClosePR,2022-10-07 00:25:06,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7539520831"", ""commit_url"": null}"
+712,DeleteBranch,2022-10-07 04:49:56,Monniasza,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7540424311"", ""commit_url"": null}"
+722,SubmitCommit,2022-10-11 02:06:19,nmoinvaz,fork_close,Make in-source builds default so we can upload failure logs.,"{""sha"": ""e4575914a67fcfade4a2af03d871672feaabd791"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T01:38:33Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T02:06:19Z""}}"
+722,OpenPR,2022-10-11 02:06:59,nmoinvaz,fork_close,,
+722,IssueComment,2022-10-11 02:07:58,nmoinvaz,fork_close,"**Output from runs:**
+
+Cmake:
+https://github.com/nmoinvaz/zlib/actions/runs/3223623416
+
+Configure:
+https://github.com/nmoinvaz/zlib/actions/runs/3223623417","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1273992671"", ""author_association"": ""CONTRIBUTOR""}"
+722,HeadRefForcePushed,2022-10-11 02:11:31,nmoinvaz,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7558233507"", ""commit_url"": null}"
+722,ReviewComment,2022-10-11 08:04:49,ProgramMax,fork_close,,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/madler/zlib/pull/722#pullrequestreview-1136966887""}"
+722,ReviewComment,2022-10-11 13:21:54,ccawley2011,fork_close,,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/madler/zlib/pull/722#pullrequestreview-1137483269""}"
+722,Revise,2022-10-11 18:06:21,nmoinvaz,fork_close,Upload build errors on failure.,"{""sha"": ""83afc454ef30bea8d2034783ef7684425e12b1db"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T01:39:14Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:06:21Z""}}"
+722,Revise,2022-10-11 18:06:21,nmoinvaz,fork_close,Run infcover during test runs.,"{""sha"": ""c563c926339c9a7d8471f568ed29011e3d3d6655"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T01:40:09Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:06:21Z""}}"
+722,Revise,2022-10-11 18:06:22,nmoinvaz,fork_close,Added CI instance for GCC -O3 on Ubuntu in cmake workflow.,"{""sha"": ""91ca0a84baa17f02bd18cdca8377054107bfa7fa"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T01:06:52Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:06:22Z""}}"
+722,Revise,2022-10-11 18:09:04,nmoinvaz,fork_close,Added CI instances for ARM using QEMU in configure workflow.,"{""sha"": ""bbb6eaaade45127954acc3d718356a48e58ad231"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:08:38Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:09:04Z""}}"
+722,Revise,2022-10-11 18:10:17,nmoinvaz,fork_close,Run test applications against QEMU.,"{""sha"": ""2f81e01a3088b04d4c17e23274c78f4db056466e"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:10:17Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:10:17Z""}}"
+722,Revise,2022-10-11 18:10:20,nmoinvaz,fork_close,Added CI instances for PPC using QEMU in configure workflow.,"{""sha"": ""f4edb07cddf0ec3193eeb3f28bc6232bc97a34d6"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T01:50:44Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:10:20Z""}}"
+722,Revise,2022-10-11 18:10:21,nmoinvaz,fork_close,Added CI instance for Clang on macOS in configure workflow.,"{""sha"": ""8f7f06ccdcf7ac277c0ff45d7902296e65b62b82"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T01:49:46Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:10:21Z""}}"
+722,Revise,2022-10-11 18:10:21,nmoinvaz,fork_close,Added CI instances for S390X using QEMU in configure workflow.,"{""sha"": ""c2c5708912122bedfb3081210b5a4849e94dd604"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T01:51:30Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:10:21Z""}}"
+722,Revise,2022-10-11 18:10:21,nmoinvaz,fork_close,Added CI instance for GCC on Windows.,"{""sha"": ""5816c2296ab1d37412f1b14d14fffdc6fe068b34"", ""author"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T01:53:41Z""}, ""committer"": {""name"": ""Nathan Moinvaziri"", ""email"": ""nathan@nathanm.com"", ""date"": ""2022-10-11T18:10:21Z""}}"
+722,HeadRefForcePushed,2022-10-11 18:13:14,nmoinvaz,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7565284269"", ""commit_url"": null}"
+722,IssueComment,2022-10-12 01:01:31,Neustradamus,fork_close,"@madler: To finish GitHub improvements, please look here.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1275450815"", ""author_association"": ""NONE""}"
+722,IssueCommentSupplement,2022-10-12 03:24:30,madler,fork_close,Applied. Thanks!,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1275532251"", ""author_association"": ""OWNER""}"
+722,ClosePR,2022-10-12 03:24:30,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7567842048"", ""commit_url"": null}"
+727,SubmitCommit,2022-10-17 11:48:05,kraj,fork_close,"configure: Pass LDFLAGS to link tests
+
+LDFLAGS can contain critical flags without which linking wont succeed
+therefore ensure that all configure tests involving link time checks are
+using LDFLAGS on compiler commandline along with CFLAGS to ensure the
+tests perform correctly. Without this some tests may fail resulting in
+wrong confgure result, ending in miscompiling the package
+
+Signed-off-by: Khem Raj <raj.khem@gmail.com>","{""sha"": ""208ee0cd1119d4338b7d6a313eff07105f0cf33f"", ""author"": {""name"": ""Khem Raj"", ""email"": ""raj.khem@gmail.com"", ""date"": ""2022-03-09T06:38:47Z""}, ""committer"": {""name"": ""Ross Burton"", ""email"": ""ross.burton@arm.com"", ""date"": ""2022-10-17T11:48:05Z""}}"
+727,OpenPR,2022-10-17 11:49:59,rossburton,fork_close,,
+727,IssueComment,2022-10-17 19:35:17,kraj,fork_close,already proposed via https://github.com/madler/zlib/pull/599,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1281377068"", ""author_association"": ""NONE""}"
+727,IssueCommentSupplement,2022-10-17 19:36:11,rossburton,fork_close,Thanks for rebasing :) ,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1281378087"", ""author_association"": ""NONE""}"
+727,ClosePR,2022-10-17 19:36:11,rossburton,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7605274111"", ""commit_url"": null}"
+739,SubmitCommit,2022-11-08 09:25:03,Marcus Müller,fork_close,"Correct changed article URL in README
+
+Signed-off-by: Marcus Müller <mueller_sourcecodinglib@baseband.digital>","{""sha"": ""086d9948f07108491ee9b81e8e5922ee759e8124"", ""author"": {""name"": ""Marcus M\u00fcller"", ""email"": ""mueller_sourcecodinglib@baseband.digital"", ""date"": ""2022-11-08T09:25:03Z""}, ""committer"": {""name"": ""Marcus M\u00fcller"", ""email"": ""mueller_sourcecodinglib@baseband.digital"", ""date"": ""2022-11-08T09:25:03Z""}}"
+739,OpenPR,2022-11-08 09:26:47,marcusmueller,fork_close,,
+739,IssueCommentSupplement,2022-11-08 18:30:40,madler,fork_close,Thanks! Incorporated. (In a local branch -- will be pushed later.) You also motivated me to update several Mark Nelson links on zlib.net.,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1307659015"", ""author_association"": ""OWNER""}"
+739,ClosePR,2022-11-08 18:30:40,madler,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7765668463"", ""commit_url"": null}"
+739,IssueCommentSupplement,2022-11-08 18:52:56,marcusmueller,fork_close,"You're most welcome. Thanks for doing this. Also, you've been super nice on Stackoverflow when younger me was only half-right, so: please keep the positive attitude :)","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1307681786"", ""author_association"": ""NONE""}"
+739,CrossReferenced,2022-11-21 15:58:35,bachittle,fork_close,fixed README links,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/748"", ""is_pull_request"": true}}"
+748,SubmitCommit,2022-11-16 14:24:19,bachittle,fork_close,"fixed dead link, apparently it now needs .html suffix","{""sha"": ""f309b4764801bb59a59b13dcd6e469c872e80bd3"", ""author"": {""name"": ""Bailey Chittle"", ""email"": ""baileyc@tessonics.com"", ""date"": ""2022-11-16T14:24:19Z""}, ""committer"": {""name"": ""Bailey Chittle"", ""email"": ""baileyc@tessonics.com"", ""date"": ""2022-11-16T14:24:19Z""}}"
+748,OpenPR,2022-11-16 14:26:02,bachittle,fork_close,,
+748,CrossReferenced,2022-11-16 14:26:59,bachittle,fork_close,dead link to mark nelson dr. dobb journal entry,"{""reference"": {""url"": ""https://api.github.com/repos/madler/zlib/issues/747"", ""is_pull_request"": false}}"
+748,Revise,2022-11-16 14:27:34,bachittle,fork_close,match other punctuation,"{""sha"": ""10458294dec796bd9cd398edab52a80382e2c6e3"", ""author"": {""name"": ""Bailey Chittle"", ""email"": ""baileyc@tessonics.com"", ""date"": ""2022-11-16T14:27:34Z""}, ""committer"": {""name"": ""Bailey Chittle"", ""email"": ""baileyc@tessonics.com"", ""date"": ""2022-11-16T14:27:34Z""}}"
+748,ReviewComment,2022-11-17 01:44:20,fredgan,fork_close,,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/madler/zlib/pull/748#pullrequestreview-1183565526""}"
+748,Revise,2022-11-18 14:40:22,bachittle,fork_close,added space before period,"{""sha"": ""ced02bf93f8a5e38d48e692d430f79897d4ea80f"", ""author"": {""name"": ""Bailey Chittle"", ""email"": ""baileyc@tessonics.com"", ""date"": ""2022-11-18T14:40:22Z""}, ""committer"": {""name"": ""Bailey Chittle"", ""email"": ""baileyc@tessonics.com"", ""date"": ""2022-11-18T14:40:22Z""}}"
+748,Revise,2022-11-18 14:51:35,bachittle,fork_close,"added https for all links, set redirects, and a few other dead links","{""sha"": ""69f662d834826aa6340f73916dae1dafe983235d"", ""author"": {""name"": ""Bailey Chittle"", ""email"": ""baileyc@tessonics.com"", ""date"": ""2022-11-18T14:51:35Z""}, ""committer"": {""name"": ""Bailey Chittle"", ""email"": ""baileyc@tessonics.com"", ""date"": ""2022-11-18T14:51:35Z""}}"
+748,RenameTitle,2022-11-18 14:51:54,bachittle,fork_close,,"{""rename"": {""from"": ""fixed dead link"", ""to"": ""fixed README link""}, ""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7844590586""}"
+748,RenameTitle,2022-11-18 14:51:58,bachittle,fork_close,,"{""rename"": {""from"": ""fixed README link"", ""to"": ""fixed README links""}, ""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7844591101""}"
+748,IssueComment,2022-11-18 14:52:27,bachittle,fork_close,"I also fixed all the links to use https rather than http, and a few other links that have a new redirect. ","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1320109585"", ""author_association"": ""NONE""}"
+748,IssueComment,2022-11-18 23:55:22,spaette,fork_close,"I prefer my approach to the Java content.
+
+One has to click on API Documentation and then on java.base and locate java.util.zip.
+
+At least this doesn't link against a specific JavaSE release.
+
+
+```diff
+- zlib is available in Java using the java.util.zip package, documented at
+- http://java.sun.com/developer/technicalArticles/Programming/compression/ .
++ zlib is available in Java using the java.util.zip package, 
++ see the API Documentation for java.base at
++ https://www.oracle.com/pls/topic/lookup?ctx=en/java/javase&id=javaselatest .
+```
+
+<s>Upon review I'd simply use https on the old CPAN address.</s>
+
+<s>At least this doesn't link against a specific Perl module release.</s>
+
+Here is my approach to the Perl content.
+
+```diff
+- A Perl interface to zlib written by Paul Marquess <pmqs@cpan.org> is available
+- at CPAN (Comprehensive Perl Archive Network) sites, including
+- http://search.cpan.org/~pmqs/IO-Compress-Zlib/ .
++ A Perl interface to zlib and bzip2 written by Paul Marquess <pmqs@cpan.org>
++ is available at CPAN (Comprehensive Perl Archive Network) sites, including
++ https://metacpan.org/dist/IO-Compress .
+```
+
+I don't know if the PR would be merged into master or simply integrated into the develop branch.","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1320670201"", ""author_association"": ""NONE""}"
+748,IssueComment,2022-11-19 21:25:55,spaette,fork_close,"for reference
+
+```
+$ sed -n 15,16p IO-Compress-2.201/README
+This distribution provides a Perl interface to allow reading and writing of
+compressed data created with the zlib and bzip2.
+$ 
+```
+","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1320973004"", ""author_association"": ""NONE""}"
+748,IssueCommentSupplement,2022-11-21 15:58:35,bachittle,fork_close,"I found a closed PR in which it says that a fix is in a local branch: https://github.com/madler/zlib/pull/739, I will close the PR but leave the issue I made open. ","{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1322280352"", ""author_association"": ""NONE""}"
+748,ClosePR,2022-11-21 15:58:35,bachittle,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/7858851785"", ""commit_url"": null}"
+748,IssueCommentSupplement,2022-12-28 00:59:16,Neustradamus,fork_close,@madler: Have you seen this PR?,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/comments/1366292212"", ""author_association"": ""NONE""}"
+757,SubmitCommit,2022-12-14 14:40:16,felixguendling,fork_close,ignore zconf.h.included,"{""sha"": ""417d320b2fdb514c4f7621d26b4fb3c5ad93127b"", ""author"": {""name"": ""Felix G\u00fcndling"", ""email"": ""guendling@algo.informatik.tu-darmstadt.de"", ""date"": ""2016-05-08T19:39:00Z""}, ""committer"": {""name"": ""julianharbarth"", ""email"": ""julian@harbarth.io"", ""date"": ""2022-12-14T14:40:16Z""}}"
+757,SubmitCommit,2022-12-14 14:40:16,felixguendling,fork_close,"don't rename zconf.h, just copy it","{""sha"": ""95ef98dc01786e256be4d1c57c0ce79cd96204b6"", ""author"": {""name"": ""Felix G\u00fcndling"", ""email"": ""guendling@algo.informatik.tu-darmstadt.de"", ""date"": ""2016-05-08T19:45:15Z""}, ""committer"": {""name"": ""julianharbarth"", ""email"": ""julian@harbarth.io"", ""date"": ""2022-12-14T14:40:16Z""}}"
+757,SubmitCommit,2022-12-14 14:40:16,felixguendling,fork_close,silence warnings,"{""sha"": ""45a3ef5082e1abf24326bba7ad79c48ada58a75d"", ""author"": {""name"": ""Felix G\u00fcndling"", ""email"": ""guendling@algo.informatik.tu-darmstadt.de"", ""date"": ""2016-05-08T19:52:41Z""}, ""committer"": {""name"": ""julianharbarth"", ""email"": ""julian@harbarth.io"", ""date"": ""2022-12-14T14:40:16Z""}}"
+757,SubmitCommit,2022-12-14 14:40:30,felixguendling,fork_close,target_include_directories for zlibstatic,"{""sha"": ""e38f12f7407a5e50ebd9a4d103bc0425dd14c518"", ""author"": {""name"": ""Felix G\u00fcndling"", ""email"": ""felixguendling@gmail.com"", ""date"": ""2018-08-08T20:13:25Z""}, ""committer"": {""name"": ""julianharbarth"", ""email"": ""julian@harbarth.io"", ""date"": ""2022-12-14T14:40:30Z""}}"
+757,SubmitCommit,2022-12-14 14:40:30,sfahnens,fork_close,fix CMakeLists.txt,"{""sha"": ""8f7349a0073a67438896d8c055b250f65300f6bd"", ""author"": {""name"": ""Sebastian Fahnenschreiber"", ""email"": ""fahnenschreiber@algo.informatik.tu-darmstadt.de"", ""date"": ""2019-03-05T08:52:29Z""}, ""committer"": {""name"": ""julianharbarth"", ""email"": ""julian@harbarth.io"", ""date"": ""2022-12-14T14:40:30Z""}}"
+757,SubmitCommit,2022-12-14 14:42:21,felixguendling,fork_close,update cmake version (prevent deprecation warning),"{""sha"": ""ae8b7dc84bb9142c3ef898a6fa4e89b61d76db95"", ""author"": {""name"": ""Felix G\u00fcndling"", ""email"": ""felixguendling@gmail.com"", ""date"": ""2021-01-04T15:58:18Z""}, ""committer"": {""name"": ""julianharbarth"", ""email"": ""julian@harbarth.io"", ""date"": ""2022-12-14T14:42:21Z""}}"
+757,SubmitCommit,2022-12-14 14:42:21,julianharbarth,fork_close,remove dynamically linked target,"{""sha"": ""cf0546ca91f67b9fb23c92d4b54b4e334c2305dd"", ""author"": {""name"": ""Julian Harbarth"", ""email"": ""julian.harbarth@tu-darmstadt.de"", ""date"": ""2022-05-17T10:53:43Z""}, ""committer"": {""name"": ""julianharbarth"", ""email"": ""julian@harbarth.io"", ""date"": ""2022-12-14T14:42:21Z""}}"
+757,OpenPR,2022-12-14 14:54:53,julianharbarth,fork_close,,
+757,ClosePR,2022-12-14 14:55:30,julianharbarth,fork_close,,"{""url"": ""https://api.github.com/repos/madler/zlib/issues/events/8038109197"", ""commit_url"": null}"

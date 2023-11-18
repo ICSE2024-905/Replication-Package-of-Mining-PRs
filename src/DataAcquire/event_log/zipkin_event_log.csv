@@ -1,0 +1,940 @@
+﻿case:concept:name,concept:name,time:timestamp,people,scene,message,description
+3338,SubmitCommit,2021-01-03 11:52:40,sgc109,fork_merge,Update README.md,"{""sha"": ""0889bcd5a58c3f0bc9011d443bf9968a2b61f9ba"", ""author"": {""name"": ""Sungho Hwang"", ""email"": ""sgc109109@gmail.com"", ""date"": ""2021-01-03T11:52:40Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-01-03T11:52:40Z""}}"
+3338,OpenPR,2021-01-03 11:53:01,sgc109,fork_merge,,
+3338,MergePR,2021-01-03 15:47:40,jorgheymans,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/4162572103"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/0f0ab1066bdcf92bbd1f96d82af1342585b37358""}"
+3339,SubmitCommit,2021-01-04 06:26:25,tacigar,fork_merge,Avoid fetching service names twice,"{""sha"": ""225be0a11f72e9da5a6bfbaed83d805f3871cfdb"", ""author"": {""name"": ""tacigar"", ""email"": ""ig.lhound@gmail.com"", ""date"": ""2021-01-04T06:26:25Z""}, ""committer"": {""name"": ""tacigar"", ""email"": ""ig.lhound@gmail.com"", ""date"": ""2021-01-04T06:26:25Z""}}"
+3339,OpenPR,2021-01-04 06:32:46,tacigar,fork_merge,,
+3339,ReviewApproved,2021-01-05 06:23:05,anuraaga,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3339#pullrequestreview-561539527""}"
+3339,Revise,2021-01-05 14:11:04,tacigar,fork_merge,Update copyright from 2020 to 2021,"{""sha"": ""e9cf1920ace69c5eebe9001234f53c76baf07a61"", ""author"": {""name"": ""tacigar"", ""email"": ""ig.lhound@gmail.com"", ""date"": ""2021-01-05T14:11:04Z""}, ""committer"": {""name"": ""tacigar"", ""email"": ""ig.lhound@gmail.com"", ""date"": ""2021-01-05T14:11:04Z""}}"
+3339,MergePR,2021-01-05 14:24:56,tacigar,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/4170057760"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/4a690eb1486eea8d5eaf10e47f1ea350b3ad0959""}"
+3368,SubmitCommit,2021-08-23 14:35:30,zhfeng,fork_close,upgarde to support armeria thrift0.14,"{""sha"": ""f7b46653bb163192b94e7297e6fc7e3bfb1a1d3e"", ""author"": {""name"": ""Amos Feng"", ""email"": ""zfeng@redhat.com"", ""date"": ""2021-08-23T14:35:30Z""}, ""committer"": {""name"": ""Amos Feng"", ""email"": ""zfeng@redhat.com"", ""date"": ""2021-08-23T14:35:30Z""}}"
+3368,OpenPR,2021-08-23 14:36:35,zhfeng,fork_close,,
+3368,CrossReferenced,2021-08-23 14:44:44,zhfeng,fork_close,Upgrade libthrift to 0.14.1,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin-reporter-java/issues/201"", ""is_pull_request"": false}}"
+3368,IssueCommentSupplement,2021-12-03 09:05:56,jcchavezs,fork_close,Fixed by https://github.com/openzipkin/zipkin/pull/3394,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/985335871"", ""author_association"": ""CONTRIBUTOR""}"
+3368,ClosePR,2021-12-03 09:05:56,jcchavezs,fork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5710799224"", ""commit_url"": null}"
+3375,OpenPR,2021-09-08 19:32:51,llinder,fork_merge,,
+3375,Revise,2021-09-08 23:50:15,llinder,fork_merge,"Bump java base container 15.0.4_p5
+
+- use latest java base container
+- use buildx for multi-arch containers
+- remove ryuk properties override","{""sha"": ""504146c59b50405e46571e197c080272290e8cb2"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-09-08T19:30:17Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-09-08T23:50:15Z""}}"
+3375,IssueComment,2021-09-09 00:02:55,llinder,fork_merge,Lots of dependency version bumps and a python2 issue with cqlsh. After a lot of tweaking versions the build looks good now.,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/915652618"", ""author_association"": ""MEMBER""}"
+3375,ReviewRequested,2021-09-09 00:03:21,llinder,fork_merge,,"{""requested_reviewer"": {""login"": ""basvanbeek"", ""id"": 7205296, ""node_id"": ""MDQ6VXNlcjcyMDUyOTY="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7205296?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/basvanbeek"", ""html_url"": ""https://github.com/basvanbeek"", ""followers_url"": ""https://api.github.com/users/basvanbeek/followers"", ""following_url"": ""https://api.github.com/users/basvanbeek/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/basvanbeek/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/basvanbeek/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/basvanbeek/subscriptions"", ""organizations_url"": ""https://api.github.com/users/basvanbeek/orgs"", ""repos_url"": ""https://api.github.com/users/basvanbeek/repos"", ""events_url"": ""https://api.github.com/users/basvanbeek/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/basvanbeek/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3375,ReviewRequested,2021-09-09 00:04:26,llinder,fork_merge,,"{""requested_reviewer"": {""login"": ""anuraaga"", ""id"": 198344, ""node_id"": ""MDQ6VXNlcjE5ODM0NA=="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/198344?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/anuraaga"", ""html_url"": ""https://github.com/anuraaga"", ""followers_url"": ""https://api.github.com/users/anuraaga/followers"", ""following_url"": ""https://api.github.com/users/anuraaga/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/anuraaga/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/anuraaga/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/anuraaga/subscriptions"", ""organizations_url"": ""https://api.github.com/users/anuraaga/orgs"", ""repos_url"": ""https://api.github.com/users/anuraaga/repos"", ""events_url"": ""https://api.github.com/users/anuraaga/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/anuraaga/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3375,ReviewApproved,2021-09-09 00:07:45,codefromthecrypt,fork_merge,coolio. I think people will appreciate the CVE less result!,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3375#pullrequestreview-749718110""}"
+3375,MergePR,2021-09-09 02:15:48,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5275639717"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/09e49ffb0e4afbd8dadf494e232a27fab7a520c8""}"
+3376,SubmitCommit,2021-09-09 02:40:23,llinder,fork_merge,Adjusting copyright headers for this year,"{""sha"": ""7683f5afaebc99888cc3b087cfabad9a8191ea59"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-09-09T02:40:23Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-09-09T02:40:23Z""}}"
+3376,OpenPR,2021-09-09 02:41:14,llinder,fork_merge,,
+3376,ReviewRequested,2021-09-09 02:41:23,llinder,fork_merge,,"{""requested_reviewer"": {""login"": ""basvanbeek"", ""id"": 7205296, ""node_id"": ""MDQ6VXNlcjcyMDUyOTY="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7205296?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/basvanbeek"", ""html_url"": ""https://github.com/basvanbeek"", ""followers_url"": ""https://api.github.com/users/basvanbeek/followers"", ""following_url"": ""https://api.github.com/users/basvanbeek/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/basvanbeek/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/basvanbeek/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/basvanbeek/subscriptions"", ""organizations_url"": ""https://api.github.com/users/basvanbeek/orgs"", ""repos_url"": ""https://api.github.com/users/basvanbeek/repos"", ""events_url"": ""https://api.github.com/users/basvanbeek/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/basvanbeek/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3376,ReviewApproved,2021-09-09 02:59:05,codefromthecrypt,fork_merge,welcome to 2021 ???? ,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3376#pullrequestreview-749782058""}"
+3376,MergePR,2021-09-09 03:00:12,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5275743084"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/09de8b558eaca856f4a7d74d345ac3654792c9f2""}"
+3377,SubmitCommit,2021-09-09 19:03:32,llinder,fork_merge,"Limit usage of ES template parameter ""include_type_name"".
+
+Using parameter ""include_type_name"" with versions of ES that didn't yet support the parameter failes with `unrecognized parameter: [include_type_name]`
+
+This change addresses that by limiting the usage to ES >= 6.7 < 7.0","{""sha"": ""5439aba0f77c4afe728e6f2387557d9dec16738b"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-09-09T19:03:32Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-09-09T19:03:32Z""}}"
+3377,OpenPR,2021-09-09 20:28:11,llinder,fork_merge,,
+3377,ReviewRequested,2021-09-09 20:30:49,llinder,fork_merge,,"{""requested_reviewer"": {""login"": ""jorgheymans"", ""id"": 193792, ""node_id"": ""MDQ6VXNlcjE5Mzc5Mg=="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/193792?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jorgheymans"", ""html_url"": ""https://github.com/jorgheymans"", ""followers_url"": ""https://api.github.com/users/jorgheymans/followers"", ""following_url"": ""https://api.github.com/users/jorgheymans/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jorgheymans/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jorgheymans/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jorgheymans/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jorgheymans/orgs"", ""repos_url"": ""https://api.github.com/users/jorgheymans/repos"", ""events_url"": ""https://api.github.com/users/jorgheymans/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jorgheymans/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3377,ReviewRequested,2021-09-09 20:30:55,llinder,fork_merge,,"{""requested_reviewer"": {""login"": ""basvanbeek"", ""id"": 7205296, ""node_id"": ""MDQ6VXNlcjcyMDUyOTY="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/7205296?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/basvanbeek"", ""html_url"": ""https://github.com/basvanbeek"", ""followers_url"": ""https://api.github.com/users/basvanbeek/followers"", ""following_url"": ""https://api.github.com/users/basvanbeek/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/basvanbeek/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/basvanbeek/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/basvanbeek/subscriptions"", ""organizations_url"": ""https://api.github.com/users/basvanbeek/orgs"", ""repos_url"": ""https://api.github.com/users/basvanbeek/repos"", ""events_url"": ""https://api.github.com/users/basvanbeek/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/basvanbeek/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3377,ReviewApproved,2021-09-09 20:35:15,codefromthecrypt,fork_merge,"there's probably a test in ElasticsearchStorageTest that conditionally adds this based on a version, and there could be a new test to prove it doesn't for 6.6.6 the devil's ES","{""author_association"": ""NONE"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3377#pullrequestreview-750797740""}"
+3377,Revise,2021-09-09 21:30:11,llinder,fork_merge,Adds some tests for includes_type_name param,"{""sha"": ""6482f0bebdcf1c8682ae8e41ad9d039c0569f935"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-09-09T21:00:51Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-09-09T21:30:11Z""}}"
+3377,MergePR,2021-09-09 21:41:19,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5281159068"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/df72a4a27824e2006730dfd4d135a854960b4f00""}"
+3378,OpenPR,2021-09-27 09:36:15,jonkerj,fork_merge,,
+3378,IssueComment,2021-09-27 12:13:19,jcchavezs,fork_merge,"Test is failing because of lack of license in YAML files. Not sure this is truly needed:
+
+![image](https://user-images.githubusercontent.com/3075074/134905710-305657dd-69b2-4c8e-b5f9-b8ffd0a09e66.png)
+
+Shall we @basvanbeek @abesto?","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/927813960"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-10-03 12:58:12,basvanbeek,fork_merge,yes we should have the license headers in.,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/932946191"", ""author_association"": ""MEMBER""}"
+3378,IssueComment,2021-10-04 07:38:23,jonkerj,fork_merge,"No problem, I've added them. Can someone trigger a re-test?","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/933224568"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-10-04 07:54:03,jonkerj,fork_merge,"Hm, the headers are there, albeit probabky in a different format your test expects. I've used Helm block comments (`{{- /* ... */ }}`) where possible, as the license applies to the templates and not to the generated manifests. I suspect the test does not like that. Although `Chart.yaml` and `values.yaml` contain simple YAML-comments (as they are not templated) and also make the test angry. Does the test work at all for YAML? Anything I can do about this?","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/933235104"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-10-04 08:09:16,jonkerj,fork_merge,"Did some digging in [license-maven-plugin](https://github.com/mojohaus/license-maven-plugin), and [it seems to me](https://github.com/mojohaus/license-maven-plugin/tree/master/src/main/java/org/codehaus/mojo/license/header/transformer) that it is limited in types of files / comment styles supported. I cannot seem to find YAML or Helm-style comments in there. 
+
+One could (in theory) submit YAML/Helm support into that plugin, and bump the license-mavin-plugin version in this repo afterwards, but I am not eager to jump on that boat.","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/933246643"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-10-04 09:37:08,jcchavezs,fork_merge,"I am inclined to say we should ignore that folder for now but I'd like to
+hear from @basvanbeek and @llinder. Also would be cool to see @abesto
+around here.
+
+On Mon, Oct 4, 2021, 10:09 Jorik Jonker ***@***.***> wrote:
+
+> Did some digging in license-maven-plugin
+> <https://github.com/mojohaus/license-maven-plugin>, and it seems to me
+> <https://github.com/mojohaus/license-maven-plugin/tree/master/src/main/java/org/codehaus/mojo/license/header/transformer>
+> that it is limited in types of files / comment styles supported. I cannot
+> seem to find YAML or Helm-style comments in there.
+>
+> One could (in theory) submit YAML/Helm support into that plugin, and bump
+> the license-mavin-plugin version in this repo afterwards, but I am not
+> eager to jump on that boat.
+>
+> —
+> You are receiving this because you commented.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/openzipkin/zipkin/pull/3378#issuecomment-933246643>,
+> or unsubscribe
+> <https://github.com/notifications/unsubscribe-auth/AAXOYAXNWVDY4QUL4QHBYSDUFFOLPANCNFSM5E2DNM4A>
+> .
+> Triage notifications on the go with GitHub Mobile for iOS
+> <https://apps.apple.com/app/apple-store/id1477376905?ct=notification-email&mt=8&pt=524675>
+> or Android
+> <https://play.google.com/store/apps/details?id=com.github.android&referrer=utm_campaign%3Dnotification-email%26utm_medium%3Demail%26utm_source%3Dgithub>.
+>
+>
+","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/933314143"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-10-04 13:33:15,abesto,fork_merge,"Who me? Hi! :D
+TBH I don't think I should have a word on setting the requirements for this - that is, whether it's OK to not have license headers in these files. I know this was extremely important under ASF, I'm not sure how much we care about it now. Personally I wouldn't worry about ignoring all YAML files.
+
+On the technical front, AFAICT YAML supports line comments starting with `#`, which the Maven plugin also supports with the `properties` comment style. So possibly it's a matter of submitting a PR to the plugin that adds `.yaml` to the default extension list? Though note, that transformer also understands hashbangs, which are invalid in YAML, but whatever. Better yet, https://www.mojohaus.org/license-maven-plugin/check-file-header-mojo.html#extraExtensions looks like it's possible to add an extra extension in configuration. So maybe that'd fly?","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/933491290"", ""author_association"": ""MEMBER""}"
+3378,IssueComment,2021-10-25 14:29:17,jcchavezs,fork_merge,@jonkerj could we avoid that folder to move on? cc @basvanbeek ,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/950988081"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-10-26 07:22:05,jonkerj,fork_merge,"> @jonkerj could we avoid that folder to move on? cc @basvanbeek
+
+Sure, but I wouldn't know how. I am not familiar with the build system (it's maven, right?) and got lost trying to find this out. If someone can point me to other stuff getting ignored by this check, I'll see that I replicate that to my folder.","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/951634921"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-11-16 14:11:01,jonkerj,fork_merge,Bump,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/970311819"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-11-23 11:55:46,mrfelek,fork_merge,"@jonkerj
+ingress.yaml:
+`{{- $svcPort := .Values.service.port -}}`   should be `{{- $svcPort := .Values.service.zipkin.port -}}`
+values.yaml:
+`service:
+  tracing:
+    type: ClusterIP
+    port: 80
+  zipkin:
+    type: ClusterIP
+    port: 9411
+`
+Anyway... good work.. Thank you!
+","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/976440975"", ""author_association"": ""NONE""}"
+3378,Revise,2021-11-23 15:04:06,loekalive,fork_merge,"feature: add Helm chart for zipkin-server
+
+Signed-off-by: Lukas van Schagen <lukas.vanschagen@eu.equinix.com>","{""sha"": ""76a962e689619b28e41033320b041486d76cc737"", ""author"": {""name"": ""Lukas van Schagen"", ""email"": ""lukas.vanschagen@eu.equinix.com"", ""date"": ""2021-09-08T08:05:19Z""}, ""committer"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-11-23T15:04:06Z""}}"
+3378,Revise,2021-11-23 15:04:06,jonkerj,fork_merge,"fix: disable automounting of service account token
+
+Signed-off-by: Jorik Jonker <jorik.jonker@eu.equinix.com>","{""sha"": ""83fe09ef7c36cb018dcd15a0961513f26f6421ee"", ""author"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-09-08T08:09:33Z""}, ""committer"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-11-23T15:04:06Z""}}"
+3378,Revise,2021-11-23 15:04:06,jonkerj,fork_merge,"fix: support three types of ingress
+
+Chart lacked logic to support ingress v1, so it supports all three now:
+- legacy extensions/v1beta1 (.. 1.21)
+- networking.k8s.io/v1beta1 (1.14 .. 1.21)
+- networking.k8s.io/v1 (1.19 .. )
+
+Signed-off-by: Jorik Jonker <jorik.jonker@eu.equinix.com>","{""sha"": ""c2730ad45ad7a56d05be3ce2f4bb2f24e74b9b01"", ""author"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-09-08T08:20:15Z""}, ""committer"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-11-23T15:04:06Z""}}"
+3378,Revise,2021-11-23 15:04:07,jonkerj,fork_merge,fix: reference correct port variable,"{""sha"": ""1a40d9a2ddc4f573afa5c43e37c0dcb90664a08f"", ""author"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-11-23T15:02:49Z""}, ""committer"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-11-23T15:04:07Z""}}"
+3378,Revise,2021-11-23 15:04:07,jonkerj,fork_merge,"fix: add license to helm chart files
+
+Signed-off-by: Jorik Jonker <jorik.jonker@eu.equinix.com>","{""sha"": ""ffd3f17226efd3c8158a498b491c0b73bd1c569a"", ""author"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-10-04T07:35:38Z""}, ""committer"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-11-23T15:04:07Z""}}"
+3378,Revise,2021-11-23 15:04:07,jonkerj,fork_merge,"fix: make ingress templating/values easier
+
+Previous templating contained confusing options for multiple
+hosts/paths, while this is propbably never used.
+
+Signed-off-by: Jorik Jonker <jorik.jonker@eu.equinix.com>","{""sha"": ""001e4a341afd5676bc95f6c8c1fe7b0171385a32"", ""author"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-09-08T08:30:35Z""}, ""committer"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-11-23T15:04:07Z""}}"
+3378,IssueComment,2021-11-23 15:05:45,jonkerj,fork_merge,"@mrfelek : thanks for the sharp eye, don't know how we could have missed that. Still looking for hints on how to exclude the chart subdir from the license header check. Can anyone point me towards the right direction?","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/976681217"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-11-23 15:20:20,jcchavezs,fork_merge,@jonkerj are you on twitter? I'd like to have a word with you.,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/976702620"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-11-23 15:24:50,jonkerj,fork_merge,"I'm sorry, I'm not on Twitter. I'm on several slacks (Talos, CNCF, Cilium, Kubernetes), though","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/976709430"", ""author_association"": ""CONTRIBUTOR""}"
+3378,IssueComment,2021-12-02 12:41:06,jonkerj,fork_merge,"Don't want to sound impatient, but I've got the feeling this PR and the conversation around it is stalling a bit. Don't get me wrong: we really love to help in getting this chart included, and believe it would boost the adaption of Zipkin in a Kubernetes environment. 
+
+If this has no priority from the main devs: totally fine and we'd respect that, and we will find a different approach, but please be clear about this.","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/984592174"", ""author_association"": ""CONTRIBUTOR""}"
+3378,MergePR,2021-12-02 13:05:05,jcchavezs,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5705699502"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/e58ea5118bed8e9bef11626b1afc728b4a64d01e""}"
+3378,IssueCommentSupplement,2021-12-02 13:05:15,jcchavezs,fork_merge,Let's merge this I will address the headers in a next PR.,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/984610125"", ""author_association"": ""CONTRIBUTOR""}"
+3378,ReviewCommentSupplement,2021-12-02 19:05:25,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3378#pullrequestreview-821911888""}"
+3378,ReviewCommentSupplement,2021-12-02 19:06:56,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3378#pullrequestreview-821913363""}"
+3378,CrossReferenced,2021-12-02 19:15:02,jcchavezs,fork_merge,chore: adds support for yaml license headers.,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3397"", ""is_pull_request"": true}}"
+3378,CrossReferenced,2021-12-06 12:20:04,jonkerj,fork_merge,fix: chart: remove unneeded `tracing` service port,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3399"", ""is_pull_request"": true}}"
+3381,OpenPR,2021-10-11 17:48:11,llinder,fork_merge,,
+3381,Revise,2021-10-11 18:49:48,llinder,fork_merge,"Bump Armeria, Cassandra, Micrometer and Jackon deps
+
+There are a few CVEs with Netty. This change bumps a few Netty related dependencies to align on the latest Netty version.","{""sha"": ""da875f00d48a2df6316c70516c74d449f30133a6"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-10-11T17:42:04Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-10-11T18:49:48Z""}}"
+3381,ReviewComment,2021-10-11 19:00:41,llinder,fork_merge,,"{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3381#pullrequestreview-776584870""}"
+3381,ReviewRequested,2021-10-12 00:43:25,llinder,fork_merge,,"{""requested_reviewer"": {""login"": ""jcchavezs"", ""id"": 3075074, ""node_id"": ""MDQ6VXNlcjMwNzUwNzQ="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/3075074?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jcchavezs"", ""html_url"": ""https://github.com/jcchavezs"", ""followers_url"": ""https://api.github.com/users/jcchavezs/followers"", ""following_url"": ""https://api.github.com/users/jcchavezs/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jcchavezs/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jcchavezs/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jcchavezs/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jcchavezs/orgs"", ""repos_url"": ""https://api.github.com/users/jcchavezs/repos"", ""events_url"": ""https://api.github.com/users/jcchavezs/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jcchavezs/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3381,ReviewRequested,2021-10-12 00:43:25,llinder,fork_merge,,"{""requested_reviewer"": {""login"": ""jeqo"", ""id"": 6180701, ""node_id"": ""MDQ6VXNlcjYxODA3MDE="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/6180701?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeqo"", ""html_url"": ""https://github.com/jeqo"", ""followers_url"": ""https://api.github.com/users/jeqo/followers"", ""following_url"": ""https://api.github.com/users/jeqo/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeqo/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeqo/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeqo/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeqo/orgs"", ""repos_url"": ""https://api.github.com/users/jeqo/repos"", ""events_url"": ""https://api.github.com/users/jeqo/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeqo/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3381,ReviewApproved,2021-10-20 23:35:29,jeqo,fork_merge,"LGTM. Did some small bumps to align to latest patch versions.
+
+Thanks @llinder ","{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3381#pullrequestreview-785081682""}"
+3381,Revise,2021-10-26 22:24:27,llinder,fork_merge,Newer jackson and micrometer,"{""sha"": ""f6411a53e97fef32a00eb02ec2795a04d650ee66"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-10-26T22:24:27Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-10-26T22:24:27Z""}}"
+3381,MergePR,2021-10-27 13:08:28,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5527354577"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/b6a5f76c4d13d2c05334eacf256787cc4be4c848""}"
+3384,OpenPR,2021-10-25 20:18:03,BbolroC,fork_merge,,
+3384,RenameTitle,2021-10-25 20:50:12,BbolroC,fork_merge,,"{""rename"": {""from"": ""Support docker image for 390x and bump base java container 15.0.5_p3"", ""to"": ""WIP: Support docker image for 390x and bump base java container 15.0.5_p3""}, ""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5516247878""}"
+3384,IssueComment,2021-10-25 20:57:18,BbolroC,fork_merge,"I am currently struggling with local test on a `amd64` machine. The following error messages appeared when I simply ran a command for docker-build like:
+
+```
+$ git clone https://github.com/openzipkin/zipkin.git
+$ cd zipkin
+$ # add '-X' option at https://github.com/openzipkin/zipkin/blob/master/build-bin/maven/maven_build#L23
+$ build-bin/docker/docker_build openzipkin/zipkin:test
+...
+log messages
+...
+#17 32.97 [ERROR] Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.11.0:npm (npm lint) on project zipkin-lens: Failed to run task: 'npm run lint' failed. org.apache.commons.exec.ExecuteException: Process exited with an error: 254 (Exit value: 254) -> [Help 1]
+#17 32.98 org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.11.0:npm (npm lint) on project zipkin-lens: Failed to run task
+#17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
+#17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+#17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+#17 32.98     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+#17 32.98     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+#17 32.98     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+#17 32.98     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.98     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+#17 32.98     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.98     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+#17 32.98     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+#17 32.98     at java.lang.Thread.run (Thread.java:832)
+#17 32.98 Caused by: org.apache.maven.plugin.MojoFailureException: Failed to run task
+#17 32.98     at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:100)
+#17 32.98     at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+#17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+#17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+#17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+#17 32.98     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+#17 32.98     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+#17 32.98     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+#17 32.98     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.99     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+#17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.99     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+#17 32.99     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+#17 32.99     at java.lang.Thread.run (Thread.java:832)
+#17 32.99 Caused by: com.github.eirslett.maven.plugins.frontend.lib.TaskRunnerException: 'npm run lint' failed.
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeTaskExecutor.execute (NodeTaskExecutor.java:63)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.NpmMojo.execute (NpmMojo.java:62)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:94)
+#17 32.99     at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+#17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+#17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+#17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+#17 32.99     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+#17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+#17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+#17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.99     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+#17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.99     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+#17 32.99     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+#17 32.99     at java.lang.Thread.run (Thread.java:832)
+#17 32.99 Caused by: com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutionException: org.apache.commons.exec.ExecuteException: Process exited with an error: 254 (Exit value: 254)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.execute (ProcessExecutor.java:82)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.executeAndRedirectOutput (ProcessExecutor.java:64)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeExecutor.executeAndRedirectOutput (NodeExecutor.java:29)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeTaskExecutor.execute (NodeTaskExecutor.java:58)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.NpmMojo.execute (NpmMojo.java:62)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:94)
+#17 32.99     at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+#17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+#17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+#17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+#17 32.99     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+#17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+#17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+#17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.99     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+#17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.99     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+#17 32.99     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+#17 32.99     at java.lang.Thread.run (Thread.java:832)
+#17 32.99 Caused by: org.apache.commons.exec.ExecuteException: Process exited with an error: 254 (Exit value: 254)
+#17 32.99     at org.apache.commons.exec.DefaultExecutor.executeInternal (DefaultExecutor.java:404)
+#17 32.99     at org.apache.commons.exec.DefaultExecutor.execute (DefaultExecutor.java:166)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.execute (ProcessExecutor.java:74)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.executeAndRedirectOutput (ProcessExecutor.java:64)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeExecutor.executeAndRedirectOutput (NodeExecutor.java:29)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeTaskExecutor.execute (NodeTaskExecutor.java:58)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.NpmMojo.execute (NpmMojo.java:62)
+#17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:94)
+#17 32.99     at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+#17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+#17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+#17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+#17 32.99     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+#17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+#17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+#17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.99     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+#17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+#17 32.99     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+#17 32.99     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+#17 32.99     at java.lang.Thread.run (Thread.java:832)
+#17 32.99 [ERROR] 
+#17 32.99 [ERROR] 
+#17 32.99 [ERROR] For more information about the errors and possible solutions, please read the following articles:
+#17 32.99 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+#17 32.99 [ERROR] 
+#17 33.00 [ERROR] After correcting the problems, you can resume the build with the command
+#17 33.00 [ERROR]   mvn <args> -rf :zipkin-lens
+------
+executor failed running [/bin/sh -c /code/build-bin/maven/maven_build_or_unjar io.zipkin zipkin-server ${VERSION} exec &&     mv zipkin-server zipkin &&     /code/build-bin/maven/maven_build_or_unjar io.zipkin zipkin-server ${VERSION} slim &&     mv zipkin-server zipkin-slim]: exit code: 1
+``` 
+
+Could someone point me out to how to do successful local test?","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/951324108"", ""author_association"": ""CONTRIBUTOR""}"
+3384,IssueComment,2021-10-25 21:30:34,jcchavezs,fork_merge,Ping @eirslett,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/951348030"", ""author_association"": ""CONTRIBUTOR""}"
+3384,Revise,2021-10-26 05:14:49,BbolroC,fork_merge,Support docker image for s390x,"{""sha"": ""578a5ad00f7666e6dc15d0fa39e8699760b32846"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-25T20:48:19Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-26T05:14:49Z""}}"
+3384,Revise,2021-10-26 05:15:12,BbolroC,fork_merge,Bump java base container 15.0.5_p3,"{""sha"": ""4b35fafa79fcff8a638e536230fa5002ebcf00df"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-25T20:48:19Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-26T05:15:12Z""}}"
+3384,Revise,2021-10-28 11:28:11,BbolroC,fork_merge,Resolve license header issue of docker_arch,"{""sha"": ""c6e405f1ae6e39e7c34a1edac428dddfe5f82683"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-28T11:28:11Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-28T11:28:11Z""}}"
+3384,Revise,2021-10-28 11:30:51,BbolroC,fork_merge,Resolve error on building docker image of zipkin-mysql for s390x,"{""sha"": ""0e7cf20104b4ee176d4a34b82479ca9998027bcd"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-28T11:30:51Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-28T11:30:51Z""}}"
+3384,RenameTitle,2021-10-28 11:31:29,BbolroC,fork_merge,,"{""rename"": {""from"": ""WIP: Support docker image for 390x and bump base java container 15.0.5_p3"", ""to"": ""Support docker image for 390x and bump base java container 15.0.5_p3""}, ""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5533459728""}"
+3384,IssueComment,2021-10-28 11:34:59,BbolroC,fork_merge,"> I am currently struggling with local test on a `amd64` machine. The following error messages appeared when I simply ran a command for docker-build like:
+> 
+> ```
+> $ git clone https://github.com/openzipkin/zipkin.git
+> $ cd zipkin
+> $ # add '-X' option at https://github.com/openzipkin/zipkin/blob/master/build-bin/maven/maven_build#L23
+> $ build-bin/docker/docker_build openzipkin/zipkin:test
+> ...
+> log messages
+> ...
+> #17 32.97 [ERROR] Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.11.0:npm (npm lint) on project zipkin-lens: Failed to run task: 'npm run lint' failed. org.apache.commons.exec.ExecuteException: Process exited with an error: 254 (Exit value: 254) -> [Help 1]
+> #17 32.98 org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal com.github.eirslett:frontend-maven-plugin:1.11.0:npm (npm lint) on project zipkin-lens: Failed to run task
+> #17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
+> #17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+> #17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+> #17 32.98     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+> #17 32.98     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+> #17 32.98     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+> #17 32.98     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.98     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+> #17 32.98     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.98     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+> #17 32.98     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+> #17 32.98     at java.lang.Thread.run (Thread.java:832)
+> #17 32.98 Caused by: org.apache.maven.plugin.MojoFailureException: Failed to run task
+> #17 32.98     at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:100)
+> #17 32.98     at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+> #17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+> #17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+> #17 32.98     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+> #17 32.98     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+> #17 32.98     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+> #17 32.98     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+> #17 32.98     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.99     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+> #17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.99     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+> #17 32.99     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+> #17 32.99     at java.lang.Thread.run (Thread.java:832)
+> #17 32.99 Caused by: com.github.eirslett.maven.plugins.frontend.lib.TaskRunnerException: 'npm run lint' failed.
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeTaskExecutor.execute (NodeTaskExecutor.java:63)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.NpmMojo.execute (NpmMojo.java:62)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:94)
+> #17 32.99     at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+> #17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+> #17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+> #17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+> #17 32.99     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+> #17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+> #17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+> #17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.99     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+> #17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.99     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+> #17 32.99     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+> #17 32.99     at java.lang.Thread.run (Thread.java:832)
+> #17 32.99 Caused by: com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutionException: org.apache.commons.exec.ExecuteException: Process exited with an error: 254 (Exit value: 254)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.execute (ProcessExecutor.java:82)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.executeAndRedirectOutput (ProcessExecutor.java:64)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeExecutor.executeAndRedirectOutput (NodeExecutor.java:29)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeTaskExecutor.execute (NodeTaskExecutor.java:58)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.NpmMojo.execute (NpmMojo.java:62)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:94)
+> #17 32.99     at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+> #17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+> #17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+> #17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+> #17 32.99     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+> #17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+> #17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+> #17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.99     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+> #17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.99     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+> #17 32.99     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+> #17 32.99     at java.lang.Thread.run (Thread.java:832)
+> #17 32.99 Caused by: org.apache.commons.exec.ExecuteException: Process exited with an error: 254 (Exit value: 254)
+> #17 32.99     at org.apache.commons.exec.DefaultExecutor.executeInternal (DefaultExecutor.java:404)
+> #17 32.99     at org.apache.commons.exec.DefaultExecutor.execute (DefaultExecutor.java:166)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.execute (ProcessExecutor.java:74)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.ProcessExecutor.executeAndRedirectOutput (ProcessExecutor.java:64)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeExecutor.executeAndRedirectOutput (NodeExecutor.java:29)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.lib.NodeTaskExecutor.execute (NodeTaskExecutor.java:58)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.NpmMojo.execute (NpmMojo.java:62)
+> #17 32.99     at com.github.eirslett.maven.plugins.frontend.mojo.AbstractFrontendMojo.execute (AbstractFrontendMojo.java:94)
+> #17 32.99     at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+> #17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+> #17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+> #17 32.99     at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+> #17 32.99     at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+> #17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:190)
+> #17 32.99     at org.apache.maven.lifecycle.internal.builder.multithreaded.MultiThreadedBuilder$1.call (MultiThreadedBuilder.java:186)
+> #17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.99     at java.util.concurrent.Executors$RunnableAdapter.call (Executors.java:515)
+> #17 32.99     at java.util.concurrent.FutureTask.run (FutureTask.java:264)
+> #17 32.99     at java.util.concurrent.ThreadPoolExecutor.runWorker (ThreadPoolExecutor.java:1130)
+> #17 32.99     at java.util.concurrent.ThreadPoolExecutor$Worker.run (ThreadPoolExecutor.java:630)
+> #17 32.99     at java.lang.Thread.run (Thread.java:832)
+> #17 32.99 [ERROR] 
+> #17 32.99 [ERROR] 
+> #17 32.99 [ERROR] For more information about the errors and possible solutions, please read the following articles:
+> #17 32.99 [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+> #17 32.99 [ERROR] 
+> #17 33.00 [ERROR] After correcting the problems, you can resume the build with the command
+> #17 33.00 [ERROR]   mvn <args> -rf :zipkin-lens
+> ------
+> executor failed running [/bin/sh -c /code/build-bin/maven/maven_build_or_unjar io.zipkin zipkin-server ${VERSION} exec &&     mv zipkin-server zipkin &&     /code/build-bin/maven/maven_build_or_unjar io.zipkin zipkin-server ${VERSION} slim &&     mv zipkin-server zipkin-slim]: exit code: 1
+> ```
+> 
+> Could someone point me out to how to do successful local test?
+
+It turns out that the following command should be run first:
+```
+$ ./mvnw -T1C -q --batch-mode -DskipTests --also-make -pl zipkin-server clean package
+```","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/953760263"", ""author_association"": ""CONTRIBUTOR""}"
+3384,IssueComment,2021-10-28 11:43:16,BbolroC,fork_merge,@llinder I would be very grateful if you could review this. Thank you very much.,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/953765487"", ""author_association"": ""CONTRIBUTOR""}"
+3384,RenameTitle,2021-10-28 13:37:34,BbolroC,fork_merge,,"{""rename"": {""from"": ""Support docker image for 390x and bump base java container 15.0.5_p3"", ""to"": ""Support docker image for s390x and bump base java container 15.0.5_p3""}, ""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5534211705""}"
+3384,ReviewRequested,2021-11-10 08:53:21,jcchavezs,fork_merge,,"{""requested_reviewer"": {""login"": ""devinsba"", ""id"": 139938, ""node_id"": ""MDQ6VXNlcjEzOTkzOA=="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/139938?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/devinsba"", ""html_url"": ""https://github.com/devinsba"", ""followers_url"": ""https://api.github.com/users/devinsba/followers"", ""following_url"": ""https://api.github.com/users/devinsba/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/devinsba/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/devinsba/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/devinsba/subscriptions"", ""organizations_url"": ""https://api.github.com/users/devinsba/orgs"", ""repos_url"": ""https://api.github.com/users/devinsba/repos"", ""events_url"": ""https://api.github.com/users/devinsba/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/devinsba/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3384,ReviewRequested,2021-11-10 08:53:21,jcchavezs,fork_merge,,"{""requested_reviewer"": {""login"": ""jeqo"", ""id"": 6180701, ""node_id"": ""MDQ6VXNlcjYxODA3MDE="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/6180701?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeqo"", ""html_url"": ""https://github.com/jeqo"", ""followers_url"": ""https://api.github.com/users/jeqo/followers"", ""following_url"": ""https://api.github.com/users/jeqo/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeqo/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeqo/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeqo/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeqo/orgs"", ""repos_url"": ""https://api.github.com/users/jeqo/repos"", ""events_url"": ""https://api.github.com/users/jeqo/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeqo/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3384,ReviewRequested,2021-11-10 08:53:21,jcchavezs,fork_merge,,"{""requested_reviewer"": {""login"": ""shakuzen"", ""id"": 8924140, ""node_id"": ""MDQ6VXNlcjg5MjQxNDA="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/8924140?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/shakuzen"", ""html_url"": ""https://github.com/shakuzen"", ""followers_url"": ""https://api.github.com/users/shakuzen/followers"", ""following_url"": ""https://api.github.com/users/shakuzen/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/shakuzen/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/shakuzen/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/shakuzen/subscriptions"", ""organizations_url"": ""https://api.github.com/users/shakuzen/orgs"", ""repos_url"": ""https://api.github.com/users/shakuzen/repos"", ""events_url"": ""https://api.github.com/users/shakuzen/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/shakuzen/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3384,ReviewRequested,2021-11-10 08:53:28,jcchavezs,fork_merge,,"{""requested_reviewer"": {""login"": ""llinder"", ""id"": 99359, ""node_id"": ""MDQ6VXNlcjk5MzU5"", ""avatar_url"": ""https://avatars.githubusercontent.com/u/99359?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/llinder"", ""html_url"": ""https://github.com/llinder"", ""followers_url"": ""https://api.github.com/users/llinder/followers"", ""following_url"": ""https://api.github.com/users/llinder/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/llinder/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/llinder/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/llinder/subscriptions"", ""organizations_url"": ""https://api.github.com/users/llinder/orgs"", ""repos_url"": ""https://api.github.com/users/llinder/repos"", ""events_url"": ""https://api.github.com/users/llinder/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/llinder/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3384,Revise,2021-11-10 09:30:00,BbolroC,fork_merge,Fix liscense issue on zipkin-mysql/install.sh,"{""sha"": ""4529e37491e36da05c84444823a5f2dfc60f7a19"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T09:30:00Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T09:30:00Z""}}"
+3384,Revise,2021-11-10 09:34:57,BbolroC,fork_merge,Fix liscense issue on mysql.sql,"{""sha"": ""845ad93a37ae7c4f9b882402d1a230459e2ae886"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T09:34:57Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T09:34:57Z""}}"
+3384,ReviewComment,2021-11-10 09:42:43,shakuzen,fork_merge,"Generally it looks good to me. I don't think it has to block adding s390x support, but Java 15 is already EOL since it was a non-LTS version. We should separately try to get on the latest supported version, which currently is 17.","{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3384#pullrequestreview-802350790""}"
+3384,Revise,2021-11-10 10:39:08,BbolroC,fork_merge,Make mysql.sql separate for test,"{""sha"": ""a6a8f17f7e0f604177292c01173dff588ef127a8"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T10:39:08Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T10:39:08Z""}}"
+3384,ReviewComment,2021-11-22 13:49:24,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3384#pullrequestreview-812556321""}"
+3384,ReviewComment,2021-11-22 13:50:45,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3384#pullrequestreview-812557795""}"
+3384,Revise,2021-11-22 16:45:03,BbolroC,fork_merge,Remove unnecessary changes,"{""sha"": ""be3f51e3f45e0b5ec2e5214de4605bf3fffb1a67"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-22T16:45:03Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-22T16:45:03Z""}}"
+3384,ReviewComment,2021-11-24 08:48:16,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3384#pullrequestreview-814582850""}"
+3384,Revise,2021-11-24 09:25:53,BbolroC,fork_merge,Update nginx version to 1.20.2,"{""sha"": ""d450cdbe9bf1c27b4e126e6e0ffe1ef8aed7f495"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-24T09:25:53Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-24T09:25:53Z""}}"
+3384,Revise,2021-11-26 12:45:23,BbolroC,fork_merge,Restore s390x config in docker_arch,"{""sha"": ""dae8f6baa7fef00644e2e9f0f900aa2826f45386"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-26T12:45:23Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-26T12:45:23Z""}}"
+3384,ReviewApproved,2021-11-29 22:28:16,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3384#pullrequestreview-818376440""}"
+3384,IssueComment,2021-11-29 22:28:32,jcchavezs,fork_merge,@llinder are we OK merging this now?,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/982081999"", ""author_association"": ""CONTRIBUTOR""}"
+3384,ReviewComment,2021-11-30 15:10:10,llinder,fork_merge,,"{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3384#pullrequestreview-819162887""}"
+3384,Revise,2021-12-14 08:06:23,BbolroC,fork_merge,Keep mysql.sql as it was,"{""sha"": ""557d1e7b2bbe8811e1a44fa57a58c0c2b4948fe3"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-12-14T07:52:50Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-12-14T08:06:23Z""}}"
+3384,ReviewComment,2021-12-14 08:54:54,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3384#pullrequestreview-831182955""}"
+3384,IssueComment,2021-12-14 08:55:19,jcchavezs,fork_merge,"This is great stuff. I left a small nit comment, other than that I will merge it today.","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/993315707"", ""author_association"": ""CONTRIBUTOR""}"
+3384,IssueComment,2021-12-14 10:33:00,BbolroC,fork_merge,@jcchavezs  Please do not merge this until your last question is clearly resolved. :wink: ,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/993402108"", ""author_association"": ""CONTRIBUTOR""}"
+3384,Revise,2021-12-14 13:51:49,jcchavezs,fork_merge,chore: removes support for target platform.,"{""sha"": ""d5b53c3d20a6d4b769f21ee52e4a6fe15cedafd0"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2021-12-14T13:32:49Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-12-14T13:51:49Z""}}"
+3384,ReviewApproved,2021-12-14 14:03:24,jcchavezs,fork_merge,Thanks for the good work and patience ???? ,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3384#pullrequestreview-831541055""}"
+3384,MergePR,2021-12-14 15:32:04,jcchavezs,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5765054795"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/7e42c7af9ff9888fd2611135177328d7953453d4""}"
+3384,DeleteBranch,2021-12-14 15:56:32,BbolroC,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5765229909"", ""commit_url"": null}"
+3392,SubmitCommit,2021-11-23 17:13:06,llinder,fork_merge,"Bump test container versions and nginx dependency
+
+Some tests where failing due to nginx version incompatibility. Also
+bumps all java versions for test containers so things align with the
+current version of java being used.","{""sha"": ""d2190212aee14b518d04f3b738e98c62b8132a8f"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-23T17:13:06Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-23T17:13:06Z""}}"
+3392,OpenPR,2021-11-23 17:15:06,llinder,fork_merge,,
+3392,MergePR,2021-11-23 19:31:53,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5662544619"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/d414f3b9932e6936646d5f878249af34c3cae5a5""}"
+3394,SubmitCommit,2021-11-24 16:29:47,llinder,fork_merge,"Bumps thrift, armeria, kafka, spring dependencies.
+
+Fixes #3391, #3393, #3390, #3387","{""sha"": ""93e03f5b1b4f537ab4165420c2b0ac24208a1866"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-24T16:29:47Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-24T16:29:47Z""}}"
+3394,OpenPR,2021-11-24 16:33:07,llinder,fork_merge,,
+3394,IssueComment,2021-11-24 16:51:26,jcchavezs,fork_merge,"+1
+
+On Wed, Nov 24, 2021, 17:33 Lance Linder ***@***.***> wrote:
+
+> Fixes #3391 <https://github.com/openzipkin/zipkin/issues/3391>, #3393
+> <https://github.com/openzipkin/zipkin/issues/3393>, #3390
+> <https://github.com/openzipkin/zipkin/issues/3390>, #3387
+> <https://github.com/openzipkin/zipkin/issues/3387>
+> ------------------------------
+> You can view, comment on, or merge this pull request online at:
+>
+>   https://github.com/openzipkin/zipkin/pull/3394
+> Commit Summary
+>
+>    - 93e03f5
+>    <https://github.com/openzipkin/zipkin/pull/3394/commits/93e03f5b1b4f537ab4165420c2b0ac24208a1866>
+>    Bumps thrift, armeria, kafka, spring dependencies.
+>
+> File Changes
+>
+> (4 files <https://github.com/openzipkin/zipkin/pull/3394/files>)
+>
+>    - *M* pom.xml
+>    <https://github.com/openzipkin/zipkin/pull/3394/files#diff-9c5fb3d1b7e3b0f54bc5c4182965c4fe1f9023d449017cece3005d3f90e8e4d8>
+>    (8)
+>    - *M* zipkin-collector/activemq/pom.xml
+>    <https://github.com/openzipkin/zipkin/pull/3394/files#diff-acf9f9baf938e119f659ffa3341e7f17036666a00359a4c1c440e23999bc36b9>
+>    (2)
+>    - *M* zipkin-collector/kafka/pom.xml
+>    <https://github.com/openzipkin/zipkin/pull/3394/files#diff-7cd33414a46e6250cc9618dd37c1d6aea37f0f8a803e31042476b5adafb8175c>
+>    (2)
+>    - *M* zipkin-collector/scribe/pom.xml
+>    <https://github.com/openzipkin/zipkin/pull/3394/files#diff-07ad44a907fbad04d5f4f8ec75bac7d545d63850a8558c3066fec0ffb5a124aa>
+>    (2)
+>
+> Patch Links:
+>
+>    - https://github.com/openzipkin/zipkin/pull/3394.patch
+>    - https://github.com/openzipkin/zipkin/pull/3394.diff
+>
+> —
+> You are receiving this because you are subscribed to this thread.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/openzipkin/zipkin/pull/3394>, or unsubscribe
+> <https://github.com/notifications/unsubscribe-auth/AAXOYAWHCYX5M2VZIPS6SDTUNUHWFANCNFSM5IWQFN6A>
+> .
+> Triage notifications on the go with GitHub Mobile for iOS
+> <https://apps.apple.com/app/apple-store/id1477376905?ct=notification-email&mt=8&pt=524675>
+> or Android
+> <https://play.google.com/store/apps/details?id=com.github.android&referrer=utm_campaign%3Dnotification-email%26utm_medium%3Demail%26utm_source%3Dgithub>.
+>
+>
+","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/978054344"", ""author_association"": ""CONTRIBUTOR""}"
+3394,Revise,2021-11-25 14:36:43,llinder,fork_merge,Fix TFramedTransport package change,"{""sha"": ""bab0665b1e3fc38a5cdf86f068468631f35786a2"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-25T14:36:43Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-25T14:36:43Z""}}"
+3394,Revise,2021-11-25 16:33:24,llinder,fork_merge,Rollback spring boot version,"{""sha"": ""8c07fb1ae804259abf3483bf22699c489f352d54"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-25T16:33:24Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-25T16:33:24Z""}}"
+3394,Revise,2021-11-25 17:04:53,llinder,fork_merge,Exclude the correct armeria-thrift dep,"{""sha"": ""a4bf3e2f0ccfffc372e622cb4938112d9604bbef"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-25T17:04:53Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-25T17:04:53Z""}}"
+3394,MergePR,2021-11-25 17:15:51,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5674175814"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/c312c0dedfb3545010c2c451161ac3e7303d56f4""}"
+3394,CrossReferenced,2021-12-03 09:05:56,jcchavezs,fork_merge,upgarde to support armeria thrift0.14,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3368"", ""is_pull_request"": true}}"
+3395,SubmitCommit,2021-11-26 15:23:49,llinder,fork_merge,Bump 14 to 15 because of tomcat deps in 14,"{""sha"": ""07cf6f0fddea00576f7730e313f0b240ccfdd06f"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-26T15:20:58Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-11-26T15:23:49Z""}}"
+3395,OpenPR,2021-11-26 15:25:27,llinder,fork_merge,,
+3395,MergePR,2021-11-27 16:44:01,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5680298713"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/6e272b91b1d74b2e8fc67b8d8f65021561edd204""}"
+3397,OpenPR,2021-12-02 13:37:06,jcchavezs,unfork_merge,,
+3397,Revise,2021-12-02 19:14:24,jcchavezs,unfork_merge,"chore: exclude chart folder from license check.
+
+We chose to skip the check in chart repository because although it is a yaml file, the comment structure for the helm templates requires a different format than yaml (see https://github.com/openzipkin/zipkin/pull/3378\#issuecomment-933235104) and even with custom header type we can't match both.","{""sha"": ""df0d56b35c9a26e129867d9c18af607d3dbf10b2"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2021-12-02T19:14:24Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2021-12-02T19:14:24Z""}}"
+3397,ReviewComment,2021-12-02 19:20:25,jcchavezs,unfork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3397#pullrequestreview-821925791""}"
+3397,MergePR,2021-12-03 09:02:10,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5710779172"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/49ca3223c2c78274ca06d41c40ea2a799b4e23be""}"
+3397,DeleteBranch,2021-12-03 09:02:11,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5710779234"", ""commit_url"": null}"
+3398,SubmitCommit,2021-12-03 13:11:09,jonkerj,fork_merge,"fix: add Helm chart CD to GH pages
+
+helm/chart-releaser-action maintains a file `index.yaml` in branch
+`gh-pages`, which refers to the chart tgz release files.","{""sha"": ""aedfdbdfc059a2024caaf4d1d24c097c994b435b"", ""author"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-12-03T12:54:18Z""}, ""committer"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-12-03T13:11:09Z""}}"
+3398,OpenPR,2021-12-03 13:13:24,jonkerj,fork_merge,,
+3398,IssueComment,2021-12-03 13:52:28,jonkerj,fork_merge,"OK, it was kind of tricky to test, because:
+- The CD workflow needs to be in the default branch (ie, `master`)
+- The workflow is only triggered by changes in `chart/**`
+
+So, what I did:
+1. I forked the repo (actually, already had a fork to create this PR)
+2. merged the branch into `master` (so the CD action was in place)
+3. changed something bogus under `chart/`, committing it into `master`
+4. Observed a helm-release was cut out
+5. Branched master, changed something bogus again, create a PR
+6. Observed that the chart was getting linted
+
+![image](https://user-images.githubusercontent.com/951654/144613576-2761ae9f-4700-4a25-a649-445ea83882a2.png)
+
+![image](https://user-images.githubusercontent.com/951654/144613638-48e29c83-6bd7-4b87-9877-8144bec75197.png)
+","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/985537689"", ""author_association"": ""CONTRIBUTOR""}"
+3398,IssueComment,2021-12-03 14:19:35,jcchavezs,fork_merge,"Awesome, thank you!
+
+On Fri, Dec 3, 2021, 14:52 Jorik Jonker ***@***.***> wrote:
+
+> OK, it was kind of tricky to test, because:
+>
+>    - The CD workflow needs to be in the default branch (ie, master)
+>    - The workflow is only triggered by changes in chart/**
+>
+> So, what I did:
+>
+>    1. I forked the repo (actually, already had a fork to create this PR)
+>    2. merged the branch into master (so the CD action was in place)
+>    3. changed something bogus under chart/, committing it into master
+>    4. Observed a helm-release was cut out
+>    5. Branched master, changed something bogus again, create a PR
+>    6. Observed that the chart was getting linted
+>
+> [image: image]
+> <https://user-images.githubusercontent.com/951654/144613576-2761ae9f-4700-4a25-a649-445ea83882a2.png>
+>
+> [image: image]
+> <https://user-images.githubusercontent.com/951654/144613638-48e29c83-6bd7-4b87-9877-8144bec75197.png>
+>
+> —
+> You are receiving this because you are subscribed to this thread.
+> Reply to this email directly, view it on GitHub
+> <https://github.com/openzipkin/zipkin/pull/3398#issuecomment-985537689>,
+> or unsubscribe
+> <https://github.com/notifications/unsubscribe-auth/AAXOYAQYRU5YX4NVIZUPINDUPDDTXANCNFSM5JJVI3IA>
+> .
+> Triage notifications on the go with GitHub Mobile for iOS
+> <https://apps.apple.com/app/apple-store/id1477376905?ct=notification-email&mt=8&pt=524675>
+> or Android
+> <https://play.google.com/store/apps/details?id=com.github.android&referrer=utm_campaign%3Dnotification-email%26utm_medium%3Demail%26utm_source%3Dgithub>.
+>
+>
+","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/985557918"", ""author_association"": ""CONTRIBUTOR""}"
+3398,ReviewApproved,2021-12-03 19:18:56,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3398#pullrequestreview-823004442""}"
+3398,IssueComment,2021-12-03 19:19:46,jcchavezs,fork_merge,"quick question, what would be the url to get the charts through helm? Do you mind adding a readme for that?","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/985767935"", ""author_association"": ""CONTRIBUTOR""}"
+3398,MergePR,2021-12-12 12:54:58,jcchavezs,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5752777635"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/d9235b9302cc9bef56c50b7e5b7b855e3932d820""}"
+3399,SubmitCommit,2021-12-06 12:19:03,jonkerj,fork_merge,"fix: chart: remove unneeded `tracing` service port
+
+Signed-off-by: Jorik Jonker <jorik.jonker@eu.equinix.com>","{""sha"": ""5fae37fb284a180ac1865a4d42ffaa2a0ae4efde"", ""author"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-12-06T12:17:18Z""}, ""committer"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2021-12-06T12:19:03Z""}}"
+3399,OpenPR,2021-12-06 12:20:04,jonkerj,fork_merge,,
+3399,ReviewApproved,2021-12-08 15:08:38,jeqo,fork_merge,"LGTM, though we don't have a test suite to validate this chart. 
+
+@jonkerj could you confirm if this works on your side before merging?","{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3399#pullrequestreview-826557495""}"
+3399,IssueComment,2021-12-10 18:07:40,mrfelek,fork_merge,@jeqo  Already deployed zipkin with this helm commit - it works.,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/991184571"", ""author_association"": ""NONE""}"
+3399,MergePR,2021-12-10 18:24:43,jeqo,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5749429511"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/e89c86a3e930df4a3a77f4b1d060ed11579bdaf4""}"
+3402,SubmitCommit,2021-12-11 23:20:08,uzshao,fork_merge,"log4j 2 fix for CVE-2021-44228
+
+This diff overrides the log4j 2 version from transitive dependency in spring boot.
+See https://spring.io/blog/2021/12/10/log4j2-vulnerability-and-spring-boot for details.
+
+Test Plan:
+> ./mvnw dependency:tree | grep log4j
+[INFO] +- org.apache.logging.log4j:log4j-api:jar:2.15.0:compile
+[INFO] +- org.apache.logging.log4j:log4j-core:jar:2.15.0:compile
+[INFO] +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.15.0:compile
+[INFO] +- org.apache.logging.log4j:log4j-jul:jar:2.15.0:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-log4j2:jar:2.4.1:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-api:jar:2.15.0:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-core:jar:2.15.0:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.15.0:compile
+[INFO] |  +- org.apache.logging.log4j:log4j-jul:jar:2.15.0:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-log4j2:jar:2.4.1:compile","{""sha"": ""28d849c87ca2b3d6e4ecd61f77696a17a65f1ace"", ""author"": {""name"": ""Zheng Shao"", ""email"": ""zheng@uber.com"", ""date"": ""2021-12-11T23:03:00Z""}, ""committer"": {""name"": ""Zheng Shao"", ""email"": ""zheng@uber.com"", ""date"": ""2021-12-11T23:20:08Z""}}"
+3402,OpenPR,2021-12-11 23:46:34,uzshao,fork_merge,,
+3402,IssueComment,2021-12-13 13:14:58,rinshadka,fork_merge,"Hi,
+
+Any update on merging this pull request.
+
+Thanks.","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/992465481"", ""author_association"": ""NONE""}"
+3402,ReviewRequested,2021-12-13 13:53:57,jcchavezs,fork_merge,,"{""requested_reviewer"": {""login"": ""jeqo"", ""id"": 6180701, ""node_id"": ""MDQ6VXNlcjYxODA3MDE="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/6180701?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jeqo"", ""html_url"": ""https://github.com/jeqo"", ""followers_url"": ""https://api.github.com/users/jeqo/followers"", ""following_url"": ""https://api.github.com/users/jeqo/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jeqo/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jeqo/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jeqo/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jeqo/orgs"", ""repos_url"": ""https://api.github.com/users/jeqo/repos"", ""events_url"": ""https://api.github.com/users/jeqo/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jeqo/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3402,ReviewRequested,2021-12-13 13:53:58,jcchavezs,fork_merge,,"{""requested_reviewer"": {""login"": ""llinder"", ""id"": 99359, ""node_id"": ""MDQ6VXNlcjk5MzU5"", ""avatar_url"": ""https://avatars.githubusercontent.com/u/99359?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/llinder"", ""html_url"": ""https://github.com/llinder"", ""followers_url"": ""https://api.github.com/users/llinder/followers"", ""following_url"": ""https://api.github.com/users/llinder/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/llinder/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/llinder/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/llinder/subscriptions"", ""organizations_url"": ""https://api.github.com/users/llinder/orgs"", ""repos_url"": ""https://api.github.com/users/llinder/repos"", ""events_url"": ""https://api.github.com/users/llinder/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/llinder/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3402,ReviewComment,2021-12-13 14:25:24,llinder,fork_merge,,"{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3402#pullrequestreview-830304875""}"
+3402,ReviewApproved,2021-12-13 14:28:46,llinder,fork_merge,Besides a small nitpick this looks good. Given the severity of this let's go ahead and merge it and remove the defaults later. Thanks for raising the PR @uzshao !,"{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3402#pullrequestreview-830309619""}"
+3402,MergePR,2021-12-13 14:29:27,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5757280995"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/d311cf6bb750300c48baf7a248cf5284ad1b3281""}"
+3402,IssueCommentSupplement,2021-12-13 15:57:21,jcchavezs,fork_merge,@llinder could you please cut a release?,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/992619415"", ""author_association"": ""CONTRIBUTOR""}"
+3402,IssueCommentSupplement,2021-12-13 16:21:38,llinder,fork_merge,Just built master locally to check things. Ran another scan and found a new CVE with Armeria https://github.com/openzipkin/zipkin/pull/3403. Once that build passes I will merge it and make a release.,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/992642644"", ""author_association"": ""MEMBER""}"
+3402,CrossReferenced,2021-12-13 16:39:11,DannyPat44,fork_merge,Update Zipkin to address Apache Log4j 2 CVE-2021-44228 ,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin-gcp/issues/194"", ""is_pull_request"": false}}"
+3402,IssueCommentSupplement,2021-12-13 19:24:51,llinder,fork_merge,Looks like Sonatype is failing to close staging builds. Right now the release is kind of stuck until that works. Others are reporting the same thing so I will keep an eye on that and try the release again once there is an indication it's fixed. https://issues.sonatype.org/projects/OSSRH/issues/OSSRH-76039,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/992796388"", ""author_association"": ""MEMBER""}"
+3402,IssueCommentSupplement,2021-12-14 17:55:31,ankurnema,fork_merge,Is there any latest docker image released for Log4J 2 CVE Fix?,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/993833608"", ""author_association"": ""NONE""}"
+3402,IssueCommentSupplement,2021-12-14 18:35:43,TheMonolithX64,fork_merge,It looks like the last attempt to cut a release happened during the maintainence window on Sonatype staging - https://status.maven.org/incidents/y5z904fgdcfx and that Sonatype continues to have a bad time - https://status.maven.org/#system-metrics,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/993867320"", ""author_association"": ""NONE""}"
+3402,IssueCommentSupplement,2021-12-14 18:59:45,ankurnema,fork_merge,"Looks like maintenance is completed. Just curious, how does release work in sonatype and docker? ","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/993885287"", ""author_association"": ""NONE""}"
+3402,IssueCommentSupplement,2021-12-14 23:41:49,SSeanSSS,fork_merge,"any idea when new release is out?
+","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/994142703"", ""author_association"": ""NONE""}"
+3402,IssueCommentSupplement,2021-12-16 11:14:01,triqster,fork_merge,Any updates on releasing a new image? After the publication of [CVE-2021-45046](https://nvd.nist.gov/vuln/detail/CVE-2021-45046) Log4j should be upgraded to 2.16.0.,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/995694545"", ""author_association"": ""NONE""}"
+3402,IssueCommentSupplement,2021-12-16 12:07:35,jcchavezs,fork_merge,Zipkin 2.23.14 includes this fix. See https://github.com/openzipkin/zipkin/blob/2.23.14/zipkin-server/pom.xml#L36,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/995754909"", ""author_association"": ""CONTRIBUTOR""}"
+3402,CrossReferenced,2021-12-19 19:27:51,jcchavezs,fork_merge,Mitigation for CVE-2021-44228,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3407"", ""is_pull_request"": false}}"
+3402,IssueCommentSupplement,2021-12-20 16:22:19,TheAschr,fork_merge,"I believe the test image for Elasticsearch integration is still vulnerable since it uses elasticsearch v7.10.0 
+
+https://github.com/openzipkin/zipkin/blob/master/docker/test-images/zipkin-elasticsearch7/Dockerfile#L52","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/998076804"", ""author_association"": ""NONE""}"
+3402,IssueCommentSupplement,2021-12-20 16:44:16,jcchavezs,fork_merge,"Do you mind opening a PR to fix it?
+
+On Mon, Dec 20, 2021, 17:22 Alex Schrimpf ***@***.***> wrote:
+
+> I believe the test image for Elasticsearch integration is still vulnerable
+> since it uses elasticsearch v7.10.0
+>
+>
+> https://github.com/openzipkin/zipkin/blob/master/docker/test-images/zipkin-elasticsearch7/Dockerfile#L52
+>
+> —
+> Reply to this email directly, view it on GitHub
+> <https://github.com/openzipkin/zipkin/pull/3402#issuecomment-998076804>,
+> or unsubscribe
+> <https://github.com/notifications/unsubscribe-auth/AAXOYAWYFK6TFTWVKG3R5M3UR5J4PANCNFSM5J3RZH6A>
+> .
+> Triage notifications on the go with GitHub Mobile for iOS
+> <https://apps.apple.com/app/apple-store/id1477376905?ct=notification-email&mt=8&pt=524675>
+> or Android
+> <https://play.google.com/store/apps/details?id=com.github.android&referrer=utm_campaign%3Dnotification-email%26utm_medium%3Demail%26utm_source%3Dgithub>.
+>
+> You are receiving this because you commented.Message ID:
+> ***@***.***>
+>
+","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/998095046"", ""author_association"": ""CONTRIBUTOR""}"
+3402,IssueCommentSupplement,2021-12-20 17:18:48,TheAschr,fork_merge,"@jcchavezs 
+Here is the PR: https://github.com/openzipkin/zipkin/pull/3413","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/998123113"", ""author_association"": ""NONE""}"
+3403,SubmitCommit,2021-12-13 16:14:34,llinder,fork_merge,Upgrade Armeria to fix CVE-2021-43795,"{""sha"": ""fd8c46fe79bf91f5e63894f9abdb886a40aa5cab"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-12-13T16:14:34Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-12-13T16:14:34Z""}}"
+3403,OpenPR,2021-12-13 16:19:20,llinder,fork_merge,,
+3403,CrossReferenced,2021-12-13 16:21:38,llinder,fork_merge,log4j 2 fix for CVE-2021-44228,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3402"", ""is_pull_request"": true}}"
+3403,MergePR,2021-12-13 16:29:21,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5758147704"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/59d22e826ab5b1d689ca0a4b882b254036af9f3e""}"
+3404,SubmitCommit,2021-10-26 05:14:49,BbolroC,unfork_close,Support docker image for s390x,"{""sha"": ""578a5ad00f7666e6dc15d0fa39e8699760b32846"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-25T20:48:19Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-26T05:14:49Z""}}"
+3404,SubmitCommit,2021-10-26 05:15:12,BbolroC,unfork_close,Bump java base container 15.0.5_p3,"{""sha"": ""4b35fafa79fcff8a638e536230fa5002ebcf00df"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-25T20:48:19Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-26T05:15:12Z""}}"
+3404,SubmitCommit,2021-10-28 11:28:11,BbolroC,unfork_close,Resolve license header issue of docker_arch,"{""sha"": ""c6e405f1ae6e39e7c34a1edac428dddfe5f82683"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-28T11:28:11Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-28T11:28:11Z""}}"
+3404,SubmitCommit,2021-10-28 11:30:51,BbolroC,unfork_close,Resolve error on building docker image of zipkin-mysql for s390x,"{""sha"": ""0e7cf20104b4ee176d4a34b82479ca9998027bcd"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-28T11:30:51Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-10-28T11:30:51Z""}}"
+3404,SubmitCommit,2021-11-10 09:30:00,BbolroC,unfork_close,Fix liscense issue on zipkin-mysql/install.sh,"{""sha"": ""4529e37491e36da05c84444823a5f2dfc60f7a19"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T09:30:00Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T09:30:00Z""}}"
+3404,SubmitCommit,2021-11-10 09:34:57,BbolroC,unfork_close,Fix liscense issue on mysql.sql,"{""sha"": ""845ad93a37ae7c4f9b882402d1a230459e2ae886"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T09:34:57Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T09:34:57Z""}}"
+3404,SubmitCommit,2021-11-10 10:39:08,BbolroC,unfork_close,Make mysql.sql separate for test,"{""sha"": ""a6a8f17f7e0f604177292c01173dff588ef127a8"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T10:39:08Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-10T10:39:08Z""}}"
+3404,SubmitCommit,2021-11-22 16:45:03,BbolroC,unfork_close,Remove unnecessary changes,"{""sha"": ""be3f51e3f45e0b5ec2e5214de4605bf3fffb1a67"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-22T16:45:03Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-22T16:45:03Z""}}"
+3404,SubmitCommit,2021-11-24 09:25:53,BbolroC,unfork_close,Update nginx version to 1.20.2,"{""sha"": ""d450cdbe9bf1c27b4e126e6e0ffe1ef8aed7f495"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-24T09:25:53Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-24T09:25:53Z""}}"
+3404,SubmitCommit,2021-11-26 12:45:23,BbolroC,unfork_close,Restore s390x config in docker_arch,"{""sha"": ""dae8f6baa7fef00644e2e9f0f900aa2826f45386"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-26T12:45:23Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-11-26T12:45:23Z""}}"
+3404,SubmitCommit,2021-12-14 08:06:23,BbolroC,unfork_close,Keep mysql.sql as it was,"{""sha"": ""557d1e7b2bbe8811e1a44fa57a58c0c2b4948fe3"", ""author"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-12-14T07:52:50Z""}, ""committer"": {""name"": ""Hyounggyu Choi"", ""email"": ""bbolroc@gmail.com"", ""date"": ""2021-12-14T08:06:23Z""}}"
+3404,SubmitCommit,2021-12-14 13:32:49,jcchavezs,unfork_close,chore: removes support for target platform.,"{""sha"": ""5cad83f942c6be5e388f06aab463ea2525f197ef"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2021-12-14T13:32:49Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2021-12-14T13:32:49Z""}}"
+3404,OpenPR,2021-12-14 13:34:18,jcchavezs,unfork_close,,
+3404,CrossReferenced,2021-12-14 13:44:14,jcchavezs,unfork_close,Support docker image for s390x and bump base java container 15.0.5_p3,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3384"", ""is_pull_request"": true}}"
+3404,ClosePR,2021-12-14 14:02:56,jcchavezs,unfork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5764389496"", ""commit_url"": null}"
+3404,DeleteBranch,2021-12-14 14:02:59,jcchavezs,unfork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5764389904"", ""commit_url"": null}"
+3405,SubmitCommit,2021-12-14 20:05:48,llinder,fork_merge,Increase Sonatype staging timeout,"{""sha"": ""9d60ad2a6b36f9ef0b50a68790a9e5161fe5daef"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-12-14T20:05:48Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-12-14T20:05:48Z""}}"
+3405,OpenPR,2021-12-14 20:08:08,llinder,fork_merge,,
+3405,ReviewRequested,2021-12-14 20:08:31,llinder,fork_merge,,"{""requested_reviewer"": {""login"": ""jcchavezs"", ""id"": 3075074, ""node_id"": ""MDQ6VXNlcjMwNzUwNzQ="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/3075074?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jcchavezs"", ""html_url"": ""https://github.com/jcchavezs"", ""followers_url"": ""https://api.github.com/users/jcchavezs/followers"", ""following_url"": ""https://api.github.com/users/jcchavezs/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jcchavezs/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jcchavezs/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jcchavezs/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jcchavezs/orgs"", ""repos_url"": ""https://api.github.com/users/jcchavezs/repos"", ""events_url"": ""https://api.github.com/users/jcchavezs/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jcchavezs/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3405,ReviewApproved,2021-12-14 20:10:44,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3405#pullrequestreview-831987496""}"
+3405,MergePR,2021-12-14 20:20:39,jcchavezs,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5766767750"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/89462c7f2fe013a8b36690f3fb2e2a3dcde6256e""}"
+3406,SubmitCommit,2021-12-14 21:33:47,llinder,fork_merge,Upgrade log4j to 2.16 with further CVE fixes,"{""sha"": ""ea221124c13f4a3d9b8981f587b4b58f1e56dfa3"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-12-14T21:33:47Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2021-12-14T21:33:47Z""}}"
+3406,OpenPR,2021-12-14 21:36:32,llinder,fork_merge,,
+3406,ReviewRequested,2021-12-14 21:36:43,llinder,fork_merge,,"{""requested_reviewer"": {""login"": ""jcchavezs"", ""id"": 3075074, ""node_id"": ""MDQ6VXNlcjMwNzUwNzQ="", ""avatar_url"": ""https://avatars.githubusercontent.com/u/3075074?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/jcchavezs"", ""html_url"": ""https://github.com/jcchavezs"", ""followers_url"": ""https://api.github.com/users/jcchavezs/followers"", ""following_url"": ""https://api.github.com/users/jcchavezs/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/jcchavezs/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/jcchavezs/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/jcchavezs/subscriptions"", ""organizations_url"": ""https://api.github.com/users/jcchavezs/orgs"", ""repos_url"": ""https://api.github.com/users/jcchavezs/repos"", ""events_url"": ""https://api.github.com/users/jcchavezs/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/jcchavezs/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3406,IssueComment,2021-12-14 21:38:32,llinder,fork_merge,Not as severe as the last log4j issue but bumping anyway to ensure exposure is eliminated https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45046,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/994046899"", ""author_association"": ""MEMBER""}"
+3406,IssueComment,2021-12-14 21:39:25,jcchavezs,fork_merge,Awesome. Would you do the same for brave?,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/994048400"", ""author_association"": ""CONTRIBUTOR""}"
+3406,IssueComment,2021-12-14 21:41:54,llinder,fork_merge,"> Awesome. Would you do the same for brave?
+
+Actually interesting that log4j is a dependency there and it would almost be better to just remove the dependency. I will check out the project later this afternoon after I'm done fighting a few fires.","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/994052951"", ""author_association"": ""MEMBER""}"
+3406,MergePR,2021-12-14 21:59:36,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5767445391"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/7716221e6589bbba6c39e7b9b8308d6a3ef4d65c""}"
+3411,SubmitCommit,2021-12-19 18:54:19,jcchavezs,unfork_merge,chore: update log4j to 2.17 to address CVE-2021-45105.,"{""sha"": ""f80a565c933440eb4e9be6f3425488ad18529c13"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2021-12-19T18:54:19Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2021-12-19T18:54:19Z""}}"
+3411,OpenPR,2021-12-19 18:54:29,jcchavezs,unfork_merge,,
+3411,ReviewRequested,2021-12-19 18:54:33,jcchavezs,unfork_merge,,"{""requested_reviewer"": {""login"": ""llinder"", ""id"": 99359, ""node_id"": ""MDQ6VXNlcjk5MzU5"", ""avatar_url"": ""https://avatars.githubusercontent.com/u/99359?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/llinder"", ""html_url"": ""https://github.com/llinder"", ""followers_url"": ""https://api.github.com/users/llinder/followers"", ""following_url"": ""https://api.github.com/users/llinder/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/llinder/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/llinder/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/llinder/subscriptions"", ""organizations_url"": ""https://api.github.com/users/llinder/orgs"", ""repos_url"": ""https://api.github.com/users/llinder/repos"", ""events_url"": ""https://api.github.com/users/llinder/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/llinder/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3411,MergePR,2021-12-19 19:24:37,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5789461186"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/b62c8b956e3039b44c4c9c8bb5810c9fc6d928e1""}"
+3411,DeleteBranch,2021-12-19 19:24:38,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5789461195"", ""commit_url"": null}"
+3414,SubmitCommit,2022-01-03 16:20:07,aegliv,fork_merge,Fixes CVE-2021-44832,"{""sha"": ""5c44e4a588e18932f04ffd42b29bcbd67d04eea6"", ""author"": {""name"": ""agilis allievo"", ""email"": ""aegliv@gmail.com"", ""date"": ""2022-01-03T16:20:07Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-01-03T16:20:07Z""}}"
+3414,OpenPR,2022-01-03 16:20:17,aegliv,fork_merge,,
+3414,Revise,2022-01-03 23:05:05,jcchavezs,fork_merge,chore: updates license date.,"{""sha"": ""9e94021378539bf7d2e9a6be390175ef82649ac8"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-03T23:05:05Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-01-03T23:05:05Z""}}"
+3414,MergePR,2022-01-03 23:16:19,jcchavezs,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5837552626"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/77903d149b195cad58b580afd93764e2061a4aa8""}"
+3414,IssueCommentSupplement,2022-01-04 09:09:10,jcchavezs,fork_merge,Release is out https://github.com/openzipkin/zipkin/releases/tag/2.23.16,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1004637059"", ""author_association"": ""CONTRIBUTOR""}"
+3415,OpenPR,2022-01-10 15:51:54,jonkerj,fork_merge,,
+3415,CrossReferenced,2022-01-10 15:53:00,jonkerj,fork_merge,chart/zipkin-server - elasticsearch support,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3401"", ""is_pull_request"": false}}"
+3415,IssueComment,2022-01-11 07:38:48,jonkerj,fork_merge,"Hmm, the missing header warning seems to come from `pom.xml`, which is not mine. Anything I can do about this?","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1009673234"", ""author_association"": ""CONTRIBUTOR""}"
+3415,ReviewComment,2022-01-24 15:48:48,mrfelek,fork_merge,,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3415#pullrequestreview-861150430""}"
+3415,IssueComment,2022-01-24 16:25:51,mrfelek,fork_merge,"Tested on elasticsearch and works. I was not able to use old data from elasticsearch. New fresh data works.
+Great job! Thank you","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1020284153"", ""author_association"": ""NONE""}"
+3415,HeadRefForcePushed,2022-01-24 19:04:16,jonkerj,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5944833640"", ""commit_url"": null}"
+3415,Revise,2022-01-24 19:04:29,jonkerj,fork_merge,"feature: support elasticsearch as output in Helm chart
+
+Signed-off-by: Jorik Jonker <jorik.jonker@eu.equinix.com>","{""sha"": ""041ddc121eebaf20551134b7eddc5f187847b77d"", ""author"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2022-01-10T15:46:25Z""}, ""committer"": {""name"": ""Jorik Jonker"", ""email"": ""jorik.jonker@eu.equinix.com"", ""date"": ""2022-01-24T19:04:29Z""}}"
+3415,HeadRefForcePushed,2022-01-24 19:04:38,jonkerj,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5944836209"", ""commit_url"": null}"
+3415,MergePR,2022-01-24 20:39:53,jcchavezs,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5945359871"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/b9e38f22788d9308d69a49fbcf4ac4cf2ef35c65""}"
+3415,IssueCommentSupplement,2022-01-24 20:40:07,jcchavezs,fork_merge,Merging as lint failure is unrelated. Fixing later.,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1020527440"", ""author_association"": ""CONTRIBUTOR""}"
+3415,ReviewCommentSupplement,2022-01-25 09:17:27,mrfelek,fork_merge,,"{""author_association"": ""NONE"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3415#pullrequestreview-861992343""}"
+3415,IssueCommentSupplement,2022-01-25 09:40:19,jcchavezs,fork_merge,"PR here: https://github.com/openzipkin/zipkin/pull/3417
+
+José Carlos Chávez
+
+
+tir. 25. jan. 2022 kl. 10:38 skrev Jorik Jonker ***@***.***>:
+
+> ***@***.**** commented on this pull request.
+> ------------------------------
+>
+> In chart/zipkin-server/templates/deployment.yaml
+> <https://github.com/openzipkin/zipkin/pull/3415#discussion_r791525758>:
+>
+> > @@ -48,7 +48,15 @@ spec:
+>            image: ""{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}""
+>            env:
+>              - name: STORAGE_METHOD
+>
+> well, it's merged now. Feel free to open a PR to fix this, though (I'm not
+> an official zipkin dev)
+>
+> —
+> Reply to this email directly, view it on GitHub
+> <https://github.com/openzipkin/zipkin/pull/3415#discussion_r791525758>,
+> or unsubscribe
+> <https://github.com/notifications/unsubscribe-auth/AAXOYAVOEQUVTCAMONKKIF3UXZVQRANCNFSM5LT75CFA>
+> .
+> Triage notifications on the go with GitHub Mobile for iOS
+> <https://apps.apple.com/app/apple-store/id1477376905?ct=notification-email&mt=8&pt=524675>
+> or Android
+> <https://play.google.com/store/apps/details?id=com.github.android&referrer=utm_campaign%3Dnotification-email%26utm_medium%3Demail%26utm_source%3Dgithub>.
+>
+> You are receiving this because you modified the open/close state.Message
+> ID: ***@***.***>
+>
+","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1020991022"", ""author_association"": ""CONTRIBUTOR""}"
+3415,CrossReferenced,2022-01-25 09:40:34,jcchavezs,fork_merge,fix: STORAGE_METHOD -> STORAGE_TYPE,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3417"", ""is_pull_request"": true}}"
+3417,SubmitCommit,2022-01-25 09:39:38,jcchavezs,unfork_merge,fix: STORAGE_METHOD -> STORAGE_TYPE,"{""sha"": ""7d9c2cf9a96c00f40dd6aca952205fe750c02fc2"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T09:39:38Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-01-25T09:39:38Z""}}"
+3417,OpenPR,2022-01-25 09:39:56,jcchavezs,unfork_merge,,
+3417,CrossReferenced,2022-01-25 09:40:19,jcchavezs,unfork_merge,feature: support elasticsearch as output in Helm chart,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3415"", ""is_pull_request"": true}}"
+3417,ReviewRejected,2022-01-25 09:41:42,jonkerj,unfork_merge,You need to bump the version (just increase the patch level) in `Chart.yaml` as well,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3417#pullrequestreview-862022915""}"
+3417,Revise,2022-01-25 11:00:22,jcchavezs,unfork_merge,chore: improves helm chart workflow.,"{""sha"": ""8fdfacd833eb8626411c2b14b8c673fe65811ee0"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T11:00:22Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T11:00:22Z""}}"
+3417,Revise,2022-01-25 11:07:07,jcchavezs,unfork_merge,chore: moves to single chart structure.,"{""sha"": ""1e89841fca8deb67b9bb5da1bb241bbbc2e50a6b"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T11:07:07Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T11:07:07Z""}}"
+3417,Revise,2022-01-25 11:10:13,jcchavezs,unfork_merge,chore: fixes interpolation syntax.,"{""sha"": ""45b4e13b35d8694d51a81badd4a0145f6a73573d"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T11:10:13Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T11:10:13Z""}}"
+3417,Revise,2022-01-25 17:10:34,jcchavezs,unfork_merge,chore: adds helm prepare script.,"{""sha"": ""ffc7a88bf8fc2233a389f294da91317c717b071c"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T17:10:34Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T17:10:34Z""}}"
+3417,Revise,2022-01-25 17:46:14,jcchavezs,unfork_merge,chore: improvements.,"{""sha"": ""25de94e0a297bc38e307c94cff533ea81c1897d1"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T17:46:14Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-25T17:46:14Z""}}"
+3417,Revise,2022-01-26 09:11:38,jcchavezs,unfork_merge,chore: polish helm prepare script.,"{""sha"": ""e547d763f0a2c53e3571411ca70652656f5accd2"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T09:11:38Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T09:11:38Z""}}"
+3417,IssueComment,2022-01-26 11:40:42,jonkerj,unfork_merge,I really like the way this is going. Don't forget to also update the chart version (`.version`).,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1022119938"", ""author_association"": ""CONTRIBUTOR""}"
+3417,Revise,2022-01-26 23:01:44,jcchavezs,unfork_merge,chore: temporary removes license checker.,"{""sha"": ""dcf8e94e6ccf27ee4aea817d4654380e504aa2e8"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:01:44Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:01:44Z""}}"
+3417,Revise,2022-01-26 23:12:41,jcchavezs,unfork_merge,tests: improves helm chart test.,"{""sha"": ""22ffc61e608d9d5d8022e9c2445b366d1528d0f8"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:12:41Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:12:41Z""}}"
+3417,Revise,2022-01-26 23:18:00,jcchavezs,unfork_merge,chore: fixes link for helm charts.,"{""sha"": ""e78a6e234bf8e3f1c118ce21767ce54547ba743b"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:18:00Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:18:00Z""}}"
+3417,Revise,2022-01-26 23:30:47,jcchavezs,unfork_merge,chore: follows chart structure.,"{""sha"": ""d32a4526a27d3a3101c5d631b2b7879054b92e42"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:30:47Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:30:47Z""}}"
+3417,ReviewComment,2022-01-26 23:32:14,jcchavezs,unfork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3417#pullrequestreview-864225768""}"
+3417,Revise,2022-01-26 23:32:28,jcchavezs,unfork_merge,docs: fixes docs.,"{""sha"": ""99c131fed703d89c8198dc5b527d00796e7fcdd5"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:32:28Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-01-26T23:32:28Z""}}"
+3417,Revise,2022-01-26 23:42:29,jcchavezs,unfork_merge,chore: adds maintainers.,"{""sha"": ""5a76f8f658649ff2308bc780d7e5be6ad6eb1410"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:42:29Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:42:29Z""}}"
+3417,Revise,2022-01-26 23:43:48,jcchavezs,unfork_merge,Merge branch 'fixes_storage_env_var_helm' of github.com:openzipkin/zipkin into fixes_storage_env_var_helm,"{""sha"": ""13dfa82d92db2de9884d14cddebd7efe509d84f1"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:43:48Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:43:48Z""}}"
+3417,IssueComment,2022-01-26 23:51:28,jcchavezs,unfork_merge,"> You need to bump the version (just increase the patch level) in Chart.yaml as well
+
+I will do a chart release after merge.","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1022709433"", ""author_association"": ""CONTRIBUTOR""}"
+3417,Revise,2022-01-26 23:55:50,jcchavezs,unfork_merge,docs: improves workflows docs.,"{""sha"": ""f69a434a59603cb57790fdc7e56bc9b88922a5f6"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:55:50Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-26T23:55:50Z""}}"
+3417,ReviewComment,2022-01-27 13:12:05,jcchavezs,unfork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3417#pullrequestreview-864847645""}"
+3417,Revise,2022-01-27 13:12:17,jcchavezs,unfork_merge,chore: fix destination for index.yaml file.,"{""sha"": ""bb497a78f678814d84a696f05d41c76222045c2c"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T13:12:17Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-01-27T13:12:17Z""}}"
+3417,MergePR,2022-01-27 14:35:48,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5964201160"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/f21e6f5545b2486457954bb3e46cd917f19b61a5""}"
+3417,DeleteBranch,2022-01-27 14:35:49,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5964201287"", ""commit_url"": null}"
+3418,SubmitCommit,2022-01-27 19:39:14,jcchavezs,unfork_merge,fix: fixes release tag for charts.,"{""sha"": ""983f8524135b41ae591405ff341a1ccc9bad1fef"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T19:39:14Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T19:39:14Z""}}"
+3418,OpenPR,2022-01-27 19:40:13,jcchavezs,unfork_merge,,
+3418,MergePR,2022-01-27 20:02:32,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966415026"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/45c8e15a20bc6eea9b01ab815323b048123600e9""}"
+3418,DeleteBranch,2022-01-27 20:02:33,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966415070"", ""commit_url"": null}"
+3419,SubmitCommit,2022-01-27 20:31:49,jcchavezs,unfork_merge,fix: overwrites the chart rightly.,"{""sha"": ""b66faff6f8b58ea641a9b0bbb651d55b6c9a8f0c"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T20:31:49Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T20:31:49Z""}}"
+3419,OpenPR,2022-01-27 20:34:06,jcchavezs,unfork_merge,,
+3419,MergePR,2022-01-27 20:40:13,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966597103"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/543c040b9cf29f1d6f68d4e66920dbb9daac28e5""}"
+3419,DeleteBranch,2022-01-27 20:40:13,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966597158"", ""commit_url"": null}"
+3420,SubmitCommit,2022-01-27 20:46:48,jcchavezs,unfork_merge,fix: adds git user info to the release step.,"{""sha"": ""9d07dff97ab2c2f03d9be0cd7f3425a2f6f45f70"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T20:46:48Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T20:46:48Z""}}"
+3420,OpenPR,2022-01-27 20:47:44,jcchavezs,unfork_merge,,
+3420,MergePR,2022-01-27 20:49:46,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966641424"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/4f55c5f885e02a11a84672e5cb6a92b2cd452e40""}"
+3420,DeleteBranch,2022-01-27 20:49:47,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966641469"", ""commit_url"": null}"
+3421,SubmitCommit,2022-01-27 21:37:23,jcchavezs,unfork_merge,fix: work out the trigger tag in a previous step.,"{""sha"": ""6a586a62c080c81cafe44255febb4f89f6f44451"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T21:37:23Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T21:37:23Z""}}"
+3421,OpenPR,2022-01-27 21:37:38,jcchavezs,unfork_merge,,
+3421,MergePR,2022-01-27 21:41:33,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966898386"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/d68e3ae6fb80fdac3c4d9ffe93a138e755205ce6""}"
+3421,DeleteBranch,2022-01-27 21:41:34,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966898450"", ""commit_url"": null}"
+3422,SubmitCommit,2022-01-27 21:44:54,jcchavezs,unfork_merge,chore: removes unused chart,"{""sha"": ""ebf203e4f006cbaec46941b6f83522884f46b3a1"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T21:44:54Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-01-27T21:44:54Z""}}"
+3422,OpenPR,2022-01-27 21:45:01,jcchavezs,unfork_merge,,
+3422,MergePR,2022-01-27 21:47:02,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966922840"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/73ccaa69c3b35811f7785af91d14ecf07e5ef190""}"
+3422,DeleteBranch,2022-01-27 21:47:03,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966922893"", ""commit_url"": null}"
+3423,SubmitCommit,2022-01-27 21:42:56,jcchavezs,unfork_merge,docs: fixes helm readme.,"{""sha"": ""2ed5ddfc268e3c303147bc13cd0ddee45104a95f"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T21:42:56Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T21:42:56Z""}}"
+3423,SubmitCommit,2022-01-27 21:46:10,jcchavezs,unfork_merge,docs: fixes typo.,"{""sha"": ""e919c973f8bba4336bb999a9f2b652e2a7ed2149"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T21:46:10Z""}, ""committer"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-01-27T21:46:10Z""}}"
+3423,OpenPR,2022-01-27 21:46:22,jcchavezs,unfork_merge,,
+3423,MergePR,2022-01-27 21:46:29,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966920239"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/16857b6cc37c30a3c232e81b7ad546b63fc2dabf""}"
+3423,DeleteBranch,2022-01-27 21:46:29,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/5966920267"", ""commit_url"": null}"
+3435,SubmitCommit,2022-03-14 10:05:03,jcchavezs,unfork_merge,docs: fixes docs for helm_prepare,"{""sha"": ""82adff1923e70f16f598db9778a1d08503f498d7"", ""author"": {""name"": ""Jos\u00e9 Carlos Ch\u00e1vez"", ""email"": ""jcchavezs@gmail.com"", ""date"": ""2022-03-14T10:05:03Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-03-14T10:05:03Z""}}"
+3435,OpenPR,2022-03-14 10:05:07,jcchavezs,unfork_merge,,
+3435,MergePR,2022-03-14 12:00:04,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6234864152"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/8a4f4b9c9a5a3204d9663ecef39d687785369c9a""}"
+3435,DeleteBranch,2022-03-14 12:00:05,jcchavezs,unfork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6234864241"", ""commit_url"": null}"
+3438,SubmitCommit,2022-03-28 17:49:46,KhungLongCuBu,fork_close,Added CASSANDRA_MAX_REQUESTS_PER_CONNECTION environment variable,"{""sha"": ""28e5280ad6c2e54488d3d3156e10395b862d1afd"", ""author"": {""name"": ""Khoa Pham"", ""email"": ""khoapham@yelp.com"", ""date"": ""2022-03-28T17:49:46Z""}, ""committer"": {""name"": ""Khoa Pham"", ""email"": ""khoapham@yelp.com"", ""date"": ""2022-03-28T17:49:46Z""}}"
+3438,OpenPR,2022-03-28 17:50:59,KhungLongCuBu,fork_close,,
+3438,ClosePR,2022-03-28 18:08:08,KhungLongCuBu,fork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6320647811"", ""commit_url"": null}"
+3439,SubmitCommit,2022-03-28 17:49:46,KhungLongCuBu,fork_close,Added CASSANDRA_MAX_REQUESTS_PER_CONNECTION environment variable,"{""sha"": ""28e5280ad6c2e54488d3d3156e10395b862d1afd"", ""author"": {""name"": ""Khoa Pham"", ""email"": ""khoapham@yelp.com"", ""date"": ""2022-03-28T17:49:46Z""}, ""committer"": {""name"": ""Khoa Pham"", ""email"": ""khoapham@yelp.com"", ""date"": ""2022-03-28T17:49:46Z""}}"
+3439,OpenPR,2022-03-28 18:13:12,KhungLongCuBu,fork_close,,
+3439,ClosePR,2022-06-29 15:43:07,KhungLongCuBu,fork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6903627353"", ""commit_url"": null}"
+3439,DeleteBranch,2022-06-29 15:43:13,KhungLongCuBu,fork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6903628091"", ""commit_url"": null}"
+3449,SubmitCommit,2022-05-18 03:16:37,rswst8,fork_close,version updates to remediate vulnerabilities,"{""sha"": ""f87acdb268e356a70db724bdcb8a8c88aa268eab"", ""author"": {""name"": ""rswst8"", ""email"": ""rswst8@yahoo.com"", ""date"": ""2022-05-18T03:16:37Z""}, ""committer"": {""name"": ""rswst8"", ""email"": ""rswst8@yahoo.com"", ""date"": ""2022-05-18T03:16:37Z""}}"
+3449,SubmitCommit,2022-05-18 03:21:24,rswst8,fork_close,"Merge pull request #1 from rswst8/update-for-vulnerabilities
+
+version updates to remediate vulnerabilities","{""sha"": ""5139c779605b28dcecf867b94b8aa470b04ac37f"", ""author"": {""name"": ""rswst8"", ""email"": ""105759887+rswst8@users.noreply.github.com"", ""date"": ""2022-05-18T03:21:24Z""}, ""committer"": {""name"": ""GitHub"", ""email"": ""noreply@github.com"", ""date"": ""2022-05-18T03:21:24Z""}}"
+3449,OpenPR,2022-05-18 03:27:02,rswst8,fork_close,,
+3449,IssueComment,2022-05-18 03:33:39,rswst8,fork_close,"I know zipkin is probably not vulnerable to 22965, the problem is this note at the end of the advisory:
+""However, the nature of the vulnerability is more general, and there may be other ways to exploit it.""
+So my organization is mandating we update the version to remediate this.
+All tests are passing in my local","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1129530230"", ""author_association"": ""NONE""}"
+3449,IssueComment,2022-05-18 20:57:34,rswst8,fork_close,"OK this just looks like the mysql version needs to be updated.  I'll add another commit. I don't have the docker tests running on my local unfortunately, they seem to need docker installed. Hopefully everything will pass then","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1130540002"", ""author_association"": ""NONE""}"
+3449,Revise,2022-05-18 21:00:43,rswst8,fork_close,mysql version update to match latest alpinelinux package,"{""sha"": ""4be09ec502d1b1017c2628dd9c353b2b1f88d639"", ""author"": {""name"": ""rswst8"", ""email"": ""rswst8@yahoo.com"", ""date"": ""2022-05-18T21:00:43Z""}, ""committer"": {""name"": ""rswst8"", ""email"": ""rswst8@yahoo.com"", ""date"": ""2022-05-18T21:00:43Z""}}"
+3449,IssueComment,2022-05-25 11:40:53,jcchavezs,fork_close,"Awesome!
+","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1137135725"", ""author_association"": ""CONTRIBUTOR""}"
+3449,IssueComment,2022-05-26 05:29:47,jcchavezs,fork_close,Could you please fix the failing ones?,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1138168945"", ""author_association"": ""CONTRIBUTOR""}"
+3449,RenameTitle,2022-05-27 00:09:10,rswst8,fork_close,,"{""rename"": {""from"": ""Update Spring Boot to 2.5.13 and Spring to 5.3.20"", ""to"": ""Update Spring Boot to 2.5.14 and Spring to 5.3.20""}, ""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6689267838""}"
+3449,Revise,2022-05-27 00:09:50,rswst8,fork_close,"mysql version update to match latest alpinelinux package
+update to latest 2.5.x spring boot 2.5.14","{""sha"": ""83e92ff03fc68df5212a75ea8e1de159c241aecc"", ""author"": {""name"": ""rswst8"", ""email"": ""rswst8@yahoo.com"", ""date"": ""2022-05-27T00:09:50Z""}, ""committer"": {""name"": ""rswst8"", ""email"": ""rswst8@yahoo.com"", ""date"": ""2022-05-27T00:09:50Z""}}"
+3449,IssueComment,2022-05-27 00:14:20,rswst8,fork_close,"Since i updated the mysql version last week and resubmitted the version went up again from 10.6.7 to 10.6.8, it's kind of annoying the hard coded version in the dockerfile has to match the latest one it finds at https://pkgs.alpinelinux.org/packages?name=mysql
+
+I also updated to spring boot 2.5.14 since they also released that.
+I don't have docker installed locally so can't run all the tests, but all tests i'm able to run are passing.
+May have to work with another developer if any other tests are failing, or find some way to get docker installed.
+Unfortunately my organization blocks github so i'm doing this on a personal iMac i don't normally do development with.","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1139165969"", ""author_association"": ""NONE""}"
+3449,ReviewRequested,2022-05-27 07:54:27,jcchavezs,fork_close,,"{""requested_reviewer"": {""login"": ""llinder"", ""id"": 99359, ""node_id"": ""MDQ6VXNlcjk5MzU5"", ""avatar_url"": ""https://avatars.githubusercontent.com/u/99359?v=4"", ""gravatar_id"": """", ""url"": ""https://api.github.com/users/llinder"", ""html_url"": ""https://github.com/llinder"", ""followers_url"": ""https://api.github.com/users/llinder/followers"", ""following_url"": ""https://api.github.com/users/llinder/following{/other_user}"", ""gists_url"": ""https://api.github.com/users/llinder/gists{/gist_id}"", ""starred_url"": ""https://api.github.com/users/llinder/starred{/owner}{/repo}"", ""subscriptions_url"": ""https://api.github.com/users/llinder/subscriptions"", ""organizations_url"": ""https://api.github.com/users/llinder/orgs"", ""repos_url"": ""https://api.github.com/users/llinder/repos"", ""events_url"": ""https://api.github.com/users/llinder/events{/privacy}"", ""received_events_url"": ""https://api.github.com/users/llinder/received_events"", ""type"": ""User"", ""site_admin"": false}, ""requested_team"": null}"
+3449,ReviewApproved,2022-06-27 20:44:55,llinder,fork_close,Looks good to me. Thanks!,"{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3449#pullrequestreview-1020760556""}"
+3449,CrossReferenced,2022-06-27 21:23:53,llinder,fork_close,Upgrade jackson and spring to resolve CVEs,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3462"", ""is_pull_request"": true}}"
+3449,IssueComment,2022-06-30 07:37:07,jcchavezs,fork_close,Shall we close this @llinder ?,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1170874139"", ""author_association"": ""CONTRIBUTOR""}"
+3449,ClosePR,2022-06-30 14:19:32,llinder,fork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6911306947"", ""commit_url"": null}"
+3449,IssueCommentSupplement,2022-06-30 14:19:32,llinder,fork_close,Updated Spring and Jackson versions in this [commit](https://github.com/openzipkin/zipkin/commit/bdfb31ebf9867b153717bc171decd1d9d3c4e3df).,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1171280882"", ""author_association"": ""MEMBER""}"
+3459,SubmitCommit,2022-06-20 13:21:59,George Dimitrov,fork_close,Upgrade gson to 2.8.9 to fix CVE-2022-25647 (#3458),"{""sha"": ""5ebb0663e8bf816dc45f9f45b4984e990a13deca"", ""author"": {""name"": ""George Dimitrov"", ""email"": ""dimitrovg@vmware.com"", ""date"": ""2022-06-20T13:21:59Z""}, ""committer"": {""name"": ""George Dimitrov"", ""email"": ""dimitrovg@vmware.com"", ""date"": ""2022-06-20T13:21:59Z""}}"
+3459,OpenPR,2022-06-20 13:28:28,gdimitrov7,fork_close,,
+3459,CrossReferenced,2022-06-20 16:02:26,gdimitrov7,fork_close,Zipkin bundles gson 2.8.6 that has known vulnerability,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3458"", ""is_pull_request"": false}}"
+3459,IssueComment,2022-06-21 08:59:50,gdimitrov7,fork_close,@jcchavezs Who can review this and approve the workflows?,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1161464849"", ""author_association"": ""CONTRIBUTOR""}"
+3459,ReviewApproved,2022-06-21 09:02:17,basvanbeek,fork_close,,"{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3459#pullrequestreview-1013233462""}"
+3459,ClosePR,2022-06-21 17:06:33,gdimitrov7,fork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6849234824"", ""commit_url"": null}"
+3459,DeleteBranch,2022-06-21 17:06:33,gdimitrov7,fork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6849234837"", ""commit_url"": null}"
+3459,CrossReferenced,2022-06-21 17:15:16,gdimitrov7,fork_close,fix: upgrade gson to 2.8.9 to fix CVE-2022-25647 (#3458),"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3461"", ""is_pull_request"": true}}"
+3461,SubmitCommit,2022-06-21 17:02:07,George Dimitrov,fork_merge,"chore: upgrade mysql 10.6.8 in test
+
+Checks are failing in `apt add` command as Alpine doesn’t keep old packages.
+https://github.com/openzipkin/zipkin/runs/6981221474?check_suite_focus=true","{""sha"": ""0e9fa9ccc20b3f5854c353fbcd40a3a957cb5a62"", ""author"": {""name"": ""George Dimitrov"", ""email"": ""dimitrovg@vmware.com"", ""date"": ""2022-06-21T16:53:44Z""}, ""committer"": {""name"": ""George Dimitrov"", ""email"": ""dimitrovg@vmware.com"", ""date"": ""2022-06-21T17:02:07Z""}}"
+3461,SubmitCommit,2022-06-21 17:02:26,George Dimitrov,fork_merge,fix: upgrade gson to 2.8.9 to fix CVE-2022-25647 (#3458),"{""sha"": ""0c480eaab44b6eed8ccb81953fb284caa8fc1166"", ""author"": {""name"": ""George Dimitrov"", ""email"": ""dimitrovg@vmware.com"", ""date"": ""2022-06-21T17:02:26Z""}, ""committer"": {""name"": ""George Dimitrov"", ""email"": ""dimitrovg@vmware.com"", ""date"": ""2022-06-21T17:02:26Z""}}"
+3461,OpenPR,2022-06-21 17:15:16,gdimitrov7,fork_merge,,
+3461,ReviewApproved,2022-06-22 09:48:57,jcchavezs,fork_merge,,"{""author_association"": ""CONTRIBUTOR"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3461#pullrequestreview-1014868893""}"
+3461,IssueComment,2022-06-24 19:16:28,gdimitrov7,fork_merge,Who can merge this?,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1165861535"", ""author_association"": ""CONTRIBUTOR""}"
+3461,ReviewApproved,2022-06-27 08:20:00,jeqo,fork_merge,"LGTM. 
+Thanks, @gdimitrov7","{""author_association"": ""MEMBER"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3461#pullrequestreview-1019792989""}"
+3461,MergePR,2022-06-27 08:20:09,jeqo,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6883053493"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/266e7283a7259368a61c44a77b3227d4468d99c3""}"
+3461,DeleteBranch,2022-06-27 21:13:02,gdimitrov7,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6888637419"", ""commit_url"": null}"
+3462,OpenPR,2022-06-27 20:21:17,llinder,fork_merge,,
+3462,Revise,2022-06-27 21:18:46,llinder,fork_merge,Upgrade jackson and spring to resolve CVEs,"{""sha"": ""93d79c05b5524cfa658b4bcd82f84ea5e28561f6"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2022-06-27T20:20:19Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2022-06-27T21:18:46Z""}}"
+3462,HeadRefForcePushed,2022-06-27 21:18:54,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6888676274"", ""commit_url"": null}"
+3462,MergePR,2022-06-27 22:39:56,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6889148806"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/bdfb31ebf9867b153717bc171decd1d9d3c4e3df""}"
+3462,CrossReferenced,2022-07-19 21:29:55,fp-dshim,fork_merge,Update Zipkin to address vulnerable version of the Spring Framework CVE-2022-22965,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin-gcp/issues/201"", ""is_pull_request"": false}}"
+3463,SubmitCommit,2022-06-27 22:41:59,llinder,fork_merge,Upgrade java base constainer,"{""sha"": ""462534b5dcfeea66c4b499732588543f319802b9"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2022-06-27T22:41:59Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2022-06-27T22:41:59Z""}}"
+3463,OpenPR,2022-06-27 22:44:14,llinder,fork_merge,,
+3463,MergePR,2022-06-27 23:19:05,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/6889316614"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/dbdb14dda7d13f3c70ec22426cc1d9b2652b965a""}"
+3464,SubmitCommit,2022-06-30 13:37:30,cuishuang,fork_merge,"fix some typos
+
+Signed-off-by: cui fliter <imcusg@gmail.com>","{""sha"": ""ec31c0aab8e7e2eb0dc4b03d572bc38f7bcd22eb"", ""author"": {""name"": ""cui fliter"", ""email"": ""imcusg@gmail.com"", ""date"": ""2022-06-30T13:37:30Z""}, ""committer"": {""name"": ""cui fliter"", ""email"": ""imcusg@gmail.com"", ""date"": ""2022-06-30T13:37:30Z""}}"
+3464,OpenPR,2022-06-30 13:42:03,cuishuang,fork_merge,,
+3464,MergePR,2022-09-21 13:58:22,jcchavezs,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/7431226649"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/ddebcfe2700e3ed877c6adb73d0730f85f47bb86""}"
+3469,SubmitCommit,2022-08-12 11:50:07,Anisoara-Ionela Plesca,fork_merge,fix docker readme compose links,"{""sha"": ""170458a1747e14f02755c31ee2d43b6e62aa3cb8"", ""author"": {""name"": ""Anisoara-Ionela Plesca"", ""email"": ""anisoara-ionela.plesca@endava.com"", ""date"": ""2022-08-12T11:50:07Z""}, ""committer"": {""name"": ""Anisoara-Ionela Plesca"", ""email"": ""anisoara-ionela.plesca@endava.com"", ""date"": ""2022-08-12T11:50:07Z""}}"
+3469,OpenPR,2022-08-12 11:51:51,ikaila,fork_merge,,
+3469,MergePR,2022-08-19 11:22:51,jcchavezs,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/7221461972"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/b0662bab56123fb2d6bf15353d12df374721f980""}"
+3471,SubmitCommit,2022-08-18 08:54:25,rogierslag,fork_merge,Remove exception on traceIds of length 15,"{""sha"": ""ba131dd1d5346ce469e4268156737fdb8dd32226"", ""author"": {""name"": ""Rogier Slag"", ""email"": ""rogier.slag@gmail.com"", ""date"": ""2022-08-18T08:54:25Z""}, ""committer"": {""name"": ""Rogier Slag"", ""email"": ""rogier.slag@gmail.com"", ""date"": ""2022-08-18T08:54:25Z""}}"
+3471,OpenPR,2022-08-18 08:55:44,rogierslag,fork_merge,,
+3471,CrossReferenced,2022-08-18 08:56:55,rogierslag,fork_merge,Refactors integration tests to be more isolated,"{""reference"": {""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/3249"", ""is_pull_request"": true}}"
+3471,ReviewApproved,2022-08-18 09:01:45,codefromthecrypt,fork_merge,"/me resists pun
+
+depending on call-site this may need a version alignment/bump release in zipkin-reporter-java to make effective.","{""author_association"": ""NONE"", ""html_url"": ""https://github.com/openzipkin/zipkin/pull/3471#pullrequestreview-1076961477""}"
+3471,MergePR,2022-08-18 12:04:33,codefromthecrypt,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/7213784694"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/bb0a133315868a65584ec4d8c6d71a1a0a4ff4c2""}"
+3471,IssueCommentSupplement,2022-08-18 12:04:57,codefromthecrypt,fork_merge,thanks for the fix @rogierslag!,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1219410132"", ""author_association"": ""NONE""}"
+3471,IssueCommentSupplement,2022-08-19 11:01:09,jcchavezs,fork_merge,Shall we release a patch?,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1220540616"", ""author_association"": ""CONTRIBUTOR""}"
+3471,IssueCommentSupplement,2022-08-20 05:52:35,codefromthecrypt,fork_merge,"yeah and then have zipkin-reporter-java consume it. I'm not sure if something else should go into the release here or not (ex if the docker images which seem to have been updated recently, should be consumed here)","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1221239076"", ""author_association"": ""NONE""}"
+3472,OpenPR,2022-08-19 19:06:42,llinder,fork_merge,,
+3472,IssueComment,2022-08-19 19:11:57,llinder,fork_merge,"Trivy scan before updates:
+```
+openzipkin/zipkin:2.23.18 (alpine 3.15.4)
+=========================================
+Total: 3 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 2, CRITICAL: 1)
+
++--------------+------------------+----------+-------------------+---------------+---------------------------------------+
+|   LIBRARY    | VULNERABILITY ID | SEVERITY | INSTALLED VERSION | FIXED VERSION |                 TITLE                 |
++--------------+------------------+----------+-------------------+---------------+---------------------------------------+
+| libcrypto1.1 | CVE-2022-2097    | HIGH     | 1.1.1n-r0         | 1.1.1q-r0     | openssl: AES OCB fails                |
+|              |                  |          |                   |               | to encrypt some bytes                 |
+|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2022-2097  |
++--------------+                  +          +                   +               +                                       +
+| libssl1.1    |                  |          |                   |               |                                       |
+|              |                  |          |                   |               |                                       |
+|              |                  |          |                   |               |                                       |
++--------------+------------------+----------+-------------------+---------------+---------------------------------------+
+| zlib         | CVE-2022-37434   | CRITICAL | 1.2.12-r0         | 1.2.12-r2     | zlib: a heap-based buffer             |
+|              |                  |          |                   |               | over-read or buffer overflow          |
+|              |                  |          |                   |               | in inflate in inflate.c...            |
+|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2022-37434 |
++--------------+------------------+----------+-------------------+---------------+---------------------------------------+
+
+Java (jar)
+==========
+Total: 5 (UNKNOWN: 0, LOW: 0, MEDIUM: 5, HIGH: 0, CRITICAL: 0)
+
++----------------------------+------------------+----------+-------------------+---------------+---------------------------------------+
+|          LIBRARY           | VULNERABILITY ID | SEVERITY | INSTALLED VERSION | FIXED VERSION |                 TITLE                 |
++----------------------------+------------------+----------+-------------------+---------------+---------------------------------------+
+| io.netty:netty-codec       | CVE-2022-24823   | MEDIUM   | 4.1.70.Final      | 4.1.77.Final  | netty: world readable temporary       |
+|                            |                  |          |                   |               | file containing sensitive data        |
+|                            |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2022-24823 |
++----------------------------+------------------+          +                   +---------------+---------------------------------------+
+| io.netty:netty-codec-http  | CVE-2021-43797   |          |                   | 4.1.71.Final  | netty: control chars in header names  |
+|                            |                  |          |                   |               | may lead to HTTP request smuggling... |
+|                            |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-43797 |
++                            +------------------+          +                   +---------------+---------------------------------------+
+|                            | CVE-2022-24823   |          |                   | 4.1.77.Final  | netty: world readable temporary       |
+|                            |                  |          |                   |               | file containing sensitive data        |
+|                            |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2022-24823 |
++----------------------------+                  +          +                   +               +                                       +
+| io.netty:netty-codec-http2 |                  |          |                   |               |                                       |
+|                            |                  |          |                   |               |                                       |
+|                            |                  |          |                   |               |                                       |
++----------------------------+                  +          +                   +               +                                       +
+| io.netty:netty-handler     |                  |          |                   |               |                                       |
+|                            |                  |          |                   |               |                                       |
+|                            |                  |          |                   |               |                                       |
++----------------------------+------------------+----------+-------------------+---------------+---------------------------------------+
+```
+
+After updates:
+```
+openzipkin/zipkin:test (alpine 3.16.2)
+======================================
+Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
+
+
+Java (jar)
+==========
+Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
+```","{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/comments/1221016097"", ""author_association"": ""MEMBER""}"
+3472,HeadRefForcePushed,2022-08-19 19:42:53,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/7224671365"", ""commit_url"": null}"
+3472,HeadRefForcePushed,2022-08-22 16:32:56,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/7234460798"", ""commit_url"": null}"
+3472,HeadRefForcePushed,2022-08-22 17:21:51,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/7234839719"", ""commit_url"": null}"
+3472,Revise,2022-08-22 18:04:46,llinder,fork_merge,"Upgrade to latest Java base container, update Armeria and Spring deps","{""sha"": ""dcb80b4bb8eca8ae45cfcb46624210d934bd2501"", ""author"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2022-08-19T19:05:32Z""}, ""committer"": {""name"": ""Lance Linder"", ""email"": ""lance@tetrate.io"", ""date"": ""2022-08-22T18:04:46Z""}}"
+3472,HeadRefForcePushed,2022-08-22 18:04:52,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/7235134961"", ""commit_url"": null}"
+3472,MergePR,2022-08-23 12:58:41,llinder,fork_merge,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/7241753624"", ""commit_url"": ""https://api.github.com/repos/openzipkin/zipkin/commits/b181d5cbab597f38facf469c164b38fca68513ef""}"
+3482,SubmitCommit,2022-10-12 11:23:54,chncaption,fork_close,update com.google.protobuf:protobuf-java 3.14.0 to 3.16.1,"{""sha"": ""27ba014e3c1e1ac480f4b3ba1bcdf1268eff83ca"", ""author"": {""name"": ""chncaption"", ""email"": ""101684156+chncaption@users.noreply.github.com"", ""date"": ""2022-10-12T11:23:54Z""}, ""committer"": {""name"": ""chncaption"", ""email"": ""101684156+chncaption@users.noreply.github.com"", ""date"": ""2022-10-12T11:23:54Z""}}"
+3482,OpenPR,2022-10-12 11:23:57,chncaption,fork_close,,
+3482,ClosePR,2022-10-14 09:07:39,chncaption,fork_close,,"{""url"": ""https://api.github.com/repos/openzipkin/zipkin/issues/events/7588496875"", ""commit_url"": null}"
