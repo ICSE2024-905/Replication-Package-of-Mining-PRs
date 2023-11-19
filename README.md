@@ -28,6 +28,7 @@ Dataset is available at https://figshare.com/articles/dataset/Dataset_for_replic
 #### Module function description
 
 ##### Obtain experimental data: Use Timeline API to crawl PR event logs
+
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/1980167/1687137009109-b19e3b44-6c81-4859-af55-7bb969d3b3ab.png#averageHue=%232b3646&clientId=uecda5481-cc36-4&from=paste&height=175&id=u078e0252&originHeight=227&originWidth=241&originalType=binary&ratio=1.2999999523162842&rotation=0&showTitle=false&size=9321&status=done&style=none&taskId=u68034fdf-2693-460c-ace7-e7411b3b6d8&title=&width=185.3846221844828)
 
 ##### Directory Description
@@ -52,6 +53,7 @@ Dataset is available at https://figshare.com/articles/dataset/Dataset_for_replic
 #### ProcessMining module
 ##### Module function description
 Functions: event log processing and grouping, process discovery, consistency check, calculation of variant information. Introduced in sequence according to the script execution process
+
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/1980167/1685157553639-a2a2c96a-fcb7-4ba3-89c4-95188f7ba966.png#averageHue=%23262c33&clientId=uf9bdc17f-df9c-4&from=paste&height=248&id=u07e0213c&originHeight=322&originWidth=366&originalType=binary&ratio=1.2999999523162842&rotation=0&showTitle=false&size=21550&status=done&style=none&taskId=uf5f11ae9-9aa0-4c79-b34e-0006a8eea28&title=&width=281.53847186523114)
 
 ##### Directory introduction
@@ -101,6 +103,7 @@ Functions: event log processing and grouping, process discovery, consistency che
 #### LabelData module
 ##### Module function description
 Function: Identify four types of semantic anomalies. The red boxes mark the four types of semantic anomalies that are not currently considered.
+
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/1980167/1685158184878-dd9aa6a9-19fa-4af8-ac6e-98c5c5de048e.png#averageHue=%2329323f&clientId=uf9bdc17f-df9c-4&from=paste&height=249&id=uaa3d0b6c&originHeight=324&originWidth=349&originalType=binary&ratio=1.2999999523162842&rotation=0&showTitle=false&size=21967&status=done&style=none&taskId=u363f964a-019c-4470-b8ea-cb823e94522&title=&width=268.46154830864936)
 ##### Directory Description
 
@@ -219,6 +222,7 @@ Function: Use the normal case set obtained after eliminating control flow anomal
 #### Kappa
 ##### Module function description
 Use Kappa to calculate the consistency of two people’s classification results of abnormal root causes
+
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/1980167/1685173943057-069001ac-ca59-4468-8ed8-fd584059514a.png#averageHue=%23272c34&clientId=uf9bdc17f-df9c-4&from=paste&height=95&id=uaa45f908&originHeight=173&originWidth=393&originalType=binary&ratio=1.2999999523162842&rotation=0&showTitle=false&size=9175&status=done&style=none&taskId=u33b6c992-bc58-4297-b72a-b41b000f63f&title=&width=215.93407385448057)
 ##### Directory Description
 
