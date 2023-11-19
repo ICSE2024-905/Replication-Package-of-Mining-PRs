@@ -122,6 +122,7 @@ Function: Identify four types of semantic anomalies. The red boxes mark the four
 #### ProcessAnomalyPR module
 ##### Introduction to module functions
 Function: Process abnormal PR identification module
+
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/1980167/1685167747822-84222e41-0102-4b0f-abd1-03c20ec6c5b4.png#averageHue=%23282e36&clientId=uf9bdc17f-df9c-4&from=paste&height=247&id=uae1cc214&originHeight=450&originWidth=382&originalType=binary&ratio=1.2999999523162842&rotation=0&showTitle=false&size=29266&status=done&style=none&taskId=uc19ebfbd-ff42-4d3b-b93d-96d05bf08e4&title=&width=209.89011758883353)
 ##### Directory introduction
 
@@ -168,6 +169,7 @@ Function: Process abnormal PR identification module
 #### NormalProcessModel module
 ##### Module function
 Function: Use the normal case set obtained after eliminating control flow anomalies and semantic anomalies to build a normal process model (**clustering/non-clustering**)
+
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/1980167/1685169812517-860f0239-db3f-40e6-bdfe-9903f40bcfcc.png#averageHue=%23292e36&clientId=uf9bdc17f-df9c-4&from=paste&height=266&id=u11c75b32&originHeight=485&originWidth=390&originalType=binary&ratio=1.2999999523162842&rotation=0&showTitle=false&size=31083&status=done&style=none&taskId=u8b40d080-874d-4cb6-bb4c-7c0a84f7bd6&title=&width=214.28572214566773)
 ##### Directory introduction
 
