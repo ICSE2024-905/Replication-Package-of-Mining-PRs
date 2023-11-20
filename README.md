@@ -2,7 +2,7 @@
 Each directory is a relatively independent sub-module, used to complete an independent function, such as: data crawling, process mining, etc. Global configuration item information is in the `Config.py` script in each module. Note: `Config.py` of each module is not interoperable!
 
 #### Database related
-Dataset is available at https://figshare.com/articles/dataset/Dataset_for_replication_package_of_mining_PRs/24587457
+Dataset is available at https://doi.org/10.6084/m9.figshare.24587457.v1
 
 1. In the attached dataset.zip pressed package, each project has two `sql` files, corresponding to three types of data, as follows. in
 
