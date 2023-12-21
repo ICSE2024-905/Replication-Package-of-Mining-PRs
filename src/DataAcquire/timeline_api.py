@@ -271,7 +271,7 @@ if __name__ == '__main__':
                 'vim/vim', 'gpac/gpac', 'ImageMagick/ImageMagick', 'apache/hadoop', 'libexpat/libexpat',
                 'apache/httpd', 'madler/zlib', 'redis/redis', 'stefanberger/swtpm', 'tensorflow/tensorflow']
     for project in projects:
-        start = datetime(2022, 6, 12)
-        end = datetime(2023, 3, 1)
+        start = datetime(2021, 1, 1)
+        end = datetime(2022, 12, 31)
         print(f"{project} begin")
         crawl_event_for_project(project, start, end)
